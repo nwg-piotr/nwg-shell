@@ -15,15 +15,16 @@ Feel free to submit addons / improvements, but keep in mind that all the stuff *
 
 ### [nwg-panel](https://github.com/nwg-piotr/nwg-panel)
 
-GTK3-based panel is the central point of the project. At the moment it contains 8 modules: Clock, Controls, CustomButton, Executor, MenuStart, Playerctl,
+The panel is the central point of the project. At the moment it contains 9 modules: Clock, Controls, CustomButton, Executor, MenuStart, Playerctl,
 Scratchpad, SwayTaskbar and SwayWorkspaces. The Executor module supports tint2-like executors, that allow to add user-defined features. 
 The MenuStart module adds support for the nwg-menu plugin.
 
 ### [nwg-launchers](https://github.com/nwg-piotr/nwg-launchers)
 
-A set of GTK-based launchers: application grid, button bar and dmenu. I initially wrote them in python, but it turned out to be too slow. I developed them from
+This is a set of launchers: application grid, button bar and dmenu. Initially written them in python, turned out to be too slow. I developed them from
 scratch in C++, as my first, and probably the last C++ code. Thanks to Contributors, led by [@Siborgium](https://github.com/Siborgium), the code looks pretty well
-now, but I understand hardly anything. I'm not going to live long enough to learn C++, so I'll code the grid and dmenu from scratch in golang sooner or later.
+now, but it's difficult to me to maintain. I'm not going to live long enough to learn C++ at last, so I think I'll code the grid and dmenu from scratch in golang 
+sooner or later.
 
 ### [nwg-dock](https://github.com/nwg-piotr/nwg-dock)
 
