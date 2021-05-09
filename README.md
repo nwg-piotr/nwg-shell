@@ -36,7 +36,15 @@ nwggrid (application grid) from nwg-launchers.
 
 ### [nwg-menu](https://github.com/nwg-piotr/nwg-menu)
 
-It's the MenuStart plugin to nwg-panel written in Go. It's also capable of working standalone.
+It's the MenuStart plugin to nwg-panel written in Go. It's also capable of working standalone.It displays the system menu with simplified [freedesktop main categories](https://specifications.freedesktop.org/menu-spec/latest/apa.html). It also provides the search entry,
+to look for installed application on the basis of .desktop files, and for files in XDG user directories.
+
+You may pin applications by right-clicking them. Pinned items will appear above the categories list. Right-click
+a pinned item to unpin it. The pinned items cache is shared with the `nwggrid` command, which is a part of
+[nwg-launchers](https://github.com/nwg-piotr/nwg-launchers).
+
+In the bottom-right corner of the window you'll also see a set of buttons: logout, lock screen, restart and shutdown.
+The commands attached to them may be defined in the nwg-panel settings or given as the arguments.
 
 <div align="center"><img src="https://scrot.cloud/images/2021/05/10/menu.png" width="400"/></div>
 
