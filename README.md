@@ -1,21 +1,20 @@
 # nwg-shell
 
 This project is primarily aimed at [sway](https://github.com/swaywm/sway). Some parts may work on other wlroots-based compositors. 
-Some may even work on X11, but it's not the primarily objective. Feel free to submit addons / improvements, but keep in mind that all the stuff **must**
+Some may even work on X11, but it's not the primary objective. Feel free to submit addons / improvements, but keep in mind that all the stuff **must**
 work on sway, and **may or may not** work elsewhere.
 
-I do love GTK and the GNOME look, but not the workflow. I'm a DIY enthusiast, so the stiff and hard to customize environment is not for me. So I thought to give 
-my favourite WM some new appearance. Once I first saw [Zorin](https://zorinos.com), I thought to give users similar freedom of choice. Just cherry-pick what 
-fits you best.
+I do love GTK and the GNOME look, but not the workflow. For DIY enthusiasts it's too stiff and hard to customize. That's why I thought to give 
+my favourite WM some new appearance, and the freedom of choice. Just cherry-pick the components that fit you best.
 
-I don't think that "nwg-shell" is the best possible name. It's subject to change as soon as someone comes up with a better idea.
+Probably "nwg-shell" is not the best possible name. It's subject to change as soon as someone comes up with a better idea.
 
 ## Components, as for now:
 
 ### [nwg-panel](https://github.com/nwg-piotr/nwg-panel)
 
-A GTK3-based panel, including what I like most in my favourite Waybar and tint2. Written in python, it's the central point of the project. For now it 
-contains 8 modules and 1 external plugin.
+A GTK3-based panel is the central point of the project. For now it contains 8 modules and 1 external plugin. It also supports tin2-like executors, that allow
+to add user-defined features easily.
 
 ### [nwg-launchers](https://github.com/nwg-piotr/nwg-launchers)
 
