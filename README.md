@@ -15,8 +15,9 @@ Feel free to submit addons / improvements, but keep in mind that all the stuff *
 
 ### [nwg-panel](https://github.com/nwg-piotr/nwg-panel)
 
-A GTK3-based panel is the central point of the project. For now it contains 8 modules and 1 external plugin. It also supports tin2-like executors, that allow
-to add user-defined features easily.
+GTK3-based panel is the central point of the project. At the moment it contains 8 modules: Clock, Controls, CustomButton, Executor, MenuStart, Playerctl,
+Scratchpad, SwayTaskbar and SwayWorkspaces. The Executor module supports tint2-like executors, that allow to add user-defined features. 
+The MenuStart module adds support for the nwg-menu plugin.
 
 ### [nwg-launchers](https://github.com/nwg-piotr/nwg-launchers)
 
