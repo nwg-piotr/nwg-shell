@@ -59,6 +59,13 @@ A [gopsutil](https://github.com/shirou/gopsutil)-based command to display system
 This script uses the [i3ipc-python library](https://github.com/altdesktop/i3ipc-python) to switch the layout splith/splitv depending on the currently focused
 window dimensions. It works on both sway and i3 window managers. You may love it or hate it, but it's my must have.
 
+## Resources
+
+The shell logo has been created by [SGSE](https://github.com/sgse) and released under the terms of the Creative Commons license 
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en). Available as .svg in the resources folder.
+
+<div align="center"><img src="https://scrot.cloud/images/2021/05/10/nwg-shell-logo-cyan.png"/></div>
+
 Images used on this page come from:
 
 - https://wallhaven.cc/w/6kxmj6
