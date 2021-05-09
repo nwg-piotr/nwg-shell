@@ -15,7 +15,7 @@ I don't think that "nwg-shell" is the best possible name. It's subject to change
 ### [nwg-panel](https://github.com/nwg-piotr/nwg-panel)
 
 A GTK3-based panel, including what I like most in my favourite Waybar and tint2. Written in python, it's the central point of the project. For now it 
-contains 8 modules and 1 plugin written in Go.
+contains 8 modules and 1 external plugin.
 
 ### [nwg-launchers](https://github.com/nwg-piotr/nwg-launchers)
 
