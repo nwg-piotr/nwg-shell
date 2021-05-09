@@ -60,6 +60,13 @@ This command, based on the [gopsutil](https://github.com/shirou/gopsutil) Go mod
 This script uses the [i3ipc-python library](https://github.com/altdesktop/i3ipc-python) to switch the layout splith/splitv depending on the currently focused
 window dimensions. It works on both sway and i3 window managers. You may love it or hate it, but it's my must have.
 
+## Contributions
+
+If you like the idea of the GTK shell for sway, feel free to submit your improvements, new modules, plugins or standalone programs. Also bug reports and ideas are
+more than welcome. Preferred languages are python and Go.
+
+**Important: before you open a PR containing major changes to already existing programs, please do open an issue to discuss what you're going to do.**
+
 ## Resources
 
 The shell logo has been created by [SGSE](https://github.com/sgse) and released under the terms of the Creative Commons license
