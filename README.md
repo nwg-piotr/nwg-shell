@@ -10,7 +10,7 @@ fits you best.
 
 I don't think that "nwg-shell" is the best possible name for the project. It's subject to change as soon as someone comes up with a better one.
 
-## Components, as for now
+## Components, as for now:
 
 ### [nwg-panel](https://github.com/nwg-piotr/nwg-panel)
 
