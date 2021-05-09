@@ -1,6 +1,6 @@
 # nwg-shell
 
-This project is an attempt to create a GTK-based shell for [sway](https://github.com/swaywm/sway) Wayland compositor. It's aimed at those, who do not believe 
+This project is an attempt to create a GTK-based shell for [sway](https://github.com/swaywm/sway) Wayland compositor. It's aimed at those, who do not believe
 that the point of a modern computer is to use less than 200 MiB RAM and 0.5% CPU. Those who don't want to stare solely at the terminal's black window.
 The programs included in the project are to give you the freedom of choice what your desktop looks like.
 
@@ -16,19 +16,19 @@ Feel free to submit addons / improvements, but keep in mind that all the stuff *
 ### [nwg-panel](https://github.com/nwg-piotr/nwg-panel)
 
 The panel is the central point of the project. At the moment it contains 9 modules: Clock, Controls, CustomButton, Executor, MenuStart, Playerctl,
-Scratchpad, SwayTaskbar and SwayWorkspaces. The Executor module supports tint2-like executors, that allow to add user-defined features. 
+Scratchpad, SwayTaskbar and SwayWorkspaces. The Executor module supports tint2-like executors, that allow to add user-defined features.
 The MenuStart module adds support for the nwg-menu plugin.
 
 ### [nwg-launchers](https://github.com/nwg-piotr/nwg-launchers)
 
 This is a set of launchers: application grid, button bar and dmenu. Initially written in python, turned out to be too slow. I developed them from
 scratch in C++, as my first, and probably the last C++ code. Thanks to Contributors, led by [@Siborgium](https://github.com/Siborgium), the code looks pretty well
-now, but it's difficult to me to maintain. I'm not going to live long enough to learn C++ at last, so I think I'll code the grid and dmenu from scratch in golang 
+now, but it's difficult to me to maintain. I'm not going to live long enough to learn C++ at last, so I think I'll code the grid and dmenu from scratch in golang
 sooner or later.
 
 ### [nwg-dock](https://github.com/nwg-piotr/nwg-dock)
 
-Fully configurable dock written in Go. It features pinned buttons, task buttons, the workspace switcher and the launcher button. The latter by default starts 
+Fully configurable dock written in Go. It features pinned buttons, task buttons, the workspace switcher and the launcher button. The latter by default starts
 nwggrid (application grid) from nwg-launchers.
 
 
@@ -39,14 +39,14 @@ nwggrid (application grid) from nwg-launchers.
 It's the MenuStart plugin to nwg-panel, written in Go. It displays the system menu with simplified [freedesktop main categories](https://specifications.freedesktop.org/menu-spec/latest/apa.html). It also provides the search entry,
 to look for installed application on the basis of .desktop files, and for files in XDG user directories.
 
-You may pin-up applications above the categories list. In the bottom-right corner of the window you'll also see a set of buttons: logout, lock screen, 
+You may pin-up applications above the categories list. In the bottom-right corner of the window you'll also see a set of buttons: logout, lock screen,
 restart and shutdown.
 
 <div align="center"><img src="https://scrot.cloud/images/2021/05/10/menu.png" width="400"/></div>
 
 ### [Azote](https://github.com/nwg-piotr/azote)
 
-Azote is a picture browser and background setter, as the frontend to the swaybg (sway/Wayland) and feh (X windows) commands. The user interface is being 
+Azote is a picture browser and background setter, as the frontend to the swaybg (sway/Wayland) and feh (X windows) commands. The user interface is being
 developed with multi-headed setups in mind. Azote also includes several colour management tools.
 
 <div align="center"><img src="https://scrot.cloud/images/2021/03/13/azote-1.9.0.png" width="400"/></div>
@@ -62,8 +62,10 @@ window dimensions. It works on both sway and i3 window managers. You may love it
 
 ## Resources
 
-The shell logo has been created by [SGSE](https://github.com/sgse) and released under the terms of the Creative Commons license 
-[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en). Available as .svg in the resources folder.
+The shell logo has been created by [SGSE](https://github.com/sgse) and released under the terms of the Creative Commons license
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en). Available as .svg in the
+[resources](https://github.com/nwg-piotr/nwg-shell/tree/main/resources) folder. You'll also find some backgrounds
+in the [wallpapers](https://github.com/nwg-piotr/nwg-shell/tree/main/wallpapers) folder.
 
 <div align="center"><img src="https://scrot.cloud/images/2021/05/10/nwg-shell-logo-cyan.png"/></div>
 
