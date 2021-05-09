@@ -38,6 +38,8 @@ nwggrid (application grid) from nwg-launchers.
 
 It's the MenuStart plugin to nwg-panel written in Go. It's also capable of working standalone.
 
+<div align="center"><img src="https://scrot.cloud/images/2021/05/10/menu.png" width="400"/></div>
+
 ### [Azote](https://github.com/nwg-piotr/azote)
 
 Azote is a GTK+3-based picture browser and background setter, as the frontend to the swaybg (sway/Wayland) and feh (X windows) commands. The user interface is being developed with multi-headed setups in mind. Azote also includes several colour management tools.
