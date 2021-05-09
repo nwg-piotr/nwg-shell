@@ -1,5 +1,32 @@
 # nwg-shell
 
 This project is primarily aimed at [sway](https://github.com/swaywm/sway) Wayland compositor. Some parts may work on other wlroots-based compositors. 
-Some may even work on X11, but it's not the primarily objective. Feel free to sumbit addons / improvements, but keep in mind that all the stuff **must**
+Some may even work on X11, but it's not the primarily objective. Feel free to submit addons / improvements, but keep in mind that all the stuff **must**
 work on sway, and **may or may not** work elsewhere.
+
+I do love GTK and the GNOME look, but not the workflow. I'm a DIY enthusiast, so the stiff and hard to customize environment is not for me. So I thought to give 
+my favourite WM some new appearance. Once I first saw [Zorin](https://zorinos.com), I thought to give users similar freedom of choice. Just cherry-pick what 
+fits you best.
+
+## [nwg-panel](https://github.com/nwg-piotr/nwg-panel)
+
+Written in python, it's the central point of the project. For now it contains 8 modules and 1 plugin written in Go.
+
+## [nwg-launchers](https://github.com/nwg-piotr/nwg-launchers)
+
+A set of GTK-based launchers: application grid, button bar and dmenu. I initially wrote them in python, but it turned out to be too slow. I developed them from
+scratch in C++, as my first, and probably the last C++ code. Thanks to Contributors, led by [@Siborgium](https://github.com/Siborgium), the code looks pretty well
+now, but I understand hardly anything. I'm not going to live long enough to learn C++, so I'll code the grid and dmenu from scratch in golang sooner or later.
+
+## [nwg-dock](https://github.com/nwg-piotr/nwg-dock)
+
+Fully configurable dock written in Go. It features pinned buttons, task buttons, the workspace switcher and the launcher button. The latter by default starts 
+nwggrid (application grid) from nwg-launchers.
+
+## [Azote](https://github.com/nwg-piotr/azote)
+
+Azote is a GTK+3-based picture browser and background setter, as the frontend to the swaybg (sway/Wayland) and feh (X windows) commands. The user interface is being developed with multi-headed setups in mind. Azote also includes several colour management tools.
+
+## [gopsuinfo](https://github.com/nwg-piotr/gopsuinfo)
+
+A [gopsutil](https://github.com/shirou/gopsutil)-based command to display system usage info as text in panels like Waybar or icon/text in tint2 and nwg-panel executors.
