@@ -8,7 +8,7 @@ I do love GTK and the GNOME look, but not the workflow. I'm a DIY enthusiast, so
 my favourite WM some new appearance. Once I first saw [Zorin](https://zorinos.com), I thought to give users similar freedom of choice. Just cherry-pick what 
 fits you best.
 
-I don't think that "nwg-shell" is the best possible name for the project. It's subject to change as soon as someone comes up with a better one.
+I don't think that "nwg-shell" is the best possible name in the world. It's subject to change as soon as someone comes up with a better one.
 
 ## Components, as for now:
 
