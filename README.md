@@ -8,6 +8,8 @@ I do love GTK and the GNOME look, but not the workflow. I'm a DIY enthusiast, so
 my favourite WM some new appearance. Once I first saw [Zorin](https://zorinos.com), I thought to give users similar freedom of choice. Just cherry-pick what 
 fits you best.
 
+I don't think that "nwg-shell" is the best possible name for the project. It's subject to change as soon as someone comes up with a better one.
+
 ## [nwg-panel](https://github.com/nwg-piotr/nwg-panel)
 
 Written in python, it's the central point of the project. For now it contains 8 modules and 1 plugin written in Go.
@@ -30,3 +32,8 @@ Azote is a GTK+3-based picture browser and background setter, as the frontend to
 ## [gopsuinfo](https://github.com/nwg-piotr/gopsuinfo)
 
 A [gopsutil](https://github.com/shirou/gopsutil)-based command to display system usage info as text in panels like Waybar or icon/text in tint2 and nwg-panel executors.
+
+## [autotiling](https://github.com/nwg-piotr/autotiling)
+
+This script uses the [i3ipc-python library](https://github.com/altdesktop/i3ipc-python) to switch the layout splith/splitv depending on the currently focused
+window dimensions. It works on both sway and i3 window managers. You may love it or hate it, but it's my must have.
