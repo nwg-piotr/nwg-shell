@@ -32,7 +32,7 @@ Fully configurable dock written in Go. It features pinned buttons, task buttons,
 nwggrid (application grid) from nwg-launchers.
 
 
-<div align="center"><img src="https://scrot.cloud/images/2021/05/10/dock.png" width="600"/></div>
+<div align="center"><img src="https://scrot.cloud/images/2021/05/10/dock.png" width="400"/></div>
 
 ### [nwg-menu](https://github.com/nwg-piotr/nwg-menu)
 
