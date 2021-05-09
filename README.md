@@ -1,7 +1,7 @@
 # nwg-shell
 
 This project is an attempt to create a GTK-based shell for [sway](https://github.com/swaywm/sway) Wayland compositor. It's aimed at those who do not believe 
-that the point of a modern computer is that it should use less than 200 MiB RAM and 0.5% CPU. Those who don't want to stare solely at the terminal's black window.
+that the point of a modern computer is to use less than 200 MiB RAM and 0.5% CPU. Those who don't want to stare solely at the terminal's black window.
 The programs included in the project are to give you the freedom of choice what your desktop looks like.
 
 ![3.png](https://scrot.cloud/images/2021/05/09/3.png)
