@@ -37,6 +37,8 @@ It's the MenuStart plugin to nwg-panel written in Go. It's also capable of worki
 
 Azote is a GTK+3-based picture browser and background setter, as the frontend to the swaybg (sway/Wayland) and feh (X windows) commands. The user interface is being developed with multi-headed setups in mind. Azote also includes several colour management tools.
 
+<div align="center"><img src="https://scrot.cloud/images/2021/03/13/azote-1.9.0.png" width="300"/></div>
+
 ### [gopsuinfo](https://github.com/nwg-piotr/gopsuinfo)
 
 A [gopsutil](https://github.com/shirou/gopsutil)-based command to display system usage info as text in panels like Waybar or icon/text in tint2 and nwg-panel executors.
