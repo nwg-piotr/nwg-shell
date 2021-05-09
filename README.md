@@ -1,13 +1,13 @@
 # nwg-shell
 
-This project is primarily aimed at [sway](https://github.com/swaywm/sway). Some parts may work on other wlroots-based compositors. 
-Some may even work on X11, but it's not the primary objective. Feel free to submit addons / improvements, but keep in mind that all the stuff **must**
-work on sway, and **may or may not** work elsewhere.
+This project is an attempt to create a GTK-based shell for [sway](https://github.com/swaywm/sway) Wayland compositor. It's aimed at those who do not believe 
+that the point of a modern computer is that it should use less than 200 MiB RAM and 0.5% CPU. Those who don't want to stare solely at the terminal's black window.
+The programs included in the project are to give you the freedom of choice what your desktop looks like.
 
-I do love GTK and the GNOME look, but not the workflow. For DIY enthusiasts it's too stiff and hard to customize. That's why I thought to give 
-my favourite WM some new appearance, and the freedom of choice. Just cherry-pick the components that fit you best.
+*This project is primarily aimed at sway. Some parts may work on other wlroots-based compositors. Some may even work on X11, but it's not the primary objective.
+Feel free to submit addons / improvements, but keep in mind that all the stuff **must** work on sway, and **may or may not** work elsewhere.*
 
-Probably "nwg-shell" is not the best possible name. It's subject to change as soon as someone comes up with a better idea.
+*Probably "nwg-shell" is not the best possible name. It's subject to change as soon as someone comes up with a better idea.*
 
 ## Components, as for now:
 
