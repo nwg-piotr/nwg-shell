@@ -23,8 +23,8 @@ The MenuStart module adds support for the nwg-menu plugin (see below).
 
 This is a set of launchers: application grid, button bar and dmenu. Initially written in python, turned out to be too slow. I developed them from
 scratch in C++, as my first, and probably the last C++ code. Thanks to Contributors, led by [@Siborgium](https://github.com/Siborgium), the code looks pretty well
-now, but it's difficult to me to maintain. I'm not going to live long enough to learn C++ at last, so I think I'll code the grid and dmenu from scratch in golang
-sooner or later.
+now, but it's difficult to me to maintain. I'm not going to live long enough to learn C++ at last, so I think I'll code the grid and dmenu from scratch in golang.
+Sooner or later.
 
 ### [nwg-dock](https://github.com/nwg-piotr/nwg-dock) (Go)
 
