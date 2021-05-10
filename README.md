@@ -17,7 +17,7 @@ Feel free to submit addons / improvements, but keep in mind that all the stuff *
 
 The panel is the central point of the project. At the moment it contains 9 modules: Clock, Controls, CustomButton, Executor, MenuStart, Playerctl,
 Scratchpad, SwayTaskbar and SwayWorkspaces. The Executor module supports tint2-like executors, that allow to add user-defined features.
-The MenuStart module adds support for the nwg-menu plugin.
+The MenuStart module adds support for the nwg-menu plugin (see below).
 
 ### [nwg-launchers](https://github.com/nwg-piotr/nwg-launchers) (C++)
 
