@@ -39,7 +39,7 @@ nwggrid (application grid) from nwg-launchers.
 It's the MenuStart plugin to nwg-panel, written in Go. It displays the system menu with simplified [freedesktop main categories](https://specifications.freedesktop.org/menu-spec/latest/apa.html). It also provides the search entry,
 to look for installed application on the basis of .desktop files, and for files in XDG user directories.
 
-You may pin-up applications above the categories list. In the bottom-right corner of the window you'll also see a set of buttons: logout, lock screen,
+You may pin-up applications above the categories list. In the bottom-right corner of the window you'll also see a set of buttons: lock screen, logout, 
 restart and shutdown.
 
 <div align="center"><img src="https://scrot.cloud/images/2021/05/10/menu.png" width="400"/></div>
