@@ -9,8 +9,6 @@ The programs included in the project are to give you the freedom of choice what 
 *This project is primarily aimed at sway. Some parts may work on other wlroots-based compositors. Some may even work on X11, but it's not the primary objective.
 Feel free to submit addons / improvements, but keep in mind that all the stuff **must** work on sway, and **may or may not** work elsewhere.*
 
-**Probably "nwg-shell" is not the best possible name. It's subject to change as soon as someone comes up with a better idea.**
-
 ## Components, as for now:
 
 ### [nwg-panel](https://github.com/nwg-piotr/nwg-panel) (Python)
