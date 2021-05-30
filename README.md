@@ -11,20 +11,20 @@ Feel free to submit addons / improvements, but keep in mind that all the stuff *
 
 ## Components, as for now:
 
-### [nwg-panel](https://github.com/nwg-piotr/nwg-panel) (Python)
+### [nwg-panel](https://github.com/nwg-piotr/nwg-panel) (Python, beta)
 
 The panel is the central point of the project. At the moment it contains 9 modules: Clock, Controls, CustomButton, Executor, MenuStart, Playerctl,
 Scratchpad, SwayTaskbar and SwayWorkspaces. The Executor module supports tint2-like executors, that allow to add user-defined features.
 The MenuStart module adds support for the nwg-menu plugin (see below).
 
-### [nwg-dock](https://github.com/nwg-piotr/nwg-dock) (Go)
+### [nwg-dock](https://github.com/nwg-piotr/nwg-dock) (Go, beta)
 
 Fully configurable dock written in Go. It features pinned buttons, task buttons, the workspace switcher and the launcher button. The latter by default starts
 nwggrid (application grid) from nwg-launchers.
 
 <div align="center"><img src="https://scrot.cloud/images/2021/05/10/dock.png" width="400"/></div>
 
-### [nwg-menu](https://github.com/nwg-piotr/nwg-menu) (Go)
+### [nwg-menu](https://github.com/nwg-piotr/nwg-menu) (Go, beta)
 
 It's the MenuStart plugin to nwg-panel, written in Go. It displays the system menu with simplified [freedesktop main categories](https://specifications.freedesktop.org/menu-spec/latest/apa.html). It also provides the search entry,
 to look for installed application on the basis of .desktop files, and for files in XDG user directories.
@@ -34,7 +34,7 @@ restart and shutdown.
 
 <div align="center"><img src="https://scrot.cloud/images/2021/05/10/menu.png" width="400"/></div>
 
-### [nwg-drawer](https://github.com/nwg-piotr/nwg-drawer) (Go)
+### [nwg-drawer](https://github.com/nwg-piotr/nwg-drawer) (Go, beta)
 
 A golang replacement to the `nwggrid` command (a part of nwg-launchers). The `nwg-drawer` command displays the application grid. The search entry allows to look
 for installed applications, and for files in XDG user directories. The grid view may also be filtered by categories. You may pin applications by right-clicking
