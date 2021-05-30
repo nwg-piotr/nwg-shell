@@ -17,18 +17,10 @@ The panel is the central point of the project. At the moment it contains 9 modul
 Scratchpad, SwayTaskbar and SwayWorkspaces. The Executor module supports tint2-like executors, that allow to add user-defined features.
 The MenuStart module adds support for the nwg-menu plugin (see below).
 
-### [nwg-launchers](https://github.com/nwg-piotr/nwg-launchers) (C++)
-
-This is a set of launchers: application grid, button bar and dmenu. Initially written in python, turned out to be too slow. I developed them from
-scratch in C++, as my first, and probably the last C++ code. Thanks to Contributors, led by [@Siborgium](https://github.com/Siborgium), the code looks pretty well
-now, but it's difficult to me to maintain. I'm not going to live long enough to learn C++ at last, so I think I'll code the grid and dmenu from scratch in golang.
-Sooner or later.
-
 ### [nwg-dock](https://github.com/nwg-piotr/nwg-dock) (Go)
 
 Fully configurable dock written in Go. It features pinned buttons, task buttons, the workspace switcher and the launcher button. The latter by default starts
 nwggrid (application grid) from nwg-launchers.
-
 
 <div align="center"><img src="https://scrot.cloud/images/2021/05/10/dock.png" width="400"/></div>
 
@@ -41,6 +33,14 @@ You may pin-up applications above the categories list. In the bottom-right corne
 restart and shutdown.
 
 <div align="center"><img src="https://scrot.cloud/images/2021/05/10/menu.png" width="400"/></div>
+
+### [nwg-drawer](https://github.com/nwg-piotr/nwg-drawer) (Go)
+
+A golang replacement to the `nwggrid` command (a part of nwg-launchers). The `nwg-drawer` command displays the application grid. The search entry allows to look
+for installed applications, and for files in XDG user directories. The grid view may also be filtered by categories. You may pin applications by right-clicking
+them. Pinned items will appear above the grid. Right-click a pinned item to unpin it.
+
+<div align="center"><img src="https://scrot.cloud/images/2021/05/30/screenshot-01.png" width="400"/></div>
 
 ### [Azote](https://github.com/nwg-piotr/azote) (Python)
 
