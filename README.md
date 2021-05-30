@@ -73,10 +73,7 @@ Arch Linux (BTW). Some issues specific to other environment, e.g. Debian, FreeBS
 
 ## Resources
 
-The shell logo has been created by [SGSE](https://github.com/sgse) and released under the terms of the Creative Commons license
-[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en). Available as .svg in the
-[resources](https://github.com/nwg-piotr/nwg-shell/tree/main/resources) folder. You'll also find some backgrounds
-in the [wallpapers](https://github.com/nwg-piotr/nwg-shell/tree/main/wallpapers) folder.
+The shell logo has been created by [edskeye](https://github.com/edskeye).
 
 <div align="center"><img src="https://scrot.cloud/images/2021/05/30/shell-logo-basic-render5b2cd1cc090aab3a.png"/></div>
 
