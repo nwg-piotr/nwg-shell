@@ -78,7 +78,7 @@ The shell logo has been created by [SGSE](https://github.com/sgse) and released 
 [resources](https://github.com/nwg-piotr/nwg-shell/tree/main/resources) folder. You'll also find some backgrounds
 in the [wallpapers](https://github.com/nwg-piotr/nwg-shell/tree/main/wallpapers) folder.
 
-<div align="center"><img src="https://scrot.cloud/images/2021/05/30/shell-logo-basic-render.png"/></div>
+<div align="center"><img src="https://scrot.cloud/images/2021/05/30/shell-logo-basic-render5b2cd1cc090aab3a.png"/></div>
 
 Images used on this page come from:
 
