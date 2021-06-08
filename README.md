@@ -29,7 +29,7 @@ nwggrid (application grid) from nwg-launchers.
 It's the MenuStart plugin to nwg-panel, written in Go. It displays the system menu with simplified [freedesktop main categories](https://specifications.freedesktop.org/menu-spec/latest/apa.html). It also provides the search entry,
 to look for installed application on the basis of .desktop files, and for files in XDG user directories.
 
-You may pin-up applications above the categories list. In the bottom-right corner of the window you'll also see a set of buttons: lock screen, logout, 
+You may pin-up applications above the categories list. In the bottom-right corner of the window you'll also see a set of buttons: lock screen, logout,
 restart and shutdown.
 
 <div align="center"><img src="https://scrot.cloud/images/2021/05/10/menu.png" width="400"/></div>
@@ -73,7 +73,10 @@ Arch Linux (BTW). Some issues specific to other environment, e.g. Debian, FreeBS
 
 ## Resources
 
-The shell logo has been created by [edskeye](https://github.com/edskeye).
+The initial version of the shell logo was created by [SGSE](https://github.com/sgse), and it looked well. Having
+received some users' feedback, I decided to use another one, due to unwanted religious associations. The current
+version has been created by [edskeye](https://github.com/edskeye). You'll find the basic svg file in the
+[resources](https://github.com/nwg-piotr/nwg-shell/tree/main/resources) folder.
 
 <div align="center"><img src="https://scrot.cloud/images/2021/05/30/shell-logo-basic-render5b2cd1cc090aab3a.png"/></div>
 
