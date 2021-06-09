@@ -1,0 +1,79 @@
+/***** SUGGESTED TO CHANGE CAREFULLY *****/
+
+/* Recommended if panel "height"  unset or smaller then your theme default button height */
+button {
+    margin: 2px
+}
+
+#button-start {
+    background: none;
+    border: 0px;
+    margin: 2px;
+    padding: 0px
+}
+
+/* WindowBox in SwayTaskBar is a custom widget, that needs this and the next name
+   to highlight currently focused task */
+#task-box {
+    padding-left: 4px;
+    padding-right: 4px
+}
+#task-box-focused {
+    background-color: rgba (255, 255, 255, 0.12);
+    padding-left: 4px;
+    padding-right: 4px
+}
+
+menu {
+  background: #669
+}
+
+
+/***** MODIFY TO YOUR TASTE *****/
+
+/* Sample button in sample config w/ no background nor border */
+#button-custom {
+    background: rgba (0, 0, 0, 0.0);
+    border: 0
+}
+
+/* Top panel in sample config uses this name */
+#panel-top {
+    background: rgba (24, 70, 89, 0.95);
+    /*color: #eeeeee*/
+}
+
+/* Bottom panel in sample config uses this name */
+#panel-bottom {
+    background-color: rgba (36, 47, 79, 1);
+    color: #eeeeee
+}
+
+/* Controls window in sample config uses this name */
+#controls-window {
+    /*border-radius: 15px;*/
+    background-color: rgba (36, 47, 79, 0.92);
+    color: #eeeeee
+}
+
+#menu-start-window {
+    border-radius: 15px;
+    background-color: rgba (36, 47, 79, 0.92);
+    color: #eeeeee
+}
+
+/* Executors usually behave better in monospace fonts */
+#executor-label {
+    font-family: monospace
+}
+
+/* and so does the Clock */
+#clock {
+    font-family: monospace;
+    font-size: 16px
+}
+
+/* Sample executor-weather uses "css-name": "weather" */
+#weather {
+    font-size: 16px
+}

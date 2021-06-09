@@ -1,0 +1,620 @@
+[
+  {
+    "name": "primary-top",
+    "output": "eDP-1",
+    "layer": "bottom",
+    "position": "top",
+    "height": 30,
+    "homogeneous": true,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "padding-horizontal": 0,
+    "padding-vertical": 0,
+    "spacing": 2,
+    "controls": "right",
+    "items-padding": 0,
+    "css-name": "panel-top",
+    "icons": "",
+    "modules-left": [],
+    "modules-center": [
+      "executor-weather",
+      "clock"
+    ],
+    "modules-right": [
+      "scratchpad",
+      "executor-github",
+      "executor-arch"
+    ],
+    "sway-taskbar": {
+      "workspace-buttons": false,
+      "show-app-icon": true,
+      "show-layout": true,
+      "show-app-name": true,
+      "name-max-len": 24,
+      "workspaces-spacing": 0,
+      "task-spacing": 0,
+      "all-outputs": false,
+      "workspace-menu": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "image-size": 16,
+      "task-padding": 0
+    },
+    "controls-settings": {
+      "alignment": "right",
+      "components": [
+        "brightness",
+        "battery",
+        "volume",
+        "bluetooth",
+        "net"
+      ],
+      "commands": {
+        "battery": "",
+        "net": "",
+        "bluetooth": "blueman-manager"
+      },
+      "custom-items": [
+        {
+          "name": "Wallpapers",
+          "icon": "azote",
+          "cmd": "azote"
+        },
+        {
+          "name": "Look & Feel",
+          "icon": "preferences-desktop-theme",
+          "cmd": "lxappearance"
+        },
+        {
+          "name": "Panel settings",
+          "icon": "nwg-panel",
+          "cmd": "nwg-panel-config"
+        }
+      ],
+      "menu": {
+        "name": "Exit",
+        "icon": "system-shutdown-symbolic",
+        "items": [
+          {
+            "name": "Lock",
+            "cmd": "swaylock -f -c 000000"
+          },
+          {
+            "name": "Logout",
+            "cmd": "swaymsg exit"
+          },
+          {
+            "name": "Restart",
+            "cmd": "systemctl reboot"
+          },
+          {
+            "name": "Shutdown",
+            "cmd": "systemctl -i poweroff"
+          }
+        ]
+      },
+      "show-values": false,
+      "interval": 1,
+      "icon-size": 18,
+      "hover-opens": false,
+      "leave-closes": true,
+      "css-name": "controls-window",
+      "net-interface": "wlo1",
+      "Exit": "Exittt",
+      "system-shutdown-symbolic": "system-shutdown",
+      "output-switcher": true,
+      "window-width": 320
+    },
+    "playerctl": {
+      "interval": 1,
+      "buttons": true,
+      "buttons-position": "left",
+      "chars": 50,
+      "css-name": "button-grid",
+      "icon-size": 16,
+      "button-css-name": "button-custom",
+      "label-css-name": "panel-top"
+    },
+    "clock": {
+      "format": "%a, %d. %b  %H:%M:%S",
+      "interval": 1,
+      "on-right-click": "",
+      "tooltip-text": "",
+      "on-left-click": "/home/piotr/PycharmProjects/swayinfo/calendar.py",
+      "on-middle-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "css-name": "clock"
+    },
+    "executor-weather": {
+      "script": "curl https://wttr.in/sokolow_podlaski?format=1",
+      "interval": 1800,
+      "css-name": "weather",
+      "on-right-click": "",
+      "tooltip-text": "",
+      "on-left-click": "",
+      "on-middle-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "icon-size": 16
+    },
+    "executor-arch": {
+      "script": "/home/piotr/.config/nwg-panel/executors/arch_updates.py",
+      "interval": 900,
+      "icon-size": 16,
+      "on-left-click": "lxterminal -e \"au.sh; swaymsg reload\"",
+      "tooltip-text": "",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "css-name": ""
+    },
+    "executor-github": {
+      "script": "/home/piotr/.config/nwg-panel/executors/github.sh",
+      "interval": 60,
+      "icon-size": 16,
+      "on-left-click": "firefox https://github.com/notifications; swaymsg reload",
+      "tooltip-text": "",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "css-name": "",
+      "icon-placement": "left"
+    },
+    "width": "auto",
+    "button-config": {
+      "command": "nwg-panel-config",
+      "icon": "nwg-panel",
+      "label": "",
+      "label-position": "right",
+      "css-name": "button-custom",
+      "icon-size": 16
+    },
+    "sway-workspaces": {
+      "numbers": [
+        "3",
+        "4"
+      ],
+      "show-icon": true,
+      "image-size": 16,
+      "show-name": true,
+      "name-length": 40,
+      "mark-autotiling": true,
+      "mark-content": true,
+      "show-layout": true
+    },
+    "scratchpad": {
+      "css-name": "",
+      "icon-size": 20
+    },
+    "menu-start": "off",
+    "menu-start-settings": {
+      "cmd-lock": "swaylock -f -c 000000",
+      "cmd-logout": "swaymsg exit",
+      "cmd-restart": "systemctl reboot",
+      "cmd-shutdown": "systemctl -i poweroff",
+      "autohide": true,
+      "file-manager": "thunar",
+      "height": 0,
+      "icon-size-large": 32,
+      "icon-size-small": 16,
+      "icon-size-button": 24,
+      "margin-bottom": 0,
+      "margin-left": 0,
+      "margin-right": 0,
+      "margin-top": 0,
+      "padding": 2,
+      "terminal": "alacritty",
+      "width": 0
+    }
+  },
+  {
+    "name": "primary-bottom",
+    "output": "eDP-1",
+    "layer": "bottom",
+    "position": "bottom",
+    "height": 30,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "padding-horizontal": 6,
+    "padding-vertical": 0,
+    "spacing": 10,
+    "items-padding": 0,
+    "css-name": "panel-top",
+    "icons": "light",
+    "menu-start": "left",
+    "modules-left": [
+      "sway-taskbar"
+    ],
+    "modules-center": [],
+    "modules-right": [
+      "executor-cpuav",
+      "executor-cpubar",
+      "executor-temp",
+      "executor-memory",
+      "executor-drives",
+      "executor-uptime"
+    ],
+    "sway-taskbar": {
+      "workspace-buttons": false,
+      "show-app-icon": true,
+      "show-layout": true,
+      "show-app-name": true,
+      "name-max-len": 15,
+      "workspaces-spacing": 0,
+      "task-padding": 0,
+      "all-outputs": false,
+      "image-size": 16,
+      "workspace-menu": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "all-workspaces": true
+    },
+    "sway-workspaces": {
+      "numbers": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "executor-cpubar": {
+      "script": "gopsuinfo -c g",
+      "interval": 2,
+      "tooltip-text": "",
+      "on-left-click": "",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "css-name": "",
+      "icon-size": 16,
+      "icon-placement": "left"
+    },
+    "executor-cpuav": {
+      "script": "gopsuinfo -i a",
+      "interval": 2,
+      "tooltip-text": "CPU average load",
+      "on-left-click": "alacritty -e htop",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "css-name": "",
+      "icon-size": 16,
+      "icon-placement": "right"
+    },
+    "executor-temp": {
+      "script": "gopsuinfo -i t",
+      "interval": 5,
+      "tooltip-text": "",
+      "on-left-click": "",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "css-name": "",
+      "icon-size": 16,
+      "icon-placement": "left"
+    },
+    "executor-memory": {
+      "script": "gopsuinfo -i m",
+      "interval": 5,
+      "tooltip-text": "",
+      "on-left-click": "",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "css-name": "",
+      "icon-size": 16,
+      "icon-placement": "left"
+    },
+    "executor-drives": {
+      "script": "gopsuinfo -i n",
+      "interval": 15,
+      "tooltip-text": "",
+      "on-left-click": "",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "css-name": "",
+      "icon-size": 16,
+      "icon-placement": "left"
+    },
+    "executor-uptime": {
+      "script": "gopsuinfo -i u",
+      "interval": 60,
+      "tooltip-text": "",
+      "on-left-click": "",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "css-name": "",
+      "icon-size": 16,
+      "icon-placement": "left"
+    },
+    "controls": "off",
+    "width": "auto",
+    "controls-settings": {
+      "components": [
+        "net",
+        "brightness",
+        "volume",
+        "battery"
+      ],
+      "commands": {
+        "battery": "",
+        "net": "",
+        "bluetooth": ""
+      },
+      "show-values": false,
+      "interval": 1,
+      "icon-size": 16,
+      "hover-opens": true,
+      "leave-closes": true,
+      "css-name": "controls-window",
+      "net-interface": "",
+      "custom-items": [
+        {
+          "name": "Panel settings",
+          "icon": "nwg-panel",
+          "cmd": "nwg-panel-config"
+        },
+        {
+          "name": "Wallpapers",
+          "icon": "azote",
+          "cmd": "azote"
+        }
+      ],
+      "menu": {
+        "name": "Exit",
+        "icon": "system-shutdown-symbolic",
+        "items": [
+          {
+            "name": "Lock",
+            "cmd": "swaylock -f -c 000000"
+          },
+          {
+            "name": "Logout",
+            "cmd": "swaymsg exit"
+          },
+          {
+            "name": "Reboot",
+            "cmd": "systemctl reboot"
+          },
+          {
+            "name": "Shutdown",
+            "cmd": "systemctl -i poweroff"
+          }
+        ]
+      }
+    },
+    "clock": {
+      "format": "%a, %d. %b  %H:%M:%S",
+      "tooltip-text": "",
+      "on-left-click": "",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "css-name": "clock",
+      "interval": 1
+    },
+    "playerctl": {
+      "buttons-position": "left",
+      "icon-size": 16,
+      "chars": 30,
+      "button-css-name": "",
+      "label-css-name": "",
+      "interval": 1
+    },
+    "executor-uname": {
+      "script": "uname -sr",
+      "tooltip-text": "",
+      "on-left-click": "",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "css-name": "",
+      "icon-size": 16,
+      "interval": 3599
+    },
+    "scratchpad": {},
+    "menu-start-settings": {
+      "cmd-lock": "swaylock -f -c 000000",
+      "cmd-logout": "swaymsg exit",
+      "cmd-restart": "systemctl reboot",
+      "cmd-shutdown": "systemctl -i poweroff",
+      "autohide": true,
+      "file-manager": "thunar",
+      "height": 0,
+      "icon-size-large": 32,
+      "icon-size-small": 16,
+      "icon-size-button": 16,
+      "margin-bottom": 0,
+      "margin-left": 0,
+      "margin-right": 0,
+      "margin-top": 0,
+      "padding": 2,
+      "terminal": "alacritty",
+      "width": 0
+    }
+  },
+  {
+    "name": "left",
+    "output": "DP-1",
+    "layer": "bottom",
+    "position": "bottom",
+    "height": 30,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "padding-horizontal": 4,
+    "padding-vertical": 0,
+    "spacing": 6,
+    "css-name": "panel-top",
+    "modules-left": [
+      "sway-taskbar"
+    ],
+    "modules-center": [],
+    "modules-right": [
+      "cpu-avg"
+    ],
+    "sway-taskbar": {
+      "workspace-buttons": false,
+      "show-app-icon": true,
+      "show-layout": true,
+      "show-app-name": true,
+      "name-max-len": 20,
+      "workspaces-spacing": 0,
+      "task-spacing": 0,
+      "all-outputs": false,
+      "image-size": 16,
+      "workspace-menu": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "task-padding": 0
+    },
+    "sway-workspaces": {
+      "numbers": [
+        "1",
+        "2"
+      ]
+    },
+    "executor-traffic": {
+      "script": "psuinfo -Ik",
+      "interval": 3
+    },
+    "controls": "off",
+    "width": "auto",
+    "items-padding": 0,
+    "icons": "light",
+    "controls-settings": {
+      "components": [
+        "net",
+        "brightness",
+        "volume",
+        "battery"
+      ]
+    },
+    "clock": {},
+    "playerctl": {},
+    "scratchpad": {}
+  },
+  {
+    "name": "right",
+    "output": "HDMI-A-1",
+    "layer": "bottom",
+    "position": "bottom",
+    "height": 30,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "padding-horizontal": 6,
+    "padding-vertical": 0,
+    "spacing": 0,
+    "css-name": "panel-top",
+    "modules-left": [
+      "sway-taskbar"
+    ],
+    "modules-center": [
+      "playerctl"
+    ],
+    "modules-right": [
+      "executor-trafiic"
+    ],
+    "sway-taskbar": {
+      "workspace-buttons": false,
+      "show-app-icon": true,
+      "show-layout": true,
+      "show-app-name": true,
+      "name-max-len": 20,
+      "workspaces-spacing": 0,
+      "task-spacing": 0,
+      "all-outputs": false,
+      "image-size": 16,
+      "workspace-menu": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "task-padding": 0,
+      "all-workspaces": true
+    },
+    "sway-workspaces": {
+      "numbers": [
+        "5",
+        "6",
+        "7"
+      ],
+      "show-icon": true,
+      "image-size": 16,
+      "show-name": true,
+      "name-length": 40,
+      "mark-autotiling": true,
+      "mark-content": true,
+      "show-layout": true
+    },
+    "controls": "off",
+    "width": "auto",
+    "items-padding": 0,
+    "icons": "light",
+    "controls-settings": {
+      "components": [
+        "net",
+        "brightness",
+        "volume",
+        "battery"
+      ]
+    },
+    "executor-trafiic": {
+      "script": "gopsuinfo -i k",
+      "tooltip-text": "",
+      "on-left-click": "",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "css-name": "",
+      "icon-size": 16,
+      "interval": 2,
+      "icon-placement": "right"
+    },
+    "clock": {},
+    "playerctl": {
+      "buttons-position": "left",
+      "icon-size": 16,
+      "chars": 30,
+      "button-css-name": "button-custom",
+      "label-css-name": "",
+      "interval": 1
+    },
+    "scratchpad": {}
+  }
+]
