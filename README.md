@@ -11,20 +11,20 @@ Feel free to submit addons / improvements, but keep in mind that all the stuff *
 
 ## Components, as for now:
 
-### [nwg-panel](https://github.com/nwg-piotr/nwg-panel) (Python, beta)
+### [nwg-panel](https://github.com/nwg-piotr/nwg-panel) (Python)
 
 The panel is the central point of the project. At the moment it contains 9 modules: Clock, Controls, CustomButton, Executor, MenuStart, Playerctl,
 Scratchpad, SwayTaskbar and SwayWorkspaces. The Executor module supports tint2-like executors, that allow to add user-defined features.
 The MenuStart module adds support for the nwg-menu plugin (see below).
 
-### [nwg-dock](https://github.com/nwg-piotr/nwg-dock) (Go, beta)
+### [nwg-dock](https://github.com/nwg-piotr/nwg-dock) (Go)
 
 Fully configurable dock written in Go. It features pinned buttons, task buttons, the workspace switcher and the launcher button. The latter by default starts
 nwggrid (application grid) from nwg-launchers.
 
 <div align="center"><img src="https://scrot.cloud/images/2021/05/10/dock.png" width="400"/></div>
 
-### [nwg-menu](https://github.com/nwg-piotr/nwg-menu) (Go, beta)
+### [nwg-menu](https://github.com/nwg-piotr/nwg-menu) (Go)
 
 It's the MenuStart plugin to nwg-panel, written in Go. It displays the system menu with simplified [freedesktop main categories](https://specifications.freedesktop.org/menu-spec/latest/apa.html). It also provides the search entry,
 to look for installed application on the basis of .desktop files, and for files in XDG user directories.
@@ -34,13 +34,21 @@ restart and shutdown.
 
 <div align="center"><img src="https://scrot.cloud/images/2021/05/10/menu.png" width="400"/></div>
 
-### [nwg-drawer](https://github.com/nwg-piotr/nwg-drawer) (Go, beta)
+### [nwg-drawer](https://github.com/nwg-piotr/nwg-drawer) (Go)
 
 A golang replacement to the `nwggrid` command (a part of nwg-launchers). The `nwg-drawer` command displays the application grid. The search entry allows to look
 for installed applications, and for files in XDG user directories. The grid view may also be filtered by categories. You may pin applications by right-clicking
 them. Pinned items will appear above the grid. Right-click a pinned item to unpin it.
 
 <div align="center"><img src="https://scrot.cloud/images/2021/05/30/screenshot-01.png" width="400"/></div>
+
+### [nwg-bar](https://github.com/nwg-piotr/nwg-bar) (Go, beta)
+
+nwg-bar is a Golang replacement to the `nwgbar` command (a part of [nwg-launchers](https://github.com/nwg-piotr/nwg-launchers)), with some improvements. 
+Aimed at sway, works with wlroots-based compositors only. The `nwg-bar` command creates a button bar on the basis of a JSON template placed in the 
+`~/.config/nwg-bar` folder. By default the command displays a horizontal bar in the center of the screen. Use command line arguments to change the placement.
+
+<div align="center"><img src="https://scrot.cloud/images/2021/07/01/screenshot.png" width="400"/></div>
 
 ### [Azote](https://github.com/nwg-piotr/azote) (Python)
 
