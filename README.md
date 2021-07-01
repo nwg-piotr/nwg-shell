@@ -44,7 +44,7 @@ them. Pinned items will appear above the grid. Right-click a pinned item to unpi
 
 ### [nwg-bar](https://github.com/nwg-piotr/nwg-bar) (Go, beta)
 
-nwg-bar is a Golang replacement to the `nwgbar` command (a part of [nwg-launchers](https://github.com/nwg-piotr/nwg-launchers)), with some improvements. 
+nwg-bar is a golang replacement to the `nwgbar` command (a part of [nwg-launchers](https://github.com/nwg-piotr/nwg-launchers)), with some improvements. 
 Aimed at sway, works with wlroots-based compositors only. The `nwg-bar` command creates a button bar on the basis of a JSON template placed in the 
 `~/.config/nwg-bar` folder. By default the command displays a horizontal bar in the center of the screen. Use command line arguments to change the placement.
 
