@@ -79,8 +79,6 @@ If you like the idea of the GTK shell for sway, feel free to submit your improve
 Bug reports and ideas are more than welcome. Please remember, however, that at this stage, most part of the shell is being developed by a single hobbyist, who uses
 Arch Linux (BTW). Some issues specific to other environment, e.g. Debian, FreeBSD, are out of my range and need some Community commitment.
 
-### [Project tracker](https://github.com/users/nwg-piotr/projects/2)
-
 ## Resources
 
 The initial version of the shell logo was created by [SGSE](https://github.com/sgse), and it looked well. Having
