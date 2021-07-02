@@ -15,11 +15,15 @@ Feel free to submit addons / improvements, but keep in mind that all the stuff *
 
 ### [nwg-panel](https://github.com/nwg-piotr/nwg-panel) (Python)
 
+[![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-panel.svg)](https://repology.org/project/nwg-panel/versions)
+
 The panel is the central point of the project. At the moment it contains 9 modules: Clock, Controls, CustomButton, Executor, MenuStart, Playerctl,
 Scratchpad, SwayTaskbar and SwayWorkspaces. The Executor module supports tint2-like executors, that allow to add user-defined features.
 The MenuStart module adds support for the nwg-menu plugin (see below).
 
 ### [nwg-dock](https://github.com/nwg-piotr/nwg-dock) (Go)
+
+[![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-dock.svg)](https://repology.org/project/nwg-dock/versions)
 
 Fully configurable dock written in Go. It features pinned buttons, task buttons, the workspace switcher and the launcher button. The latter by default starts
 nwggrid (application grid) from nwg-launchers.
@@ -27,6 +31,8 @@ nwggrid (application grid) from nwg-launchers.
 <div align="center"><img src="https://scrot.cloud/images/2021/05/10/dock.png" width="400"/></div>
 
 ### [nwg-menu](https://github.com/nwg-piotr/nwg-menu) (Go)
+
+[![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-menu.svg)](https://repology.org/project/nwg-menu/versions)
 
 It's the MenuStart plugin to nwg-panel, written in Go. It displays the system menu with simplified [freedesktop main categories](https://specifications.freedesktop.org/menu-spec/latest/apa.html). It also provides the search entry,
 to look for installed application on the basis of .desktop files, and for files in XDG user directories.
@@ -38,6 +44,8 @@ restart and shutdown.
 
 ### [nwg-drawer](https://github.com/nwg-piotr/nwg-drawer) (Go)
 
+[![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-drawer.svg)](https://repology.org/project/nwg-drawer/versions)
+
 A golang replacement to the `nwggrid` command (a part of nwg-launchers). The `nwg-drawer` command displays the application grid. The search entry allows to look
 for installed applications, and for files in XDG user directories. The grid view may also be filtered by categories. You may pin applications by right-clicking
 them. Pinned items will appear above the grid. Right-click a pinned item to unpin it.
@@ -45,6 +53,8 @@ them. Pinned items will appear above the grid. Right-click a pinned item to unpi
 <div align="center"><img src="https://scrot.cloud/images/2021/05/30/screenshot-01.png" width="400"/></div>
 
 ### [nwg-bar](https://github.com/nwg-piotr/nwg-bar) (Go, beta)
+
+[![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-bar.svg)](https://repology.org/project/nwg-bar/versions)
 
 nwg-bar is a golang replacement to the `nwgbar` command (a part of [nwg-launchers](https://github.com/nwg-piotr/nwg-launchers)), with some improvements. 
 Aimed at sway, works with wlroots-based compositors only. The `nwg-bar` command creates a button bar on the basis of a JSON template placed in the 
@@ -54,6 +64,8 @@ Aimed at sway, works with wlroots-based compositors only. The `nwg-bar` command 
 
 ### [Azote](https://github.com/nwg-piotr/azote) (Python)
 
+[![Packaging status](https://repology.org/badge/vertical-allrepos/azote.svg)](https://repology.org/project/azote/versions)
+
 Azote is a picture browser and background setter, as the frontend to the swaybg (sway/Wayland) and feh (X windows) commands. The user interface is being
 developed with multi-headed setups in mind. Azote also includes several colour management tools.
 
@@ -61,9 +73,13 @@ developed with multi-headed setups in mind. Azote also includes several colour m
 
 ### [gopsuinfo](https://github.com/nwg-piotr/gopsuinfo) (Go)
 
+[![Packaging status](https://repology.org/badge/vertical-allrepos/gopsuinfo.svg)](https://repology.org/project/gopsuinfo/versions)
+
 This command, based on the [gopsutil](https://github.com/shirou/gopsutil) Go module, produces text output to display system usage info in nwg-panel executors.
 
 ### [autotiling](https://github.com/nwg-piotr/autotiling) (Python)
+
+[![Packaging status](https://repology.org/badge/vertical-allrepos/autotiling.svg)](https://repology.org/project/autotiling/versions)
 
 This script uses the [i3ipc-python library](https://github.com/altdesktop/i3ipc-python) to switch the layout splith/splitv depending on the currently focused
 window dimensions. It works on both sway and i3 window managers. You may love it or hate it, but it's my must have.
