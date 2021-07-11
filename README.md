@@ -64,6 +64,8 @@ Aimed at sway, works with wlroots-based compositors only. The `nwg-bar` command 
 
 ### [nwg-wrapper](https://github.com/nwg-piotr/nwg-wrapper) (python, beta)
 
+[![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-wrapper.svg)](https://repology.org/project/nwg-wrapper/versions)
+
 This program is a GTK3-based wrapper to display a script output, or a text file content on the desktop in sway or 
 other wlroots-based compositors. It uses the [gtk-layer-shell](https://github.com/wmww/gtk-layer-shell) library
 to place the window on the bottom layer.As well the script output, at the text file may be formatted with 
