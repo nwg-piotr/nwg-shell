@@ -9,8 +9,6 @@ The programs included in the project are to give you the freedom of choice what 
 *This project is primarily aimed at sway. Some parts may work on other wlroots-based compositors. Some may even work on X11, but it's not the primary objective.
 Feel free to submit addons / improvements, but keep in mind that all the stuff **must** work on sway, and **may or may not** work elsewhere.*
 
-**NOTE**: until sway 1.6 / wlroots 0.13.0+ start working properly on hybrid graphics, all the projects are being developed and tested on sway 1.5 / wlroots 0.12.
-
 ## Components, as for now:
 
 ### [nwg-panel](https://github.com/nwg-piotr/nwg-panel) (Python)
@@ -95,6 +93,18 @@ This command, based on the [gopsutil](https://github.com/shirou/gopsutil) Go mod
 
 This script uses the [i3ipc-python library](https://github.com/altdesktop/i3ipc-python) to switch the layout splith/splitv depending on the currently focused
 window dimensions. It works on both sway and i3 window managers. You may love it or hate it, but it's my must have.
+
+## nwg-shell-config
+
+As you see, the nwg-shell project is a DIY kit with elements to chose from. However, together with the 
+[ArchLabs Linux](https://archlabslinux.com) team, we decided to develop a GUI to configure all the components in one 
+place. To give users more complete control over the system, we also integrated several third-party programs. 
+This required some interference with the basic sway config, using included files, that are modified on the fly from the 
+GUI level.
+
+![nwg-shell-settings.png](https://scrot.cloud/images/2022/01/16/nwg-shell-settings.png)
+
+Read more on the [nwg-shell-config](https://github.com/nwg-piotr/nwg-shell-config) repository.
 
 ## Contributions
 
