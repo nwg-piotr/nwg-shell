@@ -42,7 +42,7 @@ to look for installed application on the basis of .desktop files, and for files 
 You may pin-up applications above the categories list. In the bottom-right corner of the window you'll also see a set of buttons: lock screen, logout,
 restart and shutdown.
 
-<div align="center"><img src="https://scrot.cloud/images/2021/05/10/menu.png" width="400"/></div>
+![nwg-shell-header_new2.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell/main/images/nwg-shell/nwg-menu.png)
 
 ### [nwg-drawer](https://github.com/nwg-piotr/nwg-drawer) (Go)
 
