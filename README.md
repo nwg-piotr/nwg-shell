@@ -74,7 +74,7 @@ to place the window on the bottom layer.As well the script output, at the text f
 [Pango Markup](https://developer.gnome.org/pygtk/stable/pango-markup-language.html). The window appearance is defined
 with css styling.
 
-<div align="center"><img src="https://scrot.cloud/images/2021/07/11/2021-07-11-145313_screenshot.png" width="400"/></div>
+![nwg-shell-header_new2.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell/main/images/nwg-shell/nwg-wrapper.png)
 
 ### [Azote](https://github.com/nwg-piotr/azote) (Python)
 
