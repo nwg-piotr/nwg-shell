@@ -64,7 +64,7 @@ Aimed at sway, works with wlroots-based compositors only. The `nwg-bar` command 
 
 ![nwg-bar.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell/main/images/nwg-shell/nwg-bar.png)
 
-### [nwg-wrapper](https://github.com/nwg-piotr/nwg-wrapper) (python, beta)
+### [nwg-wrapper](https://github.com/nwg-piotr/nwg-wrapper) (python)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-wrapper.svg)](https://repology.org/project/nwg-wrapper/versions)
 
