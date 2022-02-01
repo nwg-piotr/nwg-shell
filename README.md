@@ -30,7 +30,7 @@ support for the nwg-menu plugin (see below).
 Fully configurable dock written in Go. It features pinned buttons, task buttons, the workspace switcher and the launcher button. The latter by default starts
 nwggrid (application grid) from nwg-launchers.
 
-![nwg-dock.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell/main/images/nwg-shell/nwg-dock.png)
+![nwg-dock.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell/main/images/nwg-shell/nwg-dock1.png)
 
 ### [nwg-menu](https://github.com/nwg-piotr/nwg-menu) (Go)
 
