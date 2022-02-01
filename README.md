@@ -4,7 +4,7 @@ This project is an attempt to create a GTK-based shell for [sway](https://github
 that the rationale of the modern computer is to use less than 200 MiB RAM and 0.5% CPU. Those who don't want to stare solely at the terminal's black window.
 The programs included in the project are to give you the freedom of choice what your desktop looks like.
 
-![nwg-shell-header_new2.png](https://images2.imgbox.com/58/1c/SKNRqYep_o.png)
+![nwg-shell-header_new2.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell/main/images/nwg-shell/nwg-shell-header_new2.png)
 
 *This project is primarily aimed at sway. Some parts may work on other wlroots-based compositors. Some may even work on X11, but it's not the primary objective.
 Feel free to submit addons / improvements, but keep in mind that all the stuff **must** work on sway, and **may or may not** work elsewhere.*
