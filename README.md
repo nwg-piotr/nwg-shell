@@ -125,12 +125,10 @@ Arch Linux (BTW). Some issues specific to other environment, e.g. Debian, FreeBS
 
 ## Resources
 
-The initial version of the shell logo was created by [SGSE](https://github.com/sgse), and it looked well. Having
-received some users' feedback, I decided to use another one, due to unwanted religious associations. The current
-version has been created by [edskeye](https://github.com/edskeye). You'll find the basic svg file in the
+The project logo has been created by [edskeye](https://github.com/edskeye). You'll find the basic svg file in the
 [resources](https://github.com/nwg-piotr/nwg-shell/tree/main/resources) folder.
 
-<div align="center"><img src="https://scrot.cloud/images/2021/05/30/shell-logo-basic-render5b2cd1cc090aab3a.png"/></div>
+<div align="center"><img src="https://raw.githubusercontent.com/nwg-piotr/nwg-shell/main/images/nwg-shell/logo.png"/></div>
 
 Images used on this page come from:
 
