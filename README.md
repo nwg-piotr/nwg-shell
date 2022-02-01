@@ -52,7 +52,7 @@ A golang replacement to the `nwggrid` command (a part of nwg-launchers). The `nw
 for installed applications, and for files in XDG user directories. The grid view may also be filtered by categories. You may pin applications by right-clicking
 them. Pinned items will appear above the grid. Right-click a pinned item to unpin it.
 
-<div align="center"><img src="https://scrot.cloud/images/2021/05/30/screenshot-01.png" width="400"/></div>
+![nwg-shell-header_new2.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell/main/images/nwg-shell/nwg-drawer.png)
 
 ### [nwg-bar](https://github.com/nwg-piotr/nwg-bar) (Go, beta)
 
