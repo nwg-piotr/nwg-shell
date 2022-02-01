@@ -83,7 +83,7 @@ with css styling.
 Azote is a picture browser and background setter, as the frontend to the swaybg (sway/Wayland) and feh (X windows) commands. The user interface is being
 developed with multi-headed setups in mind. Azote also includes several colour management tools.
 
-<div align="center"><img src="https://scrot.cloud/images/2021/03/13/azote-1.9.0.png" width="400"/></div>
+![nwg-shell-header_new2.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell/main/images/nwg-shell/azote.png)
 
 ### [gopsuinfo](https://github.com/nwg-piotr/gopsuinfo) (Go)
 
