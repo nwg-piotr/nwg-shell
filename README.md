@@ -62,7 +62,7 @@ nwg-bar is a golang replacement to the `nwgbar` command (a part of [nwg-launcher
 Aimed at sway, works with wlroots-based compositors only. The `nwg-bar` command creates a button bar on the basis of a JSON template placed in the 
 `~/.config/nwg-bar` folder. By default the command displays a horizontal bar in the center of the screen. Use command line arguments to change the placement.
 
-<div align="center"><img src="https://scrot.cloud/images/2021/07/01/screenshot.png" width="400"/></div>
+![nwg-shell-header_new2.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell/main/images/nwg-shell/nwg-bar.png)
 
 ### [nwg-wrapper](https://github.com/nwg-piotr/nwg-wrapper) (python, beta)
 
