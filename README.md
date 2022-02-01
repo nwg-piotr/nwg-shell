@@ -98,6 +98,8 @@ This command, based on the [gopsutil](https://github.com/shirou/gopsutil) Go mod
 This script uses the [i3ipc-python library](https://github.com/altdesktop/i3ipc-python) to switch the layout splith/splitv depending on the currently focused
 window dimensions. It works on both sway and i3 window managers. You may love it or hate it, but it's my must have.
 
+![nwg-shell-config.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell/main/images/nwg-shell/autotiling.png)
+
 ## nwg-shell-config
 
 As you see, the nwg-shell project is a DIY kit with elements to chose from. However, together with the 
