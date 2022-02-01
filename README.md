@@ -19,6 +19,8 @@ The panel is the central point of the project. At the moment it contains 9 modul
 Scratchpad, SwayTaskbar and SwayWorkspaces. The Executor module supports tint2-like executors, that allow to add user-defined features.
 The MenuStart module adds support for the nwg-menu plugin (see below).
 
+![nwg-shell-header_new2.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell/main/images/nwg-shell/nwg-panel.png)
+
 ### [nwg-dock](https://github.com/nwg-piotr/nwg-dock) (Go)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-dock.svg)](https://repology.org/project/nwg-dock/versions)
