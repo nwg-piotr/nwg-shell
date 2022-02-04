@@ -4,7 +4,7 @@ This project is an attempt to create a GTK-based shell for [sway](https://github
 that the rationale of the modern computer is to use less than 200 MiB RAM and 0.5% CPU. Those who don't want to stare solely at the terminal's black window.
 The programs included in the project are to give you the freedom of choice what your desktop looks like.
 
-![nwg-shell-header.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell/main/images/nwg-shell/nwg-shell-header_new2.png)
+![nwg-shell-header.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-shell-header_new2.png)
 
 *This project is primarily aimed at sway. Some parts may work on other wlroots-based compositors. Some may even work on X11, but it's not the primary objective.
 Feel free to submit addons / improvements, but keep in mind that all the stuff **must** work on sway, and **may or may not** work elsewhere.*
@@ -21,7 +21,7 @@ Executor, MenuStart, Playerctl, Scratchpad, SwayNC (integrates Eric Reider's
 The Executor module supports tint2-like executors, that allow to add user-defined features. The MenuStart module adds 
 support for the nwg-menu plugin (see below).
 
-![nwg-panel.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell/main/images/nwg-shell/nwg-panel1.png)
+![nwg-panel.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-panel1.png)
 
 ### [nwg-dock](https://github.com/nwg-piotr/nwg-dock) (Go)
 
@@ -30,7 +30,7 @@ support for the nwg-menu plugin (see below).
 Fully configurable dock written in Go. It features pinned buttons, task buttons, the workspace switcher and the launcher button. The latter by default starts
 nwggrid (application grid) from nwg-launchers.
 
-![nwg-dock.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell/main/images/nwg-shell/nwg-dock1.png)
+![nwg-dock.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-dock1.png)
 
 ### [nwg-menu](https://github.com/nwg-piotr/nwg-menu) (Go)
 
@@ -42,7 +42,7 @@ to look for installed application on the basis of .desktop files, and for files 
 You may pin-up applications above the categories list. In the bottom-right corner of the window you'll also see a set of buttons: lock screen, logout,
 restart and shutdown.
 
-![nwg-menu.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell/main/images/nwg-shell/nwg-menu.png)
+![nwg-menu.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-menu.png)
 
 ### [nwg-drawer](https://github.com/nwg-piotr/nwg-drawer) (Go)
 
@@ -52,7 +52,7 @@ A golang replacement to the `nwggrid` command (a part of nwg-launchers). The `nw
 for installed applications, and for files in XDG user directories. The grid view may also be filtered by categories. You may pin applications by right-clicking
 them. Pinned items will appear above the grid. Right-click a pinned item to unpin it.
 
-![nwg-drawer.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell/main/images/nwg-shell/nwg-drawer.png)
+![nwg-drawer.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-drawer.png)
 
 ### [nwg-bar](https://github.com/nwg-piotr/nwg-bar) (Go, beta)
 
@@ -62,7 +62,7 @@ nwg-bar is a golang replacement to the `nwgbar` command (a part of [nwg-launcher
 Aimed at sway, works with wlroots-based compositors only. The `nwg-bar` command creates a button bar on the basis of a JSON template placed in the 
 `~/.config/nwg-bar` folder. By default the command displays a horizontal bar in the center of the screen. Use command line arguments to change the placement.
 
-![nwg-bar.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell/main/images/nwg-shell/nwg-bar.png)
+![nwg-bar.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-bar.png)
 
 ### [nwg-wrapper](https://github.com/nwg-piotr/nwg-wrapper) (python)
 
@@ -74,7 +74,7 @@ to place the window on the bottom layer. As well the script output, at the text 
 [Pango Markup](https://developer.gnome.org/pygtk/stable/pango-markup-language.html). The window appearance is defined
 with css styling.
 
-![nwg-wrapper.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell/main/images/nwg-shell/nwg-wrapper.png)
+![nwg-wrapper.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-wrapper.png)
 
 ### [Azote](https://github.com/nwg-piotr/azote) (Python)
 
@@ -83,7 +83,7 @@ with css styling.
 Azote is a picture browser and background setter, as the frontend to the swaybg (sway/Wayland) and feh (X windows) commands. The user interface is being
 developed with multi-headed setups in mind. Azote also includes several colour management tools.
 
-![azote.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell/main/images/nwg-shell/azote.png)
+![azote.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/azote.png)
 
 ### [gopsuinfo](https://github.com/nwg-piotr/gopsuinfo) (Go)
 
@@ -98,7 +98,7 @@ This command, based on the [gopsutil](https://github.com/shirou/gopsutil) Go mod
 This script uses the [i3ipc-python library](https://github.com/altdesktop/i3ipc-python) to switch the layout splith/splitv depending on the currently focused
 window dimensions. It works on both sway and i3 window managers. You may love it or hate it, but it's my must have.
 
-![nwg-shell-config.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell/main/images/nwg-shell/autotiling.png)
+![nwg-shell-config.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/autotiling.png)
 
 ## nwg-shell-config
 
@@ -108,7 +108,7 @@ place. To give users more complete control over the system, we also integrated s
 This required some interference with the basic sway config, using included files, that are modified on the fly from the 
 GUI level.
 
-![nwg-shell-config.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell/main/images/nwg-shell/nwg-shell-config.png)
+![nwg-shell-config.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-shell-config.png)
 
 Read more on the [nwg-shell-config](https://github.com/nwg-piotr/nwg-shell-config) repository.
 
@@ -126,9 +126,9 @@ Arch Linux (BTW). Some issues specific to other environment, e.g. Debian, FreeBS
 ## Resources
 
 The project logo has been created by [edskeye](https://github.com/edskeye). You'll find the basic svg file in the
-[resources](https://github.com/nwg-piotr/nwg-shell/tree/main/resources) folder.
+[resources](https://github.com/nwg-piotr/nwg-shell/tree/master/resources) folder.
 
-<div align="center"><img src="https://raw.githubusercontent.com/nwg-piotr/nwg-shell/main/images/nwg-shell/logo.png"/></div>
+<div align="center"><img src="https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/logo.png"/></div>
 
 Images used on this page come from:
 
