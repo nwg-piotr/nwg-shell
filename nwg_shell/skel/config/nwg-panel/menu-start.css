@@ -1,0 +1,23 @@
+window {
+    background-color: rgba (23, 53, 63, 0.95);
+    color: #eeeeee;
+    border-radius: 0px
+}
+
+list {
+    background: none;
+    border-radius: 15px
+}
+
+entry {
+    background-color: rgba (0, 0, 0, 0.2)
+}
+
+button {
+    background: none;
+    border: none
+}
+
+button:hover {
+    background-color: rgba (255, 255, 255, 0.1)
+}

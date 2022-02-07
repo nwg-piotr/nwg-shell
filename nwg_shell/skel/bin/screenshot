@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Shortened version of https://github.com/moverest/sway-interactive-screenshot
+# w/o rofi, for use with key bindings
+
+list_geometry()
+{
+    swaymsg -t get_tree | jq -r '.. | (.nodes? // empty)[] | select(.'"$1"' and .pid) | "\(.rect.x),\(.rect.y) \(.rect.width)x\(.rect.height)''"'
+}
+
+FOCUSED=$(list_geometry focused)
+CHOICE=$1
+DIR=${SCREENSHOT_DIR:=$HOME/Screenshots}
+FILENAME="${DIR/#\~/$HOME}/$(date +'%Y-%m-%d-%H%M%S_screenshot.png')"
+
+mkdir -p "$DIR"
+
+case $CHOICE in
+    fullscreen) grim "$FILENAME" ;;
+    region)     grim -g "$(slurp)" "$FILENAME" ;;
+    focused)    grim -g "$FOCUSED" "$FILENAME" ;;
+    display)    grim -o "$(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name')" "$FILENAME"
+    ;;
+esac
+
+wl-copy < "$FILENAME"
+notify-send "Screenshot" "File saved as <i>'$FILENAME'</i> and copied to the clipboard." -i "$FILENAME"

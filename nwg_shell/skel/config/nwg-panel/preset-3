@@ -1,0 +1,178 @@
+[
+  {
+    "name": "top",
+    "output": "",
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "width": "auto",
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "padding-horizontal": 0,
+    "padding-vertical": 0,
+    "spacing": 2,
+    "controls": "right",
+    "items-padding": 0,
+    "css-name": "panel-top",
+    "icons": "",
+    "modules-left": [
+      "sway-workspaces"
+    ],
+    "modules-center": [
+      "clock"
+    ],
+    "modules-right": [
+      "scratchpad",
+      "executor-updates",
+      "tray"
+    ],
+    "controls-settings": {
+      "alignment": "right",
+      "components": [
+        "brightness",
+        "battery",
+        "volume"
+      ],
+      "commands": {
+        "battery": "",
+        "net": "",
+        "bluetooth": "blueman-manager"
+      },
+      "custom-items": [
+        {
+          "name": "Wallpapers",
+          "icon": "azote",
+          "cmd": "azote"
+        },
+        {
+          "name": "Look & Feel",
+          "icon": "preferences-desktop-theme",
+          "cmd": "lxappearance; import-gsettings gtk-theme:gtk-theme-name icon-theme:gtk-icon-theme-name cursor-theme:gtk-cursor-theme-name"
+        },
+        {
+          "name": "Outputs",
+          "icon": "display",
+          "cmd": "wdisplays && sway-save-outputs"
+        },
+        {
+          "name": "Panel settings",
+          "icon": "nwg-panel",
+          "cmd": "nwg-panel-config"
+        },
+        {
+          "name": "Shell settings",
+          "icon": "nwg-shell",
+          "cmd": "nwg-shell-config"
+        }
+      ],
+      "menu": {
+        "name": "Exit",
+        "icon": "system-shutdown-symbolic",
+        "items": [
+          {
+            "name": "Lock",
+            "cmd": "swaylock -f -c 000000"
+          },
+          {
+            "name": "Logout",
+            "cmd": "swaymsg exit"
+          },
+          {
+            "name": "Restart",
+            "cmd": "systemctl reboot"
+          },
+          {
+            "name": "Shutdown",
+            "cmd": "systemctl -i poweroff"
+          }
+        ]
+      },
+      "show-values": false,
+      "interval": 1,
+      "icon-size": 18,
+      "hover-opens": false,
+      "leave-closes": true,
+      "css-name": "controls-window",
+      "net-interface": "wlo1",
+      "system-shutdown-symbolic": "system-shutdown",
+      "output-switcher": true,
+      "window-width": 320,
+      "window-margin": 0,
+      "root-css-name": "controls-overview",
+      "backlight-device": ""
+    },
+    "clock": {
+      "format": "%a, %d. %b  %H:%M:%S",
+      "interval": 1,
+      "on-right-click": "",
+      "tooltip-text": "",
+      "on-left-click": "",
+      "on-middle-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "css-name": "clock"
+    },
+    "executor-updates": {
+      "script": "sway-check-updates",
+      "interval": 900,
+      "icon-size": 16,
+      "on-left-click": "foot sway-update",
+      "tooltip-text": "",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "css-name": "",
+      "root-css-name": "",
+      "icon-placement": "left"
+    },
+    "sway-workspaces": {
+      "numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "show-icon": true,
+      "image-size": 16,
+      "show-name": true,
+      "name-length": 20,
+      "mark-autotiling": false,
+      "mark-content": true,
+      "show-layout": true
+    },
+    "scratchpad": {
+      "css-name": "",
+      "icon-size": 20
+    },
+    "menu-start": "off",
+    "menu-start-settings": {},
+    "playerctl": {},
+    "sway-taskbar": {},
+    "dwl-tags": {},
+    "tray": {
+      "icon-size": 16,
+      "root-css-name": "tray",
+      "inner-css-name": "inner-tray",
+      "smooth-scrolling-threshold": 0
+    },
+    "swaync": {
+      "tooltip-text": "Notifications",
+      "on-left-click": "swaync-client -t",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "root-css-name": "root-executor",
+      "css-name": "executor",
+      "icon-placement": "left",
+      "icon-size": 16,
+      "interval": 1,
+      "always-show-icon": true
+    }
+  }
+]

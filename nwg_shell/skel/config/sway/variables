@@ -1,0 +1,4 @@
+set $lang us
+set $term foot
+set $exit nwg-bar -s preset-0.css
+set $launcher nwg-drawer

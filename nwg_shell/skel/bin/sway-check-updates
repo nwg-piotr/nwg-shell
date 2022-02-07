@@ -1,0 +1,89 @@
+#!/usr/bin/python
+
+import os
+import time
+import subprocess
+import argparse
+
+
+# You may either use the full icon(s) path here, like e.g.:
+# "/home/piotr/.config/nwg-panel/icons_light/arch-linux.svg"
+# or just give the icon name, like below.
+
+# The icon must either exist in your icon theme, or you may place `icon_name.svg`
+# custom files in '~/.config/nwg-panel/icons_light/' and '~/.config/nwg-panel/icons_dark/'.
+
+def check(interval):
+    # Avoid checking on each panel restart: check if the time given as `interval` passed first.
+    # Make sure if the path below matches your temp directory.
+    file = "/tmp/archlabs-updates"
+
+    if os.path.isfile(file):
+        if int(time.time() - os.stat(file).st_mtime) > interval:
+            arch, aur = check_updates()
+            save_string("{},{}".format(arch, aur), file)
+        else:
+            try:
+                vals = load_string(file).split(",")
+                arch, aur = int(vals[0]), int(vals[1])
+            except:
+                arch, aur = 0, 0
+    else:
+        arch, aur = check_updates()
+        save_string("{},{}".format(arch, aur), file)
+
+    if arch > 0 and aur > 0:
+        print("software-update-available")
+        print("{}/{}".format(arch, aur))
+    elif arch > 0:
+        print("software-update-available")
+        print("{}".format(arch))
+    elif aur > 0:
+        print("software-update-available")
+        print("{}".format(aur))
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-i",
+                        "--interval",
+                        type=int,
+                        default=900,
+                        help="check Interval in seconds")
+    args = parser.parse_args()
+
+    check(args.interval)
+
+
+def save_string(string, file):
+    try:
+        file = open(file, "wt")
+        file.write(string)
+        file.close()
+    except:
+        print("Error writing file '{}'".format(file))
+
+
+def load_string(path):
+    try:
+        with open(path, 'r') as file:
+            data = file.read()
+            return data
+    except:
+        return ""
+
+
+def check_updates():
+    arch, aur = 0, 0
+    try:
+        output = subprocess.check_output(["baph", "-c"]).decode("utf-8").split()
+        aur = int(output[0])
+        arch = int(output[1])
+    except Exception as e:
+        print(e)
+
+    return arch, aur
+
+
+if __name__ == "__main__":
+    main()

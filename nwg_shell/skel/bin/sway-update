@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+baph -u &&
+rm /tmp/archlabs-updates;
+echo Press enter to exit...; read;
+swaymsg reload
