@@ -18,4 +18,5 @@ md5sums=('de516b836cf6bbf7aae2c1dd321986d9')
 package() {
   cd "${pkgname}-${pkgver}"
   python setup.py install --root="${pkgdir}" --optimize=1
+  install -D -t "$pkgdir"/usr/share/backgrounds nwg-shell.jpg
 }

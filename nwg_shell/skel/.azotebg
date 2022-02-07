@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+killall swaybg 2>/dev/null
+swaybg -o '*' -i '/usr/share/backgrounds/nwg-shell.jpg'

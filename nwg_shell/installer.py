@@ -80,6 +80,11 @@ def main():
             print("Copying {}".format(os.path.join(bin_path, file)))
             copy2(os.path.join(src, file), os.path.join(bin_path, file))
 
+        src = os.path.join(dir_name, "skel/.azotebg")
+        dst = os.path.join(os.getenv("HOME"), ".azotebg")
+        print("Copying {}".format(dst))
+        copy2(src, dst)
+
     print("[Configs installation]")
     for item in ["sway", "nwg-panel", "nwg-wrapper", "nwg-drawer", "nwg-dock", "nwg-bar", "swaync"]:
         copy_from_skel(item, args.all)
