@@ -13,7 +13,7 @@ depends=('python' 'sway' 'grim' 'slurp' 'swayidle' 'swaylock' 'swappy' 'wl-clipb
 makedepends=('python-setuptools' 'python-wheel')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/nwg-piotr/nwg-shell/archive/v"$pkgver".tar.gz")
 
-md5sums=('de516b836cf6bbf7aae2c1dd321986d9')
+md5sums=('SKIP')
 
 package() {
   cd "${pkgname}-${pkgver}"
