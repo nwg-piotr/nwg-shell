@@ -14,7 +14,14 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     package_data={
-        "": ["skel/*"]
+        "": ["skel/bin*",
+             "skel/config/nwg-bar*",
+             "skel/config/nwg-dock*",
+             "skel/config/nwg-drawer*",
+             "skel/config/nwg-panel*",
+             "skel/config/nwg-wrapper*",
+             "skel/config/nwg-sway*",
+             "skel/config/nwg-swaync*"]
     },
     url='https://github.com/nwg-piotr/nwg-shell',
     license='MIT',
