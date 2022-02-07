@@ -25,7 +25,7 @@ def copy_from_skel(name, skip_confirmation=False):
     else:
         src = os.path.join(dir_name, "skel/config/", name)
         dst = os.path.join(config_home, name)
-        print("Copying '{}' content to '{}'".format(src, dst))
+        print("Copying files to '{}'".format(dst))
         #copytree(src, dst, dirs_exist_ok=True)
 
 
@@ -76,7 +76,7 @@ def main():
 
         src = os.path.join(dir_name, "skel/bin/")
         for file in os.listdir(src):
-            print("Copying '{}' to {}".format(os.path.join(src, file), os.path.join(bin_path, file)))
+            print("Copying {}".format(os.path.join(bin_path, file)))
             #copy2(os.path.join(src, file), os.path.join(bin_path, file))
 
     print("[ Configs installation ]")
