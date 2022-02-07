@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
 """
-This is going to be the nwg-shell installer, but it's in 5% ready. Please come back later.
+This is going to work as the nwg-shell installer, but also as the shell meta-package.
+The script is very basic, and will need need some improvement.
 """
 
 import os
@@ -26,7 +27,7 @@ def copy_from_skel(name, skip_confirmation=False):
         src = os.path.join(dir_name, "skel/config/", name)
         dst = os.path.join(config_home, name)
         print("Copying files to '{}'".format(dst))
-        #copytree(src, dst, dirs_exist_ok=True)
+        copytree(src, dst, dirs_exist_ok=True)
 
 
 def main():
@@ -51,7 +52,7 @@ def main():
 
     a = input("Install helper scripts? Y/n ") if not args.all else "Y"
     if a.strip().upper() == "Y" or args.all:
-        print("[ Scripts installation ]")
+        print("[Scripts installation]")
         paths = []
         bin_path = ""
         for path in os.getenv("PATH").split(":"):
@@ -77,9 +78,9 @@ def main():
         src = os.path.join(dir_name, "skel/bin/")
         for file in os.listdir(src):
             print("Copying {}".format(os.path.join(bin_path, file)))
-            #copy2(os.path.join(src, file), os.path.join(bin_path, file))
+            copy2(os.path.join(src, file), os.path.join(bin_path, file))
 
-    print("[ Configs installation ]")
+    print("[Configs installation]")
     for item in ["sway", "nwg-panel", "nwg-wrapper", "nwg-drawer", "nwg-dock", "nwg-bar", "swaync"]:
         copy_from_skel(item, args.all)
 
