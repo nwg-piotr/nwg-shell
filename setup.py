@@ -15,6 +15,7 @@ setup(
     include_package_data=True,
     package_data={
         "": ["skel/bin/*",
+             "skel/config/sway/*",
              "skel/config/nwg-bar/*",
              "skel/config/nwg-dock/*",
              "skel/config/nwg-drawer/*",

@@ -9,7 +9,7 @@ license=('MIT')
 depends=('python' 'sway' 'grim' 'slurp' 'swayidle' 'swaylock' 'swappy' 'wl-clipboard' 'jq'
          'lxappearance' 'foot' 'wlsunset' 'wdisplays' 'swaync' 'python-geopy' 'python-dasbus'
          'azote' 'autotiling' 'nwg-panel' 'nwg-wrapper' 'nwg-bar' 'nwg-dock' 'nwg-drawer'
-         'nwg-menu' 'gopsuinfo' 'nwg-shell-config' 'baph')
+         'nwg-menu' 'gopsuinfo' 'nwg-shell-config')
 makedepends=('python-setuptools' 'python-wheel')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/nwg-piotr/nwg-shell/archive/v"$pkgver".tar.gz")
 
