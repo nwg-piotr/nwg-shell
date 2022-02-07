@@ -2,7 +2,7 @@
 
 """
 This is going to work as the nwg-shell installer, but also as the shell meta-package.
-The script is very basic, and will need need some improvement.
+The script is very basic, and will need some improvement.
 """
 
 import os
@@ -26,8 +26,12 @@ def copy_from_skel(name, skip_confirmation=False):
     else:
         src = os.path.join(dir_name, "skel/config/", name)
         dst = os.path.join(config_home, name)
-        print("Copying files to '{}'".format(dst))
-        copytree(src, dst, dirs_exist_ok=True)
+        print("Copying files to '{}'".format(dst), end=" ")
+        try:
+            copytree(src, dst, dirs_exist_ok=True)
+            print("OK")
+        except:
+            print("Failure")
 
 
 def main():
@@ -77,13 +81,21 @@ def main():
 
         src = os.path.join(dir_name, "skel/bin/")
         for file in os.listdir(src):
-            print("Copying {}".format(os.path.join(bin_path, file)))
-            copy2(os.path.join(src, file), os.path.join(bin_path, file))
+            print("Copying {}".format(os.path.join(bin_path, file)), end=" ")
+            try:
+                copy2(os.path.join(src, file), os.path.join(bin_path, file))
+                print("OK")
+            except:
+                print("Failure")
 
         src = os.path.join(dir_name, "skel/.azotebg")
         dst = os.path.join(os.getenv("HOME"), ".azotebg")
-        print("Copying {}".format(dst))
-        copy2(src, dst)
+        print("Copying {}".format(dst), end=" ")
+        try:
+            copy2(src, dst)
+            print("OK")
+        except:
+            print("Failure")
 
     print("[Configs installation]")
     for item in ["sway", "nwg-panel", "nwg-wrapper", "nwg-drawer", "nwg-dock", "nwg-bar", "swaync"]:

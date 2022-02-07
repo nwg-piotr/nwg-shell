@@ -21,7 +21,8 @@ setup(
              "skel/config/nwg-panel/*",
              "skel/config/nwg-wrapper/*",
              "skel/config/sway/*",
-             "skel/config/swaync/*"]
+             "skel/config/swaync/*",
+             "skel/*"]
     },
     url='https://github.com/nwg-piotr/nwg-shell',
     license='MIT',
