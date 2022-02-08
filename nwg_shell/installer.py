@@ -98,7 +98,7 @@ def main():
             print("Failure")
 
     print("[Configs installation]")
-    for item in ["sway", "nwg-panel", "nwg-wrapper", "nwg-drawer", "nwg-dock", "nwg-bar", "swaync"]:
+    for item in ["gtk-3.0", "sway", "nwg-panel", "nwg-wrapper", "nwg-drawer", "nwg-dock", "nwg-bar", "swaync"]:
         copy_from_skel(item, args.all)
 
 
