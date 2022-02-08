@@ -9,12 +9,13 @@ def read(f_name):
 
 setup(
     name='nwg-shell',
-    version='0.0.2',
+    version='0.0.3',
     description='GTK3-based shell for sway Wayland compositor',
     packages=find_packages(),
     include_package_data=True,
     package_data={
         "": ["skel/bin/*",
+             "skel/config/gtk-3.0/*",
              "skel/config/nwg-bar/*",
              "skel/config/nwg-dock/*",
              "skel/config/nwg-drawer/*",
