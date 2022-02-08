@@ -88,7 +88,7 @@ def main():
             except:
                 print("Failure")
 
-        src = os.path.join(dir_name, "skel/.azotebg")
+        src = os.path.join(dir_name, "skel/azotebg")
         dst = os.path.join(os.getenv("HOME"), ".azotebg")
         print("Copying {}".format(dst), end=" ")
         try:
