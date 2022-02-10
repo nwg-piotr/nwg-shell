@@ -1,5 +1,7 @@
 # nwg-shell
 
+[![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-shell.svg)](https://repology.org/project/nwg-shell/versions)
+
 This project is an attempt to create a GTK-based shell for [sway](https://github.com/swaywm/sway) Wayland compositor. It's aimed at those, who do not believe
 that the rationale of the modern computer is to use less than 200 MiB RAM and 0.5% CPU. Those who don't want to stare solely at the terminal's black window.
 The programs included in the project are to give you the freedom of choice what your desktop looks like.
@@ -8,6 +10,16 @@ The programs included in the project are to give you the freedom of choice what 
 
 *This project is primarily aimed at sway. Some parts may work on other wlroots-based compositors. Some may even work on X11, but it's not the primary objective.
 Feel free to submit addons / improvements, but keep in mind that all the stuff **must** work on sway, and **may or may not** work elsewhere.*
+
+## Installation
+
+### The hard way
+
+[How to set up nwg-shell on minimal Arch Linux install in several simple steps](https://github.com/nwg-piotr/nwg-shell/wiki) - Wiki
+
+### The easy way
+
+Install [ArchLabs Linux](https://archlabslinux.com) with preconfigured sway session.
 
 ## Components, as for now:
 
