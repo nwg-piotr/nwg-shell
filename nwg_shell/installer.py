@@ -1,8 +1,15 @@
 #!/usr/bin/python3
 
 """
-This is going to work as the nwg-shell installer, but also as the shell meta-package.
-The script is very basic, and will need some improvement.
+nwg-shell installer, to copy all the components' configs and style sheets to their locations,
+or to restore original files. Pass the `--all` argument on first run or none to select files interactively.
+Interned to work/tested with Arch Linux.
+The package dependencies should pull all the packages needed for the nwg-shell to run.
+
+Project: https://github.com/nwg-piotr/nwg-shell
+Author's email: nwg.piotr@gmail.com
+Copyright (c) 2022 Piotr Miller
+License: MIT
 """
 
 import os
@@ -30,8 +37,8 @@ def copy_from_skel(name, skip_confirmation=False):
         try:
             copytree(src, dst, dirs_exist_ok=True)
             print("OK")
-        except:
-            print("Failure")
+        except Exception as e:
+            print("Failure: {}".format(e), file=sys.stderr)
 
 
 def main():
@@ -85,8 +92,8 @@ def main():
             try:
                 copy2(os.path.join(src, file), os.path.join(bin_path, file))
                 print("OK")
-            except:
-                print("Failure")
+            except Exception as e:
+                print("Failure: {}".format(e), file=sys.stderr)
 
         src = os.path.join(dir_name, "skel/azotebg")
         dst = os.path.join(os.getenv("HOME"), ".azotebg")
@@ -94,8 +101,8 @@ def main():
         try:
             copy2(src, dst)
             print("OK")
-        except:
-            print("Failure")
+        except Exception as e:
+            print("Failure: {}".format(e), file=sys.stderr)
 
     print("[Configs installation]")
     for item in ["gtk-3.0", "sway", "nwg-panel", "nwg-wrapper", "nwg-drawer", "nwg-dock", "nwg-bar", "swaync"]:
