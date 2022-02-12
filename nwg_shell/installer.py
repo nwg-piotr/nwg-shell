@@ -55,11 +55,13 @@ def main():
                         help="display version information")
     args = parser.parse_args()
 
-    print("_______________________________________________________________________________________________")
-    print("  This script installs/overwrites configs and style sheets for sway and nwg-shell components.  ")
-    print("              The only backup that will be made is the main sway config file.                  ")
-    print("  If you're running the script on your existing sway setup, you're doing it at your own risk.  ")
-    print("_______________________________________________________________________________________________")
+    print("-------------------------------------------------------------------")
+    print("|   This script installs/overwrites configs and style sheets      |")
+    print("|             for sway and nwg-shell components.                  |")
+    print("| The only backup that will be made is the main sway config file. |")
+    print("|    If you're running the script on your existing sway setup,    |")
+    print("|                you're doing it at your own risk.                |")
+    print("-------------------------------------------------------------------")
     a = input("\nProceed? Y/n ")
     if a.strip().upper() != "Y":
         print("Installation cancelled")
