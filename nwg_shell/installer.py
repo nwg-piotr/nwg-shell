@@ -36,7 +36,7 @@ def copy_from_skel(name, skip_confirmation=False):
         dst = os.path.join(config_home, name)
         print("Copying files to '{}'".format(dst), end=" ")
         try:
-            # copytree(src, dst, dirs_exist_ok=True)
+            copytree(src, dst, dirs_exist_ok=True)
             print("OK")
         except Exception as e:
             print("Failure: {}".format(e), file=sys.stderr)
