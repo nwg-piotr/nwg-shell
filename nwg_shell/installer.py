@@ -125,7 +125,7 @@ def main():
         try:
             if os.path.isfile(src):
                 copy(src, dst)
-            backup = True
+                backup = True
         except Exception as e:
             print("Error: {}".format(e))
             a = input("Proceed with installation? y/n ")
