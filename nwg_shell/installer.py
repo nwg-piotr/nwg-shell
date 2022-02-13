@@ -27,7 +27,7 @@ config_home = os.getenv('XDG_CONFIG_HOME') if os.getenv('XDG_CONFIG_HOME') else 
 
 
 def copy_from_skel(name, skip_confirmation=False):
-    a = input("Install/overwrite files in the '{}' directory? Y/n ".format(name)) if not skip_confirmation else "Y"
+    a = input("Install/overwrite files in the '{}' directory? y/n ".format(name)) if not skip_confirmation else "Y"
     if a.strip().upper() != "Y":
         print("'{}' directory skipped".format(name))
         return
@@ -63,7 +63,7 @@ def main():
     print("|         If you're running it on your existing sway setup,       |")
     print("|                you're doing it at your own risk.                |")
     print("-------------------------------------------------------------------")
-    a = input("\nProceed? Y/n ")
+    a = input("\nProceed? y/n ")
     if a.strip().upper() != "Y":
         print("Installation cancelled")
         sys.exit(0)
@@ -111,7 +111,7 @@ def main():
         except Exception as e:
             print("Failure: {}".format(e), file=sys.stderr)
 
-    a = input("Install configs and style sheets? Y/n ") if not args.all else "Y"
+    a = input("Install configs and style sheets? y/n ") if not args.all else "Y"
     if a.strip().upper() == "Y" or args.all:
         print("\n[Configs installation]")
 
@@ -123,11 +123,12 @@ def main():
         proceed = True
         backup = False
         try:
-            copy(src, dst)
+            if os.path.isfile(src):
+                copy(src, dst)
             backup = True
         except Exception as e:
             print("Error: {}".format(e))
-            a = input("Proceed with installation? Y/n ")
+            a = input("Proceed with installation? y/n ")
             proceed = a.strip().upper() == "Y"
 
         if proceed:
