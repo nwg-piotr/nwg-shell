@@ -2,7 +2,7 @@
 import os
 import sys
 import argparse
-from sway_save_outputs.__about__ import __version__
+# from sway_save_outputs.__about__ import __version__
 
 
 def list_outputs():
@@ -47,11 +47,11 @@ def main():
                         type=str,
                         default=config_path,
                         help="full path to save outputs to; default: {}".format(config_path))
-    parser.add_argument("-v",
+    """parser.add_argument("-v",
                         "--version",
                         action="version",
                         version="%(prog)s version {}".format(__version__),
-                        help="display version information")
+                        help="display version information")"""
     args = parser.parse_args()
 
     outputs = []
