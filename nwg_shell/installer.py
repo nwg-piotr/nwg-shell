@@ -74,7 +74,7 @@ def main():
         paths = []
         bin_path = ""
         for path in os.getenv("PATH").split(":"):
-            if path.startswith(os.getenv("HOME")) and os.path.exists(path):
+            if path.startswith(os.getenv("HOME")) and os.path.exists(path) and path not in paths:
                 paths.append(path)
         if len(paths) == 0:
             print("No directory in '{}' found on $PATH, dunno where to install scripts, sorry".format(os.getenv("HOME")))
