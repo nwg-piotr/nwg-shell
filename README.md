@@ -8,8 +8,17 @@ The programs included in the project are to give you the freedom of choice what 
 
 ![nwg-shell-header.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-shell-header_new2.png)
 
-*This project is primarily aimed at sway. Some parts may work on other wlroots-based compositors. Some may even work on X11, but it's not the primary objective.
-Feel free to submit addons / improvements, but keep in mind that all the stuff **must** work on sway, and **may or may not** work elsewhere.*
+## Support for other WMs
+
+This project is primarily aimed at sway. Some parts may work on other wlroots-based compositors. Some may even work on X11, but it's not the primary objective. Feel free to submit addons / improvements, but keep in mind that all the stuff **must** work on sway, and **may or may not** work elsewhere.
+
+### Pull requests adding support for non-sway stuff 
+
+are welcome.
+
+### Feature requests like "add <place_your_wm_here> support"
+
+go to `/dev/null`.
 
 ## Installation
 
