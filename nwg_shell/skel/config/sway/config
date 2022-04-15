@@ -92,7 +92,7 @@ input "type:touchpad" {
 }
 
 # disable acceleration for mice
-input "type:mouse" {
+input "type:pointer" {
 	accel_profile flat
 }
 
