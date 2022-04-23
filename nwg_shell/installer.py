@@ -119,7 +119,8 @@ def main():
                                 i["icon"] = "nwg-displays"
                                 i["cmd"] = "nwg-displays"
 
-        launch("swaymsg reload")
+        # launch("swaymsg reload")
+        print("Reload sway for changes to take effect.")
 
     else:
         print("-------------------------------------------------------------------")
