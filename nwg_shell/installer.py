@@ -144,6 +144,9 @@ def main():
                                 i["icon"] = "nwg-displays"
                                 i["cmd"] = "nwg-displays"
 
+                print("Saving '{}'".format(src))
+                save_json(panel_config, src)
+
             # Update sway config
             sway_config = os.path.join(config_home, "sway/config")
             lines = load_text_file(sway_config).splitlines()
