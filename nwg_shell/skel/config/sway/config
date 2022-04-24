@@ -1,3 +1,10 @@
+# The files we include below will be created / overwritten by nwg-shell tools
+#
+include variables
+include outputs
+include autostart
+include workspaces
+
 # ArchLabs sway config
 #
 # Read `man 5 sway` for reference.
@@ -25,14 +32,6 @@ set $down k
 set $left j
 set $right semicolon
 
-# The file we include below is created and will be overwritten by nwg-shell-config GUI!
-#
-include ~/.config/sway/variables
-
-############### Apply GTK settings ##################
-
-exec_always import-gsettings
-
 ###############     Autostart      ##################
 
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
@@ -40,18 +39,6 @@ exec hash dbus-update-activation-environment 2>/dev/null && \
     dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec ~/.azotebg
-
-# The files we include below are created and will be overwritten by nwg-shell-config GUI!
-#
-include ~/.config/sway/outputs
-include ~/.config/sway/autostart
-#
-
-output * adaptive_sync on
-
-# monitors (edit & unhash)
-# set $Mon1 eDP-1
-# set $Mon2 HDMI-A-1
 
 ### Turn off screen on lid closed
 set $laptop eDP-1

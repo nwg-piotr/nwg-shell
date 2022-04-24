@@ -153,11 +153,14 @@ def main():
 
             # Update sway config
             sway_config = os.path.join(config_home, "sway/config")
-            lines = load_text_file(sway_config).splitlines()
-            if not lines:
+            old_config = load_text_file(sway_config).splitlines()
+            if not old_config:
                 print("Couldn't load '{}'".format(sway_config))
             else:
-                print("\nUpdating '{}'".format(sway_config))
+                print("\n[Updating sway config file]")
+                print("* This may have an unexpected result if you tweaked it manually.")
+                print("* If it happens, run `nwg-shell-installer` w/o arguments, and install default configs"
+                      " from scratch.\n")
 
                 # backup original file
                 now = datetime.datetime.now()
@@ -168,13 +171,14 @@ def main():
                 try:
                     if os.path.isfile(src):
                         copy(src, dst)
-                        print("Old sway config file saved as '{}'".format(new_name))
+                        print("Your old sway config file has been saved as '{}'".format(new_name))
                 except Exception as e:
                     print("Couldn't back up your old sway config: {}".format(e))
                     a = input("Proceed with installation? y/N ")
                     proceed = a.strip().upper() == "Y"
 
                 if proceed:
+                    # Prepend includes
                     new_config = ["# The files we include below will be created / overwritten by nwg-shell tools",
                                   "#",
                                   "include variables",
@@ -182,7 +186,8 @@ def main():
                                   "include autostart",
                                   "include workspaces",
                                   ""]
-                    for line in lines:
+                    # Remove no longer needed lines
+                    for line in old_config:
                         omit = False
                         for phrase in ["Apply GTK settings",
                                        "import-gsettings",
@@ -210,13 +215,18 @@ def main():
 
                         new_config.append(line)
 
-                    # Clear double empty lines
+                    # Final cleaning
                     final_config = []
                     for i in range(len(new_config)):
                         line = new_config[i]
+                        # remove double empty lines
                         if line == "" and new_config[i+1] == "":
                             continue
-                        final_config.append(line)
+                        # fix improper input device name
+                        if line == 'input "type:mouse" {':
+                            final_config.append('input "type:pointer" {')
+                        else:
+                            final_config.append(line)
 
                     save_text_file(final_config, sway_config)
 
@@ -314,11 +324,10 @@ def main():
             src = os.path.join(config_home, "sway/config")
             dst = os.path.join(config_home, "sway/{}".format(new_name))
             proceed = True
-            backup = False
             try:
                 if os.path.isfile(src):
                     copy(src, dst)
-                    backup = True
+                    print("* Original sway config file copied to '{}'".format(new_name))
             except Exception as e:
                 print("Error: {}".format(e))
                 a = input("Proceed with installation? y/N ")
@@ -328,8 +337,6 @@ def main():
                 for item in ["gtk-3.0", "sway", "nwg-panel", "nwg-wrapper", "nwg-drawer", "nwg-dock", "nwg-bar",
                              "swaync"]:
                     copy_from_skel(item, folder="config", skip_confirmation=args.all)
-                if backup:
-                    print("\n*** Original sway config file '{}' has been renamed to '{}'".format(src, new_name))
                 for item in ["nwg-look"]:
                     copy_from_skel(item, folder="data", skip_confirmation=args.all)
                 print("That's all. You may run sway now.")
