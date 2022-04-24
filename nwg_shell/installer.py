@@ -12,13 +12,13 @@ Copyright (c) 2022 Piotr Miller
 License: MIT
 """
 
-import os
-import sys
 import argparse
-import json
-import subprocess
-from shutil import copy, copy2, copytree
 import datetime
+import json
+import os
+import subprocess
+import sys
+from shutil import copy, copy2, copytree
 
 from nwg_shell.__about__ import __version__
 
@@ -26,6 +26,9 @@ dir_name = os.path.dirname(__file__)
 
 config_home = os.getenv('XDG_CONFIG_HOME') if os.getenv('XDG_CONFIG_HOME') else os.path.join(os.getenv("HOME"),
                                                                                              ".config")
+
+data_home = os.getenv('XDG_DATA_HOME') if os.getenv('XDG_DATA_HOME') else os.path.join(os.getenv("HOME"),
+                                                                                       ".local/share")
 
 
 def load_json(path):
@@ -40,6 +43,23 @@ def load_json(path):
 def save_json(src_dict, path):
     with open(path, 'w') as f:
         json.dump(src_dict, f, indent=2)
+
+
+def load_text_file(path):
+    try:
+        with open(path, 'r') as file:
+            data = file.read()
+            return data
+    except Exception as e:
+        print(e)
+        return None
+
+
+def save_text_file(data, file):
+    f = open(file, "w")
+    for item in data:
+        f.write(item + "\n")
+    f.close()
 
 
 def is_command(cmd):
@@ -59,14 +79,17 @@ def launch(cmd):
     subprocess.Popen('exec {}'.format(cmd), shell=True)
 
 
-def copy_from_skel(name, skip_confirmation=False):
-    a = input("Install/overwrite files in the '{}' directory? y/n ".format(name)) if not skip_confirmation else "Y"
+def copy_from_skel(name, folder="config", skip_confirmation=False):
+    a = input("Install/overwrite files in the '{}' directory? y/N ".format(name)) if not skip_confirmation else "Y"
     if a.strip().upper() != "Y":
         print("'{}' directory skipped".format(name))
         return
     else:
-        src = os.path.join(dir_name, "skel/config/", name)
-        dst = os.path.join(config_home, name)
+        src = os.path.join(dir_name, "skel/{}/".format(folder), name)
+        if folder == "data":
+            dst = os.path.join(data_home, name)
+        else:
+            dst = os.path.join(config_home, name)
         print("Copying files to '{}'".format(dst), end=" ")
         try:
             copytree(src, dst, dirs_exist_ok=True)
@@ -95,11 +118,12 @@ def main():
     if args.upgrade:
         print("You are about to upgrade nwg-shell to v{}.".format(__version__))
         print("This will modify your config files to use the recently added software.")
-        a = input("\nProceed? y/n ")
+        a = input("\nProceed? y/N ")
         if a.strip().upper() != "Y":
             print("Installation cancelled")
             sys.exit(0)
         else:
+            # v2.0
             for item in ["preset-0", "preset-1", "preset-2", "preset-3"]:
                 src = os.path.join(config_home, "nwg-panel/{}".format(item))
                 panel_config = load_json(src)
@@ -113,13 +137,84 @@ def main():
                                 i["icon"] = "nwg-look"
                                 i["cmd"] = "nwg-look"
 
+                            # replace wdisplays with nwg-displays
                             if "wdisplays" in i["cmd"]:
                                 print("replacing 'wdisplays' with 'nwg-displays' in '{}'".format(item))
                                 i["name"] = "Displays"
                                 i["icon"] = "nwg-displays"
                                 i["cmd"] = "nwg-displays"
 
-        # launch("swaymsg reload")
+            # Update sway config
+            sway_config = os.path.join(config_home, "sway/config")
+            lines = load_text_file(sway_config).splitlines()
+            if not lines:
+                print("Couldn't load '{}'".format(sway_config))
+            else:
+                print("\nUpdating '{}':".format(sway_config))
+
+                # backup original file
+                now = datetime.datetime.now()
+                new_name = now.strftime("config-backup-%Y%m%d-%H%M%S")
+                src = os.path.join(config_home, "sway/config")
+                dst = os.path.join(config_home, "sway/{}".format(new_name))
+                proceed = True
+                try:
+                    if os.path.isfile(src):
+                        copy(src, dst)
+                        print("Old sway config file saved as '{}'".format(new_name))
+                except Exception as e:
+                    print("Couldn't back up your old sway config: {}".format(e))
+                    a = input("Proceed with installation? y/N ")
+                    proceed = a.strip().upper() == "Y"
+
+                if proceed:
+                    new_config = ["# The files we include below will be created / overwritten by nwg-shell tools",
+                                  "#",
+                                  "include variables",
+                                  "include outputs",
+                                  "include autostart",
+                                  "include workspaces",
+                                  ""]
+                    for line in lines:
+                        omit = False
+                        for phrase in ["Apply GTK settings",
+                                       "import-gsettings",
+                                       "The file we include below",
+                                       "The files we include below",
+                                       "# Disabled by nwg-shell",
+                                       "include ~/.config/sway/variables",
+                                       "include ~/.config/sway/outputs",
+                                       "include ~/.config/sway/autostart",
+                                       "include ~/.config/sway/workspaces",
+                                       "include variables",
+                                       "include outputs",
+                                       "include autostart",
+                                       "include workspaces"]:
+                            if phrase in line:
+                                omit = True
+                                continue
+                        if omit or line == "#":
+                            continue
+
+                        new_config.append(line)
+
+                    # Clear double empty lines
+                    final_config = []
+                    for i in range(len(new_config)):
+                        line = new_config[i]
+                        if line == "" and new_config[i+1] == "":
+                            continue
+                        final_config.append(line)
+
+                    save_text_file(final_config, sway_config)
+
+            # Use nwg-look to apply default GTK settings if it has not been done yet
+            if not os.path.isfile(os.path.join(data_home, "nwg-look/gsettings")):
+                print("\nApplying default GTK settings. Run 'nwg-look' utility to set your preferences.")
+                print("You'll find it in the 'Controls' menu as 'GTK settings'.")
+                copy_from_skel("nwg-look", folder="data", skip_confirmation=True)
+                launch("nwg-look -a")
+
         print("\n-------------------------------------------")
         print("| Reload sway for changes to take effect. |")
         print("-------------------------------------------\n")
@@ -135,7 +230,7 @@ def main():
         print("|                                                                 |")
         print("|          See 'nwg-shell-installer -h' for other options.        |")
         print("-------------------------------------------------------------------")
-        a = input("\nProceed? y/n ")
+        a = input("\nProceed? y/N ")
         if a.strip().upper() != "Y":
             print("Installation cancelled")
             sys.exit(0)
@@ -149,7 +244,8 @@ def main():
                 if path.startswith(os.getenv("HOME")) and os.path.exists(path) and path not in paths:
                     paths.append(path)
             if len(paths) == 0:
-                print("No directory in '{}' found on $PATH, dunno where to install scripts, sorry".format(os.getenv("HOME")))
+                print("No directory in '{}' found on $PATH, dunno where to install scripts, sorry".format(
+                    os.getenv("HOME")))
                 sys.exit(1)
             elif len(paths) == 1 or args.all:
                 bin_path = paths[0]
@@ -183,9 +279,9 @@ def main():
             except Exception as e:
                 print("Failure: {}".format(e), file=sys.stderr)
 
-        a = input("Install configs and style sheets? y/n ") if not args.all else "Y"
+        a = input("Install configs, style sheets and initial data files? y/N ") if not args.all else "Y"
         if a.strip().upper() == "Y" or args.all:
-            print("\n[Configs installation]")
+            print("\n[Configs, styles and data installation]")
 
             # Backup sway config file
             now = datetime.datetime.now()
@@ -200,18 +296,20 @@ def main():
                     backup = True
             except Exception as e:
                 print("Error: {}".format(e))
-                a = input("Proceed with installation? y/n ")
+                a = input("Proceed with installation? y/N ")
                 proceed = a.strip().upper() == "Y"
 
             if proceed:
                 for item in ["gtk-3.0", "sway", "nwg-panel", "nwg-wrapper", "nwg-drawer", "nwg-dock", "nwg-bar",
                              "swaync"]:
-                    copy_from_skel(item, args.all)
+                    copy_from_skel(item, folder="config", skip_confirmation=args.all)
                 if backup:
                     print("\n*** Original sway config file '{}' has been renamed to '{}'".format(src, new_name))
+                for item in ["nwg-look"]:
+                    copy_from_skel(item, folder="data", skip_confirmation=args.all)
                 print("That's all. You may run sway now.")
             else:
-                print("Configs installation cancelled")
+                print("File installation cancelled")
 
     # Inform about no longer needed stuff
     # Packages
