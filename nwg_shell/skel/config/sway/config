@@ -187,16 +187,6 @@ bindsym $Mod+Shift+Mod2+KP_Right move container to workspace number 6; workspace
 bindsym $Mod+Shift+Mod2+KP_Home  move container to workspace number 7; workspace number 7
 bindsym $Mod+Shift+Mod2+KP_Up    move container to workspace number 8; workspace number 8
 
-# Workspace to monitor assignment (edit & unhash)
-# workspace 1 output $Mon1
-# workspace 2 output $Mon1
-# workspace 3 output $Mon1
-# workspace 4 output $Mon1
-# workspace 5 output $Mon1
-# workspace 6 output $Mon1
-# workspace 7 output $Mon1
-# workspace 8 output $Mon1
-
 ############      Container/Window control  ############
 
 # Scratchpad, Floating

@@ -115,15 +115,26 @@ def main():
                         help="display version information")
     args = parser.parse_args()
 
+    # Upgrade
     if args.upgrade:
-        print("You are about to upgrade nwg-shell to v{}.".format(__version__))
-        print("This will modify your config files to use the recently added software.")
+        print("--------------------------------------------------------------")
+        print("|      You are about to upgrade nwg-shell to v{}.         |".format(__version__))
+        print("| It'll modify your config files to use the recent software. |")
+        print("|                                                            |")
+        print("|             This may have an unexpected result             |")
+        print("|        if you tweaked you sway config file manually.       |")
+        print("|  If it happens to you, run 'nwg-shell-installer -a' (all), |")
+        print("|         or 'nwg-shell-installer' (interactive mode),       |")
+        print("|             in order to install default configs.           |")
+        print("--------------------------------------------------------------")
+
         a = input("\nProceed? y/N ")
         if a.strip().upper() != "Y":
             print("Installation cancelled")
             sys.exit(0)
         else:
-            # v2.0
+            # v0.2.0
+            print("\n[Updating panel presets]")
             for item in ["preset-0", "preset-1", "preset-2", "preset-3"]:
                 src = os.path.join(config_home, "nwg-panel/{}".format(item))
                 panel_config = load_json(src)
@@ -151,6 +162,9 @@ def main():
                     print("Saving '{}'".format(src))
                     save_json(panel_config, src)
 
+            if not changed:
+                print("No change needed.")
+
             # Update sway config
             sway_config = os.path.join(config_home, "sway/config")
             old_config = load_text_file(sway_config).splitlines()
@@ -158,9 +172,6 @@ def main():
                 print("Couldn't load '{}'".format(sway_config))
             else:
                 print("\n[Updating sway config file]")
-                print("* This may have an unexpected result if you tweaked it manually.")
-                print("* If it happens, run `nwg-shell-installer` w/o arguments, and install default configs"
-                      " from scratch.\n")
 
                 # backup original file
                 now = datetime.datetime.now()
@@ -254,6 +265,7 @@ def main():
                 if c:
                     print("The '{}' script is no longer necessary, you may delete it now.".format(c))
 
+    # Installation
     else:
         print("-------------------------------------------------------------------")
         print("|   This script installs/overwrites configs and style sheets      |")
@@ -334,8 +346,7 @@ def main():
                 proceed = a.strip().upper() == "Y"
 
             if proceed:
-                for item in ["gtk-3.0", "sway", "nwg-panel", "nwg-wrapper", "nwg-drawer", "nwg-dock", "nwg-bar",
-                             "swaync"]:
+                for item in ["sway", "nwg-panel", "nwg-wrapper", "nwg-drawer", "nwg-dock", "nwg-bar", "swaync"]:
                     copy_from_skel(item, folder="config", skip_confirmation=args.all)
                 for item in ["nwg-look"]:
                     copy_from_skel(item, folder="data", skip_confirmation=args.all)
