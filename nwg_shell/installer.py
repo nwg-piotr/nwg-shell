@@ -127,6 +127,7 @@ def main():
             for item in ["preset-0", "preset-1", "preset-2", "preset-3"]:
                 src = os.path.join(config_home, "nwg-panel/{}".format(item))
                 panel_config = load_json(src)
+                changed = False
                 for panel in panel_config:
                     if "custom-items" in panel["controls-settings"]:
                         for i in panel["controls-settings"]["custom-items"]:
@@ -136,6 +137,7 @@ def main():
                                 i["name"] = "GTK settings"
                                 i["icon"] = "nwg-look"
                                 i["cmd"] = "nwg-look"
+                                changed = True
 
                             # replace wdisplays with nwg-displays
                             if "wdisplays" in i["cmd"]:
@@ -143,9 +145,11 @@ def main():
                                 i["name"] = "Displays"
                                 i["icon"] = "nwg-displays"
                                 i["cmd"] = "nwg-displays"
+                                changed = True
 
-                print("Saving '{}'".format(src))
-                save_json(panel_config, src)
+                if changed:
+                    print("Saving '{}'".format(src))
+                    save_json(panel_config, src)
 
             # Update sway config
             sway_config = os.path.join(config_home, "sway/config")
@@ -153,7 +157,7 @@ def main():
             if not lines:
                 print("Couldn't load '{}'".format(sway_config))
             else:
-                print("\nUpdating '{}':".format(sway_config))
+                print("\nUpdating '{}'".format(sway_config))
 
                 # backup original file
                 now = datetime.datetime.now()
@@ -182,6 +186,11 @@ def main():
                         omit = False
                         for phrase in ["Apply GTK settings",
                                        "import-gsettings",
+                                       "adaptive_sync",
+                                       "monitors (edit & unhash)",
+                                       "# set $Mon",
+                                       "# Workspace to monitor assignment",
+                                       "output $Mon",
                                        "The file we include below",
                                        "The files we include below",
                                        "# Disabled by nwg-shell",
@@ -221,6 +230,19 @@ def main():
         print("\n-------------------------------------------")
         print("| Reload sway for changes to take effect. |")
         print("-------------------------------------------\n")
+
+        # Inform about no longer needed stuff
+        # Packages
+        for item in ["lxappearance", "wdisplays"]:
+            if is_command(item):
+                print("The '{}' package is no longer necessary, you may uninstall it now.".format(item))
+
+        # Scripts
+        for item in ["import-gsettings", "sway-save-outputs"]:
+            if is_command(item):
+                c = is_command(item)
+                if c:
+                    print("The '{}' script is no longer necessary, you may delete it now.".format(c))
 
     else:
         print("-------------------------------------------------------------------")
@@ -313,19 +335,6 @@ def main():
                 print("That's all. You may run sway now.")
             else:
                 print("File installation cancelled")
-
-    # Inform about no longer needed stuff
-    # Packages
-    for item in ["lxappearance", "wdisplays"]:
-        if is_command(item):
-            print("The '{}' package is no longer necessary, you may uninstall it now.".format(item))
-
-    # Scripts
-    for item in ["import-gsettings", "sway-save-outputs"]:
-        if is_command(item):
-            c = is_command(item)
-            if c:
-                print("The '{}' script is no longer necessary, you may delete it now.".format(c))
 
 
 if __name__ == '__main__':
