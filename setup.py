@@ -34,7 +34,8 @@ setup(
     entry_points={
         'gui_scripts': [
             'nwg-shell = nwg_shell.main:main',
-            'nwg-shell-installer = nwg_shell.installer:main'
+            'nwg-shell-installer = nwg_shell.installer:main',
+            'nwg-shell-check-updates = nwg_shell.check_updates:main'
         ]
     }
 )
