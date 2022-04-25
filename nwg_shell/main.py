@@ -23,6 +23,11 @@ def load_json(path):
         return None
 
 
+def save_json(src_dict, path):
+    with open(path, 'w') as f:
+        json.dump(src_dict, f, indent=2)
+
+
 def ver2int(ver):
     # Converts version to int, e.g. '0.2.1' to 21
     try:
@@ -53,13 +58,19 @@ def main():
         # Will only be called if 'nwg-shell' package installed.
         global shell_data
         shell_data = load_json(shell_data_file)
-        if shell_data:
-            # Installer versions that need to trigger upgrade
-            need_upgrade = ["0.2.0"]
-            if ver2int(shell_data["last-upgrade"]) < ver2int(__version__) and __version__ in need_upgrade:
-                subprocess.Popen(
-                    'exec {}'.format("notify-send 'Upgrade to nwg-shell v{} available' "
-                                     "'Run \"nwg-shell-installer -u\" in terminal.'".format(__version__)), shell=True)
+        if not shell_data:
+            if not os.path.isdir(os.path.join(data_home, "nwg-shell/")):
+                os.makedirs(os.path.join(data_home, "nwg-shell"))
+
+            shell_data = {"last-upgrade": "0.0.0"}
+            save_json(shell_data, shell_data_file)
+
+        # Installer versions that need to trigger upgrade
+        need_upgrade = ["0.2.0"]
+        if ver2int(shell_data["last-upgrade"]) < ver2int(__version__) and __version__ in need_upgrade:
+            subprocess.Popen(
+                'exec {}'.format("notify-send 'Upgrade to nwg-shell v{} available' "
+                                 "'Run \"nwg-shell-installer -u\" in terminal.'".format(__version__)), shell=True)
 
 
 if __name__ == '__main__':
