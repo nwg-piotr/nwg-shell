@@ -61,8 +61,9 @@ def main():
     if last_upgrade is not None and ver is not None:
         if last_upgrade < ver and __version__ in need_upgrade:
             subprocess.Popen(
-                'exec {}'.format("notify-send 'Upgrade to nwg-shell v{} available' "
+                'exec {}'.format("notify-send -i /usr/share/pixmaps/nwg-shell.svg 'Upgrade to nwg-shell v{} available' "
                                  "'Run \"nwg-shell-installer -u\" in terminal.'".format(__version__)), shell=True)
+            print("Upgrade to {} needed. Run 'nwg-shell-installer -u'.".format(__version__))
         else:
             print("No upgrade needed.")
     else:
