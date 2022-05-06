@@ -122,8 +122,10 @@ def main():
     if not os.path.isdir(os.path.join(data_home, "nwg-shell/")):
         copy_from_skel("nwg-shell", folder="data", skip_confirmation=True)
     global shell_data
-    if not os.path.isdir(shell_data_file):
-        shell_data = {"last-upgrade": "0.0.0"}
+    if not os.path.isfile(shell_data_file):
+        if not os.path.isdir(os.path.join(data_home, "nwg-shell")):
+            os.makedirs(os.path.join(data_home, "nwg-shell"))
+        shell_data = {"last-upgrade": __version__}
         save_json(shell_data, shell_data_file)
     else:
         shell_data = load_json(shell_data_file)
