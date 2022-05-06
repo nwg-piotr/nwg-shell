@@ -5,8 +5,6 @@ from setuptools import setup, find_packages
 
 def read(f_name):
     return open(os.path.join(os.path.dirname(__file__), f_name)).read()
-
-
 setup(
     name='nwg-shell',
     version='0.2.0',
@@ -20,6 +18,7 @@ setup(
              "skel/config/nwg-dock/*",
              "skel/config/nwg-drawer/*",
              "skel/config/nwg-panel/*",
+             "skel/data/nwg-look/*",
              "skel/config/nwg-wrapper/*",
              "skel/config/sway/*",
              "skel/config/swaync/*",
@@ -39,3 +38,5 @@ setup(
         ]
     }
 )
+
+
