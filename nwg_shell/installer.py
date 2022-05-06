@@ -243,7 +243,7 @@ def main():
 
     # Installation
     else:
-        print("-------------------------------------------------------------------")
+        print("\n-------------------------------------------------------------------")
         print("|   This script installs/overwrites configs and style sheets      |")
         print("|             for sway and nwg-shell components.                  |")
         print("| The only backup that will be made is the main sway config file. |")
@@ -326,7 +326,7 @@ def main():
                     copy_from_skel(item, folder="config", skip_confirmation=args.all)
                 for item in ["nwg-look"]:
                     copy_from_skel(item, folder="data", skip_confirmation=args.all)
-                print("That's all. You may run sway now.")
+                print("\nThat's all. You may run sway now.")
 
                 shell_data = {"last-upgrade": __version__}
                 save_json(shell_data, shell_data_file)
