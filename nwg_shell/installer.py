@@ -325,6 +325,9 @@ def main():
                 for item in ["nwg-look"]:
                     copy_from_skel(item, folder="data", skip_confirmation=args.all)
                 print("That's all. You may run sway now.")
+
+                shell_data = {"last-upgrade": __version__}
+                save_json(shell_data, shell_data_file)
             else:
                 print("File installation cancelled")
 
