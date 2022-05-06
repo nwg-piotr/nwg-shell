@@ -25,18 +25,34 @@ def save_json(src_dict, path):
         json.dump(src_dict, f, indent=2)
 
 
-def ver2int(ver):
+def is_newer(string_new, string_existing):
     """
-    Simple conversion for Semantic Versioning 2.0 string to integer, e.g. '0.2.1' to 21
-    Valid for numbers 0-9 only!
-    :param ver: str
-    :return: int
+    Compares versions in format 'major.minor.patch' (just numbers allowed).
+    :param string_new: new version to compare with existing one
+    :param string_existing: existing version
+    :return: True if new is newer then existing
     """
+    new = major_minor_path(string_new)
+    existing = major_minor_path(string_existing)
+    if new and existing:
+        if new[0] > existing[0]:
+            return True
+        elif new[1] > existing[1]:
+            return True
+        elif new[2] > existing[2]:
+            return True
+        else:
+            return False
+    else:
+        return False
+
+
+def major_minor_path(string):
+    parts = string.split(".")
+    if len(parts) != 3:
+        return None
     try:
-        nums = ver.split(".")
-        if len(nums) != 3:
-            return None
-        return int(nums[0]) * 100 + int(nums[1]) * 10 + int(nums[2])
+        return int(parts[0]), int(parts[1]), int(parts[2])
     except:
         return None
 
@@ -56,16 +72,16 @@ def main():
     # Shell versions that need to trigger upgrade
     need_upgrade = ["0.2.0"]
 
-    last_upgrade = ver2int(shell_data["last-upgrade"])
-    ver = ver2int(__version__)
+    # last_upgrade = ver2int(shell_data["last-upgrade"])
+    # ver = ver2int(__version__)
 
-    if last_upgrade is not None and ver is not None:
-        if last_upgrade < ver and __version__ in need_upgrade:
+    if shell_data["last-upgrade"] and __version__:
+        if is_newer(__version__, shell_data["last-upgrade"]) and __version__ in need_upgrade:
+            print("Upgrade to {} needed. Run 'nwg-shell-installer -u'.".format(__version__))
             time.sleep(5)
             subprocess.Popen(
                 'exec {}'.format("notify-send -i /usr/share/pixmaps/nwg-shell.svg 'nwg-shell v{} available' "
                                  "'Run \"nwg-shell-installer -u\" in terminal.'".format(__version__)), shell=True)
-            print("Upgrade to {} needed. Run 'nwg-shell-installer -u'.".format(__version__))
         else:
             print("No upgrade needed.")
     else:
