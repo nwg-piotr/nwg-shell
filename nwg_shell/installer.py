@@ -132,13 +132,11 @@ def main():
     if args.upgrade:
         print("--------------------------------------------------------------")
         print("|      You are about to upgrade nwg-shell to v{}.         |".format(__version__))
-        print("| It'll modify your config files to use the recent software. |")
+        print("|    It will modify and/or replace your config files.        |")
         print("|                                                            |")
-        print("|             This may have an unexpected result             |")
-        print("|        if you tweaked you sway config file manually.       |")
-        print("|  If it happens to you, run 'nwg-shell-installer -a' (all), |")
-        print("|         or 'nwg-shell-installer' (interactive mode),       |")
-        print("|             in order to install default configs.           |")
+        print("|   If something goes wrong, run 'nwg-shell-installer -a'    |")
+        print("|        or 'nwg-shell-installer' (interactive mode),        |")
+        print("|            in order to install default configs.            |")
         print("--------------------------------------------------------------")
 
         a = input("\nProceed? y/N ")
@@ -171,6 +169,12 @@ def main():
                                 i["cmd"] = "nwg-displays"
                                 changed = True
 
+                            # update nwg-shell-config
+                            if "nwg-shell-config" in i["cmd"] and i["icon"] != "nwg-shell-config":
+                                print("updating 'nwg-shell-config' in '{}'".format(item))
+                                i["icon"] = "nwg-shell-config"
+                                changed = True
+
                 if changed:
                     print("Saving '{}'".format(src))
                     save_json(panel_config, src)
@@ -179,80 +183,33 @@ def main():
                 print("No change needed.")
 
             # Update sway config
-            sway_config = os.path.join(config_home, "sway/config")
-            old_config = load_text_file(sway_config).splitlines()
-            if not old_config:
-                print("Couldn't load '{}'".format(sway_config))
-            else:
-                print("\n[Updating sway config file]")
+            # backup original file
+            print("\n[Updating sway config file]")
+            now = datetime.datetime.now()
+            new_name = now.strftime("config-backup-%Y%m%d-%H%M%S")
+            src = os.path.join(config_home, "sway/config")
+            dst = os.path.join(config_home, "sway/{}".format(new_name))
+            try:
+                if os.path.isfile(src):
+                    copy(src, dst)
+                    print("Your old sway config file has been saved as '{}'".format(new_name))
+            except Exception as e:
+                print("Couldn't back up your old sway config: {}".format(e))
 
-                # backup original file
-                now = datetime.datetime.now()
-                new_name = now.strftime("config-backup-%Y%m%d-%H%M%S")
-                src = os.path.join(config_home, "sway/config")
-                dst = os.path.join(config_home, "sway/{}".format(new_name))
-                proceed = True
+            a = input("Your sway config file needs to be overwritten. Proceed? y/N ")
+            proceed = a.strip().upper() == "Y"
+
+            if proceed:
+                src = os.path.join(dir_name, "skel/config/sway/config")
+                dst = os.path.join(config_home, "sway/config")
+                print("Copying '{}'".format(dst), end=" ")
                 try:
-                    if os.path.isfile(src):
-                        copy(src, dst)
-                        print("Your old sway config file has been saved as '{}'".format(new_name))
+                    copy(src, dst)
+                    print("OK")
                 except Exception as e:
-                    print("Couldn't back up your old sway config: {}".format(e))
-                    a = input("Proceed with installation? y/N ")
-                    proceed = a.strip().upper() == "Y"
-
-                if proceed:
-                    # Prepend includes
-                    new_config = ["# The files we include below will be created / overwritten by nwg-shell tools",
-                                  "#",
-                                  "include variables",
-                                  "include outputs",
-                                  "include autostart",
-                                  "include workspaces",
-                                  ""]
-                    # Remove no longer needed lines
-                    for line in old_config:
-                        omit = False
-                        for phrase in ["Apply GTK settings",
-                                       "import-gsettings",
-                                       "adaptive_sync",
-                                       "monitors (edit & unhash)",
-                                       "# set $Mon",
-                                       "# Workspace to monitor assignment",
-                                       "output $Mon",
-                                       "The file we include below",
-                                       "The files we include below",
-                                       "# Disabled by nwg-shell",
-                                       "include ~/.config/sway/variables",
-                                       "include ~/.config/sway/outputs",
-                                       "include ~/.config/sway/autostart",
-                                       "include ~/.config/sway/workspaces",
-                                       "include variables",
-                                       "include outputs",
-                                       "include autostart",
-                                       "include workspaces"]:
-                            if phrase in line:
-                                omit = True
-                                continue
-                        if omit or line == "#":
-                            continue
-
-                        new_config.append(line)
-
-                    # Final cleaning
-                    final_config = []
-                    for i in range(len(new_config)):
-                        line = new_config[i]
-                        # remove double empty lines
-                        if line == "" and new_config[i+1] == "":
-                            continue
-                        # fix improper input device name
-                        if line == 'input "type:mouse" {':
-                            final_config.append('input "type:pointer" {')
-                        else:
-                            final_config.append(line)
-
-                    save_text_file(final_config, sway_config)
+                    print(e)
+            else:
+                print("Sway config file update skipped.")
 
             # Use nwg-look to apply default GTK settings if it has not been done yet
             if not os.path.isfile(os.path.join(data_home, "nwg-look/gsettings")):
