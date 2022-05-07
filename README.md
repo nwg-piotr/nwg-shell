@@ -129,7 +129,7 @@ place. To give users more complete control over the system, we also integrated s
 This required some interference with the basic sway config, using included files, that are modified on the fly from the 
 GUI level.
 
-![nwg-shell-config.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-shell-config.png)
+![nwg-shell-config.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-shell-config-02.png)
 
 Read more on the [nwg-shell-config](https://github.com/nwg-piotr/nwg-shell-config) repository.
 
