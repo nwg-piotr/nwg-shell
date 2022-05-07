@@ -327,13 +327,6 @@ def main():
                 for item in ["nwg-look"]:
                     copy_from_skel(item, folder="data", skip_confirmation=args.all)
 
-                # Use nwg-look to apply default GTK settings
-                if not os.path.isfile(os.path.join(data_home, "nwg-look/gsettings")):
-                    print("\nApplying default GTK settings. Run 'nwg-look' utility to set your preferences.")
-                    print("You'll find it in the 'Controls' menu as 'GTK settings'.")
-                    copy_from_skel("nwg-look", folder="data", skip_confirmation=True)
-                    launch("nwg-look -a")
-
                 print("\n\nThat's all. You may run sway now.\n")
 
                 shell_data = {"last-upgrade": __version__}
