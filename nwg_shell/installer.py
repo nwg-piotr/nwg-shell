@@ -133,8 +133,8 @@ def main():
     # Upgrade
     if args.upgrade:
         print("--------------------------------------------------------------")
-        print("|      You are about to upgrade nwg-shell to v{}.         |".format(__version__))
-        print("|    It will modify and/or replace your config files.        |")
+        print("|        You are about to upgrade nwg-shell to v{}.       |".format(__version__))
+        print("|    This will modify and/or replace your config files.      |")
         print("|                                                            |")
         print("|   If something goes wrong, run 'nwg-shell-installer -a'    |")
         print("|        or 'nwg-shell-installer' (interactive mode),        |")
