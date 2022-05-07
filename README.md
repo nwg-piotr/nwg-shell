@@ -157,3 +157,27 @@ Images used on this page come from:
 - https://wallhaven.cc/w/o39669
 - https://pixabay.com/illustrations/home-mountains-fantasy-floating-5889366
 - https://pixabay.com/vectors/mobile-devices-website-mockup-web-2017978
+
+## Credits
+
+This collection of software relies on some great third-party programs and libraries:
+
+- [wlsunset](https://sr.ht/~kennylevinsen/wlsunset) by Kenny Levinsen
+- [SwayNotificationCenter](https://github.com/ErikReider/SwayNotificationCenter) by Eric Reider
+- [swappy](https://github.com/jtheoof/swappy) Copyright (c) 2020 Jeremy Attali
+- [gtk-layer-shell](https://github.com/wmww/gtk-layer-shell) Copyright (c) 2014 Dennis Blommesteijn, Copyright (c) 2020 William Wold
+- [gotk3](https://github.com/gotk3/gotk3) Copyright (c) 2013-2014 Conformal Systems LLC,
+Copyright (c) 2015-2018 gotk3 contributors
+- [gotk3-layershell](https://github.com/dlasky/gotk3-layershell) by [@dlasky](https://github.com/dlasky/gotk3-layershell/commits?author=dlasky) - many thanks for writing this software, and for patience with my requests!
+- [go-sway](https://github.com/joshuarubin/go-sway) Copyright (c) 2019 Joshua Rubin
+- [go-singleinstance](github.com/allan-simon/go-singleinstance) Copyright (c) 2015 Allan Simon
+- [python-i3ipc](https://github.com/altdesktop/i3ipc-python) Copyright (c) 2015, Tony Crisci
+- [python-psutil](https://github.com/giampaolo/psutil) Copyright (c) 2009, Jay Loden, Dave Daeschler, Giampaolo Rodola
+- [python-geopy](https://github.com/geopy/geopy) by Kostya Esmukov
+- [brightnessctl](https://github.com/Hummer12007/brightnessctl) Copyright (c) 2016 Mykyta Holuakha
+- [playerctl](https://github.com/altdesktop/playerctl) by Tony Crisci
+- [PulseAudio](https://www.freedesktop.org/wiki/Software/PulseAudio), 
+[bluez-utils](http://www.bluez.org), [python-netifaces](https://archlinux.org/packages/community/x86_64/python-netifaces),
+ and probably more, which I forgot to mention here. Please forgive me, if so.
+
+[sway](https://github.com/swaywm/sway) is an i3-compatible Wayland compositor Copyright (c) 2016-2017 Drew DeVault
