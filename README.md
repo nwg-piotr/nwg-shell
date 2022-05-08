@@ -94,7 +94,7 @@ Output management utility inspired by wdisplays and wlay. The program provides a
 displays, apply settings, save outputs configuration and workspace -> output assignments to text files, which you
 then include in the sway config file.
 
-![2022-03-12-110614_screenshot](https://user-images.githubusercontent.com/20579136/158013748-5b27f742-0e6a-4d82-a5ac-06368b4df008.png)
+![nwg-displays](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-displays/nwg-displays.png)
 
 ### [nwg-look](https://github.com/nwg-piotr/nwg-look) (Go)
 
@@ -109,7 +109,7 @@ but nwg-look is intended to free the user from a few inconveniences:
 [workarounds](https://github.com/swaywm/sway/wiki/GTK-3-settings-on-Wayland). You don't need to set
  gsettings in the sway config file. You don't need the `import-gsettings` script any longer.
 
-![v0 1 2](https://user-images.githubusercontent.com/20579136/162642422-3b4ae446-61c1-4bf7-9115-91b66e5de58f.png)
+![nwg-look](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-look/nwg-look.png)
 
 ### [nwg-wrapper](https://github.com/nwg-piotr/nwg-wrapper) (Python)
 
