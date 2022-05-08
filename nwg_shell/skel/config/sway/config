@@ -1,5 +1,14 @@
-# ArchLabs sway config
+# The files we include below will be created / overwritten by nwg-shell tools
 #
+include variables
+include outputs
+include autostart
+include workspaces
+include keyboard
+include pointer
+include touchpad
+
+# ArchLabs sway config
 # Read `man 5 sway` for reference.
 
 # border & title
@@ -25,14 +34,6 @@ set $down k
 set $left j
 set $right semicolon
 
-# The file we include below is created and will be overwritten by nwg-shell-config GUI!
-#
-include ~/.config/sway/variables
-
-############### Apply GTK settings ##################
-
-exec_always import-gsettings
-
 ###############     Autostart      ##################
 
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
@@ -40,18 +41,6 @@ exec hash dbus-update-activation-environment 2>/dev/null && \
     dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec ~/.azotebg
-
-# The files we include below are created and will be overwritten by nwg-shell-config GUI!
-#
-include ~/.config/sway/outputs
-include ~/.config/sway/autostart
-#
-
-output * adaptive_sync on
-
-# monitors (edit & unhash)
-# set $Mon1 eDP-1
-# set $Mon2 HDMI-A-1
 
 ### Turn off screen on lid closed
 set $laptop eDP-1
@@ -64,47 +53,9 @@ exec swayidle -w \
     timeout 3300 'swaymsg "output * dpms off"' \
     resume 'swaymsg "output * dpms on"' \
     before-sleep 'swaylock -f -c 212121'
-#
 # This will lock your screen after 3000 seconds of inactivity, then turn off
 # your displays after another 3300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
-
-###############  Input configuration  ##################
-#
-# Example configuration:
-#
-# input "2:14:SynPS/2_Synaptics_TouchPad" {
-#     dwt enabled
-#     tap enabled
-#     middle_emulation enabled
-# }
-# You can get the names of your inputs by running: swaymsg -t get_inputs
-# Read `man 5 sway-input` for more information about this section.
-
-# enable touchpad speed and features
-input "type:touchpad" {
-	tap enabled
-	dwt enabled
-	drag enabled
-	scroll_factor 0.7
-	pointer_accel 0.2
-	accel_profile adaptive
-}
-
-# disable acceleration for mice
-input "type:pointer" {
-	accel_profile flat
-}
-
-# keyboard layout and repeat settings
-input "type:keyboard" {
-    xkb_layout $lang
-	repeat_delay 300
-	repeat_rate 40
-}
-
-# numlock on/off
-# input * xkb_numlock enabled
 
 #############         Bindings           ##################
 
@@ -200,16 +151,6 @@ bindsym $Mod+Shift+Mod2+KP_Right move container to workspace number 6; workspace
 bindsym $Mod+Shift+Mod2+KP_Home  move container to workspace number 7; workspace number 7
 bindsym $Mod+Shift+Mod2+KP_Up    move container to workspace number 8; workspace number 8
 
-# Workspace to monitor assignment (edit & unhash)
-# workspace 1 output $Mon1
-# workspace 2 output $Mon1
-# workspace 3 output $Mon1
-# workspace 4 output $Mon1
-# workspace 5 output $Mon1
-# workspace 6 output $Mon1
-# workspace 7 output $Mon1
-# workspace 8 output $Mon1
-
 ############      Container/Window control  ############
 
 # Scratchpad, Floating
@@ -303,7 +244,6 @@ bindsym Mod1+h exec pkill -f -12 nwg-wrapper
 # move help to front/back
 bindsym Mod1+Shift+h exec pkill -f -10 nwg-wrapper
 
-
 ###############      Border & Gaps     ###############
 
 # changing border style
@@ -324,9 +264,8 @@ bindsym $Mod+Control+Shift+minus gaps outer all     minus 5
 ############    application settings   ############
 
 # focus, floating, & sticky
-for_window [app_id="(?i)(?:blueman-manager|azote|gnome-disks|nwg-shell-config)"] floating enable
+for_window [app_id="(?i)(?:blueman-manager|azote|gnome-disks)"] floating enable
 for_window [app_id="(?i)(?:pavucontrol|nm-connection-editor|gsimplecal|galculator)"] floating enable
-for_window [class="(?i)(?:lxappearance)"] floating enable
 for_window [app_id="(?i)(?:firefox|chromium)"] border none
 for_window [title="(?i)(?:copying|deleting|moving)"] floating enable
 

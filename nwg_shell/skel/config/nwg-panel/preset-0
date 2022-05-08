@@ -47,14 +47,14 @@
           "cmd": "azote"
         },
         {
-          "name": "Look & Feel",
-          "icon": "preferences-desktop-theme",
-          "cmd": "lxappearance; import-gsettings gtk-theme:gtk-theme-name icon-theme:gtk-icon-theme-name cursor-theme:gtk-cursor-theme-name"
+          "name": "GTK settings",
+          "icon": "nwg-look",
+          "cmd": "nwg-look"
         },
         {
-          "name": "Outputs",
-          "icon": "display",
-          "cmd": "wdisplays && sway-save-outputs"
+          "name": "Displays",
+          "icon": "nwg-displays",
+          "cmd": "nwg-displays"
         },
         {
           "name": "Panel settings",
@@ -63,7 +63,7 @@
         },
         {
           "name": "Shell settings",
-          "icon": "nwg-shell",
+          "icon": "nwg-shell-config",
           "cmd": "nwg-shell-config"
         }
       ],

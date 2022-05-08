@@ -5,11 +5,9 @@ from setuptools import setup, find_packages
 
 def read(f_name):
     return open(os.path.join(os.path.dirname(__file__), f_name)).read()
-
-
 setup(
     name='nwg-shell',
-    version='0.1.4',
+    version='0.2.0',
     description='GTK3-based shell for sway Wayland compositor',
     packages=find_packages(),
     include_package_data=True,
@@ -20,6 +18,7 @@ setup(
              "skel/config/nwg-dock/*",
              "skel/config/nwg-drawer/*",
              "skel/config/nwg-panel/*",
+             "skel/data/nwg-look/*",
              "skel/config/nwg-wrapper/*",
              "skel/config/sway/*",
              "skel/config/swaync/*",
@@ -34,7 +33,10 @@ setup(
     entry_points={
         'gui_scripts': [
             'nwg-shell = nwg_shell.main:main',
-            'nwg-shell-installer = nwg_shell.installer:main'
+            'nwg-shell-installer = nwg_shell.installer:main',
+            'nwg-shell-check-updates = nwg_shell.check_updates:main'
         ]
     }
 )
+
+

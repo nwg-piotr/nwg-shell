@@ -5,8 +5,10 @@ from nwg_shell.__about__ import __version__
 
 def main():
     print("nwg-shell version {}".format(__version__))
-    print("Run `nwg-shell-installer -a` to install all components from scratch or `nwg-shell-installer` to install"
-          "/overwrite selected components in interactive mode.")
+    print("Commands:")
+    print("  nwg-shell-installer     installs selected default configs interactively")
+    print("  nwg-shell-installer -a  installs all configs from scratch")
+    print("  nwg-shell-installer -u  upgrades configs if necessary")
 
 
 if __name__ == '__main__':

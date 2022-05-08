@@ -4,4 +4,5 @@ exec_always autotiling
 exec_always nwg-drawer -r -s preset-0.css -term foot
 exec_always nwg-panel -c preset-0 -s preset-0.css
 exec_always nwg-shell-check-updates
+exec nwg-look -a
 exec nwg-shell-config
