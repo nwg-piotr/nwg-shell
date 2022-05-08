@@ -8,25 +8,17 @@ The programs included in the project are to give you the freedom of choice what 
 
 ![nwg-shell-header.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-shell-header_new2.png)
 
-## Support for other WMs
-
-This project is primarily aimed at sway. Some parts may work on other wlroots-based compositors. Some may even work on X11, but it's not the primary objective. Feel free to submit addons / improvements, but keep in mind that all the stuff **must** work on sway, and **may or may not** work elsewhere.
-
-### Pull requests adding support for non-sway stuff 
-
-are welcome.
-
-### Feature requests like "add <place_your_wm_here> support"
-
-go to `/dev/null`.
+The installer provided in this repository pulls all the necessary dependencies, and preconfigures 4 desktop
+styles for you to choose from. Each of them you can modify freely from the nwg-shell-config GUI. Or you may choose 
+the 'Custom' preset to experiment with.
 
 ## Installation
 
-### The hard way
+### The hard way (v0.2 available)
 
 [How to set up nwg-shell on minimal Arch Linux install in several simple steps](https://github.com/nwg-piotr/nwg-shell/wiki) - Wiki
 
-### The easy way
+### The easy way (v0.2 not yet available)
 
 Install [ArchLabs Linux](https://archlabslinux.com) with preconfigured sway session.
 
@@ -48,8 +40,8 @@ support for the nwg-menu plugin (see below).
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-dock.svg)](https://repology.org/project/nwg-dock/versions)
 
-Fully configurable dock written in Go. It features pinned buttons, task buttons, the workspace switcher and the launcher button. The latter by default starts
-nwggrid (application grid) from nwg-launchers.
+Fully configurable dock written in Go. It features pinned buttons, task buttons, workspace switcher and launcher button. The latter by default starts
+nwg-drawer.
 
 ![nwg-dock.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-dock1.png)
 
@@ -57,7 +49,7 @@ nwggrid (application grid) from nwg-launchers.
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-menu.svg)](https://repology.org/project/nwg-menu/versions)
 
-It's the MenuStart plugin to nwg-panel, written in Go. It displays the system menu with simplified [freedesktop main categories](https://specifications.freedesktop.org/menu-spec/latest/apa.html). It also provides the search entry,
+The MenuStart plugin to nwg-panel, written in Go. It displays the system menu with simplified [freedesktop main categories](https://specifications.freedesktop.org/menu-spec/latest/apa.html). It also provides the search entry,
 to look for installed application on the basis of .desktop files, and for files in XDG user directories.
 
 You may pin-up applications above the categories list. In the bottom-right corner of the window you'll also see a set of buttons: lock screen, logout,
@@ -75,7 +67,7 @@ them. Pinned items will appear above the grid. Right-click a pinned item to unpi
 
 ![nwg-drawer.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-drawer.png)
 
-### [nwg-bar](https://github.com/nwg-piotr/nwg-bar) (Go, beta)
+### [nwg-bar](https://github.com/nwg-piotr/nwg-bar) (Go)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-bar.svg)](https://repology.org/project/nwg-bar/versions)
 
@@ -85,7 +77,41 @@ Aimed at sway, works with wlroots-based compositors only. The `nwg-bar` command 
 
 ![nwg-bar.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-bar.png)
 
-### [nwg-wrapper](https://github.com/nwg-piotr/nwg-wrapper) (python)
+### [Azote](https://github.com/nwg-piotr/azote) (Python)
+
+[![Packaging status](https://repology.org/badge/vertical-allrepos/azote.svg)](https://repology.org/project/azote/versions)
+
+Azote is a picture browser and background setter, as the frontend to the swaybg (sway/Wayland) and feh (X windows) commands. The user interface is being
+developed with multi-headed setups in mind. Azote also includes several colour management tools.
+
+![azote.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/azote.png)
+
+### [nwg-displays](https://github.com/nwg-piotr/nwg-displays) (Python)
+
+[![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-displays.svg)](https://repology.org/project/nwg-displays/versions)
+
+Output management utility inspired by wdisplays and wlay. The program provides an intuitive GUI to manage multiple 
+displays, apply settings, save outputs configuration and workspace -> output assignments to text files, which you
+then include in the sway config file.
+
+![2022-03-12-110614_screenshot](https://user-images.githubusercontent.com/20579136/158013748-5b27f742-0e6a-4d82-a5ac-06368b4df008.png)
+
+### [nwg-look](https://github.com/nwg-piotr/nwg-look) (Go)
+
+[![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-look.svg)](https://repology.org/project/nwg-look/versions)
+
+Nwg-look is a GTK3 settings editor, designed to work properly in wlroots-based Wayland environment.
+The look and feel is strongly influenced by [LXAppearance](https://wiki.lxde.org/en/LXAppearance),
+but nwg-look is intended to free the user from a few inconveniences:
+
+- It works natively on Wayland. You no longer need Xwayland, nor strange env variables for it to run.
+- It applies gsettings directly, with no need to use
+[workarounds](https://github.com/swaywm/sway/wiki/GTK-3-settings-on-Wayland). You don't need to set
+ gsettings in the sway config file. You don't need the `import-gsettings` script any longer.
+
+![v0 1 2](https://user-images.githubusercontent.com/20579136/162642422-3b4ae446-61c1-4bf7-9115-91b66e5de58f.png)
+
+### [nwg-wrapper](https://github.com/nwg-piotr/nwg-wrapper) (Python)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-wrapper.svg)](https://repology.org/project/nwg-wrapper/versions)
 
@@ -96,15 +122,6 @@ to place the window on the bottom layer. As well the script output, at the text 
 with css styling.
 
 ![nwg-wrapper.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-wrapper.png)
-
-### [Azote](https://github.com/nwg-piotr/azote) (Python)
-
-[![Packaging status](https://repology.org/badge/vertical-allrepos/azote.svg)](https://repology.org/project/azote/versions)
-
-Azote is a picture browser and background setter, as the frontend to the swaybg (sway/Wayland) and feh (X windows) commands. The user interface is being
-developed with multi-headed setups in mind. Azote also includes several colour management tools.
-
-![azote.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/azote.png)
 
 ### [gopsuinfo](https://github.com/nwg-piotr/gopsuinfo) (Go)
 
@@ -121,7 +138,7 @@ window dimensions. It works on both sway and i3 window managers. You may love it
 
 ![nwg-shell-config.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/autotiling.png)
 
-## nwg-shell-config
+## [nwg-shell-config](https://github.com/nwg-piotr/nwg-shell-config)
 
 As you see, the nwg-shell project is a DIY kit with elements to chose from. However, together with the 
 [ArchLabs Linux](https://archlabslinux.com) team, we decided to develop a GUI to configure all the components in one 
@@ -131,7 +148,17 @@ GUI level.
 
 ![nwg-shell-config.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-shell-config-02.png)
 
-Read more on the [nwg-shell-config](https://github.com/nwg-piotr/nwg-shell-config) repository.
+## Support for other WMs
+
+This project is primarily aimed at sway. Some parts may work on other wlroots-based compositors. Some may even work on X11, but it's not the primary objective. Feel free to submit addons / improvements, but keep in mind that all the stuff **must** work on sway, and **may or may not** work elsewhere.
+
+### Pull requests adding support for non-sway stuff 
+
+are welcome.
+
+### Feature requests like "add <place_your_wm_here> support"
+
+go to `/dev/null`.
 
 ## Contributions
 
