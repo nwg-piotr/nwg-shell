@@ -174,7 +174,10 @@ Arch Linux (BTW). Some issues specific to other environment, e.g. Debian, FreeBS
 ## Resources
 
 The project logo has been created by [edskeye](https://github.com/edskeye). You'll find the basic svg file in the
-[resources](https://github.com/nwg-piotr/nwg-shell-resources/tree/master/resources) repository.
+[resources](https://github.com/nwg-piotr/nwg-shell-resources/tree/master/resources) repository. If you like the logo,
+you may also like [nwg-shell wallpapers](https://github.com/nwg-piotr/nwg-shell-resources/tree/master/wallpapers).
+The uglier ones were designed by me, and the prettier ones by 
+[@badkarma](https://forum.archlabslinux.com/u/badkarma/summary). ;)
 
 <div align="center"><img src="https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/logo.png"/></div>
 
