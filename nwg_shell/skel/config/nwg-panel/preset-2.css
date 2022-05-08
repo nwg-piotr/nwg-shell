@@ -49,13 +49,13 @@ button {
 
 /* Executors usually behave better in monospace fonts */
 #executor-label {
-    font-family: monospace;
+    font-family: DejaVu Sans Mono;
     font-size: 16px
 }
 
 /* and so does the Clock */
 #clock {
-    font-family: monospace;
+    font-family: DejaVu Sans Mono;
     font-size: 16px
 }
 
