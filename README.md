@@ -8,8 +8,8 @@ The programs included in the project are to give you the freedom of choice what 
 
 ![nwg-shell-header.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-shell-header_new2.png)
 
-**The installer provided in this repository pulls all the necessary dependencies, and preconfigures 4 desktop
-styles for you to choose from. Each of them you can modify freely from the nwg-shell-config GUI. Or you may choose 
+**The installer provided in this repository pulls all the necessary dependencies, and preconfigures [4 desktop
+styles](https://github.com/nwg-piotr/nwg-shell-config/blob/master/README.md#desktop-styles) for you to choose from. Each of them you can modify freely from the nwg-shell-config GUI. Or you may choose 
 the 'Custom' preset to experiment with.**
 
 ## Installation
