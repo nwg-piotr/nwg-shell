@@ -1,4 +1,4 @@
-exec swaync -s /home/piotr/.config/swaync/preset-0.css
+exec swaync -s ~/.config/swaync/preset-0.css
 exec nm-applet --indicator
 exec_always autotiling
 exec_always nwg-drawer -r -s preset-0.css -term foot
