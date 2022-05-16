@@ -7,7 +7,7 @@ def read(f_name):
     return open(os.path.join(os.path.dirname(__file__), f_name)).read()
 setup(
     name='nwg-shell',
-    version='0.2.1',
+    version='0.2.2',
     description='GTK3-based shell for sway Wayland compositor',
     packages=find_packages(),
     include_package_data=True,
