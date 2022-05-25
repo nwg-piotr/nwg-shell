@@ -24,7 +24,7 @@ Install [ArchLabs Linux](https://archlabslinux.com) with preconfigured sway sess
 
 ## Components, as for now:
 
-### [nwg-panel](https://github.com/nwg-piotr/nwg-panel) (Python)
+### [nwg-panel](https://github.com/nwg-piotr/nwg-panel) (python)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-panel.svg)](https://repology.org/project/nwg-panel/versions)
 
@@ -36,7 +36,17 @@ support for the nwg-menu plugin (see below).
 
 ![nwg-panel.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-panel1.png)
 
-### [nwg-dock](https://github.com/nwg-piotr/nwg-dock) (Go)
+### [nwg-drawer](https://github.com/nwg-piotr/nwg-drawer) (go)
+
+[![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-drawer.svg)](https://repology.org/project/nwg-drawer/versions)
+
+The `nwg-drawer` command displays the application grid. The search entry allows to look for installed applications, and for files 
+in XDG user directories. The grid view may also be filtered by categories. You may pin applications by right-clicking
+them. Pinned items will appear above the grid. Right-click a pinned item to unpin it.
+
+![nwg-drawer.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-drawer.png)
+
+### [nwg-dock](https://github.com/nwg-piotr/nwg-dock) (go)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-dock.svg)](https://repology.org/project/nwg-dock/versions)
 
@@ -45,7 +55,7 @@ nwg-drawer.
 
 ![nwg-dock.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-dock1.png)
 
-### [nwg-menu](https://github.com/nwg-piotr/nwg-menu) (Go)
+### [nwg-menu](https://github.com/nwg-piotr/nwg-menu) (go)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-menu.svg)](https://repology.org/project/nwg-menu/versions)
 
@@ -57,17 +67,7 @@ restart and shutdown.
 
 ![nwg-menu.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-menu.png)
 
-### [nwg-drawer](https://github.com/nwg-piotr/nwg-drawer) (Go)
-
-[![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-drawer.svg)](https://repology.org/project/nwg-drawer/versions)
-
-A golang replacement to the `nwggrid` command (a part of nwg-launchers). The `nwg-drawer` command displays the application grid. The search entry allows to look
-for installed applications, and for files in XDG user directories. The grid view may also be filtered by categories. You may pin applications by right-clicking
-them. Pinned items will appear above the grid. Right-click a pinned item to unpin it.
-
-![nwg-drawer.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-drawer.png)
-
-### [nwg-bar](https://github.com/nwg-piotr/nwg-bar) (Go)
+### [nwg-bar](https://github.com/nwg-piotr/nwg-bar) (go)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-bar.svg)](https://repology.org/project/nwg-bar/versions)
 
@@ -77,7 +77,7 @@ Aimed at sway, works with wlroots-based compositors only. The `nwg-bar` command 
 
 ![nwg-bar.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-bar.png)
 
-### [Azote](https://github.com/nwg-piotr/azote) (Python)
+### [Azote](https://github.com/nwg-piotr/azote) (python)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/azote.svg)](https://repology.org/project/azote/versions)
 
@@ -86,7 +86,7 @@ developed with multi-headed setups in mind. Azote also includes several colour m
 
 ![azote.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/azote.png)
 
-### [nwg-displays](https://github.com/nwg-piotr/nwg-displays) (Python)
+### [nwg-displays](https://github.com/nwg-piotr/nwg-displays) (python)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-displays.svg)](https://repology.org/project/nwg-displays/versions)
 
@@ -96,7 +96,7 @@ then include in the sway config file.
 
 ![nwg-displays](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-displays/nwg-displays.png)
 
-### [nwg-look](https://github.com/nwg-piotr/nwg-look) (Go)
+### [nwg-look](https://github.com/nwg-piotr/nwg-look) (go)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-look.svg)](https://repology.org/project/nwg-look/versions)
 
@@ -111,7 +111,7 @@ but nwg-look is intended to free the user from a few inconveniences:
 
 ![nwg-look](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-look/nwg-look-0.1.3.png)
 
-### [nwg-wrapper](https://github.com/nwg-piotr/nwg-wrapper) (Python)
+### [nwg-wrapper](https://github.com/nwg-piotr/nwg-wrapper) (python)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-wrapper.svg)](https://repology.org/project/nwg-wrapper/versions)
 
@@ -123,13 +123,13 @@ with css styling.
 
 ![nwg-wrapper.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-wrapper.png)
 
-### [gopsuinfo](https://github.com/nwg-piotr/gopsuinfo) (Go)
+### [gopsuinfo](https://github.com/nwg-piotr/gopsuinfo) (go)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/gopsuinfo.svg)](https://repology.org/project/gopsuinfo/versions)
 
 This command, based on the [gopsutil](https://github.com/shirou/gopsutil) Go module, produces text output to display system usage info in nwg-panel executors.
 
-### [autotiling](https://github.com/nwg-piotr/autotiling) (Python)
+### [autotiling](https://github.com/nwg-piotr/autotiling) (python)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/autotiling.svg)](https://repology.org/project/autotiling/versions)
 
@@ -138,7 +138,7 @@ window dimensions. It works on both sway and i3 window managers. You may love it
 
 ![nwg-shell-config.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/autotiling.png)
 
-## [nwg-shell-config](https://github.com/nwg-piotr/nwg-shell-config)
+## [nwg-shell-config](https://github.com/nwg-piotr/nwg-shell-config) (python)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-shell-config.svg)](https://repology.org/project/nwg-shell-config/versions)
 
