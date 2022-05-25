@@ -109,7 +109,7 @@ but nwg-look is intended to free the user from a few inconveniences:
 [workarounds](https://github.com/swaywm/sway/wiki/GTK-3-settings-on-Wayland). You don't need to set
  gsettings in the sway config file. You don't need the `import-gsettings` script any longer.
 
-![nwg-look](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-look/nwg-look.png)
+![nwg-look](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-look/nwg-look-0.1.3.png)
 
 ### [nwg-wrapper](https://github.com/nwg-piotr/nwg-wrapper) (Python)
 
@@ -140,10 +140,11 @@ window dimensions. It works on both sway and i3 window managers. You may love it
 
 ## [nwg-shell-config](https://github.com/nwg-piotr/nwg-shell-config)
 
-As you see, the nwg-shell project is a DIY kit with elements to chose from. However, together with the 
-[ArchLabs Linux](https://archlabslinux.com) team, we decided to develop a GUI to configure all the components in one 
-place. To give users more complete control over the system, we also integrated several third-party programs. 
-This required some interference with the basic sway config, using included files, that are modified on the fly from the 
+[![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-shell-config.svg)](https://repology.org/project/nwg-shell-config/versions)
+
+As you see, the nwg-shell project is a DIY kit with elements to chose from. If you decide to install it as described at the top of this page, however,
+you'll have a GUI to configure all the components in one place, together with some third-party applications. 
+This involves some interference with the basic sway config, using included files, that are modified on the fly from the 
 GUI level.
 
 ![nwg-shell-config.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-shell-config-02.png)
