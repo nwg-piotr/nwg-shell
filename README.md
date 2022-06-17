@@ -2,7 +2,7 @@
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-shell.svg)](https://repology.org/project/nwg-shell/versions)
 
-This project is an attempt to create a GTK-based shell for [sway](https://github.com/swaywm/sway) Wayland compositor. It's aimed at those, who do not believe
+This project is an attempt to create a GTK3-based GUI for [sway](https://github.com/swaywm/sway) Wayland compositor. It's aimed at those, who do not believe
 that the rationale of the modern computer is to use less than 200 MiB RAM and 0.5% CPU. Those who don't want to stare solely at the terminal's black window.
 The programs included in the project are to give you the freedom of choice what your desktop looks like.
 
@@ -23,6 +23,16 @@ the 'Custom' preset to experiment with.**
 Install [ArchLabs Linux](https://archlabslinux.com) with preconfigured sway session.
 
 ## Components, as for now:
+
+## [nwg-shell-config](https://github.com/nwg-piotr/nwg-shell-config) (python)
+
+[![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-shell-config.svg)](https://repology.org/project/nwg-shell-config/versions)
+
+You may use all the nwg-shell components as a DIY kit with elements to choose from. BTW, if you don't use Arch (or a derivative), you have no other choice, 
+at least for now. If you decide to use Arch*, however, you'll have a GUI to configure all the components in one place - together with some third-party
+applications. This involves significant interference with the basic sway config, using included files, that are modified on the fly from the GUI level.
+
+![nwg-shell-config.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-shell-config-02.png)
 
 ### [nwg-panel](https://github.com/nwg-piotr/nwg-panel) (python)
 
@@ -136,18 +146,7 @@ This command, based on the [gopsutil](https://github.com/shirou/gopsutil) Go mod
 This script uses the [i3ipc-python library](https://github.com/altdesktop/i3ipc-python) to switch the layout splith/splitv depending on the currently focused
 window dimensions. It works on both sway and i3 window managers. You may love it or hate it, but it's my must have.
 
-![nwg-shell-config.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/autotiling.png)
-
-## [nwg-shell-config](https://github.com/nwg-piotr/nwg-shell-config) (python)
-
-[![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-shell-config.svg)](https://repology.org/project/nwg-shell-config/versions)
-
-As you see, the nwg-shell project is a DIY kit with elements to chose from. If you decide to install it as described at the top of this page, however,
-you'll have a GUI to configure all the components in one place, together with some third-party applications. 
-This involves some interference with the basic sway config, using included files, that are modified on the fly from the 
-GUI level.
-
-![nwg-shell-config.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-shell-config-02.png)
+![autotiling](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/autotiling.png)
 
 ## Support for other WMs
 
