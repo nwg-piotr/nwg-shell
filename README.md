@@ -40,7 +40,7 @@ applications. This involves significant interference with the basic sway config,
 
 The panel is the central point of the project. At the moment it contains 12 modules: Clock, Controls, CustomButton, 
 Executor, MenuStart, OpenWeather, Playerctl, Scratchpad, SwayNC (integrates Eric Reider's 
-[SwayNotificationCenter](https://github.com/ErikReider/SwayNotificationCenter)), SwayTaskbar SwayWorkspaces and Tray. 
+[SwayNotificationCenter](https://github.com/ErikReider/SwayNotificationCenter)), SwayTaskbar, SwayWorkspaces and Tray. 
 The Executor module supports tint2-like executors, that allow to add user-defined features. The MenuStart module adds 
 support for the nwg-menu plugin (see below).
 
@@ -168,8 +168,8 @@ If you like the idea of the GTK shell for sway, feel free to submit your improve
 
 ### Feedback
 
-Bug reports and ideas are more than welcome. Please remember, however, that at this stage, most part of the shell is being developed by a single hobbyist, who uses
-Arch Linux (BTW). Some issues specific to other environment, e.g. Debian, FreeBSD, are out of my range and need some Community commitment.
+Bug reports and ideas are more than welcome. Please remember, however, that at this stage, most part of the shell is being developed by a single hobbyist, 
+who uses Arch Linux. Some issues specific to other environment, e.g. Debian, FreeBSD, are out of my range and need some Community commitment.
 
 ## Resources
 
