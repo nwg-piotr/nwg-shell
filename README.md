@@ -38,8 +38,8 @@ applications. This involves significant interference with the basic sway config,
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-panel.svg)](https://repology.org/project/nwg-panel/versions)
 
-The panel is the central point of the project. At the moment it contains 11 modules: Clock, Controls, CustomButton, 
-Executor, MenuStart, Playerctl, Scratchpad, SwayNC (integrates Eric Reider's 
+The panel is the central point of the project. At the moment it contains 12 modules: Clock, Controls, CustomButton, 
+Executor, MenuStart, OpenWeather, Playerctl, Scratchpad, SwayNC (integrates Eric Reider's 
 [SwayNotificationCenter](https://github.com/ErikReider/SwayNotificationCenter)), SwayTaskbar SwayWorkspaces and Tray. 
 The Executor module supports tint2-like executors, that allow to add user-defined features. The MenuStart module adds 
 support for the nwg-menu plugin (see below).
@@ -60,7 +60,7 @@ them. Pinned items will appear above the grid. Right-click a pinned item to unpi
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-dock.svg)](https://repology.org/project/nwg-dock/versions)
 
-Fully configurable dock written in Go. It features pinned buttons, task buttons, workspace switcher and launcher button. The latter by default starts
+Fully configurable dock written in Go. It features pinned buttons, task buttons, workspace switcher and the launcher button. The latter by default starts
 nwg-drawer.
 
 ![nwg-dock.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-dock1.png)
