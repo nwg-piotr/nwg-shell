@@ -30,7 +30,7 @@ Install [ArchLabs Linux](https://archlabslinux.com) with preconfigured sway sess
 
 You may use all the nwg-shell components as a DIY kit with elements to choose from. BTW, if you don't use Arch (or a derivative), you have no other choice, at least for now. If you decide to use Arch*, however, you'll have a GUI to configure all the components in one place - together with some third-party applications. This involves significant interference with the basic sway config, using included files, that are modified on the fly from the GUI level.
 
-[**Read more about the shell configuraion**](https://github.com/nwg-piotr/nwg-shell-config)
+[**>> read more about the shell configuration**](https://github.com/nwg-piotr/nwg-shell-config)
 
 ![nwg-shell-config.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-shell-config-02.png)
 
