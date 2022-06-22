@@ -211,3 +211,7 @@ Copyright (c) 2015-2018 gotk3 contributors
  and probably more, which I forgot to mention here. Please forgive me, if so.
 
 [sway](https://github.com/swaywm/sway) is an i3-compatible Wayland compositor Copyright (c) 2016-2017 Drew DeVault
+
+## Project supported by
+
+<a href="https://jb.gg/OpenSourceSupport"><img width="300" src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" alt="JetBrains Logo (Main) logo."></a>
