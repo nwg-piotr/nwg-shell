@@ -22,6 +22,8 @@ the 'Custom' preset to experiment with.**
 
 Install [ArchLabs Linux](https://archlabslinux.com) with preconfigured sway session.
 
+## [Information about the latest releases](https://github.com/nwg-piotr/nwg-shell/wiki/Releases)
+
 ## Components, as for now:
 
 ## [nwg-shell-config](https://github.com/nwg-piotr/nwg-shell-config) - main shell configuration utility
