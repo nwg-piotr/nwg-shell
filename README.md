@@ -208,9 +208,8 @@ Copyright (c) 2015-2018 gotk3 contributors
 - [python-geopy](https://github.com/geopy/geopy) by Kostya Esmukov
 - [brightnessctl](https://github.com/Hummer12007/brightnessctl) Copyright (c) 2016 Mykyta Holuakha
 - [playerctl](https://github.com/altdesktop/playerctl) by Tony Crisci
-- [PulseAudio](https://www.freedesktop.org/wiki/Software/PulseAudio),
-- [gtklock](https://github.com/jovanlanik/gtklock) by Jovan Lanik,
-- [bluez-utils](http://www.bluez.org), [python-netifaces](https://archlinux.org/packages/community/x86_64/python-netifaces),
+- [gtklock](https://github.com/jovanlanik/gtklock) by Jovan Lanik
+- [PulseAudio](https://www.freedesktop.org/wiki/Software/PulseAudio), [bluez-utils](http://www.bluez.org), [python-netifaces](https://archlinux.org/packages/community/x86_64/python-netifaces),
  and probably more, which I forgot to mention here. Please forgive me, if so.
 
 [sway](https://github.com/swaywm/sway) is an i3-compatible Wayland compositor Copyright (c) 2016-2017 Drew DeVault
