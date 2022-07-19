@@ -54,7 +54,7 @@ Due to limited interest, the development of this launcher may be discontinued in
 
 <a href="https://user-images.githubusercontent.com/20579136/179743263-a314bf97-00b0-4720-b0ed-8bdb4844e6bd.png">![2022-07-19-134851_screenshot](https://user-images.githubusercontent.com/20579136/179743263-a314bf97-00b0-4720-b0ed-8bdb4844e6bd.png)</a>
 
-## Notification Center: [swaync](https://github.com/ErikReider/SwayNotificationCenter)
+## Notification center: [swaync](https://github.com/ErikReider/SwayNotificationCenter)
 
 - Author: Erik Reider
 - License: GPL v3
@@ -101,6 +101,17 @@ Nwg-look is a GTK3 settings editor, designed to work properly in wlroots-based W
 This program provides an intuitive GUI to manage multiple displays, and save outputs configuration and workspace to output assignments.
 
 ![2022-07-20-011519_screenshot](https://user-images.githubusercontent.com/20579136/179864328-2dd5aa8b-dac9-4eaf-893c-cb85215a212c.png)
+
+## Utilities and scripts
+
+### Button bar: nwg-bar
+
+- Author: Piotr Miller & [Contributors](https://github.com/nwg-piotr/nwg-bar/graphs/contributors)
+- License: MIT
+
+The nwg-bar command creates a button bar on the basis of a JSON template placed in the `~/.config/nwg-bar` folder. By default the command displays a horizontal bar in the center of the screen. Nwg-shell uses the bar to display the exit menu, but you may find other uses for it, too.
+
+<a href="https://user-images.githubusercontent.com/20579136/179866329-bbd53391-16f4-457c-9f8b-72dabb5eebb5.png">![2022-07-20-014340_screenshot](https://user-images.githubusercontent.com/20579136/179866329-bbd53391-16f4-457c-9f8b-72dabb5eebb5.png)</a>
 
 # Project supported by
 
