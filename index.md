@@ -18,9 +18,7 @@ License: MIT
 
 The panel is the central point of the project. At the moment it contains 12 modules: Clock, Controls, CustomButton, Executor, MenuStart, OpenWeather, Playerctl, Scratchpad, SwayNC (integrates Eric Reider's [SwayNotificationCenter](https://github.com/ErikReider/SwayNotificationCenter)), SwayTaskbar, SwayWorkspaces and Tray. The Executor module supports tint2-like executors, that allow to display user-defined content. The MenuStart module adds support for the nwg-menu launcher.
 
-![image](https://user-images.githubusercontent.com/20579136/179702698-bd2dc505-07a4-4c70-88b5-fe681248bc88.png)
-
-<div align="center"><a href="https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell-config/preset-0.png"><img src="https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell-config/preset-0.png" width="640"/></a></div>
+<div align="center"><a href="https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell-config/preset-0.png"><img src="https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell-config/preset-0.png" width="640" target="_blank"/></a></div>
 
 The Controls drop-down window provides brightness and volume controls and switching audio outputs. It also includes user-definable menu items.
 
