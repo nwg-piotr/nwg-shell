@@ -1,4 +1,4 @@
-# nwg-shell project
+# About the project
 
 **The nwg-shell project aims to create a consistent GTK3-based user interface for the [sway](https://github.com/swaywm/sway) Wayland Compositor. In order to give the user the greatest possible choice, some interface elements provide several alternative solutions. Just installed shell contains a bunch of presets, which can then be freely modified.**
 
@@ -9,6 +9,8 @@ The user interface mostly consists of dedicated software, but also uses a couple
 The default (preinstalled) terminal is [foot](https://codeberg.org/dnkl/foot). This does not mean that we consider other terminals worse, but that we had to choose one. The remaining elements of the desktop environment, such as the text editor, file manager or web browser, and so on, are left to the user's choice. The author's subjective recommendation might be mousepad, Thunar, and Chromium / Chrome, but it doesn't really make much difference.
 
 On the backend side there's a lot of third party Free Open Source Software. We will try to list them all in Credits.
+
+# What's inside
 
 ## Panel: [nwg-panel](https://github.com/nwg-piotr/nwg-panel)
 
