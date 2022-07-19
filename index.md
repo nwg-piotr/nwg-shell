@@ -75,3 +75,14 @@ The shell uses gtklock as the default locker in the Idle & Lock screen settings.
 ![2022-07-19-143850_screenshot](https://user-images.githubusercontent.com/20579136/179752612-f245bc38-d113-4f82-8d42-556ac5438a70.png)
 
 Alternatively, as a locker you can use the well-known [swaylock](https://github.com/swaywm/swaylock) by Drew DeVault.
+
+## Wallpaper management: [Azote](https://github.com/nwg-piotr/azote)
+
+Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/azote/graphs/contributors)
+
+License: GPL v3
+
+Azote is a picture browser and background setter, as the frontend to Drew DeVault's [swaybg](https://github.com/swaywm/swaybg) (sway/Wayland) and Tom Gilbert's & Daniel Frieselfeh's [feh](https://feh.finalrewind.org) (X windows) commands. The user interface is being developed with multi-headed setups in mind. Azote also includes several colour management tools.
+
+![2022-07-19-144926_screenshot](https://user-images.githubusercontent.com/20579136/179755752-d0fe95c9-76b2-4203-9116-1fb34c676ceb.png)
+
