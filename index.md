@@ -82,7 +82,7 @@ Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/azote/graphs
 
 License: GPL v3
 
-Azote is a picture browser and background setter, as the frontend to Drew DeVault's [swaybg](https://github.com/swaywm/swaybg) (sway/Wayland) and Tom Gilbert's & Daniel Frieselfeh's [feh](https://feh.finalrewind.org) (X windows) commands. The user interface is being developed with multi-headed setups in mind. Azote also includes several colour management tools.
+Azote is a picture browser and background setter, as the frontend to Drew DeVault's [swaybg](https://github.com/swaywm/swaybg) (sway/Wayland) and Tom Gilbert's & Daniel Frieselfeh's [feh](https://feh.finalrewind.org) (X windows) commands. The user interface is being developed with multi-headed setups in mind. Azote also includes several colour management tools, as e.g. color palettes creation on the basis of an image.
 
-![2022-07-19-144926_screenshot](https://user-images.githubusercontent.com/20579136/179755752-d0fe95c9-76b2-4203-9116-1fb34c676ceb.png)
+![2022-07-19-164421_screenshot](https://user-images.githubusercontent.com/20579136/179779521-08e2cef5-ecff-424d-a2fd-9d87d2861aa5.png)
 
