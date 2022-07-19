@@ -12,9 +12,8 @@ On the backend side there's a lot of third party Free Open Source Software. We w
 
 ## Panel: [nwg-panel](https://github.com/nwg-piotr/nwg-panel)
 
-Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/nwg-panel/graphs/contributors)
-
-License: MIT
+- Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/nwg-panel/graphs/contributors)
+- License: MIT
 
 The panel is the central point of the project. At the moment it contains 12 modules: BrightnessSlider, Clock, Controls, CustomButton, Executor, MenuStart, OpenWeather, Playerctl, Scratchpad, SwayNC (integrates Eric Reider's [SwayNotificationCenter](https://github.com/ErikReider/SwayNotificationCenter)), SwayTaskbar, SwayWorkspaces and Tray. The Executor module supports tint2-like executors, that allow to display user-defined content. The MenuStart module adds support for the nwg-menu launcher.
 
@@ -24,9 +23,8 @@ The Controls drop-down window provides brightness & volume controls, and switchi
 
 ## Application launcher: [nwg-drawer](https://github.com/nwg-piotr/nwg-drawer)
 
-Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/nwg-drawer/graphs/contributors)
-
-License: MIT
+- Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/nwg-drawer/graphs/contributors)
+- License: MIT
 
 The `nwg-drawer` command displays the application grid. The search entry allows to look for installed applications, and for files in XDG user directories. The grid view may also be filtered by categories. You may pin applications by right-clicking them. Pinned items will appear above the grid. Right-click a pinned item to unpin it.
 
@@ -34,9 +32,8 @@ The `nwg-drawer` command displays the application grid. The search entry allows 
 
 ## Dock: [nwg-dock](https://github.com/nwg-piotr/nwg-dock)
 
-Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/nwg-dock/graphs/contributors)
-
-License: MIT
+- Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/nwg-dock/graphs/contributors)
+- License: MIT
 
 The author's personal preference is to see the running tasks in the nwg-panel's SwayTaskbar. If you prefer to use a dock, however, this may be the choice for you. Nwg-dock features pinned buttons, task buttons, workspace switcher and the launcher button. The latter by default starts nwg-drawer. The dock may be placed on the bottom, top or left side.
 
@@ -44,9 +41,8 @@ The author's personal preference is to see the running tasks in the nwg-panel's 
 
 ## Alternative launcher: [nwg-menu](https://github.com/nwg-piotr/nwg-menu)
 
-Author: Piotr Miller
-
-License: MIT
+- Author: Piotr Miller
+- License: MIT
 
 If you've recently parted ways with Windows, you may miss the menu button. This program, which is also an nwg-panel plugin, will help you acclimatize. It displays the system menu with simplified [freedesktop main categories](https://specifications.freedesktop.org/menu-spec/latest/apa.html). It also provides the search entry, to look for installed application on the basis of .desktop files, and for files in XDG user directories. You may pin-up applications above the categories list. In the bottom-right corner of the window you'll also see a set of buttons: lock screen, logout, restart and shutdown.
 
@@ -56,9 +52,8 @@ Due to limited interest, the development of this launcher may be discontinued in
 
 ## Notification Center: [swaync](https://github.com/ErikReider/SwayNotificationCenter)
 
-Author: Erik Reider
-
-License: GPL v3
+- Author: Erik Reider
+- License: GPL v3
 
 This program provides the notification daemon and a GTK-based user interface for managing notifications. Nwg-shell integrates swaync, adding a panel notification icon and configuration options in own config utility.
 
@@ -66,9 +61,8 @@ This program provides the notification daemon and a GTK-based user interface for
 
 ## Screen locker: [gtklock](https://github.com/jovanlanik/gtklock)
 
-Author: Jovan Lanik
-
-License: GPL v3
+- Author: Jovan Lanik
+- License: GPL v3
 
 The shell uses gtklock as the default locker in the Idle & Lock screen settings. We add a random image background (local or from unsplash.com), and (optionally) a media player control window over the lock screen.
 
@@ -78,15 +72,23 @@ Alternatively, as a locker you can use the well-known [swaylock](https://github.
 
 ## Wallpaper management: [Azote](https://github.com/nwg-piotr/azote)
 
-Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/azote/graphs/contributors)
-
-License: GPL v3
+- Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/azote/graphs/contributors)
+- License: GPL v3
 
 Azote is a picture browser and background setter, as the frontend to Drew DeVault's [swaybg](https://github.com/swaywm/swaybg) (sway/Wayland) and Tom Gilbert's & Daniel Frieselfeh's [feh](https://feh.finalrewind.org) (X windows) commands. The user interface is being developed with multi-headed setups in mind. Azote also includes several colour management tools, as e.g. color palettes creation on the basis of an image.
 
 ![2022-07-19-164421_screenshot](https://user-images.githubusercontent.com/20579136/179779521-08e2cef5-ecff-424d-a2fd-9d87d2861aa5.png)
 
-## Project supported by
+## Look and feel: [nwg-look](https://github.com/nwg-piotr/nwg-look)
+
+- Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/nwg-look)
+- License: MIT
+
+Nwg-look is a GTK3 settings editor, designed to work properly in wlroots-based Wayland environment. The look and feel is strongly influenced by [LXAppearance](https://wiki.lxde.org/en/LXAppearance), but nwg-look frees the user from a few inconveniences, by applying setting directly. It provides changing gtk themes, icon themes, cursors, and also to change some other GTK settings.
+
+![2022-07-19-172154_screenshot](https://user-images.githubusercontent.com/20579136/179790068-856f2e7f-1d87-4212-9341-e1ca55586bc9.png)
+
+# Project supported by
 
 <a href="https://jb.gg/OpenSourceSupport"><img width="300" src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" alt="JetBrains Logo (Main) logo."></a>
 
