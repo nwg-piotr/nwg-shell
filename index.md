@@ -1,6 +1,6 @@
 # nwg-shell project
 
-The nwg-shell project aims to create a consistent GTK3-based user interface for the [sway](https://github.com/swaywm/sway) Wayland Compositor. In order to give the user the greatest possible choice, some interface elements provide several alternative solutions. Freshly installed shell contains a bunch of presets, which can then be freely modified.
+**The nwg-shell project aims to create a consistent GTK3-based user interface for the [sway](https://github.com/swaywm/sway) Wayland Compositor. In order to give the user the greatest possible choice, some interface elements provide several alternative solutions. Freshly installed shell contains a bunch of presets, which can then be freely modified.**
 
 ![nwg-shell-header.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-shell-header_new2.png)
 
@@ -16,12 +16,11 @@ Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/nwg-panel/gr
 
 License: MIT
 
-The panel is the central point of the project. At the moment it contains 12 modules: Clock, Controls, CustomButton, Executor, MenuStart, OpenWeather, Playerctl, Scratchpad, SwayNC (integrates Eric Reider's [SwayNotificationCenter](https://github.com/ErikReider/SwayNotificationCenter)), SwayTaskbar, SwayWorkspaces and Tray. The Executor module supports tint2-like executors, that allow to display user-defined content. The MenuStart module adds support for the nwg-menu launcher.
+The panel is the central point of the project. At the moment it contains 12 modules: BrightnessSlider, Clock, Controls, CustomButton, Executor, MenuStart, OpenWeather, Playerctl, Scratchpad, SwayNC (integrates Eric Reider's [SwayNotificationCenter](https://github.com/ErikReider/SwayNotificationCenter)), SwayTaskbar, SwayWorkspaces and Tray. The Executor module supports tint2-like executors, that allow to display user-defined content. The MenuStart module adds support for the nwg-menu launcher.
+
+The Controls drop-down window provides brightness & volume controls, and switching audio outputs. It also includes user-customizable menu items.
 
 ![2022-07-19-101927_screenshot](https://user-images.githubusercontent.com/20579136/179712622-52ef164a-6dc6-4893-be16-98bac92fd150.png)
-
-
-The Controls drop-down window provides brightness and volume controls and switching audio outputs. It also includes user-definable menu items.
 
 ## Application launcher: [nwg-drawer](https://github.com/nwg-piotr/nwg-drawer)
 
@@ -54,3 +53,25 @@ If you've recently parted ways with Windows, you may miss the menu button. This 
 Due to limited interest, the development of this launcher may be discontinued in the future. Enjoy while you can. ;)
 
 ![2022-07-19-134851_screenshot](https://user-images.githubusercontent.com/20579136/179743263-a314bf97-00b0-4720-b0ed-8bdb4844e6bd.png)
+
+## Notification Center: [swaync](https://github.com/ErikReider/SwayNotificationCenter)
+
+Author: Erik Reider
+
+License: GPL v3
+
+This program provides the notification daemon and a GTK-based user interface for managing notifications. Nwg-shell integrates swaync, adding a panel notification icon and configuration options in own config utility.
+
+![2022-07-19-141124_screenshot](https://user-images.githubusercontent.com/20579136/179748788-1929c74e-64f8-4280-80d1-45f02972f1ef.png)
+
+## Screen locker: [gtklock](https://github.com/jovanlanik/gtklock)
+
+Author: Jovan Lanik
+
+License: GPL v3
+
+The shell uses gtklock as the default locker in the Idle & Lock screen settings. We add a random image background (local or from unsplash.com), and (optionally) a media player control window over the lock screen.
+
+![2022-07-19-143850_screenshot](https://user-images.githubusercontent.com/20579136/179752612-f245bc38-d113-4f82-8d42-556ac5438a70.png)
+
+Alternatively, as a locker you can use the well-known [swaylock](https://github.com/swaywm/swaylock) by Drew DeVault.
