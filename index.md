@@ -90,6 +90,15 @@ Nwg-look is a GTK3 settings editor, designed to work properly in wlroots-based W
 
 ![2022-07-19-172154_screenshot](https://user-images.githubusercontent.com/20579136/179790068-856f2e7f-1d87-4212-9341-e1ca55586bc9.png)
 
+## Display management: [nwg-displays](https://github.com/nwg-piotr/nwg-displays)
+
+- Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/nwg-displays/graphs/contributors)
+- License: MIT
+
+This program provides an intuitive GUI to manage multiple displays, and save outputs configuration and workspace to output assignments.
+
+![2022-07-20-011519_screenshot](https://user-images.githubusercontent.com/20579136/179864328-2dd5aa8b-dac9-4eaf-893c-cb85215a212c.png)
+
 # Project supported by
 
 <a href="https://jb.gg/OpenSourceSupport"><img width="300" src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" alt="JetBrains Logo (Main) logo."></a>
