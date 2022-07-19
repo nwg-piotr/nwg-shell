@@ -20,7 +20,7 @@ The panel is the central point of the project. At the moment it contains 12 modu
 
 ![image](https://user-images.githubusercontent.com/20579136/179702698-bd2dc505-07a4-4c70-88b5-fe681248bc88.png)
 
-<div align="center"><img src="https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell-config/preset-0.png" width="640"/></div>
+<div align="center"><a href="<img src="https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell-config/preset-0.png" width="640"/>"><img src="https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell-config/preset-0.png" width="640"/></a></div>
 
 The Controls drop-down window provides brightness and volume controls and switching audio outputs. It also includes user-definable menu items.
 
