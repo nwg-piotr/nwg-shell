@@ -79,7 +79,8 @@ Alternatively, as a locker you can use the well-known [swaylock](https://github.
 
 Azote is a picture browser and background setter, as the frontend to Drew DeVault's [swaybg](https://github.com/swaywm/swaybg) (sway/Wayland) and Tom Gilbert's & Daniel Frieselfeh's [feh](https://feh.finalrewind.org) (X windows) commands. The user interface is being developed with multi-headed setups in mind. Azote also includes several colour management tools, as e.g. color palettes creation on the basis of an image.
 
-<a href="https://user-images.githubusercontent.com/20579136/179779521-08e2cef5-ecff-424d-a2fd-9d87d2861aa5.png">![2022-07-19-164421_screenshot](https://user-images.githubusercontent.com/20579136/179779521-08e2cef5-ecff-424d-a2fd-9d87d2861aa5.png)</a>
+<a href="https://user-images.githubusercontent.com/20579136/179864696-11c5c93d-f86b-487d-a508-edb885157506.png">![2022-07-20-012458_screenshot](https://user-images.githubusercontent.com/20579136/179864696-11c5c93d-f86b-487d-a508-edb885157506.png)</a>
+
 
 ## Look and feel: [nwg-look](https://github.com/nwg-piotr/nwg-look)
 
