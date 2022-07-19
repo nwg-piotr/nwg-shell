@@ -10,5 +10,15 @@ The default (preinstalled) terminal is [foot](https://codeberg.org/dnkl/foot). T
 
 On the backend side there's a lot of Free Open Source Software. We will try to list them all in Credits.
 
-## Frontend
+## Panel: [nwg-panel](https://github.com/nwg-piotr/nwg-panel)
+
+Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/nwg-panel/graphs/contributors)
+
+License: MIT
+
+The panel is the central point of the project. At the moment it contains 12 modules: Clock, Controls, CustomButton, Executor, MenuStart, OpenWeather, Playerctl, Scratchpad, SwayNC (integrates Eric Reider's [SwayNotificationCenter](https://github.com/ErikReider/SwayNotificationCenter)), SwayTaskbar, SwayWorkspaces and Tray. The Executor module supports tint2-like executors, that allow to display user-defined content. The MenuStart module adds support for the nwg-menu launcher.
+
+![image](https://user-images.githubusercontent.com/20579136/179702698-bd2dc505-07a4-4c70-88b5-fe681248bc88.png)
+
+The Controls drop-down window provides brightness and volume controls and switching audio outputs. It also includes user-definable menu items.
 
