@@ -17,7 +17,7 @@ On the backend side there's a lot of third party Free Open Source Software. We w
 
 The panel is the central point of the project. At the moment it contains 13 modules: BrightnessSlider, Clock, Controls, CustomButton, Executor, MenuStart, OpenWeather, Playerctl, Scratchpad, SwayNC (integrates Eric Reider's [SwayNotificationCenter](https://github.com/ErikReider/SwayNotificationCenter)), SwayTaskbar, SwayWorkspaces and Tray. The Executor module supports tint2-like executors, that allow to display user-defined content. The MenuStart module adds support for the nwg-menu launcher.
 
-<a href="https://user-images.githubusercontent.com/20579136/179712622-52ef164a-6dc6-4893-be16-98bac92fd150.png">[![2022-07-19-101927_screenshot](https://user-images.githubusercontent.com/20579136/179712622-52ef164a-6dc6-4893-be16-98bac92fd150.png)]</a>
+<a href="https://user-images.githubusercontent.com/20579136/179712622-52ef164a-6dc6-4893-be16-98bac92fd150.png">![2022-07-19-101927_screenshot](https://user-images.githubusercontent.com/20579136/179712622-52ef164a-6dc6-4893-be16-98bac92fd150.png)]</a>
 
 The Controls drop-down window provides brightness & volume controls, and audio output switcher. It also includes user-customizable menu items.
 
@@ -30,7 +30,7 @@ The Controls drop-down window provides brightness & volume controls, and audio o
 
 The `nwg-drawer` command displays the application grid. The search entry allows to look for installed applications, and for files in XDG user directories. The grid view may also be filtered by categories. You may pin applications by right-clicking them. Pinned items will appear above the grid. Right-click a pinned item to unpin it.
 
-![2022-07-19-113502_screenshot](https://user-images.githubusercontent.com/20579136/179719429-e21bb41b-acdf-4d3e-a095-5d9acad8ef21.png)
+<a href="https://user-images.githubusercontent.com/20579136/179719429-e21bb41b-acdf-4d3e-a095-5d9acad8ef21.png">![2022-07-19-113502_screenshot](https://user-images.githubusercontent.com/20579136/179719429-e21bb41b-acdf-4d3e-a095-5d9acad8ef21.png)</a>
 
 ## Dock: [nwg-dock](https://github.com/nwg-piotr/nwg-dock)
 
@@ -39,7 +39,7 @@ The `nwg-drawer` command displays the application grid. The search entry allows 
 
 The author's personal preference is to see the running tasks in the nwg-panel's SwayTaskbar. If you prefer to use a dock, however, this may be the choice for you. Nwg-dock features pinned buttons, task buttons, workspace switcher and the launcher button. The latter by default starts nwg-drawer. The dock may be placed on the bottom, top or left side.
 
-![2022-07-19-122405_screenshot](https://user-images.githubusercontent.com/20579136/179729044-6e15cb8a-9bca-45a4-ad48-d0271782dce0.png)
+<a href="https://user-images.githubusercontent.com/20579136/179729044-6e15cb8a-9bca-45a4-ad48-d0271782dce0.png">![2022-07-19-122405_screenshot](https://user-images.githubusercontent.com/20579136/179729044-6e15cb8a-9bca-45a4-ad48-d0271782dce0.png)</a>
 
 ## Alternative launcher: [nwg-menu](https://github.com/nwg-piotr/nwg-menu)
 
@@ -50,7 +50,7 @@ If you've recently parted ways with Windows, you may miss the menu button. This 
 
 Due to limited interest, the development of this launcher may be discontinued in the future. Enjoy while you can. ;)
 
-![2022-07-19-134851_screenshot](https://user-images.githubusercontent.com/20579136/179743263-a314bf97-00b0-4720-b0ed-8bdb4844e6bd.png)
+<a href="https://user-images.githubusercontent.com/20579136/179743263-a314bf97-00b0-4720-b0ed-8bdb4844e6bd.png">![2022-07-19-134851_screenshot](https://user-images.githubusercontent.com/20579136/179743263-a314bf97-00b0-4720-b0ed-8bdb4844e6bd.png)</a>
 
 ## Notification Center: [swaync](https://github.com/ErikReider/SwayNotificationCenter)
 
@@ -59,7 +59,7 @@ Due to limited interest, the development of this launcher may be discontinued in
 
 This program provides the notification daemon and a GTK-based user interface for managing notifications. Nwg-shell integrates swaync, adding a panel notification icon and configuration options in own config utility.
 
-![2022-07-19-141124_screenshot](https://user-images.githubusercontent.com/20579136/179748788-1929c74e-64f8-4280-80d1-45f02972f1ef.png)
+<a href="https://user-images.githubusercontent.com/20579136/179748788-1929c74e-64f8-4280-80d1-45f02972f1ef.png">![2022-07-19-141124_screenshot](https://user-images.githubusercontent.com/20579136/179748788-1929c74e-64f8-4280-80d1-45f02972f1ef.png)</a>
 
 ## Screen locker: [gtklock](https://github.com/jovanlanik/gtklock)
 
@@ -68,7 +68,7 @@ This program provides the notification daemon and a GTK-based user interface for
 
 The shell uses gtklock as the default locker in the Idle & Lock screen settings. We add a random image background (local or from unsplash.com), and (optionally) a media player control window over the lock screen.
 
-![2022-07-19-143850_screenshot](https://user-images.githubusercontent.com/20579136/179752612-f245bc38-d113-4f82-8d42-556ac5438a70.png)
+<a href="https://user-images.githubusercontent.com/20579136/179752612-f245bc38-d113-4f82-8d42-556ac5438a70.png">![2022-07-19-143850_screenshot](https://user-images.githubusercontent.com/20579136/179752612-f245bc38-d113-4f82-8d42-556ac5438a70.png)</a>
 
 Alternatively, as a locker you can use the well-known [swaylock](https://github.com/swaywm/swaylock) by Drew DeVault.
 
@@ -79,7 +79,7 @@ Alternatively, as a locker you can use the well-known [swaylock](https://github.
 
 Azote is a picture browser and background setter, as the frontend to Drew DeVault's [swaybg](https://github.com/swaywm/swaybg) (sway/Wayland) and Tom Gilbert's & Daniel Frieselfeh's [feh](https://feh.finalrewind.org) (X windows) commands. The user interface is being developed with multi-headed setups in mind. Azote also includes several colour management tools, as e.g. color palettes creation on the basis of an image.
 
-![2022-07-19-164421_screenshot](https://user-images.githubusercontent.com/20579136/179779521-08e2cef5-ecff-424d-a2fd-9d87d2861aa5.png)
+<a href="https://user-images.githubusercontent.com/20579136/179779521-08e2cef5-ecff-424d-a2fd-9d87d2861aa5.png">![2022-07-19-164421_screenshot](https://user-images.githubusercontent.com/20579136/179779521-08e2cef5-ecff-424d-a2fd-9d87d2861aa5.png)</a>
 
 ## Look and feel: [nwg-look](https://github.com/nwg-piotr/nwg-look)
 
@@ -88,7 +88,7 @@ Azote is a picture browser and background setter, as the frontend to Drew DeVaul
 
 Nwg-look is a GTK3 settings editor, designed to work properly in wlroots-based Wayland environment. The look and feel is strongly influenced by [LXAppearance](https://wiki.lxde.org/en/LXAppearance), but nwg-look frees the user from a few inconveniences, by applying setting directly. It provides changing gtk themes, icon themes, cursors, and also to change some other GTK settings.
 
-![2022-07-19-172154_screenshot](https://user-images.githubusercontent.com/20579136/179790068-856f2e7f-1d87-4212-9341-e1ca55586bc9.png)
+<a href="https://user-images.githubusercontent.com/20579136/179790068-856f2e7f-1d87-4212-9341-e1ca55586bc9.png">![2022-07-19-172154_screenshot](https://user-images.githubusercontent.com/20579136/179790068-856f2e7f-1d87-4212-9341-e1ca55586bc9.png)</a>
 
 # Project supported by
 
