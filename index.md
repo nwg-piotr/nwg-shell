@@ -23,3 +23,12 @@ The panel is the central point of the project. At the moment it contains 12 modu
 
 The Controls drop-down window provides brightness and volume controls and switching audio outputs. It also includes user-definable menu items.
 
+## Application launcher: [nwg-drawer](https://github.com/nwg-piotr/nwg-drawer)
+
+Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/nwg-drawer/graphs/contributors)
+
+License: MIT
+
+The `nwg-drawer` command displays the application grid. The search entry allows to look for installed applications, and for files in XDG user directories. The grid view may also be filtered by categories. You may pin applications by right-clicking them. Pinned items will appear above the grid. Right-click a pinned item to unpin it.
+
+![2022-07-19-113502_screenshot](https://user-images.githubusercontent.com/20579136/179719429-e21bb41b-acdf-4d3e-a095-5d9acad8ef21.png)
