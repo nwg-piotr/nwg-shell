@@ -19,7 +19,7 @@ The panel is the central point of the project. At the moment it contains 12 modu
 
 ![2022-07-19-101927_screenshot](https://user-images.githubusercontent.com/20579136/179712622-52ef164a-6dc6-4893-be16-98bac92fd150.png)
 
-The Controls drop-down window provides brightness & volume controls, and switching audio outputs. It also includes user-customizable menu items.
+The Controls drop-down window provides brightness & volume controls, and audio output switcher. It also includes user-customizable menu items.
 
 ![image](https://user-images.githubusercontent.com/20579136/179860809-34dd4449-1cee-46c0-bd70-2f970aacc46d.png)
 
