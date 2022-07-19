@@ -111,7 +111,7 @@ This program provides an intuitive GUI to manage multiple displays, and save out
 
 The nwg-bar command creates a button bar on the basis of a JSON template placed in the `~/.config/nwg-bar` folder. By default the command displays a horizontal bar in the center of the screen. Nwg-shell uses the bar to display the exit menu, but you may find other uses for it, too.
 
-<a href="https://user-images.githubusercontent.com/20579136/179866329-bbd53391-16f4-457c-9f8b-72dabb5eebb5.png">![2022-07-20-014340_screenshot](https://user-images.githubusercontent.com/20579136/179866329-bbd53391-16f4-457c-9f8b-72dabb5eebb5.png)</a>
+<a href="https://user-images.githubusercontent.com/20579136/179866515-fe89e50b-cc5f-4878-aeab-387535bc1d94.png">![2022-07-20-014527_screenshot](https://user-images.githubusercontent.com/20579136/179866515-fe89e50b-cc5f-4878-aeab-387535bc1d94.png)</a>
 
 # Project supported by
 
