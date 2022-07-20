@@ -137,7 +137,7 @@ Nwg-shell-config allows to set the common sway preferences (screen, input device
 
 Swappy is a Wayland native snapshot and editor tool, inspired by Snappy on macOS. We use it to make partial screenshots, but it is worth reading the README to find out about other possible applications.
 
-![2022-07-20-104012_screenshot](https://user-images.githubusercontent.com/20579136/179939327-04b634d6-0583-4fbd-b6ab-c955e015b90d.png)
+<a href="https://user-images.githubusercontent.com/20579136/179939327-04b634d6-0583-4fbd-b6ab-c955e015b90d.png">![2022-07-20-104012_screenshot](https://user-images.githubusercontent.com/20579136/179939327-04b634d6-0583-4fbd-b6ab-c955e015b90d.png)</a>
 
 ### Button bar: nwg-bar
 
