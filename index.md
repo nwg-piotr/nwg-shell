@@ -6,7 +6,7 @@
 
 The user interface mostly consists of dedicated software, but also uses a couple of great third party products ([swaync](https://github.com/ErikReider/SwayNotificationCenter), [gtklock](https://github.com/jovanlanik/gtklock)), that perfectly complement our vision. Many thanks to their authors for favorable attitude towards feature requests.
 
-The default (preinstalled) terminal emulator is [foot](https://codeberg.org/dnkl/foot) by Daniel Eklöf. This does not mean that we consider other terminals worse, but that we had to choose one. The remaining elements of the desktop environment, such as the text editor, file manager or web browser, and so on, are left to the user's choice. The author's subjective recommendation might be mousepad, Thunar, and Chromium / Chrome, but it doesn't really make much difference.
+The default (preinstalled) terminal emulator is [foot](https://codeberg.org/dnkl/foot) by Daniel Eklöf. This does not mean that we consider other terminals worse, but that we had to choose one. The remaining elements of the desktop environment, such as the text editor, file manager, web browser, and so on, are left to the user's choice. The author's subjective recommendation might be mousepad, Thunar, and Chromium / Chrome, but it doesn't really make much difference.
 
 On the backend side there's a lot of third party Free Open Source Software. We will try to list them all in Credits.
 
@@ -170,7 +170,7 @@ Nwg-icon-picker is a tool to search GTK icons by name. Utilized by nwg-panel set
 - License: GPL v3
 - Original idea: [Ole Martin Handeland](https://github.com/olemartinorg/i3-alternating-layout)
 
-Sway is a great window manager, but changing layouts manually can be tiring for some users (including me).This script uses the i3ipc-python library to automagically switch the layout splith/splitv, depending on the currently focused window dimensions.
+Sway is a great window manager, but changing layouts manually can be tiring for some users (including me). This script uses the i3ipc-python library to automagically switch the layout splith/splitv, depending on the currently focused window dimensions.
 
 ![2022-07-20-033338_screenshot](https://user-images.githubusercontent.com/20579136/179877238-ac4baa65-bc9b-4ad9-8f4f-33d7e22a1c4b.png)
 
@@ -182,6 +182,14 @@ Sway is a great window manager, but changing layouts manually can be tiring for 
 This CLI command, based on the [gopsutil](https://github.com/shirou/gopsutil) Go module, produces text output to display system usage info in nwg-panel executors.
 
 ![gopsuinfo](https://user-images.githubusercontent.com/20579136/179935626-867cf00c-97b4-4e46-b558-8dbb4ddc4e93.png)
+
+# Where to get
+
+The easiest and fastest way is to install [ArchLabs Linux](https://archlabslinux.com), whose sway session is nothing but a full nwg-shell implementation. 
+
+A slightly more complicated way is to set up nwg-shell on a fresh Arch Linux install, done with the `archinstall` script. A step-by-step guide you'll find in [Wiki](https://github.com/nwg-piotr/nwg-shell/wiki). This should probably work on Arch derivatives other than ArchLabs, but we have never tried. ;)
+
+Currently, there is no out-of-the-box installer for other Linux distributions. You may try and install all the components manually.
 
 # Project supported by
 
