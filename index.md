@@ -106,12 +106,21 @@ This program provides an intuitive GUI to manage multiple displays, and save out
 
 ### Button bar: nwg-bar
 
-- Author: Piotr Miller & [Contributors](https://github.com/nwg-piotr/nwg-bar/graphs/contributors)
+- Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/nwg-bar/graphs/contributors)
 - License: MIT
 
 The nwg-bar command creates a button bar on the basis of a JSON template placed in the `~/.config/nwg-bar` folder. By default the command displays a horizontal bar in the center of the screen. Nwg-shell uses the bar to display the exit menu, but you may find other uses for it, too.
 
 <a href="https://user-images.githubusercontent.com/20579136/179866515-fe89e50b-cc5f-4878-aeab-387535bc1d94.png">![2022-07-20-014527_screenshot](https://user-images.githubusercontent.com/20579136/179866515-fe89e50b-cc5f-4878-aeab-387535bc1d94.png)</a>
+
+### Desktop widgets: [nwg-wrapper](https://github.com/nwg-piotr/nwg-wrapper)
+
+- Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/nwg-wrapper/graphs/contributors)
+- License: MIT
+
+On tiling window managers, putting widgets on the desktop is basically pointless, as they remain invisible 99% of the time. There happen exceptions, however. Nwg-wrapper alows to display a script output, or a Pango-formatted text file content, and we use it to create the keyboard shortcuts help for beginners.
+
+<a href="https://user-images.githubusercontent.com/20579136/179868205-26c579e2-c113-4e03-85c5-2220cbd81c5d.png">![2022-07-20-015655_screenshot](https://user-images.githubusercontent.com/20579136/179868205-26c579e2-c113-4e03-85c5-2220cbd81c5d.png)</a>
 
 # Project supported by
 
