@@ -218,6 +218,14 @@ This collection of software depends on numerous third-party programs and librari
  [GTK](https://gitlab.gnome.org/GNOME/gtk) and related libraries are a free and open-source cross-platform widget toolkit for creating graphical user interfaces, maintained by The GNOME Project.
  
  [sway](https://github.com/swaywm/sway) is an i3-compatible Wayland compositor Copyright (c) 2016-2017 Drew DeVault.
+ 
+The artwork used on this site is licensed under the terms of the [Creative Commons Zero v1.0 Universal license](https://github.com/nwg-piotr/nwg-shell-wallpapers/blob/main/LICENSE), and has been contributed by:
+
+- [@badkarma](https://forum.archlabslinux.com/u/badkarma/summary) on the ArchLabs Linux forum
+- [SGS](https://github.com/sgse)
+- [nwg-piotr](https://github.com/nwg-piotr)
+
+The author of the [project logo](https://github.com/nwg-piotr/nwg-shell-resources/blob/master/resources/logo.svg) is [edskeye](https://github.com/edskeye).
 
 # Project supported by
 
