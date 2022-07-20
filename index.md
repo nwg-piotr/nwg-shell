@@ -10,6 +10,11 @@ The default (preinstalled) terminal is [foot](https://codeberg.org/dnkl/foot). T
 
 On the backend side there's a lot of third party Free Open Source Software. We will try to list them all in Credits.
 
+- [What's inside](https://github.com/nwg-piotr/nwg-shell/blob/gh-pages/index.md#whats-inside)
+  - [Panel: nwg-panel](https://github.com/nwg-piotr/nwg-shell/blob/gh-pages/index.md#panel-nwg-panel)
+  - [Launcher: nwg-drawer](https://github.com/nwg-piotr/nwg-shell/edit/gh-pages/index.md#launcher-nwg-drawer)
+  - [Alternative launcher: nwg-menu](https://github.com/nwg-piotr/nwg-shell/edit/gh-pages/index.md#alternative-launcher-nwg-menu)
+
 # What's inside
 
 ## Panel: [nwg-panel](https://github.com/nwg-piotr/nwg-panel)
@@ -25,12 +30,12 @@ The Controls drop-down window provides brightness & volume controls, and audio o
 
 ![image](https://user-images.githubusercontent.com/20579136/179860809-34dd4449-1cee-46c0-bd70-2f970aacc46d.png)
 
-## Application launcher: [nwg-drawer](https://github.com/nwg-piotr/nwg-drawer)
+## Launcher: [nwg-drawer](https://github.com/nwg-piotr/nwg-drawer)
 
 - Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/nwg-drawer/graphs/contributors)
 - License: MIT
 
-The `nwg-drawer` command displays the application grid. The search entry allows to look for installed applications, and for files in XDG user directories. The grid view may also be filtered by categories. You may pin applications by right-clicking them. Pinned items will appear above the grid. Right-click a pinned item to unpin it.
+Nwg-drawer is thr primary launcher, and displays the application drawer. The search entry allows to look for installed applications, and for files in XDG user directories. The grid view may also be filtered by categories. You may pin applications by right-clicking them. Pinned items will appear above the grid. Right-click a pinned item to unpin it.
 
 <a href="https://user-images.githubusercontent.com/20579136/179719429-e21bb41b-acdf-4d3e-a095-5d9acad8ef21.png">![2022-07-19-113502_screenshot](https://user-images.githubusercontent.com/20579136/179719429-e21bb41b-acdf-4d3e-a095-5d9acad8ef21.png)</a>
 
