@@ -229,8 +229,6 @@ The artwork used on this site is licensed under the terms of the [Creative Commo
 - [SGS](https://github.com/sgse)
 - [nwg-piotr](https://github.com/nwg-piotr)
 
-<div style="padding: 0px 0px 20px 0px"></div>
-
 # This project is supported by
 
 <a href="https://jb.gg/OpenSourceSupport"><img width="300" src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" alt="JetBrains Logo (Main) logo."></a>
