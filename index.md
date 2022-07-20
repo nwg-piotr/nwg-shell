@@ -148,6 +148,9 @@ On tiling window managers, putting widgets on the desktop is basically pointless
 
 ### Icon picker: [nwg-icon-picker](https://github.com/nwg-piotr/nwg-icon-picker)
 
+- Author: Piotr Miller
+- License: MIT
+
 Nwg-icon-picker is a tool to search GTK icons by name. Utilized by nwg-panel settings, may also be used system-wide.
 
 ![2022-07-20-101601_screenshot](https://user-images.githubusercontent.com/20579136/179932862-c59ac8dd-0ad7-4123-a2e0-e1f7e8121497.png)
