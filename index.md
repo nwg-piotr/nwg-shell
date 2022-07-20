@@ -23,6 +23,7 @@ On the backend side there's a lot of third party Free Open Source Software. We w
     - [Shell settings: nwg-shell-config](https://nwg-piotr.github.io/nwg-shell/#shell-settings-nwg-shell-config)
     - [Utilities and scripts](https://nwg-piotr.github.io/nwg-shell/#utilities-and-scripts)
 - [Where to get](https://nwg-piotr.github.io/nwg-shell/#where-to-get)
+- [Credits](https://nwg-piotr.github.io/nwg-shell/#credits)
 
 # What's inside
 
