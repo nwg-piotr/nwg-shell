@@ -133,6 +133,16 @@ On tiling window managers, putting widgets on the desktop is basically pointless
 
 <a href="https://user-images.githubusercontent.com/20579136/179868205-26c579e2-c113-4e03-85c5-2220cbd81c5d.png">![2022-07-20-015655_screenshot](https://user-images.githubusercontent.com/20579136/179868205-26c579e2-c113-4e03-85c5-2220cbd81c5d.png)</a>
 
+### Tiling: [autotiling](https://github.com/nwg-piotr/autotiling)
+
+- Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/autotiling/graphs/contributors)
+- License: GPL v3
+- Original idea: [Ole Martin Handeland](https://github.com/olemartinorg/i3-alternating-layout)
+
+Sway is a great window manager, but changing layouts manually can be tiring for some users (including me).This script uses the i3ipc-python library to automagically switch the layout splith/splitv, depending on the currently focused window dimensions.
+
+![2022-07-20-033338_screenshot](https://user-images.githubusercontent.com/20579136/179877238-ac4baa65-bc9b-4ad9-8f4f-33d7e22a1c4b.png)
+
 # Project supported by
 
 <a href="https://jb.gg/OpenSourceSupport"><img width="300" src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" alt="JetBrains Logo (Main) logo."></a>
