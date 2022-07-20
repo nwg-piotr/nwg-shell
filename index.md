@@ -115,7 +115,7 @@ Nwg-look is a GTK3 settings editor, designed to work properly in wlroots-based W
 - Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/nwg-displays/graphs/contributors)
 - License: MIT
 
-This program provides an intuitive GUI to manage multiple displays, and save outputs configuration and workspace to output assignments.
+This program provides an intuitive GUI to manage multiple displays, and save outputs configuration and workspace-to-output assignments.
 
 ![2022-07-20-011519_screenshot](https://user-images.githubusercontent.com/20579136/179864328-2dd5aa8b-dac9-4eaf-893c-cb85215a212c.png)
 
@@ -178,7 +178,7 @@ Sway is a great window manager, but changing layouts manually can be tiring for 
 
 ![2022-07-20-033338_screenshot](https://user-images.githubusercontent.com/20579136/179877238-ac4baa65-bc9b-4ad9-8f4f-33d7e22a1c4b.png)
 
-### [gopsuinfo](https://github.com/nwg-piotr/gopsuinfo)
+### System info: [gopsuinfo](https://github.com/nwg-piotr/gopsuinfo)
 
 - Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/gopsuinfo/graphs/contributors)
 - License: BSD 2-Clause
