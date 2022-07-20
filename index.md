@@ -168,7 +168,7 @@ Nwg-icon-picker is a tool to search GTK icons by name. Utilized by nwg-panel set
 
 ![2022-07-20-101601_screenshot](https://user-images.githubusercontent.com/20579136/179932862-c59ac8dd-0ad7-4123-a2e0-e1f7e8121497.png)
 
-### Tiling: [autotiling](https://github.com/nwg-piotr/autotiling)
+### Workflow: [autotiling](https://github.com/nwg-piotr/autotiling)
 
 - Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/autotiling/graphs/contributors)
 - License: GPL v3
