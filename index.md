@@ -146,6 +146,12 @@ On tiling window managers, putting widgets on the desktop is basically pointless
 
 <a href="https://user-images.githubusercontent.com/20579136/179868205-26c579e2-c113-4e03-85c5-2220cbd81c5d.png">![2022-07-20-015655_screenshot](https://user-images.githubusercontent.com/20579136/179868205-26c579e2-c113-4e03-85c5-2220cbd81c5d.png)</a>
 
+### Icon picker: [nwg-icon-picker](https://github.com/nwg-piotr/nwg-icon-picker)
+
+Nwg-icon-picker is a tool to search GTK icons by name. Utilized by nwg-panel settings, may also be used system-wide.
+
+![2022-07-20-101601_screenshot](https://user-images.githubusercontent.com/20579136/179932862-c59ac8dd-0ad7-4123-a2e0-e1f7e8121497.png)
+
 ### Tiling: [autotiling](https://github.com/nwg-piotr/autotiling)
 
 - Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/autotiling/graphs/contributors)
