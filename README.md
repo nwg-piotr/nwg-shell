@@ -2,7 +2,7 @@
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-shell.svg)](https://repology.org/project/nwg-shell/versions)
 
-[Learn more about nwg-shell on the project website](https://nwg-piotr.github.io/nwg-shell)
+## [Learn more about nwg-shell on the project website](https://nwg-piotr.github.io/nwg-shell)
 
 The installer provided in this repository pulls all the necessary dependencies, and preconfigures [4 desktop
 styles](https://github.com/nwg-piotr/nwg-shell-config/blob/master/README.md#desktop-styles) for you to choose from. Each of them you can modify freely from the nwg-shell-config GUI. Or you may choose the 'Custom' preset to experiment with.
@@ -17,7 +17,7 @@ styles](https://github.com/nwg-piotr/nwg-shell-config/blob/master/README.md#desk
 
 Install [ArchLabs Linux](https://archlabslinux.com) with preconfigured sway session.
 
-# Components:
+# nwg-shell components:
 
 ## [nwg-shell-config](https://github.com/nwg-piotr/nwg-shell-config) (python)
 
@@ -29,133 +29,100 @@ Install [ArchLabs Linux](https://archlabslinux.com) with preconfigured sway sess
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-panel.svg)](https://repology.org/project/nwg-panel/versions)
 
+- [Wiki](https://github.com/nwg-piotr/nwg-panel/wiki)
 - [latest release](https://github.com/nwg-piotr/nwg-panel/releases/latest)
 
-### [nwg-drawer](https://github.com/nwg-piotr/nwg-drawer) (go)
+## [nwg-drawer](https://github.com/nwg-piotr/nwg-drawer) (go)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-drawer.svg)](https://repology.org/project/nwg-drawer/versions)
 
 - [latest release](https://github.com/nwg-piotr/nwg-drawer/releases/latest)
 
-### [nwg-dock](https://github.com/nwg-piotr/nwg-dock) (go)
+## [nwg-dock](https://github.com/nwg-piotr/nwg-dock) (go)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-dock.svg)](https://repology.org/project/nwg-dock/versions)
 
 - [latest release](https://github.com/nwg-piotr/nwg-dock/releases/latest)
 
-### [nwg-menu](https://github.com/nwg-piotr/nwg-menu) (go)
+## [nwg-menu](https://github.com/nwg-piotr/nwg-menu) (go)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-menu.svg)](https://repology.org/project/nwg-menu/versions)
 
 - [latest release](https://github.com/nwg-piotr/nwg-menu/releases/latest)
 
-### [nwg-bar](https://github.com/nwg-piotr/nwg-bar) (go)
+## [nwg-bar](https://github.com/nwg-piotr/nwg-bar) (go)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-bar.svg)](https://repology.org/project/nwg-bar/versions)
 
 - [latest release](https://github.com/nwg-piotr/nwg-bar/releases/latest)
 
-### [Azote](https://github.com/nwg-piotr/azote) (python)
+## [Azote](https://github.com/nwg-piotr/azote) (python)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/azote.svg)](https://repology.org/project/azote/versions)
 
 - [latest release](https://github.com/nwg-piotr/azote/releases/latest)
 
-### [nwg-displays](https://github.com/nwg-piotr/nwg-displays) (python)
+## [nwg-displays](https://github.com/nwg-piotr/nwg-displays) (python)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-displays.svg)](https://repology.org/project/nwg-displays/versions)
 
 - [latest release](https://github.com/nwg-piotr/nwg-displays/releases/latest)
 
-### [nwg-look](https://github.com/nwg-piotr/nwg-look) (go)
+## [nwg-look](https://github.com/nwg-piotr/nwg-look) (go)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-look.svg)](https://repology.org/project/nwg-look/versions)
 
 - [latest release](https://github.com/nwg-piotr/nwg-look/releases/latest)
 
-### [nwg-wrapper](https://github.com/nwg-piotr/nwg-wrapper) (python)
+## [nwg-wrapper](https://github.com/nwg-piotr/nwg-wrapper) (python)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-wrapper.svg)](https://repology.org/project/nwg-wrapper/versions)
 
 - [latest release](https://github.com/nwg-piotr/nwg-wrapper/releases/latest)
 
-### [gopsuinfo](https://github.com/nwg-piotr/gopsuinfo) (go)
+## [gopsuinfo](https://github.com/nwg-piotr/gopsuinfo) (go)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/gopsuinfo.svg)](https://repology.org/project/gopsuinfo/versions)
 
 - [latest release](https://github.com/nwg-piotr/gopsuinfo/releases/latest)
 
-### [autotiling](https://github.com/nwg-piotr/autotiling) (python)
+## [autotiling](https://github.com/nwg-piotr/autotiling) (python)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/autotiling.svg)](https://repology.org/project/autotiling/versions)
 
 - [latest release](https://github.com/nwg-piotr/autotiling/releases/latest)
 
-## Support for other WMs
+# Support for other WMs
 
 This project is primarily aimed at sway. Some parts may work on other wlroots-based compositors. Some may even work on X11, but it's not the primary objective. Feel free to submit addons / improvements, but keep in mind that all the stuff **must** work on sway, and **may or may not** work elsewhere.
 
-### Pull requests adding support for non-sway stuff 
+## Pull requests adding support for non-sway stuff 
 
 are welcome.
 
-### Feature requests like "add <place_your_wm_here> support"
+## Feature requests like "add <place_your_wm_here> support"
 
 go to `/dev/null`.
 
-## Contributions
+# Contributions
 
 If you like the idea of the GTK shell for sway, feel free to submit your improvements, new modules, plugins or standalone programs. Preferred languages are python and Go.
 
 **Important: before you open a PR containing major changes to already existing programs, please (PLEASE!) open an issue to discuss what you're going to do.**
 
-### Feedback
+## Feedback
 
 Bug reports and ideas are more than welcome. Please remember, however, that at this stage, most part of the shell is being developed by a single hobbyist, 
 who uses Arch Linux. Some issues specific to other environment, e.g. Debian, FreeBSD, are out of my range and need some Community commitment.
 
-## Resources
+# Resources
 
 The project logo has been created by [edskeye](https://github.com/edskeye). You'll find the basic svg file in the
 [resources](https://github.com/nwg-piotr/nwg-shell-resources/tree/master/resources) repository. If you like the logo,
 you may also like [nwg-shell wallpapers](https://github.com/nwg-piotr/nwg-shell-resources/tree/master/wallpapers).
-The uglier ones were designed by me, and the prettier ones by 
-[@badkarma](https://forum.archlabslinux.com/u/badkarma/summary). ;)
+The uglier ones were designed by me, and the prettier ones by [@badkarma](https://forum.archlabslinux.com/u/badkarma/summary). ;)
 
-<div align="center"><img src="https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/logo.png"/></div>
-
-Images used on this page come from:
-
-- https://wallhaven.cc/w/6kxmj6
-- https://wallhaven.cc/w/o39669
-- https://pixabay.com/illustrations/home-mountains-fantasy-floating-5889366
-- https://pixabay.com/vectors/mobile-devices-website-mockup-web-2017978
-
-## Credits
-
-This collection of software relies on some great third-party programs and libraries:
-
-- [wlsunset](https://sr.ht/~kennylevinsen/wlsunset) by Kenny Levinsen
-- [SwayNotificationCenter](https://github.com/ErikReider/SwayNotificationCenter) by Eric Reider
-- [swappy](https://github.com/jtheoof/swappy) Copyright (c) 2020 Jeremy Attali
-- [gtk-layer-shell](https://github.com/wmww/gtk-layer-shell) Copyright (c) 2014 Dennis Blommesteijn, Copyright (c) 2020 William Wold
-- [gotk3](https://github.com/gotk3/gotk3) Copyright (c) 2013-2014 Conformal Systems LLC,
-Copyright (c) 2015-2018 gotk3 contributors
-- [gotk3-layershell](https://github.com/dlasky/gotk3-layershell) by [@dlasky](https://github.com/dlasky/gotk3-layershell/commits?author=dlasky) - many thanks for writing this software, and for patience with my requests!
-- [go-sway](https://github.com/joshuarubin/go-sway) Copyright (c) 2019 Joshua Rubin
-- [go-singleinstance](github.com/allan-simon/go-singleinstance) Copyright (c) 2015 Allan Simon
-- [python-i3ipc](https://github.com/altdesktop/i3ipc-python) Copyright (c) 2015, Tony Crisci
-- [python-psutil](https://github.com/giampaolo/psutil) Copyright (c) 2009, Jay Loden, Dave Daeschler, Giampaolo Rodola
-- [python-geopy](https://github.com/geopy/geopy) by Kostya Esmukov
-- [brightnessctl](https://github.com/Hummer12007/brightnessctl) Copyright (c) 2016 Mykyta Holuakha
-- [playerctl](https://github.com/altdesktop/playerctl) by Tony Crisci
-- [gtklock](https://github.com/jovanlanik/gtklock) by Jovan Lanik
-- [PulseAudio](https://www.freedesktop.org/wiki/Software/PulseAudio), [bluez-utils](http://www.bluez.org), [python-netifaces](https://archlinux.org/packages/community/x86_64/python-netifaces),
- and probably more, which I forgot to mention here. Please forgive me, if so.
-
-[sway](https://github.com/swaywm/sway) is an i3-compatible Wayland compositor Copyright (c) 2016-2017 Drew DeVault
-
-## Project supported by
+# Project supported by
 
 <a href="https://jb.gg/OpenSourceSupport"><img width="300" src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" alt="JetBrains Logo (Main) logo."></a>
 
