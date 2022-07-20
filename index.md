@@ -1,6 +1,6 @@
 # nwg-shell project
 
-<img src="https://github.com/nwg-piotr/nwg-shell-resources/raw/master/resources/logo.svg" align="left" width="96" style="vertical-align:middle;padding:0px 50px 20px 0px">
+<img src="https://github.com/nwg-piotr/nwg-shell-resources/raw/master/resources/logo.svg" align="left" width="84" style="vertical-align:middle;padding:0px 20px 20px 0px">
 
 **The nwg-shell project aims to create a consistent, GTK3-based user interface for the [sway](https://github.com/swaywm/sway) Wayland Compositor. In order to give the user the greatest possible choice, some interface elements provide several alternative solutions. Just installed shell contains a bunch of presets, which can then be freely modified.**
 
