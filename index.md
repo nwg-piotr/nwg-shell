@@ -13,6 +13,7 @@ On the backend side there's a lot of third party Free Open Source Software. We w
 - [What's inside](https://nwg-piotr.github.io/nwg-shell/#whats-inside)
   - [Panel: nwg-panel](https://nwg-piotr.github.io/nwg-shell#panel-nwg-panel)
   - [Launcher: nwg-drawer](https://nwg-piotr.github.io/nwg-shell#launcher-nwg-drawer)
+  - [Dock: nwg-dock](https://nwg-piotr.github.io/nwg-shell/#dock-nwg-dock)
   - [Alternative launcher: nwg-menu](https://nwg-piotr.github.io/nwg-shell#alternative-launcher-nwg-menu)
 
 # What's inside
