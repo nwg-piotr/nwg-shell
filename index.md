@@ -227,7 +227,7 @@ The artwork used on this site is licensed under the terms of the [Creative Commo
 
 The author of the [project logo](https://github.com/nwg-piotr/nwg-shell-resources/blob/master/resources/logo.svg) is [edskeye](https://github.com/edskeye).
 
-# The nwg-shell project is supported by
+# This project is supported by
 
 <a href="https://jb.gg/OpenSourceSupport"><img width="300" src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" alt="JetBrains Logo (Main) logo."></a>
 
