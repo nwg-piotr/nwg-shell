@@ -2,153 +2,94 @@
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-shell.svg)](https://repology.org/project/nwg-shell/versions)
 
-This project is an attempt to create a GTK3-based GUI for [sway](https://github.com/swaywm/sway) Wayland compositor. It's aimed at those, who do not believe
-that the rationale of the modern computer is to use less than 200 MiB RAM and 0.5% CPU. Those who don't want to stare solely at the terminal's black window.
-The programs included in the project are to give you the freedom of choice what your desktop looks like.
+[Learn more about nwg-shell on the project website](https://nwg-piotr.github.io/nwg-shell)
 
-![nwg-shell-header.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-shell-header_new2.png)
+The installer provided in this repository pulls all the necessary dependencies, and preconfigures [4 desktop
+styles](https://github.com/nwg-piotr/nwg-shell-config/blob/master/README.md#desktop-styles) for you to choose from. Each of them you can modify freely from the nwg-shell-config GUI. Or you may choose the 'Custom' preset to experiment with.
 
-**The installer provided in this repository pulls all the necessary dependencies, and preconfigures [4 desktop
-styles](https://github.com/nwg-piotr/nwg-shell-config/blob/master/README.md#desktop-styles) for you to choose from. Each of them you can modify freely from the nwg-shell-config GUI. Or you may choose 
-the 'Custom' preset to experiment with.**
+# Installation
 
-## Installation
-
-### The hard way
+## The hard way
 
 [How to set up nwg-shell on minimal Arch Linux install in several simple steps](https://github.com/nwg-piotr/nwg-shell/wiki) - Wiki
 
-### The easy way
+## The easy way
 
 Install [ArchLabs Linux](https://archlabslinux.com) with preconfigured sway session.
 
-## [Information about the latest releases](https://github.com/nwg-piotr/nwg-shell/wiki/Releases)
+# Components:
 
-## Components, as for now:
-
-## [nwg-shell-config](https://github.com/nwg-piotr/nwg-shell-config) - main shell configuration utility
+## [nwg-shell-config](https://github.com/nwg-piotr/nwg-shell-config) (python)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-shell-config.svg)](https://repology.org/project/nwg-shell-config/versions)
 
-You may use all the nwg-shell components as a DIY kit with elements to choose from. BTW, if you don't use Arch (or a derivative), you have no other choice, at least for now. If you decide to use Arch*, however, you'll have a GUI to configure all the components in one place - together with some third-party applications. This involves significant interference with the basic sway config, using included files, that are modified on the fly from the GUI level.
+- [latest release](https://github.com/nwg-piotr/nwg-shell/releases/latest)
 
-[**>> read more about the shell configuration**](https://github.com/nwg-piotr/nwg-shell-config)
-
-![nwg-shell-config.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-shell-config-02.png)
-
-### [nwg-panel](https://github.com/nwg-piotr/nwg-panel) (python)
+## [nwg-panel](https://github.com/nwg-piotr/nwg-panel) (python)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-panel.svg)](https://repology.org/project/nwg-panel/versions)
 
-The panel is the central point of the project. At the moment it contains 12 modules: Clock, Controls, CustomButton, 
-Executor, MenuStart, OpenWeather, Playerctl, Scratchpad, SwayNC (integrates Eric Reider's 
-[SwayNotificationCenter](https://github.com/ErikReider/SwayNotificationCenter)), SwayTaskbar, SwayWorkspaces and Tray. 
-The Executor module supports tint2-like executors, that allow to add user-defined features. The MenuStart module adds 
-support for the nwg-menu plugin (see below).
-
-![nwg-panel.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-panel1.png)
+- [latest release](https://github.com/nwg-piotr/nwg-panel/releases/latest)
 
 ### [nwg-drawer](https://github.com/nwg-piotr/nwg-drawer) (go)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-drawer.svg)](https://repology.org/project/nwg-drawer/versions)
 
-The `nwg-drawer` command displays the application grid. The search entry allows to look for installed applications, and for files 
-in XDG user directories. The grid view may also be filtered by categories. You may pin applications by right-clicking
-them. Pinned items will appear above the grid. Right-click a pinned item to unpin it.
-
-![nwg-drawer.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-drawer.png)
+- [latest release](https://github.com/nwg-piotr/nwg-drawer/releases/latest)
 
 ### [nwg-dock](https://github.com/nwg-piotr/nwg-dock) (go)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-dock.svg)](https://repology.org/project/nwg-dock/versions)
 
-Fully configurable dock written in Go. It features pinned buttons, task buttons, workspace switcher and the launcher button. The latter by default starts
-nwg-drawer.
-
-![nwg-dock.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-dock1.png)
+- [latest release](https://github.com/nwg-piotr/nwg-dock/releases/latest)
 
 ### [nwg-menu](https://github.com/nwg-piotr/nwg-menu) (go)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-menu.svg)](https://repology.org/project/nwg-menu/versions)
 
-The MenuStart plugin to nwg-panel, written in Go. It displays the system menu with simplified [freedesktop main categories](https://specifications.freedesktop.org/menu-spec/latest/apa.html). It also provides the search entry,
-to look for installed application on the basis of .desktop files, and for files in XDG user directories.
-
-You may pin-up applications above the categories list. In the bottom-right corner of the window you'll also see a set of buttons: lock screen, logout,
-restart and shutdown.
-
-![nwg-menu.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-menu.png)
+- [latest release](https://github.com/nwg-piotr/nwg-menu/releases/latest)
 
 ### [nwg-bar](https://github.com/nwg-piotr/nwg-bar) (go)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-bar.svg)](https://repology.org/project/nwg-bar/versions)
 
-nwg-bar is a golang replacement to the `nwgbar` command (a part of [nwg-launchers](https://github.com/nwg-piotr/nwg-launchers)), with some improvements. 
-Aimed at sway, works with wlroots-based compositors only. The `nwg-bar` command creates a button bar on the basis of a JSON template placed in the 
-`~/.config/nwg-bar` folder. By default the command displays a horizontal bar in the center of the screen. Use command line arguments to change the placement.
-
-![nwg-bar.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-bar.png)
+- [latest release](https://github.com/nwg-piotr/nwg-bar/releases/latest)
 
 ### [Azote](https://github.com/nwg-piotr/azote) (python)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/azote.svg)](https://repology.org/project/azote/versions)
 
-Azote is a picture browser and background setter, as the frontend to the swaybg (sway/Wayland) and feh (X windows) commands. The user interface is being
-developed with multi-headed setups in mind. Azote also includes several colour management tools.
-
-![azote.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/azote.png)
+- [latest release](https://github.com/nwg-piotr/azote/releases/latest)
 
 ### [nwg-displays](https://github.com/nwg-piotr/nwg-displays) (python)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-displays.svg)](https://repology.org/project/nwg-displays/versions)
 
-Output management utility inspired by wdisplays and wlay. The program provides an intuitive GUI to manage multiple 
-displays, apply settings, save outputs configuration and workspace -> output assignments to text files, which you
-then include in the sway config file.
-
-![nwg-displays](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-displays/nwg-displays.png)
+- [latest release](https://github.com/nwg-piotr/nwg-displays/releases/latest)
 
 ### [nwg-look](https://github.com/nwg-piotr/nwg-look) (go)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-look.svg)](https://repology.org/project/nwg-look/versions)
 
-Nwg-look is a GTK3 settings editor, designed to work properly in wlroots-based Wayland environment.
-The look and feel is strongly influenced by [LXAppearance](https://wiki.lxde.org/en/LXAppearance),
-but nwg-look is intended to free the user from a few inconveniences:
-
-- It works natively on Wayland. You no longer need Xwayland, nor strange env variables for it to run.
-- It applies gsettings directly, with no need to use
-[workarounds](https://github.com/swaywm/sway/wiki/GTK-3-settings-on-Wayland). You don't need to set
- gsettings in the sway config file. You don't need the `import-gsettings` script any longer.
-
-![nwg-look](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-look/nwg-look-0.1.3.png)
+- [latest release](https://github.com/nwg-piotr/nwg-look/releases/latest)
 
 ### [nwg-wrapper](https://github.com/nwg-piotr/nwg-wrapper) (python)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-wrapper.svg)](https://repology.org/project/nwg-wrapper/versions)
 
-This program is a GTK3-based wrapper to display a script output, or a text file content on the desktop in sway or 
-other wlroots-based compositors. It uses the [gtk-layer-shell](https://github.com/wmww/gtk-layer-shell) library
-to place the window on the bottom layer. As well the script output, at the text file may be formatted with 
-[Pango Markup](https://developer.gnome.org/pygtk/stable/pango-markup-language.html). The window appearance is defined
-with css styling.
-
-![nwg-wrapper.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-wrapper.png)
+- [latest release](https://github.com/nwg-piotr/nwg-wrapper/releases/latest)
 
 ### [gopsuinfo](https://github.com/nwg-piotr/gopsuinfo) (go)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/gopsuinfo.svg)](https://repology.org/project/gopsuinfo/versions)
 
-This command, based on the [gopsutil](https://github.com/shirou/gopsutil) Go module, produces text output to display system usage info in nwg-panel executors.
+- [latest release](https://github.com/nwg-piotr/gopsuinfo/releases/latest)
 
 ### [autotiling](https://github.com/nwg-piotr/autotiling) (python)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/autotiling.svg)](https://repology.org/project/autotiling/versions)
 
-This script uses the [i3ipc-python library](https://github.com/altdesktop/i3ipc-python) to switch the layout splith/splitv depending on the currently focused
-window dimensions. It works on both sway and i3 window managers. You may love it or hate it, but it's my must have.
-
-![autotiling](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/autotiling.png)
+- [latest release](https://github.com/nwg-piotr/autotiling/releases/latest)
 
 ## Support for other WMs
 
