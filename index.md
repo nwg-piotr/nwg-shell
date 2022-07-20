@@ -47,7 +47,7 @@ The Controls drop-down window provides brightness & volume controls, and audio o
 - Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/nwg-drawer/graphs/contributors)
 - License: MIT
 
-Nwg-drawer is thr primary launcher, and displays the application drawer. The search entry allows to look for installed applications, and for files in XDG user directories. The grid view may also be filtered by categories. You may pin applications by right-clicking them. Pinned items will appear above the grid. Right-click a pinned item to unpin it.
+Nwg-drawer is the primary launcher, and displays the application grid. The search entry allows to look for installed applications, and for files in XDG user directories. The grid view may also be filtered by categories. You may pin applications by right-clicking them. Pinned items will appear above the grid. Right-click a pinned item to unpin it.
 
 <a href="https://user-images.githubusercontent.com/20579136/179719429-e21bb41b-acdf-4d3e-a095-5d9acad8ef21.png">![2022-07-19-113502_screenshot](https://user-images.githubusercontent.com/20579136/179719429-e21bb41b-acdf-4d3e-a095-5d9acad8ef21.png)</a>
 
@@ -76,7 +76,7 @@ Due to limited interest, the development of this launcher may be discontinued in
 - Author: Erik Reider
 - License: GPL v3
 
-This program provides the notification daemon and a GTK-based user interface for managing notifications. Nwg-shell integrates swaync, adding a panel notification icon and configuration options in own config utility.
+This program provides the notification daemon and a GTK-based user interface for managing notifications. Nwg-shell integrates swaync, by adding a panel notification icon and configuration options in own config utility.
 
 <a href="https://user-images.githubusercontent.com/20579136/179748788-1929c74e-64f8-4280-80d1-45f02972f1ef.png">![2022-07-19-141124_screenshot](https://user-images.githubusercontent.com/20579136/179748788-1929c74e-64f8-4280-80d1-45f02972f1ef.png)</a>
 
@@ -96,7 +96,7 @@ Alternatively, as a locker you can use the well-known [swaylock](https://github.
 - Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/azote/graphs/contributors)
 - License: GPL v3
 
-Azote is an image viewer with options useful when using them as wallpapers: clipping, mirroring, splitting between several displays. For setting the background, the program uses Drew DeVault's [swaybg](https://github.com/swaywm/swaybg) (sway/Wayland) and Tom Gilbert's & Daniel Frieselfeh's [feh](https://feh.finalrewind.org) (X windows) commands. The user interface is being developed with multi-headed setups in mind. Azote also includes several colour management tools, as e.g. color picker or palettes creation on the basis of an image.
+Azote is an image browser with options useful when using them as wallpapers: clipping, mirroring, splitting between displays. For setting the background, the program uses Drew DeVault's [swaybg](https://github.com/swaywm/swaybg) (sway/Wayland) and Tom Gilbert's & Daniel Frieselfeh's [feh](https://feh.finalrewind.org) (X windows) commands. The user interface is being developed with multi-headed setups in mind. Azote also includes several colour management tools, as e.g. color picker or palettes creation on the basis of an image.
 
 <a href="https://user-images.githubusercontent.com/20579136/179864696-11c5c93d-f86b-487d-a508-edb885157506.png">![2022-07-20-012458_screenshot](https://user-images.githubusercontent.com/20579136/179864696-11c5c93d-f86b-487d-a508-edb885157506.png)</a>
 
