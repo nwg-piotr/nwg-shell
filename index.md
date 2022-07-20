@@ -192,6 +192,32 @@ A slightly more complicated way is to set up nwg-shell on a fresh Arch Linux ins
 
 Currently, there is no out-of-the-box installer for other Linux distributions. You may try and install all the components manually.
 
+# Credits
+
+This collection of software depends on numerous third-party programs and libraries, that have not been mentioned above:
+
+- [wlsunset](https://sr.ht/~kennylevinsen/wlsunset) by Kenny Levinsen
+- [gtk-layer-shell](https://github.com/wmww/gtk-layer-shell) by Dennis Blommesteijn & William Wold
+- [gotk3](https://github.com/gotk3/gotk3) by Conformal Systems LLC
+- [gotk3-layershell](https://github.com/dlasky/gotk3-layershell) by [@dlasky](https://github.com/dlasky/gotk3-layershell/commits?author=dlasky)
+- [go-sway](https://github.com/joshuarubin/go-sway) by Joshua Rubin
+- [go-singleinstance](github.com/allan-simon/go-singleinstance) by 2015 Allan Simon
+- [python-i3ipc](https://github.com/altdesktop/i3ipc-python) by Tony Crisci
+- [python-psutil](https://github.com/giampaolo/psutil) by Jay Loden, Dave Daeschler & Giampaolo Rodola
+- [python-geopy](https://github.com/geopy/geopy) by Kostya Esmukov
+- [python-dasbus](https://github.com/rhinstaller/dasbus) by Red Hat Installer Engineering Team
+- [python-netifaces](https://github.com/stephica/netifaces) by Alastair Houghton
+- [python-requests](https://github.com/psf/requests) by Python Software Foundation
+- [brightnessctl](https://github.com/Hummer12007/brightnessctl) by Mykyta Holuakha
+- [ddcutil](https://github.com/rockowitz/ddcutil) by Sanford Rockowitz
+- [playerctl](https://github.com/altdesktop/playerctl) by Tony Crisci
+- [wlr-randr]() by Simon Ser
+- [PulseAudio](https://www.freedesktop.org/wiki/Software/PulseAudio), [bluez-utils](http://www.bluez.org), and probably more, which we forgot to mention here. Please forgive us, if so.
+ 
+ [GTK](https://gitlab.gnome.org/GNOME/gtk) and related libraries are a free and open-source cross-platform widget toolkit for creating graphical user interfaces, maintained by The GNOME Project.
+ 
+ [sway](https://github.com/swaywm/sway) is an i3-compatible Wayland compositor Copyright (c) 2016-2017 Drew DeVault.
+
 # Project supported by
 
 <a href="https://jb.gg/OpenSourceSupport"><img width="300" src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" alt="JetBrains Logo (Main) logo."></a>
