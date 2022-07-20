@@ -11,17 +11,18 @@ The default (preinstalled) terminal emulator is [foot](https://codeberg.org/dnkl
 On the backend side there's a lot of third party Free Open Source Software. We will try to list them all in Credits.
 
 - [What's inside](https://nwg-piotr.github.io/nwg-shell/#whats-inside)
-  - [Panel: nwg-panel](https://nwg-piotr.github.io/nwg-shell#panel-nwg-panel)
-  - [Launcher: nwg-drawer](https://nwg-piotr.github.io/nwg-shell#launcher-nwg-drawer)
-  - [Dock: nwg-dock](https://nwg-piotr.github.io/nwg-shell/#dock-nwg-dock)
-  - [Alternative launcher: nwg-menu](https://nwg-piotr.github.io/nwg-shell#alternative-launcher-nwg-menu)
-  - [Notification center: swaync](https://nwg-piotr.github.io/nwg-shell/#notification-center-swaync)
-  - [Screen locker: gtklock](https://nwg-piotr.github.io/nwg-shell/#screen-locker-gtklock)
-  - [Wallpaper management: Azote](https://nwg-piotr.github.io/nwg-shell/#wallpaper-management-azote)
-  - [Look and feel: nwg-look](https://nwg-piotr.github.io/nwg-shell/#look-and-feel-nwg-look)
-  - [Display management: nwg-displays](https://nwg-piotr.github.io/nwg-shell/#display-management-nwg-displays)
-  - [Shell settings: nwg-shell-config](https://nwg-piotr.github.io/nwg-shell/#shell-settings-nwg-shell-config)
-  - [Utilities and scripts](https://nwg-piotr.github.io/nwg-shell/#utilities-and-scripts)
+    - [Panel: nwg-panel](https://nwg-piotr.github.io/nwg-shell#panel-nwg-panel)
+    - [Launcher: nwg-drawer](https://nwg-piotr.github.io/nwg-shell#launcher-nwg-drawer)
+    - [Dock: nwg-dock](https://nwg-piotr.github.io/nwg-shell/#dock-nwg-dock)
+    - [Alternative launcher: nwg-menu](https://nwg-piotr.github.io/nwg-shell#alternative-launcher-nwg-menu)
+    - [Notification center: swaync](https://nwg-piotr.github.io/nwg-shell/#notification-center-swaync)
+    - [Screen locker: gtklock](https://nwg-piotr.github.io/nwg-shell/#screen-locker-gtklock)
+    - [Wallpaper management: Azote](https://nwg-piotr.github.io/nwg-shell/#wallpaper-management-azote)
+    - [Look and feel: nwg-look](https://nwg-piotr.github.io/nwg-shell/#look-and-feel-nwg-look)
+    - [Display management: nwg-displays](https://nwg-piotr.github.io/nwg-shell/#display-management-nwg-displays)
+    - [Shell settings: nwg-shell-config](https://nwg-piotr.github.io/nwg-shell/#shell-settings-nwg-shell-config)
+    - [Utilities and scripts](https://nwg-piotr.github.io/nwg-shell/#utilities-and-scripts)
+- [Where to get](https://nwg-piotr.github.io/nwg-shell/#where-to-get)
 
 # What's inside
 
