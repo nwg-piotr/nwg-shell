@@ -165,6 +165,15 @@ Sway is a great window manager, but changing layouts manually can be tiring for 
 
 ![2022-07-20-033338_screenshot](https://user-images.githubusercontent.com/20579136/179877238-ac4baa65-bc9b-4ad9-8f4f-33d7e22a1c4b.png)
 
+### [gopsuinfo](https://github.com/nwg-piotr/gopsuinfo)
+
+- Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/gopsuinfo/graphs/contributors)
+- License: BSD 2-Clause
+
+This CLI command, based on the [gopsutil](https://github.com/shirou/gopsutil) Go module, produces text output to display system usage info in nwg-panel executors.
+
+![gopsuinfo](https://user-images.githubusercontent.com/20579136/179935626-867cf00c-97b4-4e46-b558-8dbb4ddc4e93.png)
+
 # Project supported by
 
 <a href="https://jb.gg/OpenSourceSupport"><img width="300" src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" alt="JetBrains Logo (Main) logo."></a>
