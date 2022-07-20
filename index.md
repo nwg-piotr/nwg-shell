@@ -229,7 +229,7 @@ The artwork used on this site is licensed under the terms of the [Creative Commo
 - [SGS](https://github.com/sgse)
 - [nwg-piotr](https://github.com/nwg-piotr)
 
-The author of the [project logo](https://github.com/nwg-piotr/nwg-shell-resources/blob/master/resources/logo.svg) is [edskeye](https://github.com/edskeye).
+<img src="https://github.com/nwg-piotr/nwg-shell-resources/raw/master/resources/logo.svg" width="32" align="left">The author of the [project logo](https://github.com/nwg-piotr/nwg-shell-resources/blob/master/resources/logo.svg) is [edskeye](https://github.com/edskeye).
 
 # This project is supported by
 
