@@ -10,7 +10,7 @@ The user interface mostly consists of dedicated software, but also uses a couple
 
 The default (preinstalled) terminal emulator is [foot](https://codeberg.org/dnkl/foot) by Daniel Eklöf. This does not mean that we consider other terminals worse, but that we had to choose one. The remaining elements of the desktop environment, such as the text editor, file manager, web browser, and so on, are left to the user's choice. The author's subjective recommendation might be mousepad, Thunar, and Chromium / Chrome, but it doesn't really make much difference.
 
-On the backend side there's a lot of third party Free Open Source Software. We will try to list them all in Credits.
+On the backend side there's a lot of third party Free Open Source Software. We will try to list all the applications and libraries in Credits.
 
 # TOC
 
@@ -49,7 +49,7 @@ The Controls drop-down window provides brightness & volume controls, and audio o
 - Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/nwg-drawer/graphs/contributors)
 - License: MIT
 
-Nwg-drawer is the primary launcher, and displays the application grid. The search entry allows to look for installed applications, and for files in XDG user directories. The grid view may also be filtered by categories. You may pin applications by right-clicking them. Pinned items will appear above the grid. Right-click a pinned item to unpin it.
+Nwg-drawer is the primary launcher, and displays the application grid. The search entry allows to look for installed applications, and for files in XDG user directories. The grid view may also be filtered by categories. You may pin applications by right-clicking them. They will appear above the grid. Right-click an item to unpin it.
 
 <a href="https://user-images.githubusercontent.com/20579136/179719429-e21bb41b-acdf-4d3e-a095-5d9acad8ef21.png">![2022-07-19-113502_screenshot](https://user-images.githubusercontent.com/20579136/179719429-e21bb41b-acdf-4d3e-a095-5d9acad8ef21.png)</a>
 
@@ -67,7 +67,7 @@ The author's personal preference is to see the running tasks in the nwg-panel's 
 - Author: Piotr Miller
 - License: MIT
 
-If you've recently parted ways with Windows, you may miss the menu button. This program, which is also an nwg-panel plugin, will help you acclimatize. It displays the system menu with simplified [freedesktop main categories](https://specifications.freedesktop.org/menu-spec/latest/apa.html). It also provides the search entry, to look for installed application on the basis of .desktop files, and for files in XDG user directories. You may pin-up applications above the categories list. In the bottom-right corner of the window you'll also see a set of buttons: lock screen, logout, restart and shutdown.
+If you've recently parted ways with Windows, you may miss the menu button. This launcher will help you acclimatize. It displays the system menu with simplified [freedesktop main categories](https://specifications.freedesktop.org/menu-spec/latest/apa.html). It also provides the search entry, to look for installed application on the basis of .desktop files, and for files in XDG user directories. You may pin-up applications above the categories list. In the bottom-right corner of the window you'll also see a set of buttons: lock screen, logout, restart and shutdown.
 
 Due to limited interest, the development of this launcher may be discontinued in the future. Enjoy while you can. ;)
 
@@ -87,7 +87,7 @@ This program provides the notification daemon and a GTK-based user interface for
 - Author: Jovan Lanik
 - License: GPL v3
 
-The shell uses gtklock as the default locker in the Idle & Lock screen settings. We add a random image background (local or from unsplash.com), and (optionally) a media player control window over the lock screen.
+The shell uses gtklock as the default locker in the 'Idle & Lock screen' settings. We add a random image background (local or from unsplash.com), and (optionally) a media player control window over the lock screen.
 
 <a href="https://user-images.githubusercontent.com/20579136/179752612-f245bc38-d113-4f82-8d42-556ac5438a70.png">![2022-07-19-143850_screenshot](https://user-images.githubusercontent.com/20579136/179752612-f245bc38-d113-4f82-8d42-556ac5438a70.png)</a>
 
@@ -117,7 +117,7 @@ Nwg-look is a GTK3 settings editor, designed to work properly in wlroots-based W
 - Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/nwg-displays/graphs/contributors)
 - License: MIT
 
-This program provides an intuitive GUI to manage multiple displays, and save outputs configuration and workspace-to-output assignments.
+This program provides an intuitive GUI to manage multiple displays, save outputs configuration and workspace-to-output assignments.
 
 ![2022-07-20-011519_screenshot](https://user-images.githubusercontent.com/20579136/179864328-2dd5aa8b-dac9-4eaf-893c-cb85215a212c.png)
 
@@ -126,7 +126,7 @@ This program provides an intuitive GUI to manage multiple displays, and save out
 - Author: Piotr Miller & [Contributors](https://github.com/nwg-piotr/nwg-shell-config/graphs/contributors)
 - License: MIT
 
-This program is a GUI to configure all the components in one place, together with the most essential third-party applications. This involves significant interference with the basic sway config, using included files, that are modified on the fly from the GUI level. Even though you no longer need to edit "dotfiles" manually, you can still do it if you want (not recommended for beginners).
+This program is a GUI to configure all the components in one place, together with the most essential third-party applications. This involves significant interference with the basic sway config, using included files, that are modified on the fly from the GUI level. Even though you no longer need to edit "dotfiles" manually, you can still do it if you need to (not recommended for beginners).
 
 Nwg-shell-config allows to set the common sway preferences (screen, input devices, idle and lock screen configuration, main applications key bindings), as well as switch between predefined desktop styles. Each of the above may be adjusted to user's taste, that includes placement of the application drawer, dock, exit menu, and notification center.
 
@@ -143,7 +143,7 @@ Swappy is a Wayland native snapshot and editor tool, inspired by Snappy on macOS
 
 <a href="https://user-images.githubusercontent.com/20579136/179939327-04b634d6-0583-4fbd-b6ab-c955e015b90d.png">![2022-07-20-104012_screenshot](https://user-images.githubusercontent.com/20579136/179939327-04b634d6-0583-4fbd-b6ab-c955e015b90d.png)</a>
 
-### Button bar: nwg-bar
+### Button bar: [nwg-bar](https://github.com/nwg-piotr/nwg-bar)
 
 - Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/nwg-bar/graphs/contributors)
 - License: MIT
@@ -204,7 +204,7 @@ This collection of software depends on numerous third-party programs and librari
 - [wlsunset](https://sr.ht/~kennylevinsen/wlsunset) by Kenny Levinsen
 - [gtk-layer-shell](https://github.com/wmww/gtk-layer-shell) by Dennis Blommesteijn & William Wold
 - [gotk3](https://github.com/gotk3/gotk3) by Conformal Systems LLC
-- [gotk3-layershell](https://github.com/dlasky/gotk3-layershell) by [@dlasky](https://github.com/dlasky/gotk3-layershell/commits?author=dlasky)
+- [gotk3-layershell](https://github.com/dlasky/gotk3-layershell) by [@dlasky](https://github.com/dlasky/gotk3-layershell/commits?author=dlasky) (Dan, thanks again!)
 - [go-sway](https://github.com/joshuarubin/go-sway) by Joshua Rubin
 - [go-singleinstance](github.com/allan-simon/go-singleinstance) by 2015 Allan Simon
 - [python-i3ipc](https://github.com/altdesktop/i3ipc-python) by Tony Crisci
