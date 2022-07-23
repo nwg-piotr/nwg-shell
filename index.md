@@ -197,6 +197,9 @@ A slightly more complicated way is to set up nwg-shell on a fresh Arch Linux ins
 
 <a href="https://user-images.githubusercontent.com/20579136/180582953-6a4bada0-2c27-4139-b60b-78f7c972d6bb.jpeg"><img src="https://user-images.githubusercontent.com/20579136/180582953-6a4bada0-2c27-4139-b60b-78f7c972d6bb.jpeg" width=640></a>
 
+<a href="https://user-images.githubusercontent.com/20579136/180624922-e4486392-5c91-4896-bb4a-cdf60e6442a0.png"><img src="https://user-images.githubusercontent.com/20579136/180624922-e4486392-5c91-4896-bb4a-cdf60e6442a0.png" width=640></a>
+
+
 Currently, there is no out-of-the-box installer for other Linux distributions. You may try and install all the components manually.
 
 # Credits
