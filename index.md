@@ -77,6 +77,8 @@ Due to limited interest, the development of this launcher may be discontinued in
 
 <a href="https://user-images.githubusercontent.com/20579136/179743263-a314bf97-00b0-4720-b0ed-8bdb4844e6bd.png">![2022-07-19-134851_screenshot](https://user-images.githubusercontent.com/20579136/179743263-a314bf97-00b0-4720-b0ed-8bdb4844e6bd.png)</a>
 
+### [See more pictures](https://ibb.co/album/Mk4803)
+
 ## Notification center: [swaync](https://github.com/ErikReider/SwayNotificationCenter)
 
 - Author: Erik Reider
