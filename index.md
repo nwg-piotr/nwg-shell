@@ -1,4 +1,4 @@
-<link rel="shortcut icon" type="image/png" href="{{ "/favicon.png" | prepend: site.baseurl }}" >
+<link rel="shortcut icon" type="image/png" href="favicon.png">
 
 # nwg-shell project
 
