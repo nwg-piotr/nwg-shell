@@ -1,4 +1,4 @@
-<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?">
+<link rel="shortcut icon" type="image/png" href="https://github.com/nwg-piotr/nwg-shell/raw/gh-pages/favicon.png">
 
 # nwg-shell project
 
