@@ -147,6 +147,8 @@ Nwg-shell-config allows to set the common sway preferences (screen, input device
 
 ![2022-07-20-020818_screenshot](https://user-images.githubusercontent.com/20579136/179869662-ed91b9a7-1490-4e06-9693-9dab1db29e54.png)
 
+### [See more pictures](https://ibb.co/album/98512D)
+
 ## Utilities and scripts
 
 ### Screenshots: [swappy](https://github.com/jtheoof/swappy)
