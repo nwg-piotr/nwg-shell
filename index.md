@@ -212,11 +212,11 @@ The easiest and fastest way is to install [ArchLabs Linux](https://archlabslinux
 
 A slightly more complicated way is to set up nwg-shell on a fresh Arch Linux install, done with the `archinstall` script. A step-by-step guide you'll find in [Wiki](https://github.com/nwg-piotr/nwg-shell/wiki). This should probably work on Arch derivatives other than ArchLabs, but we have never tried. ;)
 
-[edit] OK, I did. 
+[edit] OK, I did. You can try, as well, but expect unexpected. ;)
 
-<a href="https://user-images.githubusercontent.com/20579136/180582953-6a4bada0-2c27-4139-b60b-78f7c972d6bb.jpeg"><img src="https://user-images.githubusercontent.com/20579136/180582953-6a4bada0-2c27-4139-b60b-78f7c972d6bb.jpeg" width=640></a>
+<a href="https://user-images.githubusercontent.com/20579136/180582953-6a4bada0-2c27-4139-b60b-78f7c972d6bb.jpeg"><img src="https://user-images.githubusercontent.com/20579136/180582953-6a4bada0-2c27-4139-b60b-78f7c972d6bb.jpeg" width=480></a>
 
-<a href="https://user-images.githubusercontent.com/20579136/180624922-e4486392-5c91-4896-bb4a-cdf60e6442a0.png"><img src="https://user-images.githubusercontent.com/20579136/180624922-e4486392-5c91-4896-bb4a-cdf60e6442a0.png" width=640></a>
+<a href="https://user-images.githubusercontent.com/20579136/180624922-e4486392-5c91-4896-bb4a-cdf60e6442a0.png"><img src="https://user-images.githubusercontent.com/20579136/180624922-e4486392-5c91-4896-bb4a-cdf60e6442a0.png" width=480></a>
 
 
 Currently, there is no out-of-the-box installer for other Linux distributions. You may try and install all the components manually.
