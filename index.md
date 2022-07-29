@@ -42,7 +42,7 @@ The Controls drop-down window provides brightness & volume controls, and audio o
 
 ![image](https://user-images.githubusercontent.com/20579136/179860809-34dd4449-1cee-46c0-bd70-2f970aacc46d.png)
 
-[See the screenshot gallery](https://ibb.co/album/cDMDSR)
+### [See the screenshot gallery](https://ibb.co/album/cDMDSR)
 
 ## Launcher: [nwg-drawer](https://github.com/nwg-piotr/nwg-drawer)
 
