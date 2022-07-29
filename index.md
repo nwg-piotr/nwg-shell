@@ -88,6 +88,8 @@ This program provides the notification daemon and a GTK-based user interface for
 
 <a href="https://user-images.githubusercontent.com/20579136/179748788-1929c74e-64f8-4280-80d1-45f02972f1ef.png">![2022-07-19-141124_screenshot](https://user-images.githubusercontent.com/20579136/179748788-1929c74e-64f8-4280-80d1-45f02972f1ef.png)</a>
 
+### [See more pictures](https://ibb.co/album/1fkVjz)
+
 ## Screen locker: [gtklock](https://github.com/jovanlanik/gtklock)
 
 - Author: Jovan Lanik
