@@ -64,6 +64,8 @@ The author's personal preference is to see the running tasks in the nwg-panel's 
 
 <a href="https://user-images.githubusercontent.com/20579136/179729044-6e15cb8a-9bca-45a4-ad48-d0271782dce0.png">![2022-07-19-122405_screenshot](https://user-images.githubusercontent.com/20579136/179729044-6e15cb8a-9bca-45a4-ad48-d0271782dce0.png)</a>
 
+### [See more pictures](https://ibb.co/album/Gscv89)
+
 ## Alternative launcher: [nwg-menu](https://github.com/nwg-piotr/nwg-menu)
 
 - Author: Piotr Miller
