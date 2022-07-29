@@ -4,6 +4,10 @@
 
 ![nwg-shell-header.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-shell-header_new2.png)
 
+The project is intended for users of all skill levels. Beginners will find four ready-made and immediately working desktop configurations to choose from. Advanced users will get a set of tools to build their own GTK-based user interface. 
+
+> We discourage you from editing .dotfiles manually. There's a GUI for that. The configuration files are in json format, which does not forgive mistakes.
+
 The user interface mostly consists of dedicated software, but also uses a couple of great third party products, that perfectly complement our vision. Many thanks to their authors for favorable attitude towards feature requests.
 
 The default (preinstalled) terminal emulator is [foot](https://codeberg.org/dnkl/foot) by Daniel Eklöf. This does not mean that we consider other terminals worse, but that we had to choose one. The remaining elements of the desktop environment, such as the text editor, file manager, web browser, and so on, are left to the user's choice. The author's subjective recommendation might be mousepad, Thunar, and Chromium / Chrome, but it doesn't really make much difference.
