@@ -112,6 +112,7 @@ Azote is an image browser with options useful when using them as wallpapers: cli
 
 <a href="https://user-images.githubusercontent.com/20579136/179864696-11c5c93d-f86b-487d-a508-edb885157506.png">![2022-07-20-012458_screenshot](https://user-images.githubusercontent.com/20579136/179864696-11c5c93d-f86b-487d-a508-edb885157506.png)</a>
 
+### [See more pictures](https://ibb.co/album/3v1HCf)
 
 ## Look and feel: [nwg-look](https://github.com/nwg-piotr/nwg-look)
 
