@@ -1,6 +1,4 @@
-<link rel="shortcut icon" 
-      type="image/x-icon" 
-      href="{{ '/favicon.ico' | relative_url }}" >
+<link rel="shortcut icon" type="image/png" href="{{site.url}}/favicon.png">
 
 # nwg-shell project
 
