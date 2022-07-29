@@ -4,7 +4,7 @@
 
 ![nwg-shell-header.png](https://raw.githubusercontent.com/nwg-piotr/nwg-shell-resources/master/images/nwg-shell/nwg-shell-header_new2.png)
 
-The project is intended for users of all skill levels. Beginners will find four ready-made and immediately working desktop configurations to choose from. Advanced users will get a set of tools to build their own GTK-based user interface. 
+The project is intended for users of all skill levels. Beginners will find four ready-made and immediately working desktop styles to choose from. Advanced users will get a set of tools to build their own GTK-based user interface. 
 
 > We discourage from editing .dotfiles manually. There's a GUI for that. The configuration files are in json format, which does not forgive mistakes.
 
