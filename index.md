@@ -24,7 +24,7 @@ On the backend side there's a lot of third party Free Open Source Software. We w
     - [Notification center: swaync](swaync)
     - [Screen locker: gtklock](gtklock)
     - [Wallpaper management: Azote](azote)
-    - [Look and feel: nwg-look](https://nwg-piotr.github.io/nwg-shell/#look-and-feel-nwg-look)
+    - [Look and feel: nwg-look](nwg-look)
     - [Display management: nwg-displays](https://nwg-piotr.github.io/nwg-shell/#display-management-nwg-displays)
     - [Shell settings: nwg-shell-config](https://nwg-piotr.github.io/nwg-shell/#shell-settings-nwg-shell-config)
     - [Utilities and scripts](https://nwg-piotr.github.io/nwg-shell/#utilities-and-scripts)
