@@ -1,4 +1,4 @@
-## Notification center: [swaync](https://github.com/ErikReider/SwayNotificationCenter)
+# Notification center: [swaync](https://github.com/ErikReider/SwayNotificationCenter)
 
 - Author: Erik Reider
 - License: GPL v3
