@@ -1,4 +1,4 @@
-## Panel: [nwg-panel](https://github.com/nwg-piotr/nwg-panel)
+# Panel: [nwg-panel](https://github.com/nwg-piotr/nwg-panel)
 
 - Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/nwg-panel/graphs/contributors)
 - License: MIT
