@@ -9,4 +9,4 @@ The author's personal preference is to see the running tasks in the nwg-panel's 
 
 ### [See more pictures](https://ibb.co/album/Gscv89)
 
-<a href="[https://user-images.githubusercontent.com/20579136/179729044-6e15cb8a-9bca-45a4-ad48-d0271782dce0.png](https://user-images.githubusercontent.com/20579136/179729044-6e15cb8a-9bca-45a4-ad48-d0271782dce0.png)">![Opaque-permanent-on-the-left-side](https://user-images.githubusercontent.com/20579136/182028903-0db93429-99b8-4c6b-9146-291f9ca0da0e.png)</a>
+<a href="https://user-images.githubusercontent.com/20579136/179729044-6e15cb8a-9bca-45a4-ad48-d0271782dce0.png![Opaque-permanent-on-the-left-side](https://user-images.githubusercontent.com/20579136/182028903-0db93429-99b8-4c6b-9146-291f9ca0da0e.png)</a>
