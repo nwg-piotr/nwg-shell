@@ -7,24 +7,22 @@ This program is a GUI to configure all the components in one place, together wit
 
 Nwg-shell-config allows to set the common sway preferences (screen, input devices, idle and lock screen configuration, main applications key bindings), as well as switch between predefined desktop styles. Each of the above may be adjusted to user's taste, that includes placement of the application drawer, dock, exit menu, and notification center.
 
-![2022-07-20-020818_screenshot](https://user-images.githubusercontent.com/20579136/179869662-ed91b9a7-1490-4e06-9693-9dab1db29e54.png)
+![screen](https://user-images.githubusercontent.com/20579136/182044885-f2a62627-00ef-4295-a3e5-076395827d32.png)
 
-![keyboard](https://user-images.githubusercontent.com/20579136/182044581-c2cff550-f3ac-43d5-8eb9-c7c2548196e4.png)
+![keyboard](https://user-images.githubusercontent.com/20579136/182044893-455ca4a4-6dae-4233-9cd7-f94e6a75cc27.png)
 
-![pointer-device](https://user-images.githubusercontent.com/20579136/182044585-cad82e47-83ff-48bc-9711-a5dfbfdb01e5.png)
+![pointer](https://user-images.githubusercontent.com/20579136/182044900-510b0dff-8902-443e-a833-37f317f0b559.png)
 
-![touchpad](https://user-images.githubusercontent.com/20579136/182044588-1f092325-3830-42ff-8aef-b35504578c74.png)
+![touchpad](https://user-images.githubusercontent.com/20579136/182044902-03fbf4df-9593-4ada-9a31-dfb6760da226.png)
 
-![idle-lock-screen](https://user-images.githubusercontent.com/20579136/182044592-3c93b3a7-9667-40a4-afd5-8f57ec8b7eb0.png)
+![idle-lock-screen](https://user-images.githubusercontent.com/20579136/182044904-ffd69a5f-73e9-4055-9003-dce970c234a8.png)
 
-![applications](https://user-images.githubusercontent.com/20579136/182044597-92e2ff0d-8c42-4f10-a2ee-3692449b8895.png)
+![applications](https://user-images.githubusercontent.com/20579136/182044909-e74f95de-d5ba-4078-87a5-8884dcda882d.png)
 
-![application-drawer](https://user-images.githubusercontent.com/20579136/182044606-00b2887b-abaa-4ced-8ce3-2838237b41dd.png)
+![application-drawer](https://user-images.githubusercontent.com/20579136/182044915-1201d5b1-3347-4299-8555-6ace58629af6.png)
 
-![dock](https://user-images.githubusercontent.com/20579136/182044612-22a76e01-031d-4897-a180-aea32d096722.png)
+![dock](https://user-images.githubusercontent.com/20579136/182044922-80ac4748-c6d3-4983-962d-9a9133f55cb3.png)
 
-![exit-menu](https://user-images.githubusercontent.com/20579136/182044614-0cdac87f-71fc-43b0-920c-36ad630c4bb8.png)
+![exit-menu](https://user-images.githubusercontent.com/20579136/182044929-751327f5-a5a0-4127-8215-dad78a905ef6.png)
 
-![panel-css](https://user-images.githubusercontent.com/20579136/182044617-0e450f50-6acb-4bcd-88eb-9644c750488b.png)
-
-![notification-center](https://user-images.githubusercontent.com/20579136/182044619-024afce5-24a7-4052-8a24-aaf70a5d8911.png)
+![custom-preset](https://user-images.githubusercontent.com/20579136/182044933-a96bb133-b146-4dc6-b7e3-c6a23ba2a06e.png)
