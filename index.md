@@ -84,7 +84,7 @@ Due to limited interest, the development of this launcher may be discontinued in
 
 ### [See more pictures](https://ibb.co/album/Mk4803)
 
-## Notification center: [swaync](https://github.com/ErikReider/SwayNotificationCenter)
+## Notification center: [swaync](swaync)
 
 - Author: Erik Reider
 - License: GPL v3
