@@ -3,7 +3,7 @@
 - Author: Jovan Lanik
 - License: GPL v3
 
-The shell uses gtklock as the default locker in the 'Idle & Lock screen' settings. We add a random image background (local or from unsplash.com), and (optionally) a media player control window over the lock screen.
+The shell uses Jovan Lanik's gtklock as the default locker in the 'Idle & Lock screen' settings. We add a random image background (local or from unsplash.com), and (optionally) a media player control window over the lock screen.
 
 ### Lock screen w/ random local image & playerctl window
 
