@@ -1,7 +1,7 @@
 # Utilities and scripts
 
-- [Screenshots: swappy](#swappy)
-- [Button bar: nwg-bar](#nwg-bar)
+- [Screenshots: swappy](#Screenshots: swappy)
+- [Button bar: nwg-bar](#Button bar: nwg-bar)
 - [Desktop widgets: nwg-wrapper](#nwg-wrapper)
 - [Icon picker: nwg-icon-picker](#nwg-icon-picker)
 - [Workflow: autotiling](#autotiling)
