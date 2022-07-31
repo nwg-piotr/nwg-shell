@@ -7,4 +7,10 @@ Nwg-drawer is the primary launcher, and displays the application grid. The searc
 
 <a href="https://user-images.githubusercontent.com/20579136/179719429-e21bb41b-acdf-4d3e-a095-5d9acad8ef21.png">![2022-07-19-113502_screenshot](https://user-images.githubusercontent.com/20579136/179719429-e21bb41b-acdf-4d3e-a095-5d9acad8ef21.png)</a>
 
-### [See more pictures](https://ibb.co/album/B2wRMX)
+### Category-filtered view
+
+![Category-filtered-view](https://user-images.githubusercontent.com/20579136/182026699-922a87c3-1015-4994-8381-6da676803a52.png)
+
+### Search results
+
+![Search-results](https://user-images.githubusercontent.com/20579136/182026748-7f2b5719-8bc8-44a4-81c2-a66a19e95de7.png)
