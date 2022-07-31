@@ -1,4 +1,6 @@
-# nwg-panel 0.7.3 (2022.08.31)
+# Recent updates
+
+## nwg-panel 0.7.3 (2022.08.31)
 
 Clock module: added Calendar window, with the ability to save a simple note for each day.
 
