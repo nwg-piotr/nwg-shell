@@ -19,7 +19,7 @@ On the backend side there's a lot of third party Free Open Source Software. We w
 - [What's inside](https://nwg-piotr.github.io/nwg-shell/#whats-inside)
     - [Panel: nwg-panel](nwg-panel)
     - [Launcher: nwg-drawer](nwg-drawer)
-    - [Dock: nwg-dock](https://nwg-piotr.github.io/nwg-shell/#dock-nwg-dock)
+    - [Dock: nwg-dock](nwg-dock)
     - [Alternative launcher: nwg-menu](https://nwg-piotr.github.io/nwg-shell#alternative-launcher-nwg-menu)
     - [Notification center: swaync](https://nwg-piotr.github.io/nwg-shell/#notification-center-swaync)
     - [Screen locker: gtklock](https://nwg-piotr.github.io/nwg-shell/#screen-locker-gtklock)
