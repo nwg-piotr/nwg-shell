@@ -27,7 +27,7 @@ On the backend side there's a lot of third party Free Open Source Software. We w
     - [Look and feel: nwg-look](nwg-look)
     - [Display management: nwg-displays](nwg-displays)
     - [Shell settings: nwg-shell-config](nwg-shell-config)
-    - [Utilities and scripts](https://nwg-piotr.github.io/nwg-shell/#utilities-and-scripts)
+    - [Utilities and scripts](utilities-and-scripts)
 - [Where to get](https://nwg-piotr.github.io/nwg-shell/#where-to-get)
 - [Recent updates](updates)
 - [Credits](https://nwg-piotr.github.io/nwg-shell/#credits)
