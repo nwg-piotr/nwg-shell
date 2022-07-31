@@ -1,12 +1,5 @@
 # Utilities and scripts
 
-- [Screenshots: swappy](#Screenshots: swappy)
-- [Button bar: nwg-bar](#Button bar: nwg-bar)
-- [Desktop widgets: nwg-wrapper](#nwg-wrapper)
-- [Icon picker: nwg-icon-picker](#nwg-icon-picker)
-- [Workflow: autotiling](#autotiling)
-- [System info: gopsuinfo](#gopsuinfo)
-
 ## Screenshots: [swappy](https://github.com/jtheoof/swappy)
 
 - Author: Jeremy Attali
