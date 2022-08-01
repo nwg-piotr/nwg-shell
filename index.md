@@ -36,6 +36,8 @@ On the backend side there's a lot of third party Free Open Source Software. We w
 
 The easiest and fastest way is to install [ArchLabs Linux](https://archlabslinux.com), whose sway session is nothing but a full nwg-shell implementation. Some packages may be out of date, though.
 
+<a href="https://user-images.githubusercontent.com/20579136/182092363-791405ec-2bd8-4c19-91ce-c2d60a940e56.png"><img src="https://user-images.githubusercontent.com/20579136/182092363-791405ec-2bd8-4c19-91ce-c2d60a940e56.png" width=480></a>
+
 A slightly more complicated way is to set up nwg-shell on a fresh Arch Linux install, done with the `archinstall` script. A step-by-step guide you'll find in [Wiki](https://github.com/nwg-piotr/nwg-shell/wiki). This should probably work on Arch derivatives other than ArchLabs, but we have never tried. ;)
 
 [edit] OK, I did. You can try, as well, but expect unexpected. ;)
