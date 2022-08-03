@@ -14,6 +14,8 @@ The default (preinstalled) terminal emulator is [foot](https://codeberg.org/dnkl
 
 On the backend side there's a lot of third party Free Open Source Software. We will try to list all the applications and libraries in Credits.
 
+If you want to share an idea, find a solution to a problem or discuss the project in general, please visit [**Discussion**](https://github.com/nwg-piotr/nwg-shell/discussions).
+
 # TOC
 
 - What's inside
