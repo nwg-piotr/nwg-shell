@@ -9,13 +9,7 @@ styles](https://github.com/nwg-piotr/nwg-shell-config/blob/master/README.md#desk
 
 # Installation
 
-## The hard way
-
 [How to set up nwg-shell on minimal Arch Linux install in several simple steps](https://github.com/nwg-piotr/nwg-shell/wiki) - Wiki
-
-## The easy way
-
-Install [ArchLabs Linux](https://archlabslinux.com) with preconfigured sway session.
 
 # nwg-shell components:
 
