@@ -42,6 +42,8 @@ The default way is to set up nwg-shell on a fresh Arch Linux install, done with 
 
 This should work on various Arch derivatives, but expect unexpected. ;) Some packages may be out of date, some other may be missing, and you'll need to install them manually.
 
+<a href="https://user-images.githubusercontent.com/20579136/185012961-2ddbab2a-d9d0-4d58-85e3-9a928effdb46.png"><img src="https://user-images.githubusercontent.com/20579136/185012961-2ddbab2a-d9d0-4d58-85e3-9a928effdb46.png" width=480></a>
+
 <a href="https://user-images.githubusercontent.com/20579136/180582953-6a4bada0-2c27-4139-b60b-78f7c972d6bb.jpeg"><img src="https://user-images.githubusercontent.com/20579136/180582953-6a4bada0-2c27-4139-b60b-78f7c972d6bb.jpeg" width=480></a>
 
 <a href="https://user-images.githubusercontent.com/20579136/180624922-e4486392-5c91-4896-bb4a-cdf60e6442a0.png"><img src="https://user-images.githubusercontent.com/20579136/180624922-e4486392-5c91-4896-bb4a-cdf60e6442a0.png" width=480></a>
