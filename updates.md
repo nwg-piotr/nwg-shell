@@ -1,9 +1,14 @@
 # Recent updates
 
+## nwg-panel 0.7.5 (2022.08.22)
+
+- more icon names updated to be Adawaita conformant #141 by @tewkanz
+- fixed SwayWorkspaces crash #142
+
 ## nwg-panel 0.7.4 (2022.08.15)
 
-- nwg-panel-config & Clock module: icon names fixed to work with Adwaita icon theme;
-- added a fix to prevent SwayWorkspaces from crashing on empty floating node.name - hopefully, as the issue reported from NixOS has not been reproduced on Arch Linux.
+- nwg-panel-config & Clock module: icon names fixed to work with Adwaita icon theme
+- added a fix to prevent SwayWorkspaces from crashing on empty floating node.name
 
 ## nwg-panel 0.7.3 (2022.07.31)
 
