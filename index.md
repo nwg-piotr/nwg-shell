@@ -48,6 +48,8 @@ This should work on various Arch derivatives, but expect unexpected. ;) Some pac
 
 <a href="https://user-images.githubusercontent.com/20579136/185021801-180ad161-89ce-4c72-ae5e-3dce87d8409d.png"><img src="https://user-images.githubusercontent.com/20579136/185021801-180ad161-89ce-4c72-ae5e-3dce87d8409d.png" width=480></a>
 
+<a href="https://user-images.githubusercontent.com/20579136/186039701-e367b2f0-ab9a-4530-b23c-d640e3c6c6a0.png"><img src="https://user-images.githubusercontent.com/20579136/186039701-e367b2f0-ab9a-4530-b23c-d640e3c6c6a0.png" width=480></a>
+
 <a href="https://user-images.githubusercontent.com/20579136/180624922-e4486392-5c91-4896-bb4a-cdf60e6442a0.png"><img src="https://user-images.githubusercontent.com/20579136/180624922-e4486392-5c91-4896-bb4a-cdf60e6442a0.png" width=480></a>
 
 Currently, there is no out-of-the-box installer for other Linux distributions. You may try and install all the components manually.
