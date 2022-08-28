@@ -2,12 +2,14 @@
 
 /* Recommended if panel "height"  unset or smaller then your theme default button height */
 button {
-    margin: 2px
+    margin: 2px;
+    background: none;
+    border: none
 }
 
 #button-start {
     background: none;
-    border: 0px
+    border: 0
 }
 
 /* WindowBox in SwayTaskBar is a custom widget, that needs this and the next name
@@ -17,7 +19,7 @@ button {
     padding-right: 4px
 }
 #task-box-focused {
-    background-color: rgba (255, 255, 255, 0.12);
+    background-color: rgba(255, 255, 255, 0.12);
     padding-left: 4px;
     padding-right: 4px
 }
@@ -27,37 +29,37 @@ button {
 
 /* Sample button in sample config w/ no background nor border */
 #button-custom {
-    background: rgba (0, 0, 0, 0.0);
-    border: 0px
+    background: rgba(0, 0, 0, 0.0);
+    border: 0
 }
 
 /* Top panel in sample config uses this name */
 #panel-top {
-    background-color: rgba (11, 11, 11, 0.9);
+    background-color: rgba(11, 11, 11, 0.9);
     color: #eeeeee
 }
 
 /* Bottom panel in sample config uses this name */
 #panel-bottom {
-    background-color: rgba (0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     color: #eeeeee
 }
 
 /* Controls window in sample config uses this name */
 #controls-window {
-    border-radius: 0px;
+    border-radius: 0;
     background: #27132e;
     color: #eeeeee
 }
 
 /* Executors usually behave better in monospace fonts */
 #executor-label {
-    font-family: DejaVu Sans Mono
+    font-family: DejaVu Sans Mono, monospace
 }
 
 /* and so does the Clock */
 #clock {
-    font-family: DejaVu Sans Mono;
+    font-family: DejaVu Sans Mono, monospace;
     font-size: 14px
 }
 
@@ -97,6 +99,5 @@ button {
 }
 
 #dwl-tag-selected {
-    border: solid 2px;
-    border-color: #81a1c1
+    border: 2px solid #81a1c1;
 }

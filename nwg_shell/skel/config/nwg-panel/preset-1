@@ -16,6 +16,7 @@
     "css-name": "panel-top",
     "icons": "light",
     "modules-left": [
+      "button-launcher",
       "sway-workspaces"
     ],
     "modules-center": [
@@ -26,7 +27,8 @@
       "executor-cpubar",
       "scratchpad",
       "executor-updates",
-      "tray"
+      "tray",
+      "button-help"
     ],
     "sway-taskbar": {},
     "controls-settings": {
@@ -131,14 +133,6 @@
       "icon-placement": "left"
     },
     "width": "auto",
-    "button-config": {
-      "command": "nwg-panel-config",
-      "icon": "nwg-panel",
-      "label": "",
-      "label-position": "right",
-      "css-name": "button-custom",
-      "icon-size": 16
-    },
     "sway-workspaces": {
       "numbers": [
         "1",
@@ -212,6 +206,27 @@
       "icon-size": 16,
       "interval": 1,
       "always-show-icon": true
+    },
+    "exclusive-zone": true,
+    "openweather": {},
+    "brightness-slider": {},
+    "button-launcher": {
+      "command": "nwg-drawer",
+      "icon": "grid",
+      "label": "",
+      "label-position": "right",
+      "tooltip": "Application drawer [Alt]+F1",
+      "css-name": "",
+      "icon-size": 16
+    },
+    "button-help": {
+      "command": "nwg-shell-help",
+      "icon": "help-about",
+      "label": "",
+      "label-position": "right",
+      "tooltip": "Show/hide help [S]+F1",
+      "css-name": "",
+      "icon-size": 16
     }
   }
 ]

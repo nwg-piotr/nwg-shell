@@ -25,7 +25,8 @@
       "scratchpad",
       "executor-updates",
       "clock",
-      "tray"
+      "tray",
+      "button-help"
     ],
     "sway-taskbar": {
       "workspace-buttons": false,
@@ -225,6 +226,18 @@
       "icon-size": 16,
       "interval": 1,
       "always-show-icon": true
+    },
+    "exclusive-zone": true,
+    "openweather": {},
+    "brightness-slider": {},
+    "button-help": {
+      "command": "nwg-shell-help",
+      "icon": "help-about",
+      "label": "",
+      "label-position": "right",
+      "tooltip": "Show/hide help [S]+F1",
+      "css-name": "",
+      "icon-size": 16
     }
   }
 ]

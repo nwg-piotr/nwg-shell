@@ -24,7 +24,8 @@
     "modules-right": [
       "scratchpad",
       "executor-updates",
-      "tray"
+      "tray",
+      "button-help"
     ],
     "controls-settings": {
       "alignment": "right",
@@ -173,6 +174,18 @@
       "icon-size": 16,
       "interval": 1,
       "always-show-icon": true
+    },
+    "exclusive-zone": true,
+    "openweather": {},
+    "brightness-slider": {},
+    "button-help": {
+      "command": "nwg-shell-help",
+      "icon": "help-about",
+      "label": "",
+      "label-position": "right",
+      "tooltip": "Show/hide help [S]+F1",
+      "css-name": "",
+      "icon-size": 16
     }
   }
 ]

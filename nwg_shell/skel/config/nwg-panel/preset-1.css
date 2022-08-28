@@ -1,8 +1,10 @@
 /***** SUGGESTED TO CHANGE CAREFULLY *****/
 
-/* Recommended if panel "height" unset or smaller then your theme default button height */
+/* Recommended if panel "height"  unset or smaller then your theme default button height */
 button {
-    margin: 2px
+    margin: 2px;
+    background: none;
+    border: none
 }
 
 /* SwayTaskBar and SwayWorkspaces use custom widgets, that need this and the next name
@@ -13,7 +15,7 @@ button {
 }
 
 #task-box-focused {
-    background-color: rgba (255, 255, 255, 0.12);
+    background-color: rgba(255, 255, 255, 0.12);
     padding-left: 4px;
     padding-right: 4px
 }
@@ -23,7 +25,7 @@ button {
 
 /* Sample button in sample config w/ no background nor border */
 #button-custom {
-    background: rgba (0, 0, 0, 0.0);
+    background: rgba(0, 0, 0, 0.0);
     border: 0
 }
 
@@ -48,12 +50,12 @@ button {
 
 /* Executors usually behave better in monospace fonts */
 #executor-label {
-    font-family: DejaVu Sans Mono
+    font-family: DejaVu Sans Mono, monospace
 }
 
 /* and so does the Clock */
 #clock {
-    font-family: DejaVu Sans Mono;
+    font-family: DejaVu Sans Mono, monospace;
     font-size: 16px
 }
 
@@ -79,7 +81,7 @@ button {
 #dwl-tag-free {
     font-family: monospace;
     color: #eee;
-    background-color: rgba (32, 50, 90, 1.0);
+    background-color: rgba(32, 50, 90, 1.0);
     padding-left: 3px;
     padding-right: 3px;
 }
@@ -93,6 +95,5 @@ button {
 }
 
 #dwl-tag-selected {
-    border: solid 2px;
-    border-color: #81a1c1
+    border: 2px solid #81a1c1;
 }
