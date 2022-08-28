@@ -71,6 +71,35 @@ def copy_from_skel(name, folder="config", skip_confirmation=False):
             print("Failure: {}".format(e), file=sys.stderr)
 
 
+def update_sway_config():
+    # backup original file
+    now = datetime.datetime.now()
+    new_name = now.strftime("config-backup-%Y%m%d-%H%M%S")
+    src = os.path.join(config_home, "sway/config")
+    dst = os.path.join(config_home, "sway/{}".format(new_name))
+    try:
+        if os.path.isfile(src):
+            copy(src, dst)
+            print("Your old sway config file has been saved as '{}'".format(new_name))
+    except Exception as e:
+        print("Couldn't back up your old sway config: {}".format(e))
+
+    a = input("You are about to overwrite your sway config file. Proceed? y/N ")
+    proceed = a.strip().upper() == "Y"
+
+    if proceed:
+        src = os.path.join(dir_name, "skel/config/sway/config")
+        dst = os.path.join(config_home, "sway/config")
+        print("Copying '{}'".format(dst), end=" ")
+        try:
+            copy(src, dst)
+            print("OK")
+        except Exception as e:
+            print(e)
+    else:
+        print("Sway config file update skipped.")
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-a",
@@ -155,34 +184,7 @@ def main():
                 if not changed:
                     print("No change needed.")
 
-                # Update sway config
-                # backup original file
-                print("\n[Updating sway config file]")
-                now = datetime.datetime.now()
-                new_name = now.strftime("config-backup-%Y%m%d-%H%M%S")
-                src = os.path.join(config_home, "sway/config")
-                dst = os.path.join(config_home, "sway/{}".format(new_name))
-                try:
-                    if os.path.isfile(src):
-                        copy(src, dst)
-                        print("Your old sway config file has been saved as '{}'".format(new_name))
-                except Exception as e:
-                    print("Couldn't back up your old sway config: {}".format(e))
-
-                a = input("Your sway config file needs to be overwritten. Proceed? y/N ")
-                proceed = a.strip().upper() == "Y"
-
-                if proceed:
-                    src = os.path.join(dir_name, "skel/config/sway/config")
-                    dst = os.path.join(config_home, "sway/config")
-                    print("Copying '{}'".format(dst), end=" ")
-                    try:
-                        copy(src, dst)
-                        print("OK")
-                    except Exception as e:
-                        print(e)
-                else:
-                    print("Sway config file update skipped.")
+                update_sway_config()
 
                 # Use nwg-look to apply default GTK settings if it has not been done yet
                 if not os.path.isfile(os.path.join(data_home, "nwg-look/gsettings")):
@@ -193,15 +195,20 @@ def main():
 
             elif __version__ == "0.2.4":
                 print("--------------------------------------------------------------")
-                print("| nwg-shell 0.2.4 adds two buttons to default panel presets. |")
+                print("|  nwg-shell 0.2.4 simplifies some key bindings in the main  |")
+                print("|   sway config file, and adds 2 buttons to panel presets.   |")
                 print("| Also some minor bugs in related css files have been fixed. |")
-                print("|         Would you like to overwrite your `preset*`         |")
-                print("| and `preset=*.css` files for nwg-panel with defaults now?  |")
+                print("|   If you proceed with the upgrade, your sway config file,  |")
+                print("|      panel presets and panel css style sheets will be      |")
+                print("|              overwritten with new defaults.                |")
                 print("|    Changes you made to panel presets 0-3 will be lost.     |")
+                print("|        Your old sway config file will be backed up.        |")
                 print("|                                                            |")
                 print("|   You may also do it later with the `nwg-shell-installer`  |")
                 print("|           or `nwg-shell-installer -a` command.             |")
                 print("--------------------------------------------------------------\n")
+
+                update_sway_config()
 
                 a = input("Overwrite nwg-panel config files? y/N ")
                 proceed = a.strip().upper() == "Y"
@@ -212,7 +219,7 @@ def main():
                     print("nwg-panel configs update cancelled.")
 
         print("\n--------------------------------------------------------------")
-        print("|             Reload sway for changes to take effect.        |")
+        print("|             Restart sway for changes to take effect.       |")
         print("--------------------------------------------------------------\n")
 
         # Inform about no longer needed stuff
