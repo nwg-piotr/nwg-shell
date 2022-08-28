@@ -17,6 +17,7 @@
     "icons": "light",
     "menu-start": "off",
     "modules-left": [
+      "button-launcher",
       "playerctl"
     ],
     "modules-center": [
@@ -25,7 +26,8 @@
     "modules-right": [
       "scratchpad",
       "executor-updates",
-      "tray"
+      "tray",
+      "button-help"
     ],
     "controls": "right",
     "controls-settings": {
@@ -162,6 +164,27 @@
       "icon-size": 16,
       "interval": 1,
       "always-show-icon": true
+    },
+    "exclusive-zone": true,
+    "openweather": {},
+    "brightness-slider": {},
+    "button-launcher": {
+      "command": "nwg-drawer",
+      "icon": "grid",
+      "label": "",
+      "label-position": "right",
+      "tooltip": "Application drawer [Alt]+F1",
+      "css-name": "",
+      "icon-size": 16
+    },
+    "button-help": {
+      "command": "nwg-shell-help",
+      "icon": "help-about",
+      "label": "",
+      "label-position": "right",
+      "tooltip": "Show/hide help [S]+F1",
+      "css-name": "",
+      "icon-size": 16
     }
   },
   {
@@ -284,6 +307,11 @@
       "icon-placement": "left"
     },
     "playerctl": {},
-    "sway-workspaces": {}
+    "sway-workspaces": {},
+    "exclusive-zone": true,
+    "openweather": {},
+    "brightness-slider": {},
+    "dwl-tags": {},
+    "tray": {}
   }
 ]

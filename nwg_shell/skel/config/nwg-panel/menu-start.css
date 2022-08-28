@@ -1,7 +1,7 @@
 window {
-    background-color: rgba (23, 53, 63, 0.95);
+    background-color: rgba(23, 53, 63, 0.95);
     color: #eeeeee;
-    border-radius: 0px
+    border-radius: 0
 }
 
 list {
@@ -10,7 +10,7 @@ list {
 }
 
 entry {
-    background-color: rgba (0, 0, 0, 0.2)
+    background-color: rgba(0, 0, 0, 0.2)
 }
 
 button {
@@ -19,5 +19,5 @@ button {
 }
 
 button:hover {
-    background-color: rgba (255, 255, 255, 0.1)
+    background-color: rgba(255, 255, 255, 0.1)
 }
