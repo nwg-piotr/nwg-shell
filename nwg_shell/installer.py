@@ -192,13 +192,16 @@ def main():
                     launch("nwg-look -a")
 
             elif __version__ == "0.2.4":
-                print("* nwg-shell 0.2.4 adds two buttons to default panel presets. *")
-                print("* Also some minor bugs in related css files have been fixed. *")
-                print("*         Would you like to overwrite your `preset*`         *")
-                print("* and `preset=*.css` files for nwg-panel with defaults now?  *")
-                print("* Your changes to panel presets 0-3, if any,  will be lost.  *\n")
-                print("*   You may also do it later with the `nwg-shell-installer`  *")
-                print("*           or `nwg-shell-installer -a` command.             *\n")
+                print("--------------------------------------------------------------")
+                print("| nwg-shell 0.2.4 adds two buttons to default panel presets. |")
+                print("| Also some minor bugs in related css files have been fixed. |")
+                print("|         Would you like to overwrite your `preset*`         |")
+                print("| and `preset=*.css` files for nwg-panel with defaults now?  |")
+                print("|    Changes you made to panel presets 0-3, will be lost.    |")
+                print("|                                                            |")
+                print("|   You may also do it later with the `nwg-shell-installer`  |")
+                print("|           or `nwg-shell-installer -a` command.             |")
+                print("--------------------------------------------------------------\n")
 
                 a = input("Overwrite nwg-panel config files? y/N ")
                 proceed = a.strip().upper() == "Y"

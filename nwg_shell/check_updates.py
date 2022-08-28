@@ -29,7 +29,7 @@ def main():
 
     if shell_data["last-upgrade"] and __version__:
         if is_newer(__version__, shell_data["last-upgrade"]) and __version__ in need_upgrade:
-            print("Upgrade to {} needed. Run 'nwg-shell-installer -u'.".format(__version__))
+            print("Upgrade to {} available. Run 'nwg-shell-installer -u'.".format(__version__))
             time.sleep(5)
             subprocess.Popen(
                 'exec {}'.format("notify-send -i /usr/share/pixmaps/nwg-shell.svg 'nwg-shell v{} available' "
