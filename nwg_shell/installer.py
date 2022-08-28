@@ -212,7 +212,7 @@ def main():
                     print("nwg-panel configs update cancelled.")
 
         print("\n--------------------------------------------------------------")
-        print("|             Reload sway for changes to take effect.          |")
+        print("|             Reload sway for changes to take effect.        |")
         print("--------------------------------------------------------------\n")
 
         # Inform about no longer needed stuff
