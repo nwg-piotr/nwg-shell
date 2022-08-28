@@ -197,7 +197,7 @@ def main():
                 print("| Also some minor bugs in related css files have been fixed. |")
                 print("|         Would you like to overwrite your `preset*`         |")
                 print("| and `preset=*.css` files for nwg-panel with defaults now?  |")
-                print("|    Changes you made to panel presets 0-3, will be lost.    |")
+                print("|    Changes you made to panel presets 0-3 will be lost.     |")
                 print("|                                                            |")
                 print("|   You may also do it later with the `nwg-shell-installer`  |")
                 print("|           or `nwg-shell-installer -a` command.             |")
@@ -211,9 +211,9 @@ def main():
                 else:
                     print("nwg-panel configs update cancelled.")
 
-        print("\n-------------------------------------------")
-        print("| Reload sway for changes to take effect. |")
-        print("-------------------------------------------\n")
+        print("\n--------------------------------------------------------------")
+        print("|             Reload sway for changes to take effect.          |")
+        print("--------------------------------------------------------------\n")
 
         # Inform about no longer needed stuff
         # Packages
