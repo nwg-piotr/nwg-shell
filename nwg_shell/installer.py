@@ -210,7 +210,7 @@ def main():
 
                 update_sway_config()
 
-                a = input("Overwrite nwg-panel config files? y/N ")
+                a = input("\nOverwrite nwg-panel config files? y/N ")
                 proceed = a.strip().upper() == "Y"
 
                 if proceed:
