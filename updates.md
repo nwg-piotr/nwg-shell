@@ -1,6 +1,6 @@
 # Recent updates
 
-## nwg-shell 0.2.4
+## nwg-shell 0.2.4 (2022.08.29)
 
 Since the ArchLabs 2022.08.21 release, sway, as well as nwg-shell, are no longer included. If you'd like to use them on AL anyway, see [Discussions](https://github.com/nwg-piotr/nwg-shell/discussions/17).
 
