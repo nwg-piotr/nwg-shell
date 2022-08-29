@@ -19,6 +19,10 @@ Related:
 - resolved `autotiling` multiple instances issue, appearing on sway reload.
 - added support for the gtklock `userinfo` module.
 
+### nwg-shell-config 0.3.10
+
+- Hot fix for nwg-lock crashing on the "gtklock-userinfo" config key missing.
+
 ## nwg-panel 0.7.5 (2022.08.22)
 
 - more icon names updated to be Adawaita conformant #141 by @tewkanz
