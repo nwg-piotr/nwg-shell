@@ -1,5 +1,24 @@
 # Recent updates
 
+## nwg-shell 0.2.4
+
+Since the ArchLabs 2022.08.21 release, sway, as well as nwg-shell, are no longer included. If you'd like to use them on AL anyway, see [Discussions](https://github.com/nwg-piotr/nwg-shell/discussions/17).
+
+The 0.2.4 release simplifies some key bindings in the main sway config file, and adds 2 buttons to panel presets.  Also some minor bugs in related css files have been fixed. Performing the upgrade will overwrite your sway config file, panel presets, and panel css style sheets will the new defaults. Your current sway config file will be backed up during the upgrade process. Changes you made to panel presets 0-3 will be lost. You may want to back them up manually, before issuing the `nwg-shell-installer -u` command. You may also run the command, and then skip overwriting files. After this, you won't be notified about the upgrade availability any longer.
+
+Related:
+
+### nwg-panel v0.7.6
+
+- added grid (launcher) icon;
+- CustomButton module: added tooltip text.
+
+### nwg-shell-config v0.3.9
+
+- added `nwg-shell-help` entry point, to get rid of the nwg-wrapper-based help widget. Updated (in nwg-shell v0.2.4) panel presets and the main sway config file come with the help button, and the `[Super]+F1` key binding, to show the keyboard shortcuts help. You may customize the help window behaviour in the shell config utility. The help content may be edited in the `~/.local/share/nwg-shell-config/help.pango` file.
+- resolved `autotiling` multiple instances issue, appearing on sway reload.
+- added support for the gtklock `userinfo` module.
+
 ## nwg-panel 0.7.5 (2022.08.22)
 
 - more icon names updated to be Adawaita conformant #141 by @tewkanz
