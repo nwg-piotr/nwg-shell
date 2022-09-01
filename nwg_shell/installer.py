@@ -145,7 +145,6 @@ def main():
             print("Installation cancelled")
             sys.exit(0)
         else:
-            # v0.2.0
             if __version__ == "0.2.0":
                 print("\n[Updating panel presets]")
                 for item in ["preset-0", "preset-1", "preset-2", "preset-3"]:

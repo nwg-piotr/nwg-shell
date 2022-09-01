@@ -1,7 +1,7 @@
 exec swaync -s ~/.config/swaync/preset-0.css
 exec nm-applet --indicator
 exec swayidle -w timeout 1200 nwg-lock timeout 1800 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' before-sleep nwg-lock
-exec_always autotiling
+exec_always nwg-autotiling
 exec_always nwg-drawer -r -s preset-0.css -term foot
 exec_always nwg-panel -c preset-0 -s preset-0.css
 exec_always nwg-shell-check-updates
