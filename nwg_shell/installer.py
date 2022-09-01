@@ -242,7 +242,7 @@ def main():
                     for line in old:
                         if "autotiling" not in line:
                             new.append(line)
-                        else:
+                        elif "nwg-autotiling" not in line:
                             new.append("exec_always nwg-autotiling")
                             print("`autotiling` replaced  with nwg-autotiling")
                             changed = True
