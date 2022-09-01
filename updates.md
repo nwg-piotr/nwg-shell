@@ -16,7 +16,7 @@ This release replaces the `autotiling` script (package) with the `nwg-autotiling
 - fixed initial resolution for scaled displays (by @nvski);
 - config migrated from mistakenly named `~/.config/nwg-outputs` to `~/.config/nwg-displays`.
 
-## gopsuinfo 0.1.2 (2022.08.31)
+### gopsuinfo 0.1.2
 
 - added attempt to read k10temp_tctl temperature sensor.
 
