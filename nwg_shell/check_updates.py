@@ -25,7 +25,7 @@ def main():
         save_json(shell_data, shell_data_file)
 
     # Shell versions that need to trigger upgrade
-    need_upgrade = ["0.2.0", "0.2.4"]
+    need_upgrade = ["0.2.0", "0.2.4", "0.2.5"]
 
     if shell_data["last-upgrade"] and __version__:
         if is_newer(__version__, shell_data["last-upgrade"]) and __version__ in need_upgrade:

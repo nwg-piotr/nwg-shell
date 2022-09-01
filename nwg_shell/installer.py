@@ -21,7 +21,7 @@ from shutil import copy, copy2, copytree
 
 from nwg_shell.__about__ import __version__
 
-from nwg_shell.tools import load_json, save_json
+from nwg_shell.tools import load_json, save_json, load_text_file, save_list_to_text_file
 
 dir_name = os.path.dirname(__file__)
 
@@ -132,7 +132,7 @@ def main():
     # Upgrade
     if args.upgrade:
         print("--------------------------------------------------------------")
-        print("|        You are about to upgrade nwg-shell to v{}.       |".format(__version__))
+        print("|       You are about to upgrade nwg-shell to v{}.        |".format(__version__))
         print("|    This will modify and/or replace your config files.      |")
         print("|                                                            |")
         print("|   If something goes wrong, run 'nwg-shell-installer -a'    |")
@@ -218,13 +218,48 @@ def main():
                 else:
                     print("nwg-panel configs update cancelled.")
 
+            elif __version__ == "0.2.5":
+                print("--------------------------------------------------------------")
+                print("|   nwg-shell 0.2.5 comes with own `nwg-autotiling` script,  |")
+                print("|  that replaces the `autotiling` package. This is to avoid  |")
+                print("| adding the nwg-shell-specific stuff to the original script,|")
+                print("|       which is quite widely used outside the project.      |")
+                print("|                                                            |")
+                print("|   The `nwg-autotiling` script should be more stable here.  |")
+                print("|                                                            |")
+                print("|     The upgrade process will only replace `autotiling`     |")
+                print("|   with `nwg-autotiling` in your `autostart` config file.   |")
+                print("|                   It should be 100% safe.                  |")
+                print("--------------------------------------------------------------\n")
+
+                a = input("Proceed with `autostart` upgrade? y/N ")
+                proceed = a.strip().upper() == "Y"
+
+                if proceed:
+                    autostart = os.path.join(config_home, "sway", "autostart")
+                    old = load_text_file(autostart).splitlines()
+                    new = []
+                    changed = False
+                    for line in old:
+                        if "autotiling" not in line:
+                            new.append(line)
+                        else:
+                            new.append("exec_always nwg-autotiling")
+                            print("`autotiling` replaced  with nwg-autotiling")
+                            changed = True
+
+                    if changed:
+                        save_list_to_text_file(new, autostart)
+                    else:
+                        print("No change needed")
+
         print("\n--------------------------------------------------------------")
         print("|             Restart sway for changes to take effect.       |")
         print("--------------------------------------------------------------\n")
 
         # Inform about no longer needed stuff
         # Packages
-        for item in ["lxappearance", "wdisplays", "nwg-wrapper"]:
+        for item in ["lxappearance", "wdisplays", "nwg-wrapper", "autotiling"]:
             if is_command(item):
                 print("The '{}' package is no longer necessary, you may uninstall it now.".format(item))
 

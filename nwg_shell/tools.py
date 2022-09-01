@@ -17,6 +17,23 @@ def save_json(src_dict, path):
         json.dump(src_dict, f, indent=2)
 
 
+def load_text_file(path):
+    try:
+        with open(path, 'r') as file:
+            data = file.read()
+            return data
+    except Exception as e:
+        print(e)
+        return None
+
+
+def save_list_to_text_file(data, file_path):
+    text_file = open(file_path, "w")
+    for line in data:
+        text_file.write(line + "\n")
+    text_file.close()
+
+
 def is_newer(string_new, string_existing):
     """
     Compares versions in format 'major.minor.patch' (just numbers allowed).
