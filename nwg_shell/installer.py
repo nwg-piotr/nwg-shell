@@ -252,10 +252,6 @@ def main():
                     else:
                         print("No change needed")
 
-        print("\n--------------------------------------------------------------")
-        print("|             Restart sway for changes to take effect.       |")
-        print("--------------------------------------------------------------\n")
-
         # Inform about no longer needed stuff
         # Packages
         for item in ["lxappearance", "wdisplays", "nwg-wrapper", "autotiling"]:
@@ -272,6 +268,10 @@ def main():
         # Save shell data file
         shell_data = {"last-upgrade": __version__}
         save_json(shell_data, shell_data_file)
+
+        print("\n--------------------------------------------------------------")
+        print("|             Restart sway for changes to take effect.       |")
+        print("--------------------------------------------------------------\n")
 
     # Installation
     else:
