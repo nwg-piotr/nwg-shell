@@ -1,5 +1,21 @@
 # Recent updates
 
+## nwg-shell 0.2.5 (2022.09.02)
+
+This release replaces the `autotiling` script (package) with the `nwg-autotiling` command (nwg-shell-config entry point). This is to avoid adding the shell-specific stuff to the original script, as it's quite widely used outside the project. All the arguments remain the same. The new script is better tailored to the shell, and should be more stable.
+
+**Related:**
+
+### nwg-panel
+
+- fixed improper Tray icon size on outputs scaled up;
+- fixed output dimensions detection on compositors other than sway.
+
+### nwg-displays
+
+- fixed initial resolution for scaled displays (by @nvski);
+- config migrated from mistakenly named `~/.config/nwg-outputs` to `~/.config/nwg-displays`.
+
 ## gopsuinfo 0.1.2 (2022.08.31)
 
 - added attempt to read k10temp_tctl temperature sensor.
@@ -10,7 +26,7 @@ Since the ArchLabs 2022.08.21 release, sway, as well as nwg-shell, are no longer
 
 The 0.2.4 release simplifies some key bindings in the main sway config file, and adds 2 buttons to panel presets.  Also some minor bugs in related css files have been fixed. Performing the upgrade will overwrite your sway config file, panel presets, and panel css style sheets will the new defaults. Your current sway config file will be backed up during the upgrade process. Changes you made to panel presets 0-3 will be lost. You may want to back them up manually, before issuing the `nwg-shell-installer -u` command. You may also run the command, and then skip overwriting files. After this, you won't be notified about the upgrade availability any longer.
 
-Related:
+**Related:**
 
 ### nwg-panel v0.7.6
 
