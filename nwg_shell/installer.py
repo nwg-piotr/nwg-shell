@@ -250,7 +250,7 @@ def main():
                     if changed:
                         save_list_to_text_file(new, autostart)
                     else:
-                        print("No change needed")
+                        print("No change needed.\n")
 
         # Inform about no longer needed stuff
         # Packages
