@@ -18,15 +18,6 @@ The nwg-bar command creates a button bar on the basis of a JSON template placed 
 
 <a href="https://user-images.githubusercontent.com/20579136/179866515-fe89e50b-cc5f-4878-aeab-387535bc1d94.png">![2022-07-20-014527_screenshot](https://user-images.githubusercontent.com/20579136/179866515-fe89e50b-cc5f-4878-aeab-387535bc1d94.png)</a>
 
-## Desktop widgets: [nwg-wrapper](https://github.com/nwg-piotr/nwg-wrapper)
-
-- Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/nwg-wrapper/graphs/contributors)
-- License: MIT
-
-On tiling window managers, putting widgets on the desktop is basically pointless, as they remain invisible 99% of the time. There happen exceptions, however. Nwg-wrapper alows to display a script output, or a Pango-formatted text file content, and we use it to create the keyboard shortcuts help for beginners.
-
-<a href="https://user-images.githubusercontent.com/20579136/179868205-26c579e2-c113-4e03-85c5-2220cbd81c5d.png">![2022-07-20-015655_screenshot](https://user-images.githubusercontent.com/20579136/179868205-26c579e2-c113-4e03-85c5-2220cbd81c5d.png)</a>
-
 ## Icon picker: [nwg-icon-picker](https://github.com/nwg-piotr/nwg-icon-picker)
 
 - Author: Piotr Miller
@@ -43,6 +34,8 @@ Nwg-icon-picker is a tool to search GTK icons by name. Utilized by nwg-panel set
 - Original idea: [Ole Martin Handeland](https://github.com/olemartinorg/i3-alternating-layout)
 
 Sway is a great window manager, but changing layouts manually can be tiring for some users (including me). This script uses the i3ipc-python library to automagically switch the layout splith/splitv, depending on the currently focused window dimensions.
+
+Since v0.2.5 nwg-shell does not use the `autotiling` package, but an own `nwg-autotiling` script, that's better adjusted to use here.
 
 ![2022-07-20-033338_screenshot](https://user-images.githubusercontent.com/20579136/179877238-ac4baa65-bc9b-4ad9-8f4f-33d7e22a1c4b.png)
 
