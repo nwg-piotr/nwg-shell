@@ -35,7 +35,7 @@ Nwg-icon-picker is a tool to search GTK icons by name. Utilized by nwg-panel set
 
 Sway is a great window manager, but changing layouts manually can be tiring for some users (including me). This script uses the i3ipc-python library to automagically switch the layout splith/splitv, depending on the currently focused window dimensions.
 
-Since v0.2.5 nwg-shell does not use the `autotiling` package, but an own `nwg-autotiling` script, that's better adjusted to use here.
+Since v0.2.5 nwg-shell does not use the `autotiling` package, but its own `nwg-autotiling` script, that's better adjusted to use here.
 
 ![2022-07-20-033338_screenshot](https://user-images.githubusercontent.com/20579136/179877238-ac4baa65-bc9b-4ad9-8f4f-33d7e22a1c4b.png)
 
