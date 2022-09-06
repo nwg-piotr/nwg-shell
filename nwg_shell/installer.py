@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 
 """
-nwg-shell installer, to copy all the components' configs and style sheets to their locations,
-or to restore original files. Pass the `--all` argument on first run, or none to select/restore files interactively.
-Intended to work / tested with just-installed Arch Linux.
+Installer script to copy all the components' configs and style sheets to their locations, or to restore original files.
+Pass the `--all` argument to install/overwrite all, or use w/ no argument to restore selected files interactively.
+This script is primarily intended to work (and tested!) on fresh installed Arch Linux.
+See: https://github.com/nwg-piotr/nwg-shell/wiki
+
 The package dependencies should pull all the packages needed for the nwg-shell to run.
 
 Project: https://github.com/nwg-piotr/nwg-shell
@@ -53,35 +55,6 @@ def copy_from_skel(name, folder="config", skip_confirmation=False):
             print("Failure: {}".format(e), file=sys.stderr)
 
 
-def update_sway_config():
-    # backup original file
-    now = datetime.datetime.now()
-    new_name = now.strftime("config-backup-%Y%m%d-%H%M%S")
-    src = os.path.join(config_home, "sway/config")
-    dst = os.path.join(config_home, "sway/{}".format(new_name))
-    try:
-        if os.path.isfile(src):
-            copy(src, dst)
-            print("Your old sway config file has been saved as '{}'".format(new_name))
-    except Exception as e:
-        print("Couldn't back up your old sway config: {}".format(e))
-
-    a = input("You are about to overwrite your sway config file. Proceed? y/N ")
-    proceed = a.strip().upper() == "Y"
-
-    if proceed:
-        src = os.path.join(dir_name, "skel/config/sway/config")
-        dst = os.path.join(config_home, "sway/config")
-        print("Copying '{}'".format(dst), end=" ")
-        try:
-            copy(src, dst)
-            print("OK")
-        except Exception as e:
-            print(e)
-    else:
-        print("Sway config file update skipped.")
-
-
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-a",
@@ -95,7 +68,7 @@ def main():
                         help="display version information")
     args = parser.parse_args()
 
-    # Load own data file, initiate first if it doesn't exist
+    # Load own data file, initiate first, if it doesn't exist
     global shell_data
     if not os.path.isfile(shell_data_file):
         if not os.path.isdir(os.path.join(data_home, "nwg-shell")):
@@ -104,19 +77,19 @@ def main():
         save_json(shell_data, shell_data_file)
     else:
         shell_data = load_json(shell_data_file)
-        # We no longer need the pre-v030 "last-upgrade" key
+        # We no longer need the pre-v0.3.0 "last-upgrade" key
         if "last-upgrade" in shell_data:
             del shell_data["last-upgrade"]
             save_json(shell_data, shell_data_file)
 
-    print("\n-------------------------------------------------------------------")
-    print("|   This script installs/overwrites configs and style sheets      |")
-    print("|             for sway and nwg-shell components.                  |")
-    print("| The only backup that will be made is the main sway config file. |")
-    print("|  This script should be used on a fresh Arch Linux installation. |")
-    print("|         If you're running it on your existing sway setup,       |")
-    print("|                you're doing it at your own risk.                |")
-    print("-------------------------------------------------------------------")
+    print("\n*******************************************************************")
+    print("    This script installs/overwrites configs and style sheets       ")
+    print("              for sway and nwg-shell components.                   ")
+    print("  The only backup that will be made is the main sway config file.  ")
+    print("   This script should be used on a fresh Arch Linux installation.  ")
+    print("          If you're running it on your existing sway setup,        ")
+    print("                 you're doing it at your own risk.                 ")
+    print("*******************************************************************")
     a = input("\nProceed? y/N ")
     if a.strip().upper() != "Y":
         print("Installation cancelled")
