@@ -1,8 +1,20 @@
 #!/usr/bin/python3
 
+import os
 import json
 import subprocess
 import sys
+
+
+def temp_dir():
+    if os.getenv("TMPDIR"):
+        return os.getenv("TMPDIR")
+    elif os.getenv("TEMP"):
+        return os.getenv("TEMP")
+    elif os.getenv("TMP"):
+        return os.getenv("TMP")
+
+    return "/tmp"
 
 
 def load_json(path):
@@ -27,6 +39,15 @@ def load_text_file(path):
     except Exception as e:
         print(e)
         return None
+
+
+def save_string(string, file):
+    try:
+        file = open(file, "wt")
+        file.write(string)
+        file.close()
+    except:
+        print("Error writing file '{}'".format(file))
 
 
 def save_list_to_text_file(data, file_path):

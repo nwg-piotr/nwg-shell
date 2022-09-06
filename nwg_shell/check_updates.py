@@ -7,13 +7,28 @@ import time
 
 from nwg_shell.__about__ import __version__
 
-from nwg_shell.tools import load_json, save_json, is_newer, eprint
+from nwg_shell.tools import load_json, save_string, temp_dir, launch, eprint
 
 data_home = os.getenv('XDG_DATA_HOME') if os.getenv('XDG_DATA_HOME') else os.path.join(os.getenv("HOME"),
                                                                                        ".local/share")
+tmp_dir = temp_dir()
 
 
 def main():
+    # If file present, we won't notify again
+    notification_file = os.path.join(tmp_dir, "nwg-shell-update-notification")
+    if os.path.isfile(notification_file):
+        print("notification already sent, terminating")
+        sys.exit(0)
+
+    lock_file = os.path.join(tmp_dir, "nwg-shell-check-update.lock")
+    if os.path.isfile(lock_file):
+        # We are still waiting for user's response to the notification
+        print("'{}' file found, terminating".format(lock_file))
+        sys.exit(0)
+
+    save_string(str(os.getpid()), lock_file)
+
     shell_data_file = os.path.join(data_home, "nwg-shell/data")
 
     if not os.path.isfile(shell_data_file):
@@ -35,14 +50,19 @@ def main():
             if version not in shell_data["updates"]:
                 pending_updates.append(version)
         if len(pending_updates) > 0:
+            updates_desc = ", ".join(pending_updates)
             print("Update(s) to {} available. Run 'nwg-shell-installer -u'.".format(", ".join(pending_updates)))
             time.sleep(5)
+            save_string(updates_desc, notification_file)
             output = subprocess.check_output(
                 'exec {}'.format(
                     "notify-send -i /usr/share/pixmaps/nwg-shell.svg 'nwg-shell update' "
                     "'Update(s) to {} available!' --action=update=Update --action=later=Later --wait".format(
-                        ", ".join(pending_updates))), shell=True)
+                        updates_desc)), shell=True)
             print("'{}'".format(output.strip().decode("utf-8")))
+            os.remove(lock_file)
+            if output.strip().decode("utf-8") == "update":
+                launch("nwg-shell-updater")
         else:
             print("No upgrade needed.")
     else:
