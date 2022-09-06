@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import json
+import subprocess
 
 
 def load_json(path):
@@ -46,9 +47,9 @@ def is_newer(string_new, string_existing):
     if new and existing:
         if new[0] > existing[0]:
             return True
-        elif new[1] > existing[1]:
+        elif new[1] > existing[1] and new[0] >= existing[0]:
             return True
-        elif new[2] > existing[2]:
+        elif new[2] > existing[2] and new[0] >= existing[0] and new[1] >= existing[1]:
             return True
         else:
             return False
@@ -64,3 +65,8 @@ def major_minor_path(string):
         return int(parts[0]), int(parts[1]), int(parts[2])
     except:
         return None
+
+
+def launch(cmd):
+    print("Executing '{}'".format(cmd))
+    subprocess.Popen('exec {}'.format(cmd), shell=True)

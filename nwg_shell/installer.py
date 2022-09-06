@@ -15,13 +15,12 @@ License: MIT
 import argparse
 import datetime
 import os
-import subprocess
 import sys
-from shutil import copy, copy2, copytree
+from shutil import copy, copytree
 
 from nwg_shell.__about__ import __version__
 
-from nwg_shell.tools import load_json, save_json, load_text_file, save_list_to_text_file
+from nwg_shell.tools import load_json, save_json
 
 dir_name = os.path.dirname(__file__)
 
@@ -33,23 +32,6 @@ data_home = os.getenv('XDG_DATA_HOME') if os.getenv('XDG_DATA_HOME') else os.pat
 
 shell_data = []
 shell_data_file = os.path.join(data_home, "nwg-shell/data")
-
-
-def is_command(cmd):
-    cmd = cmd.split()[0]  # strip arguments
-    cmd = "command -v {}".format(cmd)
-    try:
-        is_cmd = subprocess.check_output(cmd, shell=True).decode("utf-8").strip()
-        if is_cmd:
-            return is_cmd
-
-    except subprocess.CalledProcessError:
-        return ""
-
-
-def launch(cmd):
-    print("Executing '{}'".format(cmd))
-    subprocess.Popen('exec {}'.format(cmd), shell=True)
 
 
 def copy_from_skel(name, folder="config", skip_confirmation=False):
@@ -132,89 +114,37 @@ def main():
     print("|  This script should be used on a fresh Arch Linux installation. |")
     print("|         If you're running it on your existing sway setup,       |")
     print("|                you're doing it at your own risk.                |")
-    print("|                                                                 |")
-    print("|          See 'nwg-shell-installer -h' for other options.        |")
     print("-------------------------------------------------------------------")
     a = input("\nProceed? y/N ")
     if a.strip().upper() != "Y":
         print("Installation cancelled")
         sys.exit(0)
 
-    a = input("Install helper scripts? Y/n ") if not args.all else "Y"
-    if a.strip().upper() == "Y" or args.all:
-        print("\n[Scripts installation]")
-        paths = []
-        bin_path = ""
-        for path in os.getenv("PATH").split(":"):
-            if path.startswith(os.getenv("HOME")) and os.path.exists(path) and path not in paths:
-                paths.append(path)
-        if len(paths) == 0:
-            print("No directory in '{}' found on $PATH, dunno where to install scripts, sorry".format(
-                os.getenv("HOME")))
-            sys.exit(1)
-        elif len(paths) == 1 or args.all:
-            bin_path = paths[0]
-        else:
-            print("More then 1 possible path for scripts found:")
-            for i in range(len(paths)):
-                print("  {}) {}".format(i + 1, paths[i]))
+    # Backup sway config file
+    now = datetime.datetime.now()
+    new_name = now.strftime("config-backup-%Y%m%d-%H%M%S")
+    src = os.path.join(config_home, "sway/config")
+    dst = os.path.join(config_home, "sway/{}".format(new_name))
+    proceed = True
+    try:
+        if os.path.isfile(src):
+            copy(src, dst)
+            print("* Original sway config file copied to '{}'".format(new_name))
+    except Exception as e:
+        print("Error: {}".format(e))
+        a = input("Proceed with installation? y/N ")
+        proceed = a.strip().upper() == "Y"
 
-            while bin_path == "":
-                i = input("Select folder to install scripts to: ")
-                try:
-                    bin_path = paths[int(i) - 1]
-                except:
-                    pass
+    if proceed:
+        for item in ["sway", "nwg-panel", "nwg-wrapper", "nwg-drawer", "nwg-dock", "nwg-bar", "swaync", "foot"]:
+            copy_from_skel(item, folder="config", skip_confirmation=args.all)
+        for item in ["nwg-look"]:
+            copy_from_skel(item, folder="data", skip_confirmation=args.all)
 
-        src = os.path.join(dir_name, "skel/bin/")
-        for file in os.listdir(src):
-            print("Copying {}".format(os.path.join(bin_path, file)), end=" ")
-            try:
-                copy2(os.path.join(src, file), os.path.join(bin_path, file))
-                print("OK")
-            except Exception as e:
-                print("Failure: {}".format(e), file=sys.stderr)
+        print("\n\nThat's all. You may run sway now.\n")
 
-        src = os.path.join(dir_name, "skel/azotebg")
-        dst = os.path.join(os.getenv("HOME"), ".azotebg")
-        print("Copying {}".format(dst), end=" ")
-        try:
-            copy2(src, dst)
-            print("OK")
-        except Exception as e:
-            print("Failure: {}".format(e), file=sys.stderr)
-
-    a = input("Install configs, style sheets and initial data files? y/N ") if not args.all else "Y"
-    if a.strip().upper() == "Y" or args.all:
-        print("\n[Configs, styles and data installation]")
-
-        # Backup sway config file
-        now = datetime.datetime.now()
-        new_name = now.strftime("config-backup-%Y%m%d-%H%M%S")
-        src = os.path.join(config_home, "sway/config")
-        dst = os.path.join(config_home, "sway/{}".format(new_name))
-        proceed = True
-        try:
-            if os.path.isfile(src):
-                copy(src, dst)
-                print("* Original sway config file copied to '{}'".format(new_name))
-        except Exception as e:
-            print("Error: {}".format(e))
-            a = input("Proceed with installation? y/N ")
-            proceed = a.strip().upper() == "Y"
-
-        if proceed:
-            for item in ["sway", "nwg-panel", "nwg-wrapper", "nwg-drawer", "nwg-dock", "nwg-bar", "swaync"]:
-                copy_from_skel(item, folder="config", skip_confirmation=args.all)
-            for item in ["nwg-look"]:
-                copy_from_skel(item, folder="data", skip_confirmation=args.all)
-
-            print("\n\nThat's all. You may run sway now.\n")
-
-            shell_data = {"last-upgrade": __version__}
-            save_json(shell_data, shell_data_file)
-        else:
-            print("File installation cancelled")
+        shell_data = {"last-upgrade": __version__}
+        save_json(shell_data, shell_data_file)
 
 
 if __name__ == '__main__':
