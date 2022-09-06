@@ -109,7 +109,6 @@ def main():
             del shell_data["last-upgrade"]
             save_json(shell_data, shell_data_file)
 
-    print("shell_data", shell_data)
     print("\n-------------------------------------------------------------------")
     print("|   This script installs/overwrites configs and style sheets      |")
     print("|             for sway and nwg-shell components.                  |")
