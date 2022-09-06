@@ -2,8 +2,8 @@
 
 """
 nwg-shell installer, to copy all the components' configs and style sheets to their locations,
-or to restore original files. Pass the `--all` argument on first run or none to select files interactively.
-Intended to work/tested with Arch Linux.
+or to restore original files. Pass the `--all` argument on first run, or none to select/restore files interactively.
+Intended to work / tested with just-installed Arch Linux.
 The package dependencies should pull all the packages needed for the nwg-shell to run.
 
 Project: https://github.com/nwg-piotr/nwg-shell
@@ -96,8 +96,6 @@ def main():
     args = parser.parse_args()
 
     # Load own data file, initiate first if it doesn't exist
-    if not os.path.isdir(os.path.join(data_home, "nwg-shell/")):
-        copy_from_skel("nwg-shell", folder="data", skip_confirmation=True)
     global shell_data
     if not os.path.isfile(shell_data_file):
         if not os.path.isdir(os.path.join(data_home, "nwg-shell")):
@@ -106,7 +104,12 @@ def main():
         save_json(shell_data, shell_data_file)
     else:
         shell_data = load_json(shell_data_file)
+        # We no longer need the pre-v030 "last-upgrade" key
+        if "last-upgrade" in shell_data:
+            del shell_data["last-upgrade"]
+            save_json(shell_data, shell_data_file)
 
+    print("shell_data", shell_data)
     print("\n-------------------------------------------------------------------")
     print("|   This script installs/overwrites configs and style sheets      |")
     print("|             for sway and nwg-shell components.                  |")
