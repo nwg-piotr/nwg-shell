@@ -2,6 +2,7 @@
 
 import json
 import subprocess
+import sys
 
 
 def load_json(path):
@@ -70,3 +71,7 @@ def major_minor_path(string):
 def launch(cmd):
     print("Executing '{}'".format(cmd))
     subprocess.Popen('exec {}'.format(cmd), shell=True)
+
+
+def eprint(*args, **kwargs):
+    print(*args, file=sys.stderr, **kwargs)

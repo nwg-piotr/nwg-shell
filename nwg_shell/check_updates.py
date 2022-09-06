@@ -2,11 +2,12 @@
 
 import os
 import subprocess
+import sys
 import time
 
 from nwg_shell.__about__ import __version__
 
-from nwg_shell.tools import load_json, save_json, is_newer
+from nwg_shell.tools import load_json, save_json, is_newer, eprint
 
 data_home = os.getenv('XDG_DATA_HOME') if os.getenv('XDG_DATA_HOME') else os.path.join(os.getenv("HOME"),
                                                                                        ".local/share")
@@ -15,29 +16,37 @@ data_home = os.getenv('XDG_DATA_HOME') if os.getenv('XDG_DATA_HOME') else os.pat
 def main():
     shell_data_file = os.path.join(data_home, "nwg-shell/data")
 
+    if not os.path.isfile(shell_data_file):
+        eprint("'{}' file not found, can't check updates. Terminating.".format(shell_data_file))
+        sys.exit(1)
+
     shell_data = load_json(shell_data_file)
     if not shell_data:
-        if not os.path.isdir(os.path.join(data_home, "nwg-shell/")):
-            os.makedirs(os.path.join(data_home, "nwg-shell"))
-
-        print("Shell data file not found, creating default.")
-        shell_data = {"last-upgrade": "0.0.0"}
-        save_json(shell_data, shell_data_file)
+        eprint("'{}' file corrupted, can't check updates. Terminating.".format(shell_data_file))
+        sys.exit(1)
 
     # Shell versions that need to trigger upgrade
-    need_upgrade = ["0.2.0", "0.2.4", "0.2.5"]
+    need_update = ["0.2.5", "0.3.0"]
 
-    if shell_data["last-upgrade"] and __version__:
-        if is_newer(__version__, shell_data["last-upgrade"]) and __version__ in need_upgrade:
-            print("Upgrade to {} available. Run 'nwg-shell-installer -u'.".format(__version__))
+    if __version__ > shell_data["installed-version"]:
+        # If not just installed
+        pending_updates = []
+        for version in need_update:
+            if version not in shell_data["updates"]:
+                pending_updates.append(version)
+        if len(pending_updates) > 0:
+            print("Update(s) to {} available. Run 'nwg-shell-installer -u'.".format(", ".join(pending_updates)))
             time.sleep(5)
-            subprocess.Popen(
-                'exec {}'.format("notify-send -i /usr/share/pixmaps/nwg-shell.svg 'nwg-shell v{} available' "
-                                 "'Run \"nwg-shell-installer -u\" in terminal.'".format(__version__)), shell=True)
+            output = subprocess.check_output(
+                'exec {}'.format(
+                    "notify-send -i /usr/share/pixmaps/nwg-shell.svg 'nwg-shell update' "
+                    "'Update(s) to {} available!' --action=update=Update --action=later=Later --wait".format(
+                        ", ".join(pending_updates))), shell=True)
+            print("'{}'".format(output.strip().decode("utf-8")))
         else:
             print("No upgrade needed.")
     else:
-        print("Couldn't check if upgrade needed.")
+        print("Just installed.")
 
 
 if __name__ == '__main__':
