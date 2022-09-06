@@ -32,7 +32,7 @@ config_home = os.getenv('XDG_CONFIG_HOME') if os.getenv('XDG_CONFIG_HOME') else 
 data_home = os.getenv('XDG_DATA_HOME') if os.getenv('XDG_DATA_HOME') else os.path.join(os.getenv("HOME"),
                                                                                        ".local/share")
 
-shell_data = []
+shell_data = None
 shell_data_file = os.path.join(data_home, "nwg-shell/data")
 
 
@@ -68,20 +68,6 @@ def main():
                         help="display version information")
     args = parser.parse_args()
 
-    # Load own data file, initiate first, if it doesn't exist
-    global shell_data
-    if not os.path.isfile(shell_data_file):
-        if not os.path.isdir(os.path.join(data_home, "nwg-shell")):
-            os.makedirs(os.path.join(data_home, "nwg-shell"))
-        shell_data = {"installed-version": __version__}
-        save_json(shell_data, shell_data_file)
-    else:
-        shell_data = load_json(shell_data_file)
-        # We no longer need the pre-v0.3.0 "last-upgrade" key
-        if "last-upgrade" in shell_data:
-            del shell_data["last-upgrade"]
-            save_json(shell_data, shell_data_file)
-
     print("\n*******************************************************************")
     print("    This script installs/overwrites configs and style sheets       ")
     print("              for sway and nwg-shell components.                   ")
@@ -90,10 +76,28 @@ def main():
     print("          If you're running it on your existing sway setup,        ")
     print("                 you're doing it at your own risk.                 ")
     print("*******************************************************************")
+
+    global shell_data
+
     a = input("\nProceed? y/N ")
     if a.strip().upper() != "Y":
         print("Installation cancelled")
         sys.exit(0)
+    else:
+        if not os.path.isfile(shell_data_file):
+            # It must be clean install: init and save shell data
+            if not os.path.isdir(os.path.join(data_home, "nwg-shell")):
+                os.makedirs(os.path.join(data_home, "nwg-shell"))
+            shell_data = {"installed-version": __version__, "updates": [__version__]}
+            save_json(shell_data, shell_data_file)
+
+        else:
+            # Installing over existing install
+            shell_data = load_json(shell_data_file)
+            # We no longer need the pre-v0.3.0 "last-upgrade" key: delete it if found
+            if "last-upgrade" in shell_data:
+                del shell_data["last-upgrade"]
+                save_json(shell_data, shell_data_file)
 
     # Backup sway config file
     now = datetime.datetime.now()
@@ -117,9 +121,6 @@ def main():
             copy_from_skel(item, folder="data", skip_confirmation=args.all)
 
         print("\n\nThat's all. You may run sway now.\n")
-
-        shell_data = {"last-upgrade": __version__}
-        save_json(shell_data, shell_data_file)
 
 
 if __name__ == '__main__':
