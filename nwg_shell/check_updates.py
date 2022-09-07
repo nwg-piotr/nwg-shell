@@ -62,7 +62,6 @@ def main():
                     "notify-send -i /usr/share/pixmaps/nwg-shell.svg 'nwg-shell update' "
                     "'Update(s) to {} available!' --action=update=Update --action=later=Later --wait".format(
                         updates_desc)), shell=True)
-            print("'{}'".format(output.strip().decode("utf-8")))
 
             if output.strip().decode("utf-8") == "update":
                 # run updater script
