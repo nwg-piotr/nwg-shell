@@ -45,7 +45,7 @@ def main():
                 pending_updates.append(version)
         if len(pending_updates) > 0:
             updates_desc = ", ".join(pending_updates)
-            print("Update(s) to {} available. Run 'nwg-shell-installer -u'.".format(", ".join(pending_updates)))
+            print("Update(s) to {} available.".format(", ".join(pending_updates)))
             time.sleep(5)
             output = subprocess.check_output(
                 'exec {}'.format(
