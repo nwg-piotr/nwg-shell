@@ -89,10 +89,5 @@ def major_minor_path(string):
         return None
 
 
-def launch(cmd):
-    print("Executing '{}'".format(cmd))
-    subprocess.Popen('exec {}'.format(cmd), shell=True)
-
-
 def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
