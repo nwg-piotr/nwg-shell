@@ -35,7 +35,7 @@ def main():
         sys.exit(1)
 
     # Shell versions that need to trigger upgrade
-    need_update = ["0.2.5", "0.3.0"]
+    need_update = ["0.3.0"]
 
     if __version__ > shell_data["installed-version"]:
         # If not just installed
