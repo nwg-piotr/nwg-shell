@@ -37,16 +37,18 @@ shell_data_file = os.path.join(data_home, "nwg-shell/data")
 
 
 def copy_from_skel(name, folder="config", skip_confirmation=False):
-    a = input("Install/overwrite files in the '{}' directory? y/N ".format(name)) if not skip_confirmation else "Y"
-    if a.strip().upper() != "Y":
-        print("'{}' directory skipped".format(name))
-        return
+    src = os.path.join(dir_name, "skel/{}/".format(folder), name)
+    if folder == "data":
+        dst = os.path.join(data_home, name)
     else:
-        src = os.path.join(dir_name, "skel/{}/".format(folder), name)
-        if folder == "data":
-            dst = os.path.join(data_home, name)
-        else:
-            dst = os.path.join(config_home, name)
+        dst = os.path.join(config_home, name)
+
+    a = input("Install/overwrite files in the '{}' directory? y/N ".format(dst)) if not skip_confirmation else "Y"
+    if a.strip().upper() != "Y":
+        print("'{}' directory skipped".format(dst))
+        return
+
+    else:
         print("Copying files to '{}'".format(dst), end=" ")
         try:
             copytree(src, dst, dirs_exist_ok=True)
@@ -85,7 +87,7 @@ def main():
         sys.exit(0)
     else:
         if not os.path.isfile(shell_data_file):
-            # It must be clean install: init and save shell data
+            # It must be a new installation. We need to init and save the shell data file.
             if not os.path.isdir(os.path.join(data_home, "nwg-shell")):
                 os.makedirs(os.path.join(data_home, "nwg-shell"))
             shell_data = {"installed-version": __version__, "updates": [__version__]}
@@ -115,7 +117,7 @@ def main():
         proceed = a.strip().upper() == "Y"
 
     if proceed:
-        for item in ["sway", "nwg-panel", "nwg-wrapper", "nwg-drawer", "nwg-dock", "nwg-bar", "swaync", "foot"]:
+        for item in ["sway", "nwg-panel", "nwg-drawer", "nwg-dock", "nwg-bar", "swaync", "foot"]:
             copy_from_skel(item, folder="config", skip_confirmation=args.all)
         for item in ["nwg-look"]:
             copy_from_skel(item, folder="data", skip_confirmation=args.all)
