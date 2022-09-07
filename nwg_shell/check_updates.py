@@ -23,11 +23,12 @@ tmp_dir = temp_dir()
 def main():
     lock_file = os.path.join(tmp_dir, "nwg-shell-check-update.lock")
     if os.path.isfile(lock_file):
-        # Don't notify twice. The lock file will be removed in autostart.
+        # don't notify twice
         print("'{}' file found, terminating".format(lock_file))
         sys.exit(0)
 
-    save_string(str(os.getpid()), lock_file)
+    # the lock file will be removed in autostart
+    save_string(str("this is to avoid multiple nwg-shell update checks in the same sway session"), lock_file)
 
     shell_data_file = os.path.join(data_home, "nwg-shell/data")
 
