@@ -2,9 +2,13 @@
 
 """
 This script checks the installed nwg-shell package version, first installed shell version, and performed updates,
-recorded in the shell data file. If the shell needs an update / updates, it sends a notification,
-and saves the lock file, to avoid consecutive runs -> notifications in the same sway session.
-The lock file will be then removed in `autostart`.
+recorded in the shell data file. If the shell needs an update, it sends a notification, and saves the lock file,
+to avoid consecutive runs -> notifications in the same sway session. The lock file will be then removed in `autostart`.
+
+Project: https://github.com/nwg-piotr/nwg-shell
+Author's email: nwg.piotr@gmail.com
+Copyright (c) 2022 Piotr Miller
+License: MIT
 """
 import os
 import subprocess
@@ -27,7 +31,7 @@ def main():
         print("'{}' file found, terminating".format(lock_file))
         sys.exit(0)
 
-    # the lock file will be removed in autostart
+    # This file will be removed in autostart
     save_string(str("this is to avoid multiple nwg-shell update checks in the same sway session"), lock_file)
 
     shell_data_file = os.path.join(data_home, "nwg-shell/data")
