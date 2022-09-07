@@ -1,5 +1,11 @@
 #!/usr/bin/python3
 
+"""
+This script checks the installed nwg-shell package version, first installed shell version, and performed updates,
+recorded in the shell data file. If the shell needs an update / updates, it sends a notification,
+and saves the lock file, to avoid consecutive runs -> notifications in the same sway session.
+The lock file will be then removed in `autostart`.
+"""
 import os
 import subprocess
 import sys
@@ -34,7 +40,7 @@ def main():
         eprint("'{}' file corrupted, can't check updates. Terminating.".format(shell_data_file))
         sys.exit(1)
 
-    # Shell versions that need to trigger upgrade
+    # Shell versions that need to trigger update
     need_update = ["0.3.0"]
 
     if __version__ > shell_data["installed-version"]:
@@ -43,17 +49,22 @@ def main():
         for version in need_update:
             if version not in shell_data["updates"]:
                 pending_updates.append(version)
+
         if len(pending_updates) > 0:
             updates_desc = ", ".join(pending_updates)
             print("Update(s) to {} available.".format(", ".join(pending_updates)))
+            # notification looks better if appears after a period of time since startup
             time.sleep(5)
+            # send notification with actions, wait for response
             output = subprocess.check_output(
                 'exec {}'.format(
                     "notify-send -i /usr/share/pixmaps/nwg-shell.svg 'nwg-shell update' "
                     "'Update(s) to {} available!' --action=update=Update --action=later=Later --wait".format(
                         updates_desc)), shell=True)
             print("'{}'".format(output.strip().decode("utf-8")))
+
             if output.strip().decode("utf-8") == "update":
+                # run updater script
                 subprocess.call('exec nwg-shell-updater', shell=True)
         else:
             print("No upgrade needed.")
