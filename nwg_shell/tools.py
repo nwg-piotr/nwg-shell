@@ -30,6 +30,14 @@ def save_json(src_dict, path):
         json.dump(src_dict, f, indent=2)
 
 
+def check_key(dictionary, key, default_value):
+    """
+    Adds a key w/ default value if missing from the dictionary
+    """
+    if key not in dictionary:
+        dictionary[key] = default_value
+
+
 def load_text_file(path):
     try:
         with open(path, 'r') as file:

@@ -17,7 +17,7 @@ import time
 
 from nwg_shell.__about__ import __version__
 
-from nwg_shell.tools import load_json, save_string, temp_dir, eprint
+from nwg_shell.tools import check_key, load_json, save_string, temp_dir, eprint
 
 data_home = os.getenv('XDG_DATA_HOME') if os.getenv('XDG_DATA_HOME') else os.path.join(os.getenv("HOME"),
                                                                                        ".local/share")
@@ -44,6 +44,11 @@ def main():
     if not shell_data:
         eprint("'{}' file corrupted, can't check updates. Terminating.".format(shell_data_file))
         sys.exit(1)
+
+    # "installed-version" and "updates" keys will be missing from pre-0.3.0
+    defaults = {"installed-version": "0.0.0", "updates": []}
+    for key in defaults:
+        check_key(shell_data, key, defaults[key])
 
     # Shell versions that need to trigger update
     need_update = ["0.3.0"]
