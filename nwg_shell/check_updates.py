@@ -45,7 +45,8 @@ def main():
         eprint("'{}' file corrupted, can't check updates. Terminating.".format(shell_data_file))
         sys.exit(1)
 
-    # "installed-version" and "updates" keys will be missing from pre-0.3.0
+    # "installed-version" and "updates" keys will be missing from pre-0.3.0 installs
+    # we only substitute them temporarily here, w/o saving
     defaults = {"installed-version": "0.0.0", "updates": []}
     for key in defaults:
         check_key(shell_data, key, defaults[key])
