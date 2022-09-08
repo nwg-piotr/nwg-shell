@@ -1,6 +1,19 @@
 #!/usr/bin/python3
 
+import os
 import json
+import sys
+
+
+def temp_dir():
+    if os.getenv("TMPDIR"):
+        return os.getenv("TMPDIR")
+    elif os.getenv("TEMP"):
+        return os.getenv("TEMP")
+    elif os.getenv("TMP"):
+        return os.getenv("TMP")
+
+    return "/tmp"
 
 
 def load_json(path):
@@ -27,6 +40,15 @@ def load_text_file(path):
         return None
 
 
+def save_string(string, file):
+    try:
+        file = open(file, "wt")
+        file.write(string)
+        file.close()
+    except:
+        print("Error writing file '{}'".format(file))
+
+
 def save_list_to_text_file(data, file_path):
     text_file = open(file_path, "w")
     for line in data:
@@ -46,9 +68,9 @@ def is_newer(string_new, string_existing):
     if new and existing:
         if new[0] > existing[0]:
             return True
-        elif new[1] > existing[1]:
+        elif new[1] > existing[1] and new[0] >= existing[0]:
             return True
-        elif new[2] > existing[2]:
+        elif new[2] > existing[2] and new[0] >= existing[0] and new[1] >= existing[1]:
             return True
         else:
             return False
@@ -64,3 +86,7 @@ def major_minor_path(string):
         return int(parts[0]), int(parts[1]), int(parts[2])
     except:
         return None
+
+
+def eprint(*args, **kwargs):
+    print(*args, file=sys.stderr, **kwargs)
