@@ -1,5 +1,18 @@
 # Recent updates
 
+## nwg-shell 0.3.0 (2022.09.09)
+
+This release brings the graphical updater, that replaces the former `nwg-shell-installer -u` CLI command. You'll be notified about shell updates via system notifications with 'Update' and "Later' actions. If you decide to update later, you may open the shell config utility, and use the 'Updates` button. It will show the number of pending updates, if any. 
+
+![2022-09-09-032942_screenshot](https://user-images.githubusercontent.com/20579136/189253420-d32bd451-13c9-45ae-a420-a1966d1de154.png)
+
+![2022-09-09-033424_screenshot](https://user-images.githubusercontent.com/20579136/189253801-dc1894c1-5fde-4192-858c-a475cbd0022b.png)
+
+The 0.3.0 version also  simplifies the installation process. You no longer need to edit the `/etc/environment` file, as all the helper scripts are now being installed to `/usr/local/bin` by the nwg-shell package itself. Applying the 0.3.0 update to the existing shell installation will remove no longer necessary scripts from your home directory.
+
+- [nwg-shell 0.3.0 release notes](https://github.com/nwg-piotr/nwg-shell/releases/tag/v0.3.0)
+- [nwg-shell-config 0.3.12 release notes](https://github.com/nwg-piotr/nwg-shell-config/releases/tag/v0.3.12)
+
 ## nwg-shell 0.2.5 (2022.09.02)
 
 This release replaces the `autotiling` script (package) with the `nwg-autotiling` command (nwg-shell-config entry point). This is to avoid adding the shell-specific stuff to the original script, as it's quite widely used outside the project. All the arguments remain the same. The new script is better tailored to the shell, and should be more stable.
