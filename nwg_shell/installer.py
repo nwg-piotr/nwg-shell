@@ -122,6 +122,12 @@ def main():
         for item in ["nwg-look"]:
             copy_from_skel(item, folder="data", skip_confirmation=args.all)
 
+        # copy default background
+        bcg = os.path.join(os.getenv("HOME"), ".azotebg")
+        if not os.path.isfile(bcg):
+            print("Copying default background")
+            copy(os.path.join(dir_name, "skel", ".azotebg"), bcg)
+
         print("\n\nThat's all. You may run sway now.\n")
 
 
