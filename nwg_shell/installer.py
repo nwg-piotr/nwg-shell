@@ -129,7 +129,7 @@ def main():
             copy(os.path.join(dir_name, "skel", "stuff", "azotebg"), bcg)
             os.rename(bcg, os.path.join(os.getenv("HOME"), ".azotebg"))
 
-        print("\n\nThat's all. You may run sway now.\n")
+        print("\nThat's all. You may run sway now.\n")
 
 
 if __name__ == '__main__':
