@@ -1,8 +1,10 @@
 # Recent updates
 
-## nwg-shell 0.3.0 (2022.09.09)
+## nwg-shell 0.3.0 / 0.3.3 (2022.09.09-10)
 
 This release brings the graphical updater, that replaces the former `nwg-shell-installer -u` CLI command. You'll be notified about shell updates via system notifications with 'Update' and 'Later' actions. If you decide to update later, you may open the shell config utility, and use the 'Updates' button. It will show the number of pending updates, if any. 
+
+_NOTE: I found out that the default background was missing from fresh v0.3.0 installs, and got into trouble while trying to fix it quickly, so we are on v0.3.3 now._
 
 ![2022-09-09-032942_screenshot](https://user-images.githubusercontent.com/20579136/189253420-d32bd451-13c9-45ae-a420-a1966d1de154.png)
 
