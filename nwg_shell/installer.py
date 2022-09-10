@@ -126,7 +126,7 @@ def main():
         bcg = os.path.join(os.getenv("HOME"), ".azotebg")
         if not os.path.isfile(bcg):
             print("Copying default background")
-            copy(os.path.join(dir_name, "skel", ".azotebg"), bcg)
+            copy(os.path.join(dir_name, "skel", "stuff", ".azotebg"), bcg)
 
         print("\n\nThat's all. You may run sway now.\n")
 
