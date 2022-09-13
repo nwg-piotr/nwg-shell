@@ -1,5 +1,9 @@
 # Recent updates
 
+## nwg-panel 0.7.8 (2022.09.13)
+
+- one more [fix to scaling tray icons](https://github.com/nwg-piotr/nwg-panel/commit/90ad8679546e2e6158f7af306b702b2c2080458f).
+
 ## nwg-shell 0.3.0 / 0.3.3 (2022.09.09-10)
 
 This release brings the graphical updater, that replaces the former `nwg-shell-installer -u` CLI command. You'll be notified about shell updates via system notifications with 'Update' and 'Later' actions. If you decide to update later, you may open the shell config utility, and use the 'Updates' button. It will show the number of pending updates, if any. 
