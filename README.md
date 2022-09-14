@@ -70,12 +70,6 @@ styles](https://github.com/nwg-piotr/nwg-shell-config/blob/master/README.md#desk
 
 - [latest release](https://github.com/nwg-piotr/nwg-look/releases/latest)
 
-## [nwg-wrapper](https://github.com/nwg-piotr/nwg-wrapper) (python)
-
-[![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-wrapper.svg)](https://repology.org/project/nwg-wrapper/versions)
-
-- [latest release](https://github.com/nwg-piotr/nwg-wrapper/releases/latest)
-
 ## [gopsuinfo](https://github.com/nwg-piotr/gopsuinfo) (go)
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/gopsuinfo.svg)](https://repology.org/project/gopsuinfo/versions)
@@ -110,13 +104,6 @@ If you like the idea of the GTK shell for sway, feel free to submit your improve
 
 Bug reports and ideas are more than welcome. Please remember, however, that at this stage, most part of the shell is being developed by a single hobbyist, 
 who uses Arch Linux. Some issues specific to other environment, e.g. Debian, FreeBSD, are out of my range and need some Community commitment.
-
-# Resources
-
-The project logo has been created by [edskeye](https://github.com/edskeye). You'll find the basic svg file in the
-[resources](https://github.com/nwg-piotr/nwg-shell-resources/tree/master/resources) repository. If you like the logo,
-you may also like [nwg-shell wallpapers](https://github.com/nwg-piotr/nwg-shell-resources/tree/master/wallpapers).
-The uglier ones were designed by me, and the prettier ones by [@badkarma](https://forum.archlabslinux.com/u/badkarma/summary). ;)
 
 # Project supported by
 
