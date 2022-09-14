@@ -9,7 +9,7 @@ def read(f_name):
 
 setup(
     name='nwg-shell',
-    version='0.3.3',
+    version='0.3.4',
     description='GTK3-based shell for sway Wayland compositor',
     packages=find_packages(),
     include_package_data=True,
@@ -23,6 +23,7 @@ setup(
              "skel/config/sway/*",
              "skel/config/swaync/*",
              "skel/config/foot/*",
+             "skel/config/gtklock/*",
              "skel/*"]
     },
     url='https://github.com/nwg-piotr/nwg-shell',

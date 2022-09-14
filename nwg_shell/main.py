@@ -9,6 +9,7 @@ def main():
     print("  nwg-shell-installer      installs selected default configs interactively")
     print("  nwg-shell-installer -a   installs all configs from scratch")
     print("  nwg-shell-check-updates  checks for updates")
+    print('\nWiki: https://github.com/nwg-piotr/nwg-shell/wiki')
 
 
 if __name__ == '__main__':

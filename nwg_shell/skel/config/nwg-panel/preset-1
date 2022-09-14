@@ -104,7 +104,11 @@
       "window-width": 320,
       "window-margin": 6,
       "backlight-device": "",
-      "root-css-name": "controls-overview"
+      "root-css-name": "controls-overview",
+      "backlight-controller": "light",
+      "window-margin-horizontal": 4,
+      "window-margin-vertical": 4,
+      "angle": 0.0
     },
     "playerctl": {},
     "clock": {
