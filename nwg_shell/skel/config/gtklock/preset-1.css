@@ -1,0 +1,28 @@
+* {
+  border: none;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+button {
+  border-radius: 10px;
+  background: none;
+  padding: 10px
+}
+
+#unlock-button {
+  border: solid 1px;
+  border-color: #000;
+  border-radius: 10px;
+  background: #31373A
+}
+
+#powerbar-box {
+  border: solid 1px;
+  border-color: #000;
+  border-radius: 10px;
+  background: #31373A
+}
+
+#input-field {
+  background-color: rgba(0, 0, 0, 0.7);
+}

@@ -1,0 +1,1 @@
+If you'd like to have separate gtklock configs for different nwg-shell presets, create a config file for each one, under the names 'preset-0', 'preset-1' and so on in this folder.
