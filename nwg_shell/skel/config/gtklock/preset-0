@@ -1,0 +1,5 @@
+[powerbar]
+show-labels=false
+linked-buttons=false
+reboot-command=systemctl reboot
+poweroff-command=systemctl -i poweroff
