@@ -1,5 +1,5 @@
 * {
-  border-radius: 0px;
+  border-radius: 0;
   border: none;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7)
 }
@@ -14,19 +14,16 @@ button {
 }
 
 #unlock-button {
-  border: solid 1px;
-  border-color: #000;
+  border: 1px solid #000;
   background-color: rgba(37, 37, 37, 0.95)
 }
 
 #powerbar-box {
-  border: solid 1px;
-  border-color: #000;
+  border: 1px solid #000;
   background-color: rgba(37, 37, 37, 0.95)
 }
 
 #input-field {
-  border: solid 1px;
-  border-color: #000;
+  border: 1px solid #000;
   background-color: rgba(37, 37, 37, 0.95)
 }
