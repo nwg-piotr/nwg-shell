@@ -10,11 +10,15 @@ button {
 }
 
 #unlock-button {
-  background-color: rgba(0, 0, 0, 0.7)
+  border: solid 1px;
+  border-color: #000;
+  background-color: rgba(37, 37, 37, 0.95)
 }
 
 #powerbar-box {
-  background-color: rgba(0, 0, 0, 0.7);
+  border: solid 1px;
+  border-color: #000;
+  background-color: rgba(37, 37, 37, 0.95)
 }
 
 #input-field {
