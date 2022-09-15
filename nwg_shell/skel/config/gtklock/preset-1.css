@@ -1,6 +1,6 @@
 * {
   border: none;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7)
 }
 
 button {
@@ -10,7 +10,11 @@ button {
 }
 
 #clock-label {
-  font-family: monospace;
+  font-family: monospace
+}
+
+search-entry {
+  background: #fff
 }
 
 #unlock-button {
@@ -24,5 +28,6 @@ button {
 }
 
 #input-field {
-  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  background: #31373A
 }

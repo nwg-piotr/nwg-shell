@@ -1,7 +1,7 @@
 * {
   border-radius: 0px;
   border: none;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7)
 }
 
 button {
@@ -10,17 +10,17 @@ button {
 }
 
 #clock-label {
-  font-family: monospace;
+  font-family: monospace
 }
 
 #unlock-button {
-  background-color: background: #27132e
+  background-color: rgba(23, 53, 63, 0.95)
 }
 
 #powerbar-box {
-  background-color: background: #27132e
+  background-color: rgba(23, 53, 63, 0.95)
 }
 
 #input-field {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(23, 53, 63, 0.95)
 }
