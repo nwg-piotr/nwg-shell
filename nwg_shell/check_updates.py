@@ -58,7 +58,7 @@ def main():
         # If not just installed
         pending_updates = []
         for version in need_update:
-            if version not in shell_data["updates"]:
+            if version not in shell_data["updates"] and version > shell_data["installed-version"]:
                 pending_updates.append(version)
 
         if len(pending_updates) > 0:
