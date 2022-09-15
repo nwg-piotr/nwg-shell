@@ -9,6 +9,10 @@ button {
   padding: 10px
 }
 
+#clock-label {
+  font-family: monospace;
+}
+
 #unlock-button {
   border-radius: 10px;
   background: #31373A
