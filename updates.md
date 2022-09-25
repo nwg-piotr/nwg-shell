@@ -1,5 +1,12 @@
 # Recent updates
 
+## nwg-drawer 0.3.1 (2022.09.25)
+
+- fixed crash on trimming long names/descriptions;
+- added support for `Hidden`, `OnlyShowIn` and `NotShowIn`; 
+- fixed path to own data dir;
+- minor code improvements.
+
 ## nwg-panel 0.7.8 (2022.09.13)
 
 - one more [fix to scaling tray icons](https://github.com/nwg-piotr/nwg-panel/commit/90ad8679546e2e6158f7af306b702b2c2080458f).
