@@ -1,0 +1,31 @@
+* {
+  border-radius: 0;
+  border: none;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7)
+}
+
+button {
+  background: none;
+  padding: 10px
+}
+
+#clock-label {
+  font-family: monospace
+}
+
+#unlock-button {
+  background-color: rgba(23, 53, 63, 0.95)
+}
+
+#powerbar-box {
+  background-color: rgba(23, 53, 63, 0.95)
+}
+
+#input-field {
+  background-color: rgba(23, 53, 63, 0.95)
+}
+
+#playerctl-box {
+  margin: 20px;
+  background-color: rgba(23, 53, 63, 0.95)
+}

@@ -57,18 +57,60 @@ def copy_from_skel(name, folder="config", skip_confirmation=False):
             print("Failure: {}".format(e), file=sys.stderr)
 
 
+def restore(name, folder="config"):
+    src = os.path.join(dir_name, "skel/{}/".format(folder), name)
+    if folder == "data":
+        dst = os.path.join(data_home, name)
+    else:
+        dst = os.path.join(config_home, name)
+
+    response = []
+
+    for f in os.listdir(src):
+        src_path = os.path.join(src, f)
+        dst_path = os.path.join(dst, f)
+        try:
+            if not os.path.isfile(dst_path):
+                copy(src_path, dst_path, follow_symlinks=False)
+                response.append("Copied '{}'".format(dst_path))
+
+        except Exception as e:
+            response.append("Couldn't copy '{}' to '{}': {}".format(src_path, dst_path, e))
+
+    return "\n".join(response) if len(response) > 0 else None
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-a",
                         "--all",
                         action="store_true",
-                        help="Install/overwrite all configs and styles w/o confirmation")
+                        help="install/overwrite All configs and styles w/o confirmation")
+    parser.add_argument("-r",
+                        "--restore",
+                        action="store_true",
+                        help="Restore missing configs, styles & data files")
     parser.add_argument("-v",
                         "--version",
                         action="version",
                         version="%(prog)s version {}".format(__version__),
-                        help="display version information")
+                        help="display Version information")
     args = parser.parse_args()
+
+    if args.restore:
+        summary = []
+        for item in ["sway", "nwg-panel", "nwg-drawer", "nwg-dock", "nwg-bar", "swaync", "foot", "gtklock"]:
+            r = restore(item, folder="config")
+            if r:
+                summary.append(r)
+        for item in ["nwg-look"]:
+            r = restore(item, folder="data")
+            if r:
+                summary.append(r)
+        if len(summary) > 0:
+            print("\n".join(summary))
+
+        sys.exit(0)
 
     print("\n*******************************************************************")
     print("    This script installs/overwrites configs and style sheets       ")
@@ -117,7 +159,7 @@ def main():
         proceed = a.strip().upper() == "Y"
 
     if proceed:
-        for item in ["sway", "nwg-panel", "nwg-drawer", "nwg-dock", "nwg-bar", "swaync", "foot"]:
+        for item in ["sway", "nwg-panel", "nwg-drawer", "nwg-dock", "nwg-bar", "swaync", "foot", "gtklock"]:
             copy_from_skel(item, folder="config", skip_confirmation=args.all)
         for item in ["nwg-look"]:
             copy_from_skel(item, folder="data", skip_confirmation=args.all)
