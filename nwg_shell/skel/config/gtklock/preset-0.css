@@ -27,3 +27,9 @@ button {
   border: 1px solid #000;
   background-color: rgba(37, 37, 37, 0.95)
 }
+
+#playerctl-box {
+  border: 1px solid #000;
+  margin: 20px;
+  background-color: rgba(37, 37, 37, 0.8)
+}

@@ -27,3 +27,8 @@ button {
   border-radius: 10px;
   background: #31373A
 }
+
+#playerctl-box {
+  margin: 20px;
+  background: #31373A
+}

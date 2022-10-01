@@ -24,3 +24,8 @@ button {
 #input-field {
   background-color: rgba(23, 53, 63, 0.95)
 }
+
+#playerctl-box {
+  margin: 20px;
+  background-color: rgba(23, 53, 63, 0.95)
+}
