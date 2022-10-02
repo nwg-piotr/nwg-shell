@@ -61,8 +61,12 @@ def restore(name, folder="config"):
     src = os.path.join(dir_name, "skel/{}/".format(folder), name)
     if folder == "data":
         dst = os.path.join(data_home, name)
+        if not os.path.isdir(dst):
+            os.mkdir(dst)
     else:
         dst = os.path.join(config_home, name)
+        if not os.path.isdir(dst):
+            os.mkdir(dst)
 
     response = []
 
