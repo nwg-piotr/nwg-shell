@@ -52,7 +52,7 @@ def main():
         check_key(shell_data, key, defaults[key])
 
     # Shell versions that need to trigger update
-    need_update = ["0.3.0"]
+    need_update = ["0.3.0", "0.3.4"]
 
     if __version__ > shell_data["installed-version"]:
         # If not just installed
