@@ -1,5 +1,16 @@
 # Recent updates
 
+## nwg-shell 0.3.4 (2022.10.04)
+
+- added `nwg-shell-installer --restore` flag, to bring back missing configs, styles & data files;
+- added common and per-preset @jovanlanik's gtklock modules settings;
+- added gtklock per-preset style sheets;
+- added support for the gtklock playerctl module;
+- added support for @ErikReider's swaync mpris widget;
+- fixed updates check + some other minor fixes.
+
+![2022-10-04-013414_screenshot](https://user-images.githubusercontent.com/20579136/193704413-b7645004-b2e1-40d9-8198-ae03beda4a65.png)
+
 ## nwg-drawer 0.3.1 (2022.09.25)
 
 - fixed crash on trimming long names/descriptions;
