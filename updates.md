@@ -1,5 +1,12 @@
 # Recent updates
 
+## nwg-panel 0.7.9 (2022.10.06)
+
+- added (back) check box to disable the panel homogeneity. See #95: if we use Center modules in a panel, the panel's box "columns" need to be homogeneous, if we want the center columns content (e.g. clock) to be centered in the screen. If some columns width exceeds 1/3 of the screen width, it results in cutting off the panel edges. If one really needs 3 columns and wide content, the only solution is to turn the columns' homogeneity off, and give up on centering.
+- Playerctl module: added possibility to scroll track metadata longer than the label length limit (instead of shortening).
+
+![image](https://user-images.githubusercontent.com/20579136/194182330-dbd749a4-2ff0-4f47-b7da-5d768f04dc8e.png)
+
 ## nwg-shell 0.3.4 (2022.10.04)
 
 - added `nwg-shell-installer --restore` flag, to bring back missing configs, styles & data files;
