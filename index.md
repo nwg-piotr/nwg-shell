@@ -40,17 +40,9 @@ The default way is to set up nwg-shell on a fresh Arch Linux install, done with 
 
 <a href="https://user-images.githubusercontent.com/20579136/182253244-5ebeabfa-853c-4192-b883-686c2d00f20b.png"><img src="https://user-images.githubusercontent.com/20579136/182253244-5ebeabfa-853c-4192-b883-686c2d00f20b.png" width=480></a>
 
-This should work on various Arch derivatives, but expect unexpected. ;) Some packages may be out of date, some other may be missing, and you'll need to install them manually.
+This works on various Arch derivatives, too, but expect unexpected. ;) Some packages may be out of date, some other may be missing, and you'll need to install them manually:
 
-<a href="https://user-images.githubusercontent.com/20579136/185012961-2ddbab2a-d9d0-4d58-85e3-9a928effdb46.png"><img src="https://user-images.githubusercontent.com/20579136/185012961-2ddbab2a-d9d0-4d58-85e3-9a928effdb46.png" width=480></a>
-
-<a href="https://user-images.githubusercontent.com/20579136/180582953-6a4bada0-2c27-4139-b60b-78f7c972d6bb.jpeg"><img src="https://user-images.githubusercontent.com/20579136/180582953-6a4bada0-2c27-4139-b60b-78f7c972d6bb.jpeg" width=480></a>
-
-<a href="https://user-images.githubusercontent.com/20579136/185021801-180ad161-89ce-4c72-ae5e-3dce87d8409d.png"><img src="https://user-images.githubusercontent.com/20579136/185021801-180ad161-89ce-4c72-ae5e-3dce87d8409d.png" width=480></a>
-
-<a href="https://user-images.githubusercontent.com/20579136/186039701-e367b2f0-ab9a-4530-b23c-d640e3c6c6a0.png"><img src="https://user-images.githubusercontent.com/20579136/186039701-e367b2f0-ab9a-4530-b23c-d640e3c6c6a0.png" width=480></a>
-
-<a href="https://user-images.githubusercontent.com/20579136/180624922-e4486392-5c91-4896-bb4a-cdf60e6442a0.png"><img src="https://user-images.githubusercontent.com/20579136/180624922-e4486392-5c91-4896-bb4a-cdf60e6442a0.png" width=480></a>
+### [Arch derivatives we installed nwg-shell on](derivatives)
 
 Currently, there is no out-of-the-box installer for other Linux distributions. You may try and install all the components manually.
 
