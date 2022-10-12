@@ -1,5 +1,26 @@
 # Recent updates
 
+## nwg-shell-config 0.4.0 (2022.10.13)
+
+Added support for translations. The `~/.local/share/nwg-shell/data` json file contains the `"interface-locale"` key, that is empty by default. It means: use auto-detected locale. Detection looks like this:
+
+```python
+lang = os.getenv("LANG").split(".")[0] if not shell_data["interface-locale"] else shell_data["interface-locale"]
+```
+
+which returns e.g. `pl_PL` for the `pl_PL.UTF-8` locale, __if no value found__ in the data file. Otherwise the saved value will be used. You may use the "Interface language" combo to save the value. This is supposed to work shell-wide in the future.
+
+### Localization authors, so far:
+
+- `fr_FR` by **[@giraudan](https://github.com/giraudan)**
+- `it_IT` by **[@luftmensch-luftmensh](https://github.com/luftmensch-luftmensch)**
+- `nl_NL` by **[@Peppe](https://forum.archlabslinux.com/u/Peppe)**
+- `pl_PL` by **[@nwg-piotr](https://github.com/nwg-piotr)**
+
+## nwg-panel 0.7.11 (2022.10.13)
+
+- added check for the max value returned by `brightnessctl` (bug fixed)
+
 ## nwg-panel 0.7.10 (2022.10.07)
 
 - Playerctl module: added album cover (since everyone does it).
