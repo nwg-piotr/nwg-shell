@@ -54,6 +54,44 @@ This should work on various Arch derivatives, but expect unexpected. ;) Some pac
 
 Currently, there is no out-of-the-box installer for other Linux distributions. You may try and install all the components manually.
 
+# Contribution
+
+If you like the idea, feel free to submit your improvements, new modules or plugins. You can also propose your own program as part of the shell, if you think it fits.
+
+## Pull requests
+
+Before you open one, containing substantial changes to already existing programs, **please open an issue to discuss what you're going to do**.
+
+## Issues
+
+Open an issue in **appropriate GitHub repository**, to report a bug or request a feature.
+
+## Translations
+
+As of the nwg-shell-config 0.4.0 version, work on the localization of the user interface has begun. Eventually it's going to affect all the nwg-shell components. If you'd like to contribute to what we already have, copy the [en_US.json file](https://github.com/nwg-piotr/nwg-shell-config/blob/master/nwg_shell_config/langs/en_US.json), rename to the name reflecting your locale (like: `de_DE.json` for German_Germany) and translate values in `"key": "value"` pairs.
+
+Original:
+
+```json
+{
+  "above-clock": "Above Clock",
+  "acceleration": "Acceleration"
+  (...)
+}
+```
+
+will look like this in Polish:
+
+```json
+{
+  "above-clock": "Ponad Zegarem",
+  "acceleration": "Akceleracja",
+  (...)
+}
+```
+
+Then you may either open a Pull Request to the [nwg-shell-config](https://github.com/nwg-piotr/nwg-shell-config) repo (see [this guide](https://github.com/firstcontributions/first-contributions) if you've never ever done it), or just share the translated file in another way. [Gist](https://gist.github.com) is a good idea, but any other solution will do.
+
 # Credits
 
 This collection of software depends on numerous third-party programs and libraries, that have not been mentioned above:
