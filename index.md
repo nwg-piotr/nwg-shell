@@ -68,7 +68,7 @@ Open an issue in **appropriate GitHub repository**, to report a bug or request a
 
 ## Translations
 
-As of the nwg-shell-config 0.4.0 version, work on the localization of the user interface has begun. Eventually it's going to affect all the nwg-shell components. If you'd like to contribute to what we already have, copy the [en_US.json file](https://github.com/nwg-piotr/nwg-shell-config/blob/master/nwg_shell_config/langs/en_US.json), rename to the name reflecting your locale (like: `de_DE.json` for German_Germany) and translate values in `"key": "value"` pairs.
+As of the nwg-shell-config 0.4.0 version, work on the localization of the user interface has begun. Eventually it's going to affect all the nwg-shell components. If you'd like to contribute to what we already have, copy the [en_US.json file](https://github.com/nwg-piotr/nwg-shell-config/blob/master/nwg_shell_config/langs/en_US.json), rename for the name to reflect your locale (like: `de_DE.json` for German_GERMANY) and translate values in `"key": "value"` pairs.
 
 Original:
 
