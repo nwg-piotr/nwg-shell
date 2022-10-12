@@ -30,9 +30,11 @@ If you want to share an idea, find a solution to a problem or discuss the projec
     - [Display management: nwg-displays](nwg-displays)
     - [Shell settings: nwg-shell-config](nwg-shell-config)
     - [Utilities and scripts](utilities-and-scripts)
-- [Where to get](https://nwg-piotr.github.io/nwg-shell/#where-to-get)
+- [Where to get](where-to-get)
 - [Recent updates](updates)
-- [Credits](https://nwg-piotr.github.io/nwg-shell/#credits)
+- [Contribution](contribution)
+    - [Translations](translations) 
+- [Credits](credits)
 
 # Where to get
 
