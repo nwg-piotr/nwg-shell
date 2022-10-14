@@ -57,7 +57,7 @@ If you like the idea, feel free to submit your improvements, new modules or plug
 1. Before you open one, containing substantial changes to already existing programs, **please open an issue to discuss what you're going to do**.
 2. Half-baked PRs won't be merged: 
 
-- Make sure you don't introduce new bugs. We have enough of our own bugs to fix.
+- Make sure you don't introduce new bugs. We already have enough bugs to fix.
 - _The project is intended for users of all skill levels_. Make sure that your new feature is well explained to the user. Add tooltips where needed.
 
 
