@@ -50,7 +50,7 @@ Currently, there is no out-of-the-box installer for other Linux distributions. Y
 
 # Contribution
 
-1. If you like the idea, feel free to submit your improvements, new modules or plugins. You can also propose your own program as part of the shell, if you think it fits.
+1. If you like the idea, feel free to submit your improvements, new modules or plugins. You can also propose your own program as a part of the shell, if you think it fits.
 
 2. Half-baked PRs won't be merged: 
 
