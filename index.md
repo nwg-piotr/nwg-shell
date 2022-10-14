@@ -50,7 +50,12 @@ Currently, there is no out-of-the-box installer for other Linux distributions. Y
 
 # Contribution
 
-If you like the idea, feel free to submit your improvements, new modules or plugins. You can also propose your own program as part of the shell, if you think it fits.
+1. If you like the idea, feel free to submit your improvements, new modules or plugins. You can also propose your own program as part of the shell, if you think it fits.
+
+2. Half-baked PRs won't be merged: 
+
+- Make sure you don't introduce new bugs. We have enough of our own bugs to fix.
+- The project is intended for users of all skill levels. Make sure that your new feature is well explained to the user. Add tooltips where needed.
 
 ## Pull requests
 
