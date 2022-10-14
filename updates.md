@@ -1,5 +1,10 @@
 # Recent updates
 
+## nwg-dock 0.3.1 (2022.10.14)
+
+- workspaces button fixed for touch screens
+- minor code cleanup
+
 ## nwg-shell-config 0.4.0 (2022.10.13)
 
 Added support for translations. The `~/.local/share/nwg-shell/data` json file contains the `"interface-locale"` key, that is empty by default. It means: use auto-detected locale. Detection looks like this:
