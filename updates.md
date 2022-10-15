@@ -1,5 +1,10 @@
 # Recent updates
 
+## nwg-shell-config 0.4.2 (2022.10.16)
+
+- added Brazilian Portuguese `pt_BR` to the supported languages #27 by [rb-andrade](https://github.com/rb-andrade)
+- updated Dutch translation `nl_NL` by [Peppe](https://forum.archlabslinux.com/u/Peppe)
+
 ## nwg-shell-config 0.4.1 (2022.10.15)
 
 **[Bug in default settings]** The previous version contains a typo in default gtklock time format: the leading apostrophe will prevent gtklock from starting. Please check your settings, and remove it, if exists.
