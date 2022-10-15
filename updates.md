@@ -1,5 +1,11 @@
 # Recent updates
 
+## nwg-shell-config 0.4.1 (2022.10.15)
+
+**[Bug in default settings]** The previous version contains a typo in default gtklock time format: the leading apostrophe will prevent gtklock from starting. Please check your settings, and remove it, if exists.
+
+![image](https://user-images.githubusercontent.com/20579136/195958457-7d916ceb-3db6-4b1c-9f10-4cde8c628700.png)
+
 ## nwg-dock 0.3.1 (2022.10.14)
 
 - workspaces button fixed for touch screens
