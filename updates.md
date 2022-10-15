@@ -2,7 +2,7 @@
 
 ## nwg-shell-config 0.4.2 (2022.10.16)
 
-- added Brazilian Portuguese `pt_BR` to the supported languages #27 by [rb-andrade](https://github.com/rb-andrade)
+- added Brazilian Portuguese `pt_BR` by [rb-andrade](https://github.com/rb-andrade)
 - updated Dutch translation `nl_NL` by [Peppe](https://forum.archlabslinux.com/u/Peppe)
 
 ## nwg-shell-config 0.4.1 (2022.10.15)
