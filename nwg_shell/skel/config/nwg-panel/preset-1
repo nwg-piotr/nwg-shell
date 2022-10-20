@@ -97,6 +97,7 @@
       "icon-size": 18,
       "hover-opens": false,
       "leave-closes": true,
+      "click-closes": false,
       "css-name": "controls-window",
       "net-interface": "wlo1",
       "system-shutdown-symbolic": "system-shutdown",

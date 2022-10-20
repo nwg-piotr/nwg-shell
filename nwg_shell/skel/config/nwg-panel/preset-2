@@ -117,6 +117,7 @@
       "icon-size": 16,
       "hover-opens": false,
       "leave-closes": true,
+      "click-closes": false,
       "css-name": "controls-window",
       "net-interface": "wlan0",
       "system-shutdown-symbolic": "system-shutdown",
