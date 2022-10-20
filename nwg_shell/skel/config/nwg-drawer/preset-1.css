@@ -1,11 +1,12 @@
 window {
     background: #282828;
+    border-radius: 0;
     color: #eeeeee
 }
 
 /* search entry */
 entry {
-    background-color: rgba (0, 0, 0, 0.2)
+    background-color: rgba(0, 0, 0, 0.2)
 }
 
 button, image {
@@ -14,7 +15,7 @@ button, image {
 }
 
 button:hover {
-    background-color: rgba (255, 255, 255, 0.1)
+    background-color: rgba(255, 255, 255, 0.1)
 }
 
 /* in case you wanted to give category buttons a different look */

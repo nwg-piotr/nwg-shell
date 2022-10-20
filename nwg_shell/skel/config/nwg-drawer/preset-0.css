@@ -1,5 +1,6 @@
 window {
     background-color: rgba(20, 20, 20, 0.95);
+    border-radius: 0;
     color: #eeeeee
 }
 
