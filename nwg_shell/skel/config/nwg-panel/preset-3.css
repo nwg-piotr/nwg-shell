@@ -27,8 +27,6 @@ button {
 
 /***** MODIFY TO YOUR TASTE *****/
 
-* { border-radius: 0 }
-
 /* Sample button in sample config w/ no background nor border */
 #button-custom {
     background: rgba(0, 0, 0, 0.0);
@@ -50,6 +48,7 @@ button {
 /* Controls window in sample config uses this name */
 #controls-window {
     background: #27132e;
+    border-radius: 0;
     color: #eeeeee
 }
 
