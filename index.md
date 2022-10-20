@@ -58,7 +58,7 @@ If you like the idea, feel free to submit your improvements, new modules or plug
 2. Half-baked PRs won't be merged: 
 
 - Make sure you don't introduce new bugs. We already have enough bugs to fix.
-- _The project is intended for users of all skill levels_. Make sure that your new feature is well explained to the user. Add tooltips where needed.
+- _The project is intended for users of all skill levels_. Make sure that your new feature is well explained to the user. Add tooltips where needed. Update README / Wiki.
 
 
 ## Issues
