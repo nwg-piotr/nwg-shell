@@ -33,12 +33,14 @@ button {
 /* Top panel in sample config uses this name */
 #panel-top {
     background: #030303;
+    border-radius: 0;
     color: #eeeeee
 }
 
 /* Bottom panel in sample config uses this name */
 #panel-bottom {
     background-color: #213540;
+    border-radius: 0;
     color: #eeeeee
 }
 

@@ -36,12 +36,14 @@ button {
 /* Top panel in sample config uses this name */
 #panel-top {
     background-color: rgba(11, 11, 11, 0.9);
+    border-radius: 0;
     color: #eeeeee
 }
 
 /* Bottom panel in sample config uses this name */
 #panel-bottom {
     background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 0;
     color: #eeeeee
 }
 
