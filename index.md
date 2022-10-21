@@ -58,7 +58,7 @@ If you like the idea, feel free to submit your improvements, new modules or plug
 2. Half-baked PRs won't be merged: 
 
 - **Make sure you don't introduce new bugs**. We already have enough bugs to fix.
-- **Make sure your work is finished**, and needs no futher work to be usable.
+- **Make sure your work is finished**, and needs no futher effort to be usable.
 - **Remember, that the project is intended for users of all skill levels**. Explain your new feature to the user. Add tooltips where needed. Update README / Wiki.
 
 
