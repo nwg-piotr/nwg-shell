@@ -76,7 +76,7 @@
         "items": [
           {
             "name": "Lock",
-            "cmd": "swaylock -f -c 000000"
+            "cmd": "nwg-lock"
           },
           {
             "name": "Logout",
