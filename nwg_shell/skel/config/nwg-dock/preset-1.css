@@ -4,7 +4,7 @@ window {
     border-radius: 10px;
     border-style: none;
     border-width: 1px;
-    border-color: rgba (156, 142, 122, 0.7)
+    border-color: rgba(156, 142, 122, 0.7)
 }
 
 #box {
@@ -28,7 +28,7 @@ button {
 }
 
 button:hover {
-    background-color: rgba (255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.15);
     border-radius: 2px;
 }
 
