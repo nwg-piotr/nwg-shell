@@ -1,6 +1,6 @@
 # Recent updates
 
-## nwg-shell 0.3.5
+## nwg-shell 0.3.5 (2022.10.23)
 
 - some fixes to presets and css style sheets
 
@@ -47,16 +47,22 @@ New keys: 
 - added Brazilian Portuguese `pt_BR` by [rb-andrade](https://github.com/rb-andrade)
 - updated Dutch translation `nl_NL` by [Peppe](https://forum.archlabslinux.com/u/Peppe)
 
+---
+
 ## nwg-shell-config 0.4.1 (2022.10.15)
 
 **[Bug in default settings]** The previous version contains a typo in default gtklock time format: the leading apostrophe will prevent gtklock from starting. Please check your settings, and remove it, if exists.
 
 ![image](https://user-images.githubusercontent.com/20579136/195958457-7d916ceb-3db6-4b1c-9f10-4cde8c628700.png)
 
+---
+
 ## nwg-dock 0.3.1 (2022.10.14)
 
 - workspaces button fixed for touch screens
 - minor code cleanup
+
+---
 
 ## nwg-shell-config 0.4.0 (2022.10.13)
 
@@ -75,9 +81,13 @@ which returns e.g. `pl_PL` for the `pl_PL.UTF-8` locale, __if no value found__ i
 - `nl_NL` by **[@Peppe](https://forum.archlabslinux.com/u/Peppe)**
 - `pl_PL` by **[@nwg-piotr](https://github.com/nwg-piotr)**
 
+---
+
 ## nwg-panel 0.7.11 (2022.10.13)
 
 - added check for the max value returned by `brightnessctl` (bug fixed)
+
+---
 
 ## nwg-panel 0.7.10 (2022.10.07)
 
@@ -85,12 +95,16 @@ which returns e.g. `pl_PL` for the `pl_PL.UTF-8` locale, __if no value found__ i
 
 ![image](https://user-images.githubusercontent.com/20579136/194442974-e45208e3-6573-4e96-92a5-3034c0cbe6f9.png)
 
+--
+
 ## nwg-panel 0.7.9 (2022.10.06)
 
 - added (back) check box to disable the panel homogeneity. See #95: if we use Center modules in a panel, the panel's box "columns" need to be homogeneous, if we want the center columns content (e.g. clock) to be centered in the screen. If some columns width exceeds 1/3 of the screen width, it results in cutting off the panel edges. If one really needs 3 columns and wide content, the only solution is to turn the columns' homogeneity off, and give up on centering.
 - Playerctl module: added possibility to scroll track metadata longer than the label length limit (instead of shortening).
 
 ![image](https://user-images.githubusercontent.com/20579136/194182330-dbd749a4-2ff0-4f47-b7da-5d768f04dc8e.png)
+
+---
 
 ## nwg-shell 0.3.4 (2022.10.04)
 
@@ -103,6 +117,8 @@ which returns e.g. `pl_PL` for the `pl_PL.UTF-8` locale, __if no value found__ i
 
 ![2022-10-04-013414_screenshot](https://user-images.githubusercontent.com/20579136/193704413-b7645004-b2e1-40d9-8198-ae03beda4a65.png)
 
+---
+
 ## nwg-drawer 0.3.1 (2022.09.25)
 
 - fixed crash on trimming long names/descriptions;
@@ -110,9 +126,13 @@ which returns e.g. `pl_PL` for the `pl_PL.UTF-8` locale, __if no value found__ i
 - fixed path to own data dir;
 - minor code improvements.
 
+---
+
 ## nwg-panel 0.7.8 (2022.09.13)
 
 - one more [fix to scaling tray icons](https://github.com/nwg-piotr/nwg-panel/commit/90ad8679546e2e6158f7af306b702b2c2080458f).
+
+---
 
 ## nwg-shell 0.3.0 / 0.3.3 (2022.09.09-10)
 
@@ -128,6 +148,8 @@ The 0.3.0 version also  simplifies the installation process. You no longer need 
 
 - [nwg-shell 0.3.0 release notes](https://github.com/nwg-piotr/nwg-shell/releases/tag/v0.3.0)
 - [nwg-shell-config 0.3.12 release notes](https://github.com/nwg-piotr/nwg-shell-config/releases/tag/v0.3.12)
+
+---
 
 ## nwg-shell 0.2.5 (2022.09.02)
 
@@ -148,6 +170,8 @@ This release replaces the `autotiling` script (package) with the `nwg-autotiling
 ### gopsuinfo 0.1.2
 
 - added attempt to read k10temp_tctl temperature sensor.
+
+--
 
 ## nwg-shell 0.2.4 (2022.08.29)
 
@@ -172,15 +196,21 @@ The 0.2.4 release simplifies some key bindings in the main sway config file, and
 
 - Hot fix for nwg-lock crashing on the "gtklock-userinfo" config key missing.
 
+---
+
 ## nwg-panel 0.7.5 (2022.08.22)
 
 - more icon names updated to be Adawaita conformant #141 by @tewkanz
 - fixed SwayWorkspaces crash #142
 
+---
+
 ## nwg-panel 0.7.4 (2022.08.15)
 
 - nwg-panel-config & Clock module: icon names fixed to work with Adwaita icon theme
 - added a fix to prevent SwayWorkspaces from crashing on empty floating node.name
+
+---
 
 ## nwg-panel 0.7.3 (2022.07.31)
 
