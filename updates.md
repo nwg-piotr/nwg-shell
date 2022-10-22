@@ -1,5 +1,45 @@
 # Recent updates
 
+## nwg-shell 0.3.5
+
+- some fixes to presets and css style sheets
+
+### Related
+
+### nwg-shell-config 0.4.3
+
+**Support for gtklock 2.x**
+
+- powerbar module suspend command
+- powerbar module userswitch command
+- powerbar module logout command
+
+Thanks to @jovanlanik for additions and bug fixes to [gtklock](https://github.com/jovanlanik/gtklock) and [gtklock-playerctl-module](https://github.com/jovanlanik/gtklock-playerctl-module).
+
+**Translations**
+
+Modified keys: 
+
+- `"power-off-tooltip"`
+- `"reboot-tooltip"`
+- `"under-clock"`
+
+New keys: 
+
+- `"suspend"`
+- `"suspend-tooltip"`
+- `"logout"`
+- `"logout-tooltip"`
+- `"switch-user"`
+- `"switch-user-tooltip"`
+
+### nwg-panel 0.7.12
+
+- Playerctl module: full (unshortened) label text -> tooltip text;
+- Controls module: added optional, semi-transparent background window to click and close the popup, in addition to the previous behaviour;
+- some typos fixed by @kianmeng;
+- added fallback icon name, same as the `app_id`, when all other icon name detection methods fail.
+
 ## nwg-shell-config 0.4.2 (2022.10.16)
 
 - added Brazilian Portuguese `pt_BR` by [rb-andrade](https://github.com/rb-andrade)
