@@ -40,6 +40,8 @@ New keys: 
 - some typos fixed by @kianmeng;
 - added fallback icon name, same as the `app_id`, when all other icon name detection methods fail.
 
+---
+
 ## nwg-shell-config 0.4.2 (2022.10.16)
 
 - added Brazilian Portuguese `pt_BR` by [rb-andrade](https://github.com/rb-andrade)
