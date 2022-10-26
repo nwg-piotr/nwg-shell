@@ -16,6 +16,8 @@
 
 - Hopefully fixed random crash of resident instance on `SIGUSR1`: closes #45 (reopened for actually a new reason).
 
+---
+
 ## nwg-shell 0.3.5 (2022.10.23)
 
 - some fixes to presets and css style sheets
