@@ -1,5 +1,21 @@
 # Recent updates
 
+## nwg-shell 0.3.6 (2022.10.26)
+
+- Changed default wallpaper, size optimized.
+
+![image](https://user-images.githubusercontent.com/20579136/197909867-3fe77799-8046-47da-ac52-956d64e4c29b.png)
+
+### Related
+
+### nwg-shell-config 0.4.4
+
+- Added Swedish locale by [womp](https://forum.archlabslinux.com/u/womp).
+
+### nwg-drawer 0.3.2
+
+- Hopefully fixed random crash of resident instance on `SIGUSR1`: closes #45 (reopened for actually a new reason).
+
 ## nwg-shell 0.3.5 (2022.10.23)
 
 - some fixes to presets and css style sheets
