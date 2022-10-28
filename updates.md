@@ -1,5 +1,27 @@
 # Recent updates
 
+## nwg-panel 0.7.13
+
+- added "minimize windows" to scratchpad feature, [inspired by u/tiny_humble_guy](https://www.reddit.com/r/swaywm/comments/ydkx3d/comment/ittodo8/?utm_source=share&utm_medium=web2x&context=3).
+
+This feature adds the `move scratchpad` entry to the SwayTaskbar context menu. It moves the window to the sway scratchpad. If you place the Scratchpad module next to the SwayTaskbar module, you'll see minimized windows' icons in it.
+
+![image](https://user-images.githubusercontent.com/20579136/198430339-a1d9cf9c-dc55-4267-8271-c991cb4496d7.png)
+
+The SwayTaskbar module saves the window parent workspace and floating state. When you click the window icon in the Scratchpad module, these two properties will be restored. Obviously it won't happen if you move a window to the scratchpad in any other way.
+
+Users of multi-headed setups with a SwayTaskbar + Scratch module combo on each of them, may want to see the tasks that belong to the certain display on every Scratchpad module instance. That's why the "Single output" check box has been added.
+
+![image](https://user-images.githubusercontent.com/20579136/198437259-d3058aca-d8dc-4282-abcf-f833c1640ab2.png)
+
+Again, for it to work, you need to "minimize" the window from the SwayTaskbar module. Also, the panel needs to be assigned to an output.
+
+![image](https://user-images.githubusercontent.com/20579136/198438535-6e040c64-02e7-4915-a28e-c18cdb0b3f8f.png)
+
+Please find this feature beta, and **report bugs**, if any.
+
+---
+
 ## nwg-shell 0.3.6 (2022.10.26)
 
 - Changed default wallpaper, size optimized.
