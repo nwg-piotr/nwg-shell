@@ -1,5 +1,11 @@
 # Recent updates
 
+## nwg-panel 0.7.14
+
+Addition to 0.7.13
+
+- Scratchpad: added the `/tmp/nwg-scratchpad` file. It stores additional info on the containers moved to scratchpad, for it to survive sway reloads.
+
 ## nwg-panel 0.7.13
 
 - added "minimize windows" to scratchpad feature, [inspired by u/tiny_humble_guy](https://www.reddit.com/r/swaywm/comments/ydkx3d/comment/ittodo8/?utm_source=share&utm_medium=web2x&context=3).
