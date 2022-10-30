@@ -1,5 +1,11 @@
 # Recent updates
 
+## nwg-drawer 0.3.3
+
+- fixed inconsistent behaviour of the resident instance
+
+If the pinned apps list is not empty, and the window has just been opened/shown, the first pinned app button should grab focus. Otherwise - the first item in the app flowbox. This was not the case if it comes to the resident instance. 
+
 ## nwg-panel 0.7.14
 
 Addition to 0.7.13
