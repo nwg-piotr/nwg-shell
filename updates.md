@@ -4,13 +4,17 @@
 
 - fixed inconsistent behaviour of the resident instance
 
-If the pinned apps list is not empty, and the window has just been opened/shown, the first pinned app button should grab focus. Otherwise - the first item in the app flowbox. This was not the case if it comes to the resident instance. 
+If the pinned apps list is not empty, and the window has just been opened/shown, the first pinned app button should grab focus. Otherwise - the first item in the app flowbox. This was not the case if it comes to the resident instance.
+
+---
 
 ## nwg-panel 0.7.14
 
 Addition to 0.7.13
 
 - Scratchpad: added the `/tmp/nwg-scratchpad` file. It stores additional info on the containers moved to scratchpad, for it to survive sway reloads.
+
+---
 
 ## nwg-panel 0.7.13
 
