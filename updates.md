@@ -1,5 +1,24 @@
 # Recent updates
 
+## nwg-shell-config 0.4.5 (2022.10.31)
+
+- nwg-autotiling: added  `-l LIMIT`, `--limit LIMIT` argument, [contributed to the original autotiling repo](https://github.com/nwg-piotr/autotiling/pull/41) by @Syphdias
+
+The argument limits how deep will autotiling work. The `-l 2` value allows to mimic the master-stack layouts, and in nwg-shell we only use either none or this value. As a bonus, below the `2` depth level, stacking and tabbed layout will behave well again.
+
+![image](https://user-images.githubusercontent.com/20579136/199121803-5c92c685-011d-4cd2-810d-d2374c154294.png)
+
+## Translations
+
+2 new keys added:
+
+```json
+  "autotiling-depth-limit": "Depth limit",
+  "autotiling-depth-limit-tooltip": "Limits autotiling depth to 2 levels, to mimic\n(to some degree) the master/stack layout.",
+```
+
+---
+
 ## nwg-drawer 0.3.3 (2022.10.31)
 
 - fixed inconsistent behaviour of the resident instance
