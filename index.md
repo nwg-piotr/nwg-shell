@@ -1,4 +1,4 @@
-<div align="right"><a href="https://nwg-piotr.github.io/nwg-shell/updates">recent changes</a></div>
+<div align="right"><a href="https://nwg-piotr.github.io/nwg-shell/updates">CHANGELOG</a></div>
 
 # nwg-shell project
 
