@@ -1,6 +1,6 @@
 # Recent updates
 
-## nwg-drawer 0.3.3
+## nwg-drawer 0.3.3 (2022.10.31)
 
 - fixed inconsistent behaviour of the resident instance
 
@@ -8,7 +8,7 @@ If the pinned apps list is not empty, and the window has just been opened/shown,
 
 ---
 
-## nwg-panel 0.7.14
+## nwg-panel 0.7.14 (2022.10.30)
 
 Addition to 0.7.13
 
@@ -16,7 +16,7 @@ Addition to 0.7.13
 
 ---
 
-## nwg-panel 0.7.13
+## nwg-panel 0.7.13 (2022.10.29)
 
 - added "minimize windows" to scratchpad feature, [inspired by u/tiny_humble_guy](https://www.reddit.com/r/swaywm/comments/ydkx3d/comment/ittodo8/?utm_source=share&utm_medium=web2x&context=3).
 
