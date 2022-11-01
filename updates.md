@@ -1,18 +1,21 @@
 # Recent updates
 
-## Azote 1.9.6 (2022.11.01)
+## nwg-shell 0.3.7 (2022.11.01)
+
+- minor changes to preset-0 & preset-2, to make use of the latest additions to nwg-panel ("minimize" to scratchpad);
+- numerous fixes & improvements to shell components (see below).
+
+### Related
+
+### Azote 1.9.6 (2022.11.01)
 
 - added 2 lines to check if the `/usr/share/backgrounds/nwg-shell` path exists, and set it as the `sample_dir`, if so.
 
----
-
-## nwg-shell-wallpapers 1.1 (2022.11.01)
+### nwg-shell-wallpapers 1.1 (2022.11.01)
 
 - added 4 new stunning renders by [badkarma](https://forum.archlabslinux.com/u/badkarma).
 
----
-
-## nwg-shell-config 0.4.5 (2022.10.31)
+### nwg-shell-config 0.4.5 (2022.10.31)
 
 - nwg-autotiling: added  `-l LIMIT`, `--limit LIMIT` argument, [contributed to the original autotiling repo](https://github.com/nwg-piotr/autotiling/pull/41) by @Syphdias
 
@@ -20,7 +23,7 @@ The argument limits how deep will autotiling work. The `-l 2` value allows to mi
 
 ![image](https://user-images.githubusercontent.com/20579136/199121803-5c92c685-011d-4cd2-810d-d2374c154294.png)
 
-## Translations
+**Translations**
 
 2 new keys added:
 
@@ -29,25 +32,19 @@ The argument limits how deep will autotiling work. The `-l 2` value allows to mi
   "autotiling-depth-limit-tooltip": "Limits autotiling depth to 2 levels, to mimic\n(to some degree) the master/stack layout.",
 ```
 
----
-
-## nwg-drawer 0.3.3 (2022.10.31)
+### nwg-drawer 0.3.3 (2022.10.31)
 
 - fixed inconsistent behaviour of the resident instance
 
 If the pinned apps list is not empty, and the window has just been opened/shown, the first pinned app button should grab focus. Otherwise - the first item in the app flowbox. This was not the case if it comes to the resident instance.
 
----
-
-## nwg-panel 0.7.14 (2022.10.30)
+### nwg-panel 0.7.14 (2022.10.30)
 
 Addition to 0.7.13
 
 - Scratchpad: added the `/tmp/nwg-scratchpad` file. It stores additional info on the containers moved to scratchpad, for it to survive sway reloads.
 
----
-
-## nwg-panel 0.7.13 (2022.10.29)
+### nwg-panel 0.7.13 (2022.10.29)
 
 - added "minimize windows" to scratchpad feature, [inspired by u/tiny_humble_guy](https://www.reddit.com/r/swaywm/comments/ydkx3d/comment/ittodo8/?utm_source=share&utm_medium=web2x&context=3).
 
