@@ -1,5 +1,17 @@
 # Recent updates
 
+## Azote 1.9.6 (2022.11.01)
+
+- added 2 lines to check if the `/usr/share/backgrounds/nwg-shell` path exists, and set it as the `sample_dir`, if so.
+
+---
+
+## nwg-shell-wallpapers 1.1 (2022.11.01)
+
+- added 4 new stunning renders by [badkarma](https://forum.archlabslinux.com/u/badkarma).
+
+---
+
 ## nwg-shell-config 0.4.5 (2022.10.31)
 
 - nwg-autotiling: added  `-l LIMIT`, `--limit LIMIT` argument, [contributed to the original autotiling repo](https://github.com/nwg-piotr/autotiling/pull/41) by @Syphdias
