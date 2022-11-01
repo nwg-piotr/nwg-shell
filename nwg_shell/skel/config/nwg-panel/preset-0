@@ -24,7 +24,6 @@
       "clock"
     ],
     "modules-right": [
-      "scratchpad",
       "executor-updates",
       "tray",
       "button-help"
@@ -206,11 +205,17 @@
     "width": "auto",
     "controls": "off",
     "controls-settings": {},
-    "scratchpad": {},
+    "scratchpad": {
+      "css-name": "",
+      "icon-size": 16,
+      "angle": 0.0,
+      "single-output": false
+    },
     "clock": {},
     "menu-start-settings": {},
     "modules-left": [
-      "sway-taskbar"
+      "sway-taskbar",
+      "scratchpad"
     ],
     "modules-center": [],
     "modules-right": [

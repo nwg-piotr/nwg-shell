@@ -16,13 +16,13 @@
     "css-name": "panel-bottom",
     "icons": "",
     "modules-left": [
-      "sway-taskbar"
+      "sway-taskbar",
+      "scratchpad"
     ],
     "modules-center": [],
     "modules-right": [
       "executor-cpuavg",
       "executor-cpubar",
-      "scratchpad",
       "executor-updates",
       "clock",
       "tray",
@@ -157,7 +157,9 @@
     "sway-workspaces": {},
     "scratchpad": {
       "css-name": "",
-      "icon-size": 20
+      "icon-size": 24,
+      "angle": 0.0,
+      "single-output": false
     },
     "menu-start": "left",
     "menu-start-settings": {
