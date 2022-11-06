@@ -14,6 +14,8 @@ Depth limit determines how deep will autotiling work. The `2` value allows to mi
 
 Original depth limit feature [contributed](https://github.com/nwg-piotr/autotiling/pull/41) to the Autotiling repository by [@Syphdias](https://github.com/Syphdias).
 
+---
+
 ## nwg-shell 0.3.7 (2022.11.01)
 
 - minor changes to preset-0 & preset-2, to make use of the latest additions to nwg-panel ("minimize" to scratchpad);
