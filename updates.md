@@ -1,5 +1,19 @@
 # Recent updates
 
+## nwg-shell 0.3.8 (2022.11.06)
+
+- nwg-bar: removed label mnemonics in `~/.config/nwg-bar/bar.json`, that stopped working for some mysterious reason.
+
+### Related
+
+### nwg-shell-config 0.4.6 (2022.11.06)
+
+- nwg-autotiling: added per-output depth limit
+
+Depth limit determines how deep will autotiling work. The `2` value allows to mimic the master/stack layout on horizontal displays. On vertical displays you may like the `3` value. Use `0` for no limit. Beyond the limit, tabbed and stacking layouts will work back again. The `1` value is not recommended, as it will spoil autotiling.
+
+Original depth limit feature [contributed](https://github.com/nwg-piotr/autotiling/pull/41) to the Autotiling repository by [@Syphdias](https://github.com/Syphdias).
+
 ## nwg-shell 0.3.7 (2022.11.01)
 
 - minor changes to preset-0 & preset-2, to make use of the latest additions to nwg-panel ("minimize" to scratchpad);
