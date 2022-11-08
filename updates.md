@@ -1,5 +1,9 @@
 # Recent updates
 
+## nwg-shell-config 0.4.7 (2022.11.08)
+
+- restored accidentally deleted line to kill autotiling on nwg-shell-config "Apply" button pressed. Due to this, in v0.4.6, after turning autotiling off, you had to exit sway for the change to take effect.
+
 ## Azote 1.9.7 (2022.11.08)
 
 - fixed regression introduced in v1.9.6, that messed up the ./azotebg file.
