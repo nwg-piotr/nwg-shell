@@ -1,5 +1,11 @@
 # Recent updates
 
+## Azote 1.9.7 (2022.11.08)
+
+- fixed regression introduced in v1.9.6, that messed up the ./azotebg file.
+
+---
+
 ## nwg-shell 0.3.8 (2022.11.06)
 
 - nwg-bar: removed label mnemonics in `~/.config/nwg-bar/bar.json`, that stopped working for some mysterious reason.
