@@ -5,7 +5,7 @@
 
 list_geometry()
 {
-    swaymsg -t get_tree | jq -r '.. | (.nodes? // empty)[] | select(.'"$1"' and .pid) | "\(.rect.x),\(.rect.y) \(.rect.width)x\(.rect.height)''"'
+    swaymsg -t get_tree | jq -r '.. | try select(.'"$1"' and .pid) | "\(.rect.x),\(.rect.y) \(.rect.width)x\(.rect.height)''"'
 }
 
 FOCUSED=$(list_geometry focused)
