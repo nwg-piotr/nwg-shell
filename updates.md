@@ -2,7 +2,9 @@
 
 ## nwg-shell 0.3.9 (2022.11.11)
 
-- fixed [#31 `screenshot focused` doesn't work with floating windows](https://github.com/nwg-piotr/nwg-shell/issues/31)
+- fixed [#31 `screenshot focused` doesn't work with floating windows](https://github.com/nwg-piotr/nwg-shell/issues/31). 
+ 
+See https://www.reddit.com/r/swaywm/comments/ynbcc1/comment/ivssmpc/?utm_source=share&utm_medium=web2x&context=3
 
 ### Related:
 
