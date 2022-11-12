@@ -1,5 +1,13 @@
 # Recent updates
 
+### nwg-drawer 0.3.4
+
+- Added a fix to hide invalid pinned items (.desktop file not found, probably uninstalled). The first modification of the pinned cache file will remove the invalid entry. Closes [#74](https://github.com/nwg-piotr/nwg-drawer/issues/74).
+
+If you run the drawer residently, after the app deinstallation, the pinned icon remains visible (but possible to unpin), until you restart the drawer.
+
+---
+
 ## nwg-shell 0.3.9 (2022.11.11)
 
 - fixed [#31 `screenshot focused` doesn't work with floating windows](https://github.com/nwg-piotr/nwg-shell/issues/31). 
