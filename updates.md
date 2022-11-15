@@ -1,6 +1,10 @@
 # Recent updates
 
-### nwg-drawer 0.3.4
+### nwg-dock 0.3.2 (2022.11.15)
+
+- added the mouse pointer speed detection while entering the hotspot area, to determine if to show up the dock. See [#30](https://github.com/nwg-piotr/nwg-dock/issues/30). The `-hd` (for Hotspot Delay) argument allows to adjust the required speed (default delay: 20 ms). Set it to `0` to turn the feature off.
+
+### nwg-drawer 0.3.4 (2022.11.14)
 
 - Added a fix to hide invalid pinned items (.desktop file not found, probably uninstalled). The first modification of the pinned cache file will remove the invalid entry. Closes [#74](https://github.com/nwg-piotr/nwg-drawer/issues/74).
 
