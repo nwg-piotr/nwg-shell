@@ -39,6 +39,12 @@ Since v0.2.5 nwg-shell does not use the `autotiling` package, but its own `nwg-a
 
 ![2022-07-20-033338_screenshot](https://user-images.githubusercontent.com/20579136/179877238-ac4baa65-bc9b-4ad9-8f4f-33d7e22a1c4b.png)
 
+**Important note: turning autotiling on will spoil some default sway behaviour:**
+
+- moving windows with key bindings/swaymsg commands will need you to change the window focus first; dragging windows with Alt+mouse pointer should work well, however;
+- stacking and tabbed layouts will behave oddly. If you're attached to them, turn autotiling off, or set the `Depth limit`. Both layouts will work normally back again below the depth limit.
+- Split width/hight settings allow to achive uneven 1st window split. You may use them e.g. on vertical outputs, or, together with `depth limit = 2`, to achive the windows behaviour similar to Master/stack DWL layout (`depth_limit = 2`, `splith_width = 0.9`). Both settings are experimental, and may cause some not yet known and unexpected behaviour. Use at you own risk, or set to 1.0 to turn them off.
+
 ## System info: [gopsuinfo](https://github.com/nwg-piotr/gopsuinfo)
 
 - Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/gopsuinfo/graphs/contributors)
