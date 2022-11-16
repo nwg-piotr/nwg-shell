@@ -43,7 +43,7 @@ Since v0.2.5 nwg-shell does not use the `autotiling` package, but its own `nwg-a
 
 - moving windows with key bindings/swaymsg commands will need you to change the window focus first; dragging windows with Alt+mouse pointer should work well, however;
 - stacking and tabbed layouts will behave oddly. If you're attached to them, turn autotiling off, or set the `Depth limit`. Both layouts will work normally back again below the depth limit.
-- Split width/hight settings allow to achive uneven 1st window split. You may use them e.g. on vertical outputs, or, together with `depth limit = 2`, to achive the windows behaviour similar to Master/stack DWL layout (`depth_limit = 2`, `splith_width = 0.9`). Both settings are experimental, and may cause some not yet known and unexpected behaviour. Use at you own risk, or set to 1.0 to turn them off.
+- Split width/hight settings (since nwg-shell-config 0.4.8) allow to achive uneven 1st window split. You may use them e.g. on vertical outputs, or, together with `depth limit = 2`, to achive the windows behaviour similar to Master/stack DWL layout (`depth_limit = 2`, `splith_width = 0.9`). Both settings are experimental, and may cause some not yet known and unexpected behaviour. Use at you own risk, or set to 1.0 to turn them off.
 
 _Fake master/stack layout on HDMI-A-1_
 
