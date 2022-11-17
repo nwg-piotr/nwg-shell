@@ -1,4 +1,4 @@
-<div align="right"><a href="[https://nwg-piotr.github.io/nwg-shell/updates](https://github.com/nwg-piotr/nwg-shell/discussions/categories/changelog)">CHANGELOG</a></div>
+<div align="right"><a href="https://github.com/nwg-piotr/nwg-shell/discussions/categories/changelog">CHANGELOG</a></div>
 
 # nwg-shell project
 
@@ -33,7 +33,7 @@ If you want to share an idea, find a solution to a problem or discuss the projec
     - [Shell settings: nwg-shell-config](nwg-shell-config)
     - [Utilities and scripts](utilities-and-scripts)
 - [Where to get](https://nwg-piotr.github.io/nwg-shell#where-to-get)
-- [Recent updates]([updates](https://github.com/nwg-piotr/nwg-shell/discussions/categories/changelog))
+- [Recent updates](https://github.com/nwg-piotr/nwg-shell/discussions/categories/changelog)
 - [Contribution](https://nwg-piotr.github.io/nwg-shell#contribution)
     - [Translations](https://nwg-piotr.github.io/nwg-shell#translations) 
 - [Credits](https://nwg-piotr.github.io/nwg-shell#credits)
