@@ -1,5 +1,16 @@
 # Recent updates
 
+### nwg-shell-config 0.4.8 (2022.11.17)
+
+- presets: added a field to set nwg-dock hotspot delay
+- autotiling: added split width & split height, contributed by [@JoseConseco](https://github.com/JoseConseco)
+
+![image](https://user-images.githubusercontent.com/20579136/202330529-130a1df9-a8b7-4cf4-a7c8-91278a961801.png)
+
+Split width/height specifies the horizontal/vertical value multiplier to resize descendant container to after splitting the parent. 
+
+[read more](https://nwg-piotr.github.io/nwg-shell/utilities-and-scripts#workflow-autotiling)
+
 ### nwg-dock 0.3.2 (2022.11.15)
 
 - added the mouse pointer speed detection while entering the hotspot area, to determine if to show up the dock. See [#30](https://github.com/nwg-piotr/nwg-dock/issues/30). The `-hd` (for Hotspot Delay) argument allows to adjust the required speed (default delay: 20 ms). Set it to `0` to turn the feature off.
