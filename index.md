@@ -1,9 +1,8 @@
-❤️ [Support this project](https://github.com/sponsors/nwg-piotr)
 <div align="right"><a href="https://github.com/nwg-piotr/nwg-shell/discussions/categories/changelog">CHANGELOG</a></div>
 
-<iframe src="https://github.com/sponsors/nwg-piotr/button" title="Sponsor nwg-piotr" height="35" width="116" style="border: 0;"></iframe>
 
 # nwg-shell project
+<iframe src="https://github.com/sponsors/nwg-piotr/button" title="Sponsor nwg-piotr" height="35" width="116" style="border: 0;"></iframe>
 
 **The nwg-shell project aims to create a consistent, GTK3-based user interface for the [sway](https://github.com/swaywm/sway) Wayland Compositor. In order to give the user the greatest possible choice, some interface elements provide several alternative solutions. Just installed shell contains a bunch of presets, which can then be freely modified.**
 
