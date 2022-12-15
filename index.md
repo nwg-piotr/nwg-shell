@@ -1,3 +1,4 @@
+:heart: [Support this project](https://github.com/sponsors/nwg-piotr)
 <div align="right"><a href="https://github.com/nwg-piotr/nwg-shell/discussions/categories/changelog">CHANGELOG</a></div>
 
 # nwg-shell project
