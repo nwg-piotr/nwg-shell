@@ -136,7 +136,7 @@ The artwork used on this site is licensed under the terms of the [Creative Commo
 # Contact
 
 - nwg.piotr(at)gmail.com
-- https://forum.archlabslinux.com/u/nwg
+- [forum.archlabslinux.com/u/nwg](https://forum.archlabslinux.com/u/nwg)
 - <a rel="me" href="https://fosstodon.org/@nwgpiotr">@nwgpiotr@fosstodon.org</a>
 
 # This project is supported by
