@@ -39,6 +39,7 @@ If you want to share an idea, find a solution to a problem or discuss the projec
 - [Contribution](https://nwg-piotr.github.io/nwg-shell#contribution)
     - [Translations](https://nwg-piotr.github.io/nwg-shell#translations) 
 - [Credits](https://nwg-piotr.github.io/nwg-shell#credits)
+- [Contack](https://nwg-piotr.github.io/nwg-shell#contact)
 
 # Where to get
 
@@ -131,6 +132,12 @@ The artwork used on this site is licensed under the terms of the [Creative Commo
 - [@badkarma](https://forum.archlabslinux.com/u/badkarma/summary) on the ArchLabs Linux forum
 - [SGS](https://github.com/sgse)
 - [nwg-piotr](https://github.com/nwg-piotr)
+
+# Contact
+
+- nwg.piotr(at)gmail.com
+- https://forum.archlabslinux.com/u/nwg
+- <a rel="me" href="https://fosstodon.org/@nwgpiotr">@nwgpiotr@fosstodon.org</a>
 
 # This project is supported by
 
