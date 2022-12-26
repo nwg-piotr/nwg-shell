@@ -39,7 +39,7 @@ If you want to share an idea, find a solution to a problem or discuss the projec
 - [Contribution](https://nwg-piotr.github.io/nwg-shell#contribution)
     - [Translations](https://nwg-piotr.github.io/nwg-shell#translations) 
 - [Credits](https://nwg-piotr.github.io/nwg-shell#credits)
-- [Contack](https://nwg-piotr.github.io/nwg-shell#contact)
+- [Contact](https://nwg-piotr.github.io/nwg-shell#contact)
 
 # Where to get
 
