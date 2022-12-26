@@ -138,6 +138,7 @@ The artwork used on this site is licensed under the terms of the [Creative Commo
 - nwg.piotr(at)gmail.com
 - [forum.archlabslinux.com/u/nwg](https://forum.archlabslinux.com/u/nwg)
 - <a rel="me" href="https://fosstodon.org/@nwgpiotr">@nwgpiotr@fosstodon.org</a>
+- [reddit.com/user/nwg-piotr](https://www.reddit.com/user/nwg-piotr)
 
 # This project is supported by
 
