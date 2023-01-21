@@ -23,7 +23,6 @@
     ],
     "modules-right": [
       "scratchpad",
-      "executor-updates",
       "tray",
       "button-help"
     ],
@@ -113,20 +112,6 @@
       "on-scroll-up": "",
       "on-scroll-down": "",
       "css-name": "clock"
-    },
-    "executor-updates": {
-      "script": "sway-check-updates",
-      "interval": 900,
-      "icon-size": 16,
-      "on-left-click": "foot sway-update",
-      "tooltip-text": "",
-      "on-middle-click": "",
-      "on-right-click": "",
-      "on-scroll-up": "",
-      "on-scroll-down": "",
-      "css-name": "",
-      "root-css-name": "",
-      "icon-placement": "left"
     },
     "sway-workspaces": {
       "numbers": [
