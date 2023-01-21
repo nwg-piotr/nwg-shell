@@ -163,7 +163,7 @@ def main():
         proceed = a.strip().upper() == "Y"
 
     if proceed:
-        for item in ["sway", "nwg-panel", "nwg-drawer", "nwg-dock", "nwg-bar", "swaync", "foot", "gtklock"]:
+        for item in ["sway", "nwg-panel", "nwg-drawer", "nwg-dock", "nwg-bar", "nwg-look", "swaync", "foot", "gtklock"]:
             copy_from_skel(item, folder="config", skip_confirmation=args.all)
         for item in ["nwg-look"]:
             copy_from_skel(item, folder="data", skip_confirmation=args.all)
