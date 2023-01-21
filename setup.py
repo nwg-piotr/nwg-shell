@@ -19,6 +19,7 @@ setup(
              "skel/config/nwg-dock/*",
              "skel/config/nwg-drawer/*",
              "skel/config/nwg-panel/*",
+             "skel/config/nwg-look/*",
              "skel/data/nwg-look/*",
              "skel/config/sway/*",
              "skel/config/swaync/*",
