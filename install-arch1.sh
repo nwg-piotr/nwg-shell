@@ -1,4 +1,4 @@
 #!/usr/bash
-cls
+clear
 ls
 echo Press Enter to exit...; read;
