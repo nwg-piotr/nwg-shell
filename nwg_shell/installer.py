@@ -94,6 +94,10 @@ def main():
                         "--restore",
                         action="store_true",
                         help="Restore missing configs, styles & data files")
+    parser.add_argument("-w",
+                        "--web",
+                        action="store_true",
+                        help="Web installer - skip confirmations")
     parser.add_argument("-v",
                         "--version",
                         action="version",
@@ -116,18 +120,22 @@ def main():
 
         sys.exit(0)
 
-    print("\n*******************************************************************")
-    print("    This script installs/overwrites configs and style sheets       ")
-    print("              for sway and nwg-shell components.                   ")
-    print("  The only backup that will be made is the main sway config file.  ")
-    print("   This script should be used on a fresh Arch Linux installation.  ")
-    print("          If you're running it on your existing sway setup,        ")
-    print("                 you're doing it at your own risk.                 ")
-    print("*******************************************************************")
-
     global shell_data
 
-    a = input("\nProceed? y/N ")
+    if not args.web:
+        print("\n*******************************************************************")
+        print("    This script installs/overwrites configs and style sheets       ")
+        print("              for sway and nwg-shell components.                   ")
+        print("  The only backup that will be made is the main sway config file.  ")
+        print("   This script should be used on a fresh Arch Linux installation.  ")
+        print("          If you're running it on your existing sway setup,        ")
+        print("                 you're doing it at your own risk.                 ")
+        print("*******************************************************************")
+
+        a = input("\nProceed? y/N ")
+    else:
+        a = "Y"
+
     if a.strip().upper() != "Y":
         print("Installation cancelled")
         sys.exit(0)
@@ -175,7 +183,10 @@ def main():
             copy(os.path.join(dir_name, "skel", "stuff", "azotebg"), bcg)
             os.rename(bcg, os.path.join(os.getenv("HOME"), ".azotebg"))
 
-        print("\nThat's all. You may run sway now.\n")
+        if not args.web:
+            print("\nThat's all. You may run sway now.\n")
+        else:
+            print("\nThat's all. For the brightness control to work, reboot before running sway.\n")
 
 
 if __name__ == '__main__':
