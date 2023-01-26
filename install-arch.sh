@@ -1,4 +1,4 @@
 #!/usr/bash
 cls
 ls
-echo Press enter to exit...; read;
+echo Press Enter to exit...; read;
