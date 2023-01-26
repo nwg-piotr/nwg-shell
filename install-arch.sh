@@ -1,6 +1,5 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 cls
 ls
 echo Press enter to exit...; read;
-
