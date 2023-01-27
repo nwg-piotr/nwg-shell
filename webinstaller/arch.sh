@@ -6,5 +6,5 @@ sudo usermod -aG video $USER
 git clone https://bitbucket.org/natemaia/baph.git
 cd baph || { echo "Failed cloning baph, terminating"; exit 1; }
 sudo make install
-baph -inN nwg-shell
+baph -inN nwg-shell-git
 nwg-shell-installer -w
