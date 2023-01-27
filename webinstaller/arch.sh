@@ -1,6 +1,6 @@
 #!/usr/bash
 
-sudo pacman -s chromium mousepad thunar nano git man-db vi xdg-user-dirs
+sudo pacman -S chromium mousepad thunar nano git man-db vi xdg-user-dirs
 xdg-user-dirs-update
 sudo usermod -aG video $USER
 git clone https://bitbucket.org/natemaia/baph.git
