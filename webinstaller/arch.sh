@@ -1,4 +1,4 @@
-#!/usr/bash
+#!/usr/bin/bash
 
 sudo pacman -S --noconfirm chromium mousepad thunar nano git man-db vi xdg-user-dirs
 xdg-user-dirs-update

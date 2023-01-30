@@ -9,7 +9,7 @@ def read(f_name):
 
 setup(
     name='nwg-shell',
-    version='0.4.1',
+    version='0.4.2',
     description='GTK3-based shell for sway Wayland compositor',
     packages=find_packages(),
     include_package_data=True,
@@ -37,6 +37,7 @@ setup(
         'gui_scripts': [
             'nwg-shell = nwg_shell.main:main',
             'nwg-shell-installer = nwg_shell.installer:main',
+            'nwg-shell-installer-gui = nwg_shell.gui:main',
             'nwg-shell-check-updates = nwg_shell.check_updates:main'
         ]
     }
