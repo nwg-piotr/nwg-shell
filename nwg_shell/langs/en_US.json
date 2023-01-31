@@ -1,8 +1,0 @@
-{
-  "file-manager": "File manager",
-  "status-0": "If you followed the installation steps properly, you should be in the Arch Linux default sway session now.",
-  "status-1": "At this point all the shell packages are already installed. You only need to select a few components, the choice of which is left to the user.",
-  "text-editor": "Text editor",
-  "web-browser": "Web browser",
-  "welcome": "Welcome to nwg-shell: GTK3-based shell for sway Wayland compositor."
-}
