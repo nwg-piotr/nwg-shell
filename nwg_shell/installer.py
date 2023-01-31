@@ -22,7 +22,7 @@ from shutil import copy, copytree
 
 from nwg_shell.__about__ import __version__
 
-from nwg_shell.tools import load_json, save_json
+from nwg_shell.tools import load_json, save_json, is_command
 
 dir_name = os.path.dirname(__file__)
 
@@ -34,6 +34,22 @@ data_home = os.getenv('XDG_DATA_HOME') if os.getenv('XDG_DATA_HOME') else os.pat
 
 shell_data = None
 shell_data_file = os.path.join(data_home, "nwg-shell/data")
+
+browsers = {
+    "brave": "brave --enable-features=UseOzonePlatform --ozone-platform=wayland",
+    "chromium": "chromium --enable-features=UseOzonePlatform --ozone-platform=wayland",
+    "google-chrome-stable": "google-chrome-stable --enable-features=UseOzonePlatform --ozone-platform=wayland",
+    "epiphany": "epiphany",
+    "falkon": "falkon",
+    "firefox": "MOZ_ENABLE_WAYLAND=1 firefox",
+    "konqueror": "konqueror",
+    "midori": "midori",
+    "opera": "opera",
+    "qutebrowser": "qutebrowser",
+    "seamonkey": "seamonkey",
+    "surf": "surf",
+    "vivaldi-stable": "vivaldi-stable --enable-features=UseOzonePlatform --ozone-platform=wayland",
+}
 
 
 def copy_from_skel(name, folder="config", skip_confirmation=False):
@@ -155,7 +171,7 @@ def main():
                 del shell_data["last-upgrade"]
                 save_json(shell_data, shell_data_file)
 
-    # Backup sway config file
+    # Backup sway config file (we may have none on fresh installation)
     now = datetime.datetime.now()
     new_name = now.strftime("config-backup-%Y%m%d-%H%M%S")
     src = os.path.join(config_home, "sway/config")
@@ -177,7 +193,33 @@ def main():
         for item in ["nwg-look"]:
             copy_from_skel(item, folder="data", skip_confirmation=skip)
 
-        # copy default background
+        # Set default apps, if found, for nwg-shell-config
+        shell_config_settings_file = os.path.join(data_home, "nwg-shell-config", "settings")
+        shell_config_settings = load_json(shell_config_settings_file)
+
+        if "file-manager" not in shell_config_settings or not shell_config_settings["file-manager"]:
+            for cmd in ["thunar", "caja", "dolphin", "nautilus", "nemo", "pcmanfm"]:
+                if is_command(cmd):
+                    shell_config_settings["file-manager"] = cmd
+                    break
+
+        if "editor" not in shell_config_settings or not shell_config_settings["editor"]:
+            for cmd in ["mousepad", "atom", "emacs", "gedit", "geany", "kate", "vim"]:
+                if is_command(cmd):
+                    shell_config_settings["editor"] = cmd
+                    break
+
+        if "browser" not in shell_config_settings or not shell_config_settings["browser"]:
+            for cmd in ["brave", "chromium", "google-chrome-stable", "epiphany", "falkon", "firefox", "konqueror",
+                        "midori",
+                        "opera", "qutebrowser", "seamonkey", "surf", "vivaldi-stable"]:
+                if is_command(cmd):
+                    shell_config_settings["browser"] = browsers[cmd]
+                    break
+
+        save_json(shell_config_settings, shell_config_settings_file)
+
+        # Copy default background
         bcg = os.path.join(os.getenv("HOME"), "azotebg")
         if not os.path.isfile(bcg):
             print("Copying default background")
