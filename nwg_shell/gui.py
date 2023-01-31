@@ -98,43 +98,41 @@ def main():
 
     hbox = Gtk.Box.new(Gtk.Orientation.HORIZONTAL, 0)
     box.pack_start(hbox, False, False, 0)
-    lbl = Gtk.Label.new(voc["file-manager"])
-    hbox.pack_start(lbl, True, True, 0)
+    grid = Gtk.Grid()
+    grid.set_column_spacing(12)
+    grid.set_row_spacing(12)
+    grid.set_property("margin", 12)
+    hbox.pack_start(grid, True, False, 0)
+    lbl = Gtk.Label.new("{}:".format(voc["file-manager"]))
+    lbl.set_property("halign", Gtk.Align.END)
+    grid.attach(lbl, 0, 0, 1, 1)
 
-    hbox = Gtk.Box.new(Gtk.Orientation.HORIZONTAL, 0)
-    box.pack_start(hbox, False, False, 0)
     combo_fm = Gtk.ComboBoxText()
     for item in ["caja", "dolphin", "nautilus", "nemo", "pcmanfm", "thunar"]:
         combo_fm.append(item, item)
     combo_fm.set_active_id("thunar")
-    hbox.pack_start(combo_fm, True, False, 0)
+    grid.attach(combo_fm, 1, 0, 1, 1)
 
-    hbox = Gtk.Box.new(Gtk.Orientation.HORIZONTAL, 0)
-    box.pack_start(hbox, False, False, 0)
-    lbl = Gtk.Label.new(voc["text-editor"])
-    hbox.pack_start(lbl, True, True, 0)
+    lbl = Gtk.Label.new("{}:".format(voc["text-editor"]))
+    lbl.set_property("halign", Gtk.Align.END)
+    grid.attach(lbl, 0, 1, 1, 1)
 
-    hbox = Gtk.Box.new(Gtk.Orientation.HORIZONTAL, 0)
-    box.pack_start(hbox, False, False, 0)
     combo_fm = Gtk.ComboBoxText()
-    for item in ["atom", "emacs", "gedit", "geany", "kaste", "mousepad", "vim"]:
+    for item in ["atom", "emacs", "gedit", "geany", "kate", "mousepad", "vim"]:
         combo_fm.append(item, item)
     combo_fm.set_active_id("mousepad")
-    hbox.pack_start(combo_fm, True, False, 0)
+    grid.attach(combo_fm, 1, 1, 1, 1)
 
-    hbox = Gtk.Box.new(Gtk.Orientation.HORIZONTAL, 0)
-    box.pack_start(hbox, False, False, 0)
-    lbl = Gtk.Label.new(voc["web-browser"])
-    hbox.pack_start(lbl, True, True, 0)
+    lbl = Gtk.Label.new("{}:".format(voc["web-browser"]))
+    lbl.set_property("halign", Gtk.Align.END)
+    grid.attach(lbl, 0, 2, 1, 1)
 
-    hbox = Gtk.Box.new(Gtk.Orientation.HORIZONTAL, 0)
-    box.pack_start(hbox, False, False, 0)
     combo_fm = Gtk.ComboBoxText()
     for item in ["brave", "chromium", "google-chrome-stable", "epiphany", "falkon", "firefox", "konqueror", "midori",
                  "opera", "qutebrowser", "seamonkey", "surf", "vivaldi-stable"]:
         combo_fm.append(item, item)
     combo_fm.set_active_id("chromium")
-    hbox.pack_start(combo_fm, True, False, 0)
+    grid.attach(combo_fm, 1, 2, 1, 1)
 
     win.show_all()
     Gtk.main()
