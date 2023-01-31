@@ -21,4 +21,4 @@ do
     break
 done
 
-echo "baph -inN $fm $editor $browser"
+echo "Executing baph -inN $fm $editor $browser"
