@@ -1,5 +1,8 @@
 #!/usr/bin/bash
 
+# Download me, make executable, run & remove:
+# wget https://raw.github.com/nwg-piotr/nwg-shell/gui/install/test.sh -O test.sh && chmod u+x test.sh && ./test.sh && rm arch.sh
+
 echo "You're about to install the rest of components required for the key bindings to work."
 echo "None of them is a shell dependency, and you're free to change them later."
 
