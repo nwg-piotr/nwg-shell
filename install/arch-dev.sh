@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-# wget https://raw.github.com/nwg-piotr/nwg-shell/main/install/arch-dev.sh && chmod u+x arch-dev.sh && ./arch-dev.sh
+# wget https://raw.github.com/nwg-piotr/nwg-shell/main/install/arch-dev.sh && chmod u+x arch-dev.sh && ./arch-dev.sh && rm ./arch-dev.sh
 sudo pacman -S --noconfirm git man-db vi xdg-user-dirs
 
 echo Initializing XDG user directories
@@ -15,8 +15,7 @@ cd baph || { echo "Couldn't setup baph, terminating..."; exit 1; }
 sudo make install
 
 echo
-echo "You're about to select a file manager, text editor and web browser."
-echo "They need to be preinstalled now, for the key bindings to work."
+echo "You're about to select components, that need to be preinstalled for the key bindings to work."
 echo "None of above is a shell dependency, and you're free to change them any time later."
 echo
 
