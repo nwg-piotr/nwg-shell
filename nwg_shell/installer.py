@@ -197,6 +197,9 @@ def main():
         shell_config_settings_file = os.path.join(data_home, "nwg-shell-config", "settings")
         shell_config_settings = load_json(shell_config_settings_file)
 
+        if "terminal" not in shell_config_settings or not shell_config_settings["terminal"]:
+            shell_config_settings["terminal"] = "foot"
+
         if "file-manager" not in shell_config_settings or not shell_config_settings["file-manager"]:
             for cmd in ["thunar", "caja", "dolphin", "nautilus", "nemo", "pcmanfm"]:
                 if is_command(cmd):
