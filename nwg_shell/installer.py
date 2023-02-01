@@ -17,6 +17,7 @@ License: MIT
 import argparse
 import datetime
 import os
+import subprocess
 import sys
 from shutil import copy, copytree
 
@@ -232,7 +233,10 @@ def main():
         if not args.web:
             print("\nThat's all. You may run sway now.\n")
         else:
-            print("\nThat's all. For the brightness control to work, reboot before running sway.\n")
+            print("\nThat's all. For the brightness control to work, you need to reboot before running sway.\n")
+            a = input("\nReboot now? Y/n ")
+            if a.strip().upper() == "Y" or not a:
+                subprocess.call("sudo reboot", shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
 
 
 if __name__ == '__main__':
