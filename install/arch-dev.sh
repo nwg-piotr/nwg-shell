@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-# wget https://raw.github.com/nwg-piotr/nwg-shell/main/installer/arch.sh && chmod u+x arch.sh && ./arch.sh
+# wget https://raw.github.com/nwg-piotr/nwg-shell/main/install/arch-dev.sh && chmod u+x arch-dev.sh && ./arch-dev.sh
 sudo pacman -S --noconfirm git man-db vi xdg-user-dirs
 
 echo Initializing XDG user directories
@@ -14,9 +14,11 @@ git clone https://bitbucket.org/natemaia/baph.git || { echo "Failed cloning baph
 cd baph || { echo "Couldn't setup baph, terminating..."; exit 1; }
 sudo make install
 
+echo
 echo "You're about to select a file manager, text editor and web browser."
 echo "They need to be preinstalled now, for the key bindings to work."
 echo "None of above is a shell dependency, and you're free to change them any time later."
+echo
 
 PS3="Select file manager: "
 select fm in thunar caja dolphin nautilus nemo pcmanfm;
@@ -31,7 +33,7 @@ do
 done
 
 PS3="Select web browser: "
-select browser in chromium brave-bin google-chrome-stable epiphany falkon firefox konqueror midori opera qutebrowser seamonkey surf vivaldi-stable;
+select browser in chromium brave-bin google-chrome epiphany falkon firefox konqueror midori opera qutebrowser seamonkey surf vivaldi;
 do
     break
 done
