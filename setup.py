@@ -21,6 +21,7 @@ setup(
              "skel/config/nwg-panel/*",
              "skel/config/nwg-look/*",
              "skel/data/nwg-look/*",
+             "skel/data/nwg-shell-config/*",
              "skel/config/sway/*",
              "skel/config/swaync/*",
              "skel/config/foot/*",

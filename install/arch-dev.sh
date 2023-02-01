@@ -25,18 +25,21 @@ select fm in thunar caja dolphin nautilus nemo pcmanfm;
 do
     break
 done
+echo
 
 PS3="Select text editor: "
 select editor in mousepad atom emacs gedit geany kate vim;
 do
     break
 done
+echo
 
 PS3="Select web browser: "
 select browser in chromium brave-bin google-chrome epiphany falkon firefox konqueror midori opera qutebrowser seamonkey surf vivaldi;
 do
     break
 done
+echo
 
 echo "Installing selection: $fm $editor $browser"
 baph -inN $fm $editor $browser
