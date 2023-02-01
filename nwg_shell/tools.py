@@ -3,6 +3,7 @@
 import os
 import json
 import sys
+import subprocess
 
 
 def temp_dir():
@@ -62,6 +63,19 @@ def save_list_to_text_file(data, file_path):
     for line in data:
         text_file.write(line + "\n")
     text_file.close()
+
+
+def is_command(cmd):
+    cmd = cmd.split()[0]
+    cmd = "command -v {}".format(cmd)
+    try:
+        is_cmd = subprocess.check_output(
+            cmd, shell=True).decode("utf-8").strip()
+        if is_cmd:
+            return True
+
+    except subprocess.CalledProcessError:
+        return False
 
 
 def is_newer(string_new, string_existing):
