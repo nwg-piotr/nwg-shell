@@ -1,5 +1,13 @@
 #!/usr/bin/bash
 
+if [ "$(id -u)" == 0 ] ; then
+   echo "Please don't run this script as root"
+   exit 1
+fi
+
+# Don't continue script if any error occurs.
+set -e
+
 # wget https://raw.github.com/nwg-piotr/nwg-shell/main/install/arch.sh && chmod u+x arch.sh && ./arch.sh && rm arch.sh
 sudo pacman -S --noconfirm git man-db vi xdg-user-dirs
 
