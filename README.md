@@ -11,7 +11,7 @@ styles](https://github.com/nwg-piotr/nwg-shell-config/blob/master/README.md#desk
 
 # Installation
 
-[How to set up nwg-shell on minimal Arch Linux install in several simple steps](https://github.com/nwg-piotr/nwg-shell/wiki) - Wiki
+[How to set up nwg-shell in several simple steps](https://github.com/nwg-piotr/nwg-shell/wiki) - Wiki
 
 # nwg-shell components:
 
