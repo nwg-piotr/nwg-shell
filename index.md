@@ -34,14 +34,16 @@ If you want to share an idea, find a solution to a problem or discuss the projec
     - [Display management: nwg-displays](nwg-displays)
     - [Shell settings: nwg-shell-config](nwg-shell-config)
     - [Utilities and scripts](utilities-and-scripts)
-- [Where to get](https://nwg-piotr.github.io/nwg-shell#where-to-get)
+- [Installation](https://nwg-piotr.github.io/nwg-shell#installation)
 - [Recent updates](https://github.com/nwg-piotr/nwg-shell/discussions/categories/changelog)
 - [Contribution](https://nwg-piotr.github.io/nwg-shell#contribution)
     - [Translations](https://nwg-piotr.github.io/nwg-shell#translations) 
 - [Credits](https://nwg-piotr.github.io/nwg-shell#credits)
 - [Contact](https://nwg-piotr.github.io/nwg-shell#contact)
 
-# Where to get
+# Installation
+
+## Arch Linux
 
 The default way is to set up nwg-shell on a fresh Arch Linux install, done with the `archinstall` script. A step-by-step guide you'll find in [Wiki](https://github.com/nwg-piotr/nwg-shell/wiki). 
 
@@ -51,7 +53,13 @@ This works on various Arch derivatives, too, but expect unexpected. ;) Some pack
 
 ### [Arch derivatives we installed nwg-shell on](derivatives)
 
-Currently, there is no out-of-the-box installer for other Linux distributions. You may try and install all the components manually.
+## Fedora
+
+Please find installation steps on [Wiki](https://github.com/nwg-piotr/nwg-shell/wiki#fedora)
+
+## Slackware
+
+[Work In Progress](https://github.com/mac-a-r0ni/nwg-shell_slackbuilds)
 
 # Contribution
 
