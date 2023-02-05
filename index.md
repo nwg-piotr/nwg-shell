@@ -55,7 +55,7 @@ This works on various Arch derivatives, too, but expect unexpected. ;) Some pack
 
 ## Fedora
 
-Please find installation steps on [Wiki](https://github.com/nwg-piotr/nwg-shell/wiki#fedora)
+Please find installation steps in [Wiki](https://github.com/nwg-piotr/nwg-shell/wiki#fedora).
 
 ## Slackware
 
