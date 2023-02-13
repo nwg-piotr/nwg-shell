@@ -11,6 +11,9 @@ set -e
 echo "Enabling nwg-shell Copr"
 sudo dnf copr enable -y tofik/nwg-shell
 
+echo "Enabling pamixer Copr"
+sudo dnf copr enable -y notahat/pamixer
+
 echo
 echo "You're about to select components, that need to be preinstalled for the key bindings to work."
 echo "None of above is a shell dependency, and you're free to change them any time later."
@@ -41,7 +44,7 @@ echo "Installing selection: $fm $editor $browser"
 sudo dnf install -y $fm $editor $browser
 
 echo "Installing nwg-shell"
-sudo dnf install -y nwg-shell
+sudo dnf install -y nwg-shell pamixer
 
 echo "Installing initial configuration"
 # Version in fedora does not support -w flag, so, implemented workaround
