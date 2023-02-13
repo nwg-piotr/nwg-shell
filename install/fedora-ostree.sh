@@ -55,3 +55,5 @@ sudo rpm-ostree apply-live
 echo "Installing initial configuration"
 # Version in fedora does not support -w flag, so, implemented workaround
 echo y | nwg-shell-installer -a
+
+xdg-user-dirs-update
