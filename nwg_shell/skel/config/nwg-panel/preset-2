@@ -55,7 +55,8 @@
       "components": [
         "brightness",
         "battery",
-        "volume"
+        "volume",
+        "processes"
       ],
       "commands": {
         "battery": "",
@@ -183,7 +184,7 @@
     "executor-cpuavg": {
       "script": "gopsuinfo -i a",
       "tooltip-text": "",
-      "on-left-click": "",
+      "on-left-click": "nwg-processes",
       "on-middle-click": "",
       "on-right-click": "",
       "on-scroll-up": "",

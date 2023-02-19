@@ -33,7 +33,8 @@
       "components": [
         "brightness",
         "battery",
-        "volume"
+        "volume",
+        "processes"
       ],
       "commands": {
         "battery": "",
@@ -249,7 +250,7 @@
       "script": "gopsuinfo -i a",
       "interval": 2,
       "tooltip-text": "CPU average load",
-      "on-left-click": "foot -e htop",
+      "on-left-click": "nwg-processes",
       "on-middle-click": "",
       "on-right-click": "",
       "on-scroll-up": "",

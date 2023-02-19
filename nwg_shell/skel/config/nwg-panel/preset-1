@@ -35,7 +35,8 @@
       "components": [
         "brightness",
         "battery",
-        "volume"
+        "volume",
+        "processes"
       ],
       "commands": {
         "battery": "",
@@ -151,7 +152,7 @@
     "executor-cpuav": {
       "script": "gopsuinfo -i a",
       "tooltip-text": "average CPU load",
-      "on-left-click": "foot htop",
+      "on-left-click": "nwg-processes",
       "on-middle-click": "",
       "on-right-click": "",
       "on-scroll-up": "",

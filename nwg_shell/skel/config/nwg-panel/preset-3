@@ -31,7 +31,8 @@
       "components": [
         "brightness",
         "battery",
-        "volume"
+        "volume",
+        "processes"
       ],
       "commands": {
         "battery": "",
