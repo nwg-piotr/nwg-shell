@@ -114,7 +114,7 @@ This collection of software depends on numerous third-party programs and librari
 - [gotk3](https://github.com/gotk3/gotk3) by Conformal Systems LLC
 - [gotk3-layershell](https://github.com/dlasky/gotk3-layershell) by [@dlasky](https://github.com/dlasky/gotk3-layershell/commits?author=dlasky) (Dan, thanks again!)
 - [go-sway](https://github.com/joshuarubin/go-sway) by Joshua Rubin
-- [go-singleinstance](github.com/allan-simon/go-singleinstance) by 2015 Allan Simon
+- [go-singleinstance](https://github.com/allan-simon/go-singleinstance) by 2015 Allan Simon
 - [python-i3ipc](https://github.com/altdesktop/i3ipc-python) by Tony Crisci
 - [python-psutil](https://github.com/giampaolo/psutil) by Jay Loden, Dave Daeschler & Giampaolo Rodola
 - [python-geopy](https://github.com/geopy/geopy) by Kostya Esmukov
@@ -124,7 +124,7 @@ This collection of software depends on numerous third-party programs and librari
 - [brightnessctl](https://github.com/Hummer12007/brightnessctl) by Mykyta Holuakha
 - [ddcutil](https://github.com/rockowitz/ddcutil) by Sanford Rockowitz
 - [playerctl](https://github.com/altdesktop/playerctl) by Tony Crisci
-- [wlr-randr]() by Simon Ser
+- [wlr-randr](https://sr.ht/~emersion/wlr-randr) by Simon Ser
 - [PulseAudio](https://www.freedesktop.org/wiki/Software/PulseAudio), [bluez-utils](http://www.bluez.org), and probably more, which we forgot to mention here. Please forgive us, if so.
  
  [GTK](https://gitlab.gnome.org/GNOME/gtk) and related libraries are a free and open-source cross-platform widget toolkit for creating graphical user interfaces, developed by The GNOME Project.
