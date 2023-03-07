@@ -47,7 +47,11 @@ def main():
 
     # "installed-version" and "updates" keys will be missing from pre-0.3.0 installs
     # we only substitute them temporarily here, w/o saving
-    defaults = {"installed-version": "0.0.0", "updates": []}
+    defaults = {
+        "installed-version": "0.0.0",
+        "updates": [],
+        "interface-locale": ""
+    }
     for key in defaults:
         check_key(shell_data, key, defaults[key])
 

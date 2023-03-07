@@ -161,7 +161,11 @@ def main():
             # It must be a new installation. We need to init and save the shell data file.
             if not os.path.isdir(os.path.join(data_home, "nwg-shell")):
                 os.makedirs(os.path.join(data_home, "nwg-shell"))
-            shell_data = {"installed-version": __version__, "updates": [__version__]}
+            shell_data = {
+                "installed-version": __version__,
+                "updates": [__version__],
+                "interface-locale": ""
+            }
             save_json(shell_data, shell_data_file)
 
         else:
