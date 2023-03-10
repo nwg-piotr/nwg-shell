@@ -21,4 +21,12 @@ As of the nwg-shell-config 0.4.19 version, all the own (non-third party) shell c
 Since I don't really like gettext, which would be an overkill here anyway, I decided to create my own simple system based on JSON format.
 The base en_US lang, as well as pl_PL translation are provided together with each program. Other translations depend on contributors.
 
-If you'd like to improve translations, or add your own, please find the "Translate" button on the nwg-shell-config main screen:
+If you'd like to improve translations, or add your own, please click the translation button on the nwg-shell-config main screen:
+
+![obraz](https://user-images.githubusercontent.com/20579136/224201486-2bf13d81-7b59-4df2-a7b8-e73e19144584.png)
+
+This will open the nwg-shell-translate utility. Select an app and a language, create or edit phrases, use the "Export" button.
+It will save a json file in your home directory, named like `app-name-ln_LN.json`. Then you may share the file as a [gist](https://gist.github.com),
+or just send it to nwg.piotr@gmail.com. Thanks!
+
+![obraz](https://user-images.githubusercontent.com/20579136/224203217-095ca616-9bdb-4957-b02c-f1ce521ee043.png)
