@@ -18,7 +18,7 @@ Open an issue in appropriate GitHub repository to report a bug or request a feat
 ## Translations
 
 As of the nwg-shell-config 0.4.20 version, all the own (non-third party) shell components are supported by a common translation engine.
-Since I don't really like gettext, which would be an overkill here anyway, I created a simple system based on JSON format.
+Since I don't really like gettext, which would be an overkill here anyway, I created a simple system based on the JSON format.
 The base en_US lang, as well as pl_PL translation are provided together with each program. Other translations depend on contributors.
 
 If you'd like to improve translations, or add your own, please click the translation button on the nwg-shell-config main screen:
