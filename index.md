@@ -36,8 +36,8 @@ If you want to share an idea, find a solution to a problem or discuss the projec
     - [Utilities and scripts](utilities-and-scripts)
 - [Installation](https://github.com/nwg-piotr/nwg-shell/wiki)
 - [Recent updates](https://github.com/nwg-piotr/nwg-shell/discussions/categories/changelog)
-  - [Contribution](contribution)
-    - [Translations](contribution#translations)
+- [Contribution](contribution)
+  - [Translations](contribution#translations)
 - [Credits](https://nwg-piotr.github.io/nwg-shell#credits)
 - [Contact](https://nwg-piotr.github.io/nwg-shell#contact)
 
