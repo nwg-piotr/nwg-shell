@@ -30,3 +30,5 @@ It will save a json file in your home directory, named like `app-name-ln_LN.json
 or just send it to nwg.piotr@gmail.com. Thanks!
 
 ![obraz](https://user-images.githubusercontent.com/20579136/224203217-095ca616-9bdb-4957-b02c-f1ce521ee043.png)
+
+*NOTE: All windows in the nwg-shell user interface are designed to fit 1/2 the screen width at 1920x1080 resolution. When typing phrases in your native language, pay attention that they are not too long. Use abbreviations when necessary.*
