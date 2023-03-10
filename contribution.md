@@ -1,6 +1,6 @@
 # Contribution
 
-If you like the idea, feel free to submit your improvements, new modules or plugins. You can also propose your own program as a part of the shell, if you think it fits.
+Feel free to submit your improvements and bug fixes. You can also propose your own program as a part of the shell, if you think it fits.
 
 ## Code
 
