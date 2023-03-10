@@ -34,76 +34,11 @@ If you want to share an idea, find a solution to a problem or discuss the projec
     - [Display management: nwg-displays](nwg-displays)
     - [Shell settings: nwg-shell-config](nwg-shell-config)
     - [Utilities and scripts](utilities-and-scripts)
-- [Installation](https://nwg-piotr.github.io/nwg-shell#installation)
+- [Installation](https://github.com/nwg-piotr/nwg-shell/wiki)
 - [Recent updates](https://github.com/nwg-piotr/nwg-shell/discussions/categories/changelog)
-- [Contribution](https://nwg-piotr.github.io/nwg-shell#contribution)
-    - [Translations](https://nwg-piotr.github.io/nwg-shell#translations) 
+- [Contribution](contribution)
 - [Credits](https://nwg-piotr.github.io/nwg-shell#credits)
 - [Contact](https://nwg-piotr.github.io/nwg-shell#contact)
-
-# Installation
-
-## Arch Linux
-
-The default way is to set up nwg-shell on a fresh Arch Linux install, done with the `archinstall` script. A step-by-step guide you'll find in [Wiki](https://github.com/nwg-piotr/nwg-shell/wiki). 
-
-<a href="https://user-images.githubusercontent.com/20579136/182253244-5ebeabfa-853c-4192-b883-686c2d00f20b.png"><img src="https://user-images.githubusercontent.com/20579136/182253244-5ebeabfa-853c-4192-b883-686c2d00f20b.png" width=480></a>
-
-This works on various Arch derivatives, too, but expect unexpected. ;) Some packages may be out of date, some other may be missing, and you'll need to install them manually:
-
-### [Arch derivatives we installed nwg-shell on](derivatives)
-
-## Fedora
-
-Please find installation steps in [Wiki](https://github.com/nwg-piotr/nwg-shell/wiki#fedora).
-
-## Slackware
-
-[Work In Progress](https://github.com/mac-a-r0ni/nwg-shell_slackbuilds)
-
-# Contribution
-
-If you like the idea, feel free to submit your improvements, new modules or plugins. You can also propose your own program as a part of the shell, if you think it fits.
-
-## Pull requests
-
-1. Before you open a PR containing substantial changes to already existing programs, please open a [Discussion](https://github.com/nwg-piotr/nwg-shell/discussions).
-2. Half-baked PRs won't be merged: 
-
-- **Make sure you don't introduce new bugs**. We already have enough bugs to fix.
-- **Make sure your work is finished**, and needs no futher effort to be usable.
-- **Remember, that the project is intended for users of all skill levels**. Explain your new feature to the user. Add tooltips where needed. Update README / Wiki.
-
-
-## Issues
-
-Open an issue in **appropriate GitHub repository**, to report a bug or request a feature.
-
-## Translations
-
-As of the nwg-shell-config 0.4.0 version, work on the localization of the user interface has begun. Eventually it's going to affect all the nwg-shell components. If you'd like to contribute to what we already have, copy the [en_US.json file](https://github.com/nwg-piotr/nwg-shell-config/blob/master/nwg_shell_config/langs/en_US.json), rename for the name to reflect your locale (like: `de_DE.json` for German_GERMANY) and translate values in `"key": "value"` pairs.
-
-Original:
-
-```json
-{
-  "above-clock": "Above Clock",
-  "acceleration": "Acceleration"
-  (...)
-}
-```
-
-will look like this in Polish:
-
-```json
-{
-  "above-clock": "Ponad Zegarem",
-  "acceleration": "Akceleracja",
-  (...)
-}
-```
-
-Then you may either open a Pull Request to the [nwg-shell-config](https://github.com/nwg-piotr/nwg-shell-config) repo (see [this guide](https://github.com/firstcontributions/first-contributions) if you've never ever done it), or just share the translated file in another way. [Gist](https://gist.github.com) is a good idea, but any other solution will do.
 
 # Credits
 
@@ -131,7 +66,7 @@ This collection of software depends on numerous third-party programs and librari
  
  [sway](https://github.com/swaywm/sway) is an i3-compatible Wayland compositor Copyright (c) 2016-2017 Drew DeVault.
  
-<div style="padding: 10px 0px"></div>
+<div style="padding: 10px 0"></div>
 
 <img src="https://github.com/nwg-piotr/nwg-shell-resources/raw/master/resources/logo.svg" width="32" align="left" style="vertical-align: inline; padding: 0px 10px 0px 0px">The author of the [project logo](https://github.com/nwg-piotr/nwg-shell-resources/blob/master/resources/logo.svg) is [edskeye](https://github.com/edskeye).
 
