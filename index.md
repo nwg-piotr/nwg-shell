@@ -10,13 +10,13 @@
 
 The project is intended for users of all skill levels. Beginners will find four ready-made and immediately working desktop styles to choose from. Advanced users will get a set of tools to build their own GTK-based user interface. 
 
-> We discourage from editing .dotfiles manually. There's a GUI for that. The configuration files are in json format, which does not forgive mistakes.
+> I strongly discourage manual editing of .dotfiles. There's a GUI for that. The configuration files are in json format, which does not forgive mistakes.
 
-The user interface mostly consists of dedicated software, but also uses a couple of great third party products, that perfectly complement our vision. Many thanks to their authors for favorable attitude towards feature requests.
+The user interface mostly consists of dedicated software, but also uses several great third party products, that perfectly fit. Many thanks to their authors for favorable attitude towards feature requests.
 
-The default (preinstalled) terminal emulator is [foot](https://codeberg.org/dnkl/foot) by Daniel Eklöf. This does not mean that we consider other terminals worse, but that we had to choose one. The remaining elements of the desktop environment, such as the text editor, file manager, web browser, and so on, are left to the user's choice. The author's subjective recommendation might be mousepad, Thunar, and Chromium / Chrome, but it doesn't really make much difference.
+The default (preinstalled) terminal emulator is [foot](https://codeberg.org/dnkl/foot) by Daniel Eklöf. This does not mean that I consider other terminals worse, but that I had to choose one. The remaining elements of the desktop environment, such as the text editor, file manager, web browser, and so on, are left to the user's choice. The author's subjective recommendation might be mousepad, Thunar, and Chromium / Chrome, but it doesn't really make much difference.
 
-On the backend side there's a lot of third party Free Open Source Software. We will try to list all the applications and libraries in Credits.
+On the backend side there's a lot of third party Free Open Source Software. I'll try to list all the applications and libraries in Credits.
 
 If you want to share an idea, find a solution to a problem or discuss the project in general, please join [**Discussion**](https://github.com/nwg-piotr/nwg-shell/discussions).
 
@@ -61,7 +61,7 @@ This collection of software depends on numerous third-party programs and librari
 - [ddcutil](https://github.com/rockowitz/ddcutil) by Sanford Rockowitz
 - [playerctl](https://github.com/altdesktop/playerctl) by Tony Crisci
 - [wlr-randr](https://sr.ht/~emersion/wlr-randr) by Simon Ser
-- [PulseAudio](https://www.freedesktop.org/wiki/Software/PulseAudio), [bluez-utils](http://www.bluez.org), and probably more, which we forgot to mention here. Please forgive us, if so.
+- [PulseAudio](https://www.freedesktop.org/wiki/Software/PulseAudio), [bluez-utils](http://www.bluez.org), and probably more, which I forgot to mention here. Please forgive me, if so.
  
  [GTK](https://gitlab.gnome.org/GNOME/gtk) and related libraries are a free and open-source cross-platform widget toolkit for creating graphical user interfaces, developed by The GNOME Project.
  
