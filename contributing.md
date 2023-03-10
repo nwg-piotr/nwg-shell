@@ -8,7 +8,7 @@ Feel free to submit your improvements and bug fixes. You can also propose your o
 2. Half-baked PRs won't be merged: 
 
     - **Make sure you don't introduce new bugs**. We already have enough bugs to fix.
-    - **Make sure your work is finished**, and needs no futher effort to be usable.
+    - **Make sure your work is finished** and needs no futher effort to be usable.
     - **Remember, that the project is intended for users of all skill levels**. Explain your new feature to the user. Add tooltips where needed. Update README / Wiki.
     - **Follow the existing coding style**. All the PRs like _I reformatted code with Black or whatever_ go directly to `/dev/null`, w/o further reading.
 
