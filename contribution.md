@@ -10,7 +10,7 @@ If you like the idea, feel free to submit your improvements, new modules or plug
 - **Make sure you don't introduce new bugs**. We already have enough bugs to fix.
 - **Make sure your work is finished**, and needs no futher effort to be usable.
 - **Remember, that the project is intended for users of all skill levels**. Explain your new feature to the user. Add tooltips where needed. Update README / Wiki.
-- **Follow the existing coding style**. All the PRs like `I reformatted code with Black | whatever` go directly to `/dev/null`, w/o further reading.
+- **Follow the existing coding style**. All the PRs like *I reformatted code with Black | whatever* go directly to `/dev/null`, w/o further reading.
 
 ## Issues
 
