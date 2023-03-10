@@ -2,7 +2,7 @@
 
 If you like the idea, feel free to submit your improvements, new modules or plugins. You can also propose your own program as a part of the shell, if you think it fits.
 
-## Pull requests
+## Code
 
 1. Before you open a PR containing substantial changes to already existing programs, please open a [Discussion](https://github.com/nwg-piotr/nwg-shell/discussions).
 2. Half-baked PRs won't be merged: 
