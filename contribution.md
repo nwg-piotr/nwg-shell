@@ -1,4 +1,4 @@
-# Contribution
+# Contributing
 
 Feel free to submit your improvements and bug fixes. You can also propose your own program as a part of the shell, if you think it fits.
 
@@ -7,10 +7,10 @@ Feel free to submit your improvements and bug fixes. You can also propose your o
 1. Before you open a PR containing substantial changes to already existing programs, please open a [Discussion](https://github.com/nwg-piotr/nwg-shell/discussions).
 2. Half-baked PRs won't be merged: 
 
-  - **Make sure you don't introduce new bugs**. We already have enough bugs to fix.
-  - **Make sure your work is finished**, and needs no futher effort to be usable.
-  - **Remember, that the project is intended for users of all skill levels**. Explain your new feature to the user. Add tooltips where needed. Update README / Wiki.
-  - **Follow the existing coding style**. All the PRs like _I reformatted code with Black or whatever_ go directly to `/dev/null`, w/o further reading.
+- **Make sure you don't introduce new bugs**. We already have enough bugs to fix.
+- **Make sure your work is finished**, and needs no futher effort to be usable.
+- **Remember, that the project is intended for users of all skill levels**. Explain your new feature to the user. Add tooltips where needed. Update README / Wiki.
+- **Follow the existing coding style**. All the PRs like _I reformatted code with Black or whatever_ go directly to `/dev/null`, w/o further reading.
 
 ## Issues
 
