@@ -10,7 +10,7 @@ Learn more about nwg-shell on the [**project website**](https://nwg-piotr.github
 
 # Installation
 
-[How to set up nwg-shell in several simple steps](https://github.com/nwg-piotr/nwg-shell/wiki) - Wiki
+[How to set up nwg-shell in several simple steps](https://github.com/nwg-piotr/nwg-shell/wiki) - Wiki (Arch Linux, Fedora, Slackware)
 
 # Components
 
