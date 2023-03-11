@@ -2,12 +2,11 @@
 
 [![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-shell.svg)](https://repology.org/project/nwg-shell/versions)
 
-**[Learn more about nwg-shell on the project website](https://nwg-piotr.github.io/nwg-shell).**
+**Contributing:** please read the [general contributing rules for the nwg-shell project](https://nwg-piotr.github.io/nwg-shell/contribution).
 
-**Use [Discussions](https://github.com/nwg-piotr/nwg-shell/discussions) to see announcements, share ideas or ask for support.**
+Learn more about nwg-shell on the [**project website**](https://nwg-piotr.github.io/nwg-shell).
 
-The installer provided in this repository pulls all the necessary dependencies, and preconfigures [4 desktop
-styles](https://github.com/nwg-piotr/nwg-shell-config/blob/master/README.md#desktop-styles) for you to choose from. Each of them you can modify freely from the nwg-shell-config GUI. Or you may choose the 'Custom' preset to experiment with.
+**Use [Discussions](https://github.com/nwg-piotr/nwg-shell/discussions)** to see announcements, share ideas or ask for support.
 
 # Installation
 
