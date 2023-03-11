@@ -93,17 +93,6 @@ are welcome.
 
 go to `/dev/null`.
 
-# Contributions
-
-If you like the idea of the GTK shell for sway, feel free to submit your improvements, new modules, plugins or standalone programs. Preferred languages are python and Go.
-
-**Important: before you open a PR containing major changes to already existing programs, please (PLEASE!) open an issue to discuss what you're going to do.**
-
-## Feedback
-
-Bug reports and ideas are more than welcome. Please remember, however, that at this stage, most part of the shell is being developed by a single hobbyist, 
-who uses Arch Linux. Some issues specific to other environment, e.g. Debian, FreeBSD, are out of my range and need some Community commitment.
-
 # Project supported by
 
 <a href="https://jb.gg/OpenSourceSupport"><img width="300" src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" alt="JetBrains Logo (Main) logo."></a>
