@@ -12,7 +12,7 @@ Learn more about nwg-shell on the [**project website**](https://nwg-piotr.github
 
 [How to set up nwg-shell in several simple steps](https://github.com/nwg-piotr/nwg-shell/wiki) - Wiki
 
-# Components:
+# Components
 
 ## [nwg-shell-config](https://github.com/nwg-piotr/nwg-shell-config) (python)
 
