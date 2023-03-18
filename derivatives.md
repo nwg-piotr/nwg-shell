@@ -36,6 +36,6 @@ Installed over Manjaro Sway; some packages not in required versions.
 
 ## CachyOS
 
-No issue, installed over the sway session. [swayfx](https://github.com/WillPower3309/swayfx) instead of sway for a change.
+No issue, installed over the sway session. Then I replaced sway with [swayfx](https://github.com/WillPower3309/swayfx), for a change.
 
 <a href="https://user-images.githubusercontent.com/20579136/226076973-a9925f67-854c-4156-a117-c57e869f8a24.png"><img src="https://user-images.githubusercontent.com/20579136/226076973-a9925f67-854c-4156-a117-c57e869f8a24.png" width=480></a>
