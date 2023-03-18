@@ -35,6 +35,7 @@ If you want to share an idea, find a solution to a problem or discuss the projec
     - [Shell settings: nwg-shell-config](nwg-shell-config)
     - [Utilities and scripts](utilities-and-scripts)
 - [Installation](https://github.com/nwg-piotr/nwg-shell/wiki)
+- [nwg-shell on Arch derivatives](derivatives)
 - [Recent updates](https://github.com/nwg-piotr/nwg-shell/discussions/categories/changelog)
 - [Contributing](contribution)
     - [Translations](contribution#translations)
