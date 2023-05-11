@@ -1,27 +1,51 @@
 #!/bin/bash
 
-# Shortened version of https://github.com/moverest/sway-interactive-screenshot
-# w/o rofi, for use with key bindings
+# Original script based on some early version of https://github.com/moverest/sway-interactive-screenshot
+# modified for use with key bindings. For now supports sway & Hyprland.
+
+SWAY=$(echo "$SWAYSOCK")
+HYPR=$(echo "$HYPRLAND_INSTANCE_SIGNATURE")
+if [[ -n "$SWAY" && -n "$HYPR" ]]; then
+    echo "This script only works on sway or Hyprland, terminating.";
+    exit 1
+fi
 
 list_geometry()
 {
     swaymsg -t get_tree | jq -r '.. | try select(.'"$1"' and .pid) | "\(.rect.x),\(.rect.y) \(.rect.width)x\(.rect.height)''"'
 }
 
-FOCUSED=$(list_geometry focused)
+list_geometry_hypr()
+{
+    hyprctl -j activewindow | jq -r '"\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])''"'
+}
+
 CHOICE=$1
 DIR=${SCREENSHOT_DIR:=$HOME/Screenshots}
-FILENAME="${DIR/#\~/$HOME}/$(date +'%Y-%m-%d-%H%M%S_screenshot.png')"
 
 mkdir -p "$DIR"
 
-case $CHOICE in
-    fullscreen) grim "$FILENAME" ;;
-    region)     grim -g "$(slurp)" "$FILENAME" ;;
-    focused)    grim -g "$FOCUSED" "$FILENAME" ;;
-    display)    grim -o "$(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name')" "$FILENAME"
-    ;;
-esac
+if [[ -n "$SWAY" ]]; then
+    FOCUSED=$(list_geometry focused)
+    FILENAME="${DIR/#\~/$HOME}/$(date +'%Y-%m-%d-%H%M%S_sway_screenshot.png')"
+    case $CHOICE in
+        fullscreen) grim "$FILENAME" ;;
+        region)     grim -g "$(slurp)" "$FILENAME" ;;
+        focused)    grim -g "$FOCUSED" "$FILENAME" ;;
+        display)    grim -o "$(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name')" "$FILENAME" ;;
+    esac
+fi
+
+if [[ -n "$HYPR" ]]; then
+    FOCUSED=$(list_geometry_hypr)
+    FILENAME="${DIR/#\~/$HOME}/$(date +'%Y-%m-%d-%H%M%S_hypr_screenshot.png')"
+    case $CHOICE in
+        fullscreen) grim "$FILENAME" ;;
+        region)     grim -g "$(slurp)" "$FILENAME" ;;
+        focused)    grim -g "$FOCUSED" "$FILENAME" ;;
+        display)    grim -o "$(hyprctl -j monitors | jq -r '.[] | select(.focused) | .name')" "$FILENAME" ;;
+    esac
+fi
 
 wl-copy < "$FILENAME"
 notify-send "Screenshot" "File saved as <i>'$FILENAME'</i> and copied to the clipboard." -i "$FILENAME"
