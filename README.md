@@ -8,6 +8,8 @@ Learn more about nwg-shell on the [**project website**](https://nwg-piotr.github
 
 **Use [Discussions](https://github.com/nwg-piotr/nwg-shell/discussions)** to see announcements, share ideas or ask for support.
 
+**See [CHANGELOG](https://github.com/nwg-piotr/nwg-shell/discussions/categories/changelog)** to to learn about latest updates.
+
 # Installation
 
 [How to set up nwg-shell in several simple steps](https://github.com/nwg-piotr/nwg-shell/wiki) - Wiki (Arch Linux, Fedora, Slackware)
