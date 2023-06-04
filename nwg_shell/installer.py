@@ -143,10 +143,10 @@ def main():
     if not args.web:
         print("\n*******************************************************************")
         print("    This script installs/overwrites configs and style sheets       ")
-        print("              for sway and nwg-shell components.                   ")
+        print("          for sway, Hyprland and nwg-shell components.             ")
         print("  The only backup that will be made is the main sway config file.  ")
         print("   This script should be used on a fresh Arch Linux installation.  ")
-        print("          If you're running it on your existing sway setup,        ")
+        print("            If you're running it on your existing setup,           ")
         print("                 you're doing it at your own risk.                 ")
         print("*******************************************************************")
 

@@ -1,0 +1,223 @@
+[
+  {
+    "name": "top",
+    "output": "",
+    "layer": "bottom",
+    "position": "top",
+    "height": 30,
+    "homogeneous": true,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "padding-horizontal": 0,
+    "padding-vertical": 0,
+    "spacing": 2,
+    "controls": "right",
+    "items-padding": 0,
+    "css-name": "panel-top",
+    "icons": "light",
+    "modules-left": [
+      "button-launcher",
+      "sway-workspaces"
+    ],
+    "modules-center": [
+      "clock"
+    ],
+    "modules-right": [
+      "executor-cpuav",
+      "executor-cpubar",
+      "scratchpad",
+      "tray",
+      "button-help"
+    ],
+    "sway-taskbar": {},
+    "controls-settings": {
+      "alignment": "right",
+      "components": [
+        "brightness",
+        "battery",
+        "volume",
+        "processes"
+      ],
+      "commands": {
+        "battery": "",
+        "net": "nm-connection-editor",
+        "bluetooth": "blueman-manager"
+      },
+      "custom-items": [
+        {
+          "name": "Wallpapers",
+          "icon": "azote",
+          "cmd": "azote"
+        },
+        {
+          "name": "GTK settings",
+          "icon": "nwg-look",
+          "cmd": "nwg-look"
+        },
+        {
+          "name": "Displays",
+          "icon": "nwg-displays",
+          "cmd": "nwg-displays"
+        },
+        {
+          "name": "Panel settings",
+          "icon": "nwg-panel",
+          "cmd": "nwg-panel-config"
+        },
+        {
+          "name": "Shell settings",
+          "icon": "nwg-shell-config",
+          "cmd": "nwg-shell-config"
+        }
+      ],
+      "menu": {
+        "name": "Exit",
+        "icon": "system-shutdown-symbolic",
+        "items": [
+          {
+            "name": "Lock",
+            "cmd": "nwg-lock"
+          },
+          {
+            "name": "Logout",
+            "cmd": "swaymsg exit"
+          },
+          {
+            "name": "Restart",
+            "cmd": "systemctl reboot"
+          },
+          {
+            "name": "Shutdown",
+            "cmd": "systemctl -i poweroff"
+          }
+        ]
+      },
+      "show-values": false,
+      "interval": 1,
+      "icon-size": 18,
+      "hover-opens": false,
+      "leave-closes": true,
+      "click-closes": false,
+      "css-name": "controls-window",
+      "net-interface": "wlo1",
+      "system-shutdown-symbolic": "system-shutdown",
+      "output-switcher": true,
+      "window-width": 320,
+      "window-margin": 6,
+      "backlight-device": "",
+      "root-css-name": "controls-overview",
+      "backlight-controller": "light",
+      "window-margin-horizontal": 4,
+      "window-margin-vertical": 4,
+      "angle": 0.0
+    },
+    "playerctl": {},
+    "clock": {
+      "format": "%a, %d. %b  %H:%M:%S",
+      "interval": 1,
+      "on-right-click": "",
+      "tooltip-text": "",
+      "on-left-click": "",
+      "on-middle-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "css-name": "clock"
+    },
+    "width": "auto",
+    "sway-workspaces": {
+      "numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "show-icon": true,
+      "image-size": 16,
+      "show-name": true,
+      "name-length": 20,
+      "mark-autotiling": false,
+      "mark-content": true,
+      "show-layout": true
+    },
+    "scratchpad": {
+      "css-name": "",
+      "icon-size": 20
+    },
+    "menu-start": "off",
+    "menu-start-settings": {},
+    "executor-cpuav": {
+      "script": "gopsuinfo -i a",
+      "tooltip-text": "average CPU load",
+      "on-left-click": "nwg-processes",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "root-css-name": "",
+      "css-name": "",
+      "icon-placement": "right",
+      "icon-size": 16,
+      "interval": 3
+    },
+    "executor-cpubar": {
+      "script": "gopsuinfo -c g",
+      "tooltip-text": "",
+      "on-left-click": "",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "root-css-name": "",
+      "css-name": "",
+      "icon-placement": "left",
+      "icon-size": 16,
+      "interval": 3
+    },
+    "dwl-tags": {},
+    "tray": {
+      "icon-size": 16,
+      "root-css-name": "tray",
+      "inner-css-name": "inner-tray",
+      "smooth-scrolling-threshold": 0
+    },
+    "swaync": {
+      "tooltip-text": "Notifications",
+      "on-left-click": "swaync-client -t",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "root-css-name": "root-executor",
+      "css-name": "executor",
+      "icon-placement": "left",
+      "icon-size": 16,
+      "interval": 1,
+      "always-show-icon": true
+    },
+    "exclusive-zone": true,
+    "openweather": {},
+    "brightness-slider": {},
+    "button-launcher": {
+      "command": "nwg-drawer",
+      "icon": "grid",
+      "label": "",
+      "label-position": "right",
+      "tooltip": "Application drawer [Alt]+F1",
+      "css-name": "",
+      "icon-size": 16
+    },
+    "button-help": {
+      "command": "nwg-shell-help",
+      "icon": "help-about",
+      "label": "",
+      "label-position": "right",
+      "tooltip": "Show/hide help [S]+F1",
+      "css-name": "",
+      "icon-size": 16
+    }
+  }
+]

@@ -1,0 +1,309 @@
+[
+  {
+    "name": "top",
+    "output": "",
+    "layer": "bottom",
+    "position": "top",
+    "width": "auto",
+    "height": 30,
+    "homogeneous": true,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "padding-horizontal": 0,
+    "padding-vertical": 0,
+    "spacing": 2,
+    "items-padding": 0,
+    "css-name": "panel-top",
+    "icons": "light",
+    "menu-start": "off",
+    "modules-left": [
+      "button-launcher",
+      "playerctl"
+    ],
+    "modules-center": [
+      "clock"
+    ],
+    "modules-right": [
+      "tray",
+      "button-help"
+    ],
+    "controls": "right",
+    "controls-settings": {
+      "alignment": "right",
+      "components": [
+        "brightness",
+        "battery",
+        "volume",
+        "processes"
+      ],
+      "commands": {
+        "battery": "",
+        "net": "",
+        "bluetooth": "blueman-manager"
+      },
+      "custom-items": [
+        {
+          "name": "Wallpapers",
+          "icon": "azote",
+          "cmd": "azote"
+        },
+        {
+          "name": "GTK settings",
+          "icon": "nwg-look",
+          "cmd": "nwg-look"
+        },
+        {
+          "name": "Displays",
+          "icon": "nwg-displays",
+          "cmd": "nwg-displays"
+        },
+        {
+          "name": "Panel settings",
+          "icon": "nwg-panel",
+          "cmd": "nwg-panel-config"
+        },
+        {
+          "name": "Shell settings",
+          "icon": "nwg-shell-config",
+          "cmd": "nwg-shell-config"
+        }
+      ],
+      "menu": {
+        "name": "Exit",
+        "icon": "system-shutdown-symbolic",
+        "items": [
+          {
+            "name": "Lock",
+            "cmd": "nwg-lock"
+          },
+          {
+            "name": "Logout",
+            "cmd": "swaymsg exit"
+          },
+          {
+            "name": "Restart",
+            "cmd": "systemctl reboot"
+          },
+          {
+            "name": "Shutdown",
+            "cmd": "systemctl -i poweroff"
+          }
+        ]
+      },
+      "show-values": false,
+      "interval": 1,
+      "icon-size": 18,
+      "hover-opens": false,
+      "leave-closes": false,
+      "click-closes": true,
+      "css-name": "controls-window",
+      "net-interface": "wlo1",
+      "system-shutdown-symbolic": "system-shutdown",
+      "output-switcher": true,
+      "window-width": 320,
+      "window-margin": 0,
+      "root-css-name": "controls-overview",
+      "backlight-device": ""
+    },
+    "playerctl": {
+      "interval": 1,
+      "buttons": true,
+      "buttons-position": "left",
+      "chars": 50,
+      "css-name": "button-grid",
+      "icon-size": 16,
+      "button-css-name": "button-custom",
+      "label-css-name": "panel-top"
+    },
+    "clock": {
+      "format": "%a, %d. %b  %H:%M:%S",
+      "interval": 1,
+      "on-right-click": "",
+      "tooltip-text": "",
+      "on-left-click": "",
+      "on-middle-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "css-name": "clock",
+      "root-css-name": "root-clock"
+    },
+    "sway-taskbar": {},
+    "sway-workspaces": {},
+    "scratchpad": {},
+    "dwl-tags": {},
+    "tray": {
+      "icon-size": 16,
+      "root-css-name": "tray",
+      "inner-css-name": "inner-tray",
+      "smooth-scrolling-threshold": 0
+    },
+    "swaync": {
+      "tooltip-text": "Notifications",
+      "on-left-click": "swaync-client -t",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "root-css-name": "root-executor",
+      "css-name": "executor",
+      "icon-placement": "left",
+      "icon-size": 16,
+      "interval": 1,
+      "always-show-icon": true
+    },
+    "exclusive-zone": true,
+    "openweather": {},
+    "brightness-slider": {},
+    "button-launcher": {
+      "command": "nwg-drawer",
+      "icon": "grid",
+      "label": "",
+      "label-position": "right",
+      "tooltip": "Application drawer [Alt]+F1",
+      "css-name": "",
+      "icon-size": 16
+    },
+    "button-help": {
+      "command": "nwg-shell-help",
+      "icon": "help-about",
+      "label": "",
+      "label-position": "right",
+      "tooltip": "Show/hide help [S]+F1",
+      "css-name": "",
+      "icon-size": 16
+    }
+  },
+  {
+    "name": "bottom",
+    "output": "",
+    "layer": "bottom",
+    "position": "bottom",
+    "height": 30,
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "padding-horizontal": 6,
+    "padding-vertical": 0,
+    "spacing": 10,
+    "items-padding": 0,
+    "css-name": "panel-bottom",
+    "icons": "",
+    "menu-start": "off",
+    "width": "auto",
+    "controls": "off",
+    "controls-settings": {},
+    "scratchpad": {
+      "css-name": "",
+      "icon-size": 16,
+      "angle": 0.0,
+      "single-output": false
+    },
+    "clock": {},
+    "menu-start-settings": {},
+    "modules-left": [
+      "sway-taskbar",
+      "scratchpad"
+    ],
+    "modules-center": [],
+    "modules-right": [
+      "executor-cpuav",
+      "executor-cpubar",
+      "executor-temp",
+      "executor-memory",
+      "executor-drives"
+    ],
+    "sway-taskbar": {
+      "workspace-buttons": false,
+      "show-app-icon": true,
+      "show-layout": true,
+      "show-app-name": true,
+      "name-max-len": 15,
+      "workspaces-spacing": 0,
+      "task-padding": 0,
+      "all-outputs": false,
+      "image-size": 16,
+      "workspace-menu": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "all-workspaces": true
+    },
+    "executor-cpubar": {
+      "script": "gopsuinfo -c g",
+      "interval": 2,
+      "tooltip-text": "",
+      "on-left-click": "",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "css-name": "",
+      "icon-size": 16,
+      "icon-placement": "left"
+    },
+    "executor-cpuav": {
+      "script": "gopsuinfo -i a",
+      "interval": 2,
+      "tooltip-text": "CPU average load",
+      "on-left-click": "nwg-processes",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "css-name": "",
+      "icon-size": 16,
+      "icon-placement": "right"
+    },
+    "executor-temp": {
+      "script": "gopsuinfo -i t",
+      "interval": 5,
+      "tooltip-text": "",
+      "on-left-click": "",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "css-name": "",
+      "icon-size": 16,
+      "icon-placement": "left"
+    },
+    "executor-memory": {
+      "script": "gopsuinfo -i m",
+      "interval": 5,
+      "tooltip-text": "",
+      "on-left-click": "",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "css-name": "",
+      "icon-size": 16,
+      "icon-placement": "left"
+    },
+    "executor-drives": {
+      "script": "gopsuinfo -i n",
+      "interval": 15,
+      "tooltip-text": "",
+      "on-left-click": "",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "css-name": "",
+      "icon-size": 16,
+      "icon-placement": "left"
+    },
+    "playerctl": {},
+    "sway-workspaces": {},
+    "exclusive-zone": true,
+    "openweather": {},
+    "brightness-slider": {},
+    "dwl-tags": {},
+    "tray": {}
+  }
+]
