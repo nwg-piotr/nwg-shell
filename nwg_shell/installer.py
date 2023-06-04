@@ -45,6 +45,7 @@ browsers = {
     "firefox": "MOZ_ENABLE_WAYLAND=1 firefox",
     "konqueror": "konqueror",
     "midori": "midori",
+    "microsoft-edge-stable": "microsoft-edge-stable --enable-features=UseOzonePlatform --ozone-platform=wayland",
     "opera": "opera",
     "qutebrowser": "qutebrowser",
     "seamonkey": "seamonkey",
@@ -219,8 +220,7 @@ def main():
 
         if "browser" not in shell_config_settings or not shell_config_settings["browser"]:
             for cmd in ["brave", "chromium", "google-chrome-stable", "epiphany", "falkon", "firefox", "konqueror",
-                        "midori",
-                        "opera", "qutebrowser", "seamonkey", "surf", "vivaldi-stable"]:
+                        "midori", "microsoft-edge-stable", "opera", "qutebrowser", "seamonkey", "surf", "vivaldi-stable"]:
                 if is_command(cmd):
                     shell_config_settings["browser"] = browsers[cmd]
                     break
