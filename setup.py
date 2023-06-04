@@ -23,6 +23,7 @@ setup(
              "skel/data/nwg-look/*",
              "skel/data/nwg-shell-config/*",
              "skel/config/sway/*",
+             "skel/config/hypr/*",
              "skel/config/swaync/*",
              "skel/config/foot/*",
              "skel/config/gtklock/*",
