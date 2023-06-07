@@ -1,6 +1,0 @@
-set $term foot
-set $browser microsoft-edge-stable --enable-features=UseOzonePlatform --ozone-platform=wayland
-set $filemanager thunar
-set $editor mousepad
-set $launcher nwg-drawer
-set $exit nwg-bar -p center -a middle -i 48

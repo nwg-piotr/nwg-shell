@@ -125,7 +125,8 @@ def main():
 
     if args.restore:
         summary = []
-        for item in ["sway", "nwg-panel", "nwg-drawer", "nwg-dock", "nwg-bar", "swaync", "foot", "gtklock"]:
+        for item in ["sway", "nwg-panel", "nwg-drawer", "nwg-dock", "nwg-dock-hyprland", "nwg-bar", "swaync", "foot",
+                     "gtklock"]:
             r = restore(item, folder="config")
             if r:
                 summary.append(r)
@@ -220,7 +221,8 @@ def main():
 
         if "browser" not in shell_config_settings or not shell_config_settings["browser"]:
             for cmd in ["brave", "chromium", "google-chrome-stable", "epiphany", "falkon", "firefox", "konqueror",
-                        "midori", "microsoft-edge-stable", "opera", "qutebrowser", "seamonkey", "surf", "vivaldi-stable"]:
+                        "midori", "microsoft-edge-stable", "opera", "qutebrowser", "seamonkey", "surf",
+                        "vivaldi-stable"]:
                 if is_command(cmd):
                     shell_config_settings["browser"] = browsers[cmd]
                     break

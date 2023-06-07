@@ -17,6 +17,7 @@ setup(
         "": ["skel/stuff/*",
              "skel/config/nwg-bar/*",
              "skel/config/nwg-dock/*",
+             "skel/config/nwg-dock-hyprland/*",
              "skel/config/nwg-drawer/*",
              "skel/config/nwg-panel/*",
              "skel/config/nwg-look/*",

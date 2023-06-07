@@ -16,8 +16,7 @@
     "css-name": "panel-bottom",
     "icons": "",
     "modules-left": [
-      "sway-taskbar",
-      "scratchpad"
+      "hyprland-taskbar"
     ],
     "modules-center": [],
     "modules-right": [
@@ -27,28 +26,21 @@
       "tray",
       "button-help"
     ],
-    "sway-taskbar": {
-      "workspace-buttons": false,
-      "show-app-icon": true,
-      "show-layout": true,
-      "show-app-name": false,
-      "name-max-len": 20,
+    "sway-taskbar": {},
+    "hyprland-taskbar": {
+      "name-max-len": 24,
+      "icon-size": 16,
       "workspaces-spacing": 0,
-      "task-spacing": 0,
-      "all-outputs": true,
-      "workspace-menu": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8"
-      ],
+      "client-padding": 0,
+      "show-app-icon": true,
+      "show-app-name": false,
+      "show-app-name-special": false,
+      "show-layout": true,
+      "all-outputs": false,
+      "mark-xwayland": true,
+      "angle": 0.0,
       "image-size": 24,
-      "task-padding": 0,
-      "all-workspaces": true
+      "task-padding": 0
     },
     "controls-settings": {
       "alignment": "right",

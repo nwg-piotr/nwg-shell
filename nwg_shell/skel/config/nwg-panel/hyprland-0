@@ -200,7 +200,7 @@
     "clock": {},
     "menu-start-settings": {},
     "modules-left": [
-      "sway-taskbar",
+      "hyprland-taskbar",
       "scratchpad"
     ],
     "modules-center": [],
@@ -211,27 +211,21 @@
       "executor-memory",
       "executor-drives"
     ],
-    "sway-taskbar": {
-      "workspace-buttons": false,
-      "show-app-icon": true,
-      "show-layout": true,
-      "show-app-name": true,
+    "hyprland-taskbar": {
       "name-max-len": 15,
+      "image-size": 16,
       "workspaces-spacing": 0,
       "task-padding": 0,
+      "show-app-icon": true,
+      "show-app-name": true,
+      "show-layout": true,
+      "workspace-clickable": false,
+      "mark-xwayland": true,
       "all-outputs": false,
-      "image-size": 16,
-      "workspace-menu": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8"
-      ],
-      "all-workspaces": true
+      "angle": 0.0,
+      "icon-size": 16,
+      "client-padding": 0,
+      "show-app-name-special": false
     },
     "executor-cpubar": {
       "script": "gopsuinfo -c g",
@@ -299,6 +293,7 @@
       "icon-placement": "left"
     },
     "playerctl": {},
+    "sway-taskbar": {},
     "sway-workspaces": {},
     "exclusive-zone": true,
     "openweather": {},
