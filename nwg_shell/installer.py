@@ -138,10 +138,10 @@ def main():
 
     if args.restore:
         summary = []
-        items = ["sway", "nwg-panel", "nwg-drawer", "nwg-dock", "nwg-dock-hyprland", "nwg-bar", "swaync", "foot",
-                 "gtklock"]
+        items = ["sway", "nwg-panel", "nwg-drawer", "nwg-dock", "nwg-bar", "nwg-look", "swaync", "swaync", "foot", "gtklock"]
         if args.hypr:
             items.append("hypr")
+            items.append("nwg-dock-hyprland")
         for item in items:
             r = restore(item, folder="config")
             if r:
@@ -214,6 +214,7 @@ def main():
         items = ["sway", "nwg-panel", "nwg-drawer", "nwg-dock", "nwg-bar", "nwg-look", "swaync", "foot", "gtklock"]
         if args.hypr:
             items.append("hypr")
+            items.append("nwg-dock-hyprland")
         for item in items:
             copy_from_skel(item, folder="config", skip_confirmation=skip, hyprland=args.hypr)
         for item in ["nwg-look"]:
