@@ -19,7 +19,7 @@ import datetime
 import os
 import subprocess
 import sys
-from shutil import copy, copytree
+from shutil import copy, copy2
 
 from nwg_shell.__about__ import __version__
 
@@ -54,7 +54,17 @@ browsers = {
 }
 
 
-def copy_from_skel(name, folder="config", skip_confirmation=False):
+def copy_folder(src, dst, hyprland=False):
+    if not os.path.isdir(dst):
+        os.mkdir(dst)
+
+    for item in os.listdir(src):
+        if hyprland or "hyprland" not in item:
+            print(" {}".format(item))
+            copy2(os.path.join(src, item), os.path.join(dst, item))
+
+
+def copy_from_skel(name, folder="config", skip_confirmation=False, hyprland=False):
     src = os.path.join(dir_name, "skel/{}/".format(folder), name)
     if folder == "data":
         dst = os.path.join(data_home, name)
@@ -67,10 +77,10 @@ def copy_from_skel(name, folder="config", skip_confirmation=False):
         return
 
     else:
-        print("Copying files to '{}'".format(dst), end=" ")
+        print("Copying files to '{}'".format(dst))
         try:
-            copytree(src, dst, dirs_exist_ok=True)
-            print("OK")
+            # copytree(src, dst, dirs_exist_ok=True)
+            copy_folder(src, dst, hyprland=hyprland)
         except Exception as e:
             print("Failure: {}".format(e), file=sys.stderr)
 
@@ -108,6 +118,9 @@ def main():
                         "--all",
                         action="store_true",
                         help="install/overwrite All configs and styles w/o confirmation")
+    parser.add_argument("-hypr",
+                        action="store_true",
+                        help="Install Hyprland presets")
     parser.add_argument("-r",
                         "--restore",
                         action="store_true",
@@ -125,8 +138,11 @@ def main():
 
     if args.restore:
         summary = []
-        for item in ["sway", "nwg-panel", "nwg-drawer", "nwg-dock", "nwg-dock-hyprland", "nwg-bar", "swaync", "foot",
-                     "gtklock"]:
+        items = ["sway", "nwg-panel", "nwg-drawer", "nwg-dock", "nwg-dock-hyprland", "nwg-bar", "swaync", "foot",
+                 "gtklock"]
+        if args.hypr:
+            items.append("hypr")
+        for item in items:
             r = restore(item, folder="config")
             if r:
                 summary.append(r)
@@ -195,10 +211,13 @@ def main():
 
     if proceed:
         skip = args.all or args.web
-        for item in ["sway", "nwg-panel", "nwg-drawer", "nwg-dock", "nwg-bar", "nwg-look", "swaync", "foot", "gtklock"]:
-            copy_from_skel(item, folder="config", skip_confirmation=skip)
-        for item in ["nwg-look", "nwg-shell-config"]:
-            copy_from_skel(item, folder="data", skip_confirmation=skip)
+        items = ["sway", "nwg-panel", "nwg-drawer", "nwg-dock", "nwg-bar", "nwg-look", "swaync", "foot", "gtklock"]
+        if args.hypr:
+            items.append("hypr")
+        for item in items:
+            copy_from_skel(item, folder="config", skip_confirmation=skip, hyprland=args.hypr)
+        for item in ["nwg-look"]:
+            copy_from_skel(item, folder="data", skip_confirmation=skip, hyprland=args.hypr)
 
         # Set default apps, if found, for nwg-shell-config
         shell_config_settings_file = os.path.join(data_home, "nwg-shell-config", "settings")
