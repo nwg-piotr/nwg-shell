@@ -61,6 +61,8 @@ def copy_folder(src, dst, hyprland=False):
     for item in os.listdir(src):
         if hyprland or "hyprland" not in item:
             print(" {}".format(item))
+            if os.path.isfile(os.path.join(dst, item)):
+                os.remove(os.path.join(dst, item))
             copy2(os.path.join(src, item), os.path.join(dst, item))
 
 
