@@ -1,0 +1,101 @@
+/***** SUGGESTED TO CHANGE CAREFULLY *****/
+
+/* Recommended if panel "height"  unset or smaller then your theme default button height */
+button {
+    margin: 2px;
+    background: none;
+    border: none
+}
+
+/* SwayTaskBar and SwayWorkspaces use custom widgets, that need this and the next name
+   to highlight currently focused task / workspace. */
+#task-box {
+    padding-left: 4px;
+    padding-right: 4px
+}
+
+#task-box-focused {
+    background-color: rgba(255, 255, 255, 0.12);
+    padding-left: 4px;
+    padding-right: 4px
+}
+
+
+/***** MODIFY TO YOUR TASTE *****/
+
+/* Sample button in sample config w/ no background nor border */
+#button-custom {
+    background: rgba(0, 0, 0, 0.0);
+    border: 0
+}
+
+/* Top panel in sample config uses this name */
+#panel-top {
+    background: #101010;
+    border-radius: 0;
+    color: #eeeeee
+}
+
+/* Bottom panel in sample config uses this name */
+#panel-bottom {
+    background: #3b4559;
+    border-radius: 0;
+    color: #eeeeee
+}
+
+/* Controls window in sample config uses this name */
+#controls-window {
+    border-radius: 10px;
+    background: #31373A;
+    color: #eeeeee
+}
+
+/* Executors usually behave better in monospace fonts */
+#executor-label {
+    font-family: DejaVu Sans Mono, monospace
+}
+
+/* and so does the Clock */
+#clock {
+    font-family: DejaVu Sans Mono, monospace;
+    font-size: 16px
+}
+
+/* Sample executor-weather uses "css-name": "weather" */
+#weather {
+    font-size: 16px
+}
+
+/* dwl-tags module */
+#dwl-tag-box {
+    padding-top: 4px;
+    padding-bottom: 4px
+}
+
+#dwl-tag-occupied {
+    font-family: monospace;
+    color: #eee;
+    background-color: #006699;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#dwl-tag-free {
+    font-family: monospace;
+    color: #eee;
+    background-color: rgba(32, 50, 90, 1.0);
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#dwl-tag-urgent {
+    font-family: monospace;
+    color: #eee;
+    background-color: #ee6600;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+#dwl-tag-selected {
+    border: 2px solid #81a1c1;
+}

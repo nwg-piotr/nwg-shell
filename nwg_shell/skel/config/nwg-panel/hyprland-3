@@ -1,47 +1,31 @@
 [
   {
-    "name": "bottom",
+    "name": "top",
     "output": "",
-    "layer": "bottom",
-    "position": "bottom",
-    "height": 36,
+    "layer": "top",
+    "position": "top",
+    "height": 30,
     "width": "auto",
     "margin-top": 0,
     "margin-bottom": 0,
-    "padding-horizontal": 4,
+    "padding-horizontal": 0,
     "padding-vertical": 0,
     "spacing": 2,
     "controls": "right",
     "items-padding": 0,
-    "css-name": "panel-bottom",
+    "css-name": "panel-top",
     "icons": "",
     "modules-left": [
-      "hyprland-taskbar"
+      "sway-workspaces"
     ],
-    "modules-center": [],
+    "modules-center": [
+      "clock"
+    ],
     "modules-right": [
-      "executor-cpuavg",
-      "executor-cpubar",
-      "clock",
+      "scratchpad",
       "tray",
       "button-help"
     ],
-    "sway-taskbar": {},
-    "hyprland-taskbar": {
-      "name-max-len": 24,
-      "icon-size": 16,
-      "workspaces-spacing": 0,
-      "client-padding": 0,
-      "show-app-icon": true,
-      "show-app-name": false,
-      "show-app-name-special": false,
-      "show-layout": true,
-      "all-outputs": false,
-      "mark-xwayland": true,
-      "angle": 0.0,
-      "image-size": 24,
-      "task-padding": 0
-    },
     "controls-settings": {
       "alignment": "right",
       "components": [
@@ -106,12 +90,12 @@
       },
       "show-values": false,
       "interval": 1,
-      "icon-size": 16,
+      "icon-size": 18,
       "hover-opens": false,
-      "leave-closes": true,
-      "click-closes": false,
+      "leave-closes": false,
+      "click-closes": true,
       "css-name": "controls-window",
-      "net-interface": "wlan0",
+      "net-interface": "wlo1",
       "system-shutdown-symbolic": "system-shutdown",
       "output-switcher": true,
       "window-width": 320,
@@ -119,9 +103,8 @@
       "root-css-name": "controls-overview",
       "backlight-device": ""
     },
-    "playerctl": {},
     "clock": {
-      "format": "%H:%M:%S",
+      "format": "%a, %d. %b  %H:%M:%S",
       "interval": 1,
       "on-right-click": "",
       "tooltip-text": "",
@@ -129,64 +112,35 @@
       "on-middle-click": "",
       "on-scroll-up": "",
       "on-scroll-down": "",
-      "css-name": "clock",
-      "root-css-name": "root-clock"
+      "css-name": "clock"
     },
-    "sway-workspaces": {},
+    "sway-workspaces": {
+      "numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "show-icon": true,
+      "image-size": 16,
+      "show-name": true,
+      "name-length": 20,
+      "mark-autotiling": false,
+      "mark-content": true,
+      "show-layout": true
+    },
     "scratchpad": {
       "css-name": "",
-      "icon-size": 24,
-      "angle": 0.0,
-      "single-output": false
+      "icon-size": 20
     },
-    "menu-start": "left",
-    "menu-start-settings": {
-      "cmd-lock": "swaylock -f -c 000000",
-      "cmd-logout": "swaymsg exit",
-      "cmd-restart": "systemctl reboot",
-      "cmd-shutdown": "systemctl -i poweroff",
-      "autohide": true,
-      "file-manager": "thunar",
-      "height": 0,
-      "icon-size-large": 32,
-      "icon-size-small": 16,
-      "icon-size-button": 18,
-      "margin-bottom": 0,
-      "margin-left": 0,
-      "margin-right": 8,
-      "margin-top": 8,
-      "padding": 2,
-      "terminal": "foot",
-      "width": 0
-    },
-    "executor-cpubar": {
-      "script": "gopsuinfo -i g",
-      "tooltip-text": "",
-      "on-left-click": "",
-      "on-middle-click": "",
-      "on-right-click": "",
-      "on-scroll-up": "",
-      "on-scroll-down": "",
-      "root-css-name": "",
-      "css-name": "",
-      "icon-placement": "left",
-      "icon-size": 16,
-      "interval": 3
-    },
-    "executor-cpuavg": {
-      "script": "gopsuinfo -i a",
-      "tooltip-text": "",
-      "on-left-click": "nwg-processes",
-      "on-middle-click": "",
-      "on-right-click": "",
-      "on-scroll-up": "",
-      "on-scroll-down": "",
-      "root-css-name": "",
-      "css-name": "",
-      "icon-placement": "right",
-      "icon-size": 14,
-      "interval": 3
-    },
+    "menu-start": "off",
+    "menu-start-settings": {},
+    "playerctl": {},
+    "sway-taskbar": {},
     "dwl-tags": {},
     "tray": {
       "icon-size": 16,

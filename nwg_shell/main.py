@@ -8,7 +8,7 @@ def main():
     print("Commands:")
     print("  nwg-shell-installer      installs selected default configs interactively")
     print("  nwg-shell-installer -a   installs All configs from scratch")
-    print("  nwg-shell-installer -r   Restore missing configs, styles & data files")
+    print("  nwg-shell-installer -r   Restores missing configs, styles & data files")
     print("  nwg-shell-check-updates  checks for updates")
     print('\nWiki: https://github.com/nwg-piotr/nwg-shell/wiki')
 

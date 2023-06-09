@@ -1,47 +1,35 @@
 [
   {
-    "name": "bottom",
+    "name": "top",
     "output": "",
     "layer": "bottom",
-    "position": "bottom",
-    "height": 36,
-    "width": "auto",
+    "position": "top",
+    "height": 30,
+    "homogeneous": true,
     "margin-top": 0,
     "margin-bottom": 0,
-    "padding-horizontal": 4,
+    "padding-horizontal": 0,
     "padding-vertical": 0,
     "spacing": 2,
     "controls": "right",
     "items-padding": 0,
-    "css-name": "panel-bottom",
-    "icons": "",
+    "css-name": "panel-top",
+    "icons": "light",
     "modules-left": [
-      "hyprland-taskbar"
+      "button-launcher",
+      "hyprland-workspaces"
     ],
-    "modules-center": [],
+    "modules-center": [
+      "clock"
+    ],
     "modules-right": [
-      "executor-cpuavg",
+      "executor-cpuav",
       "executor-cpubar",
-      "clock",
+      "scratchpad",
       "tray",
       "button-help"
     ],
     "sway-taskbar": {},
-    "hyprland-taskbar": {
-      "name-max-len": 24,
-      "icon-size": 16,
-      "workspaces-spacing": 0,
-      "client-padding": 0,
-      "show-app-icon": true,
-      "show-app-name": false,
-      "show-app-name-special": false,
-      "show-layout": true,
-      "all-outputs": false,
-      "mark-xwayland": true,
-      "angle": 0.0,
-      "image-size": 24,
-      "task-padding": 0
-    },
     "controls-settings": {
       "alignment": "right",
       "components": [
@@ -52,7 +40,7 @@
       ],
       "commands": {
         "battery": "",
-        "net": "",
+        "net": "nm-connection-editor",
         "bluetooth": "blueman-manager"
       },
       "custom-items": [
@@ -106,22 +94,26 @@
       },
       "show-values": false,
       "interval": 1,
-      "icon-size": 16,
+      "icon-size": 18,
       "hover-opens": false,
       "leave-closes": true,
       "click-closes": false,
       "css-name": "controls-window",
-      "net-interface": "wlan0",
+      "net-interface": "wlo1",
       "system-shutdown-symbolic": "system-shutdown",
       "output-switcher": true,
       "window-width": 320,
-      "window-margin": 0,
+      "window-margin": 6,
+      "backlight-device": "",
       "root-css-name": "controls-overview",
-      "backlight-device": ""
+      "backlight-controller": "light",
+      "window-margin-horizontal": 4,
+      "window-margin-vertical": 4,
+      "angle": 0.0
     },
     "playerctl": {},
     "clock": {
-      "format": "%H:%M:%S",
+      "format": "%a, %d. %b  %H:%M:%S",
       "interval": 1,
       "on-right-click": "",
       "tooltip-text": "",
@@ -129,38 +121,41 @@
       "on-middle-click": "",
       "on-scroll-up": "",
       "on-scroll-down": "",
-      "css-name": "clock",
-      "root-css-name": "root-clock"
+      "css-name": "clock"
     },
+    "width": "auto",
     "sway-workspaces": {},
-    "scratchpad": {
-      "css-name": "",
-      "icon-size": 24,
+    "hyprland-workspaces": {
+      "num-ws": 10,
+      "show-icon": true,
+      "image-size": 16,
+      "show-name": true,
+      "name-length": 20,
+      "show-empty": true,
+      "mark-content": true,
+      "show-names": true,
+      "mark-floating": true,
       "angle": 0.0,
-      "single-output": false
+      "mark-xwayland": true
     },
-    "menu-start": "left",
-    "menu-start-settings": {
-      "cmd-lock": "swaylock -f -c 000000",
-      "cmd-logout": "swaymsg exit",
-      "cmd-restart": "systemctl reboot",
-      "cmd-shutdown": "systemctl -i poweroff",
-      "autohide": true,
-      "file-manager": "thunar",
-      "height": 0,
-      "icon-size-large": 32,
-      "icon-size-small": 16,
-      "icon-size-button": 18,
-      "margin-bottom": 0,
-      "margin-left": 0,
-      "margin-right": 8,
-      "margin-top": 8,
-      "padding": 2,
-      "terminal": "foot",
-      "width": 0
+    "menu-start": "off",
+    "menu-start-settings": {},
+    "executor-cpuav": {
+      "script": "gopsuinfo -i a",
+      "tooltip-text": "average CPU load",
+      "on-left-click": "nwg-processes",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "root-css-name": "",
+      "css-name": "",
+      "icon-placement": "right",
+      "icon-size": 16,
+      "interval": 3
     },
     "executor-cpubar": {
-      "script": "gopsuinfo -i g",
+      "script": "gopsuinfo -c g",
       "tooltip-text": "",
       "on-left-click": "",
       "on-middle-click": "",
@@ -171,20 +166,6 @@
       "css-name": "",
       "icon-placement": "left",
       "icon-size": 16,
-      "interval": 3
-    },
-    "executor-cpuavg": {
-      "script": "gopsuinfo -i a",
-      "tooltip-text": "",
-      "on-left-click": "nwg-processes",
-      "on-middle-click": "",
-      "on-right-click": "",
-      "on-scroll-up": "",
-      "on-scroll-down": "",
-      "root-css-name": "",
-      "css-name": "",
-      "icon-placement": "right",
-      "icon-size": 14,
       "interval": 3
     },
     "dwl-tags": {},
@@ -211,6 +192,15 @@
     "exclusive-zone": true,
     "openweather": {},
     "brightness-slider": {},
+    "button-launcher": {
+      "command": "nwg-drawer",
+      "icon": "grid",
+      "label": "",
+      "label-position": "right",
+      "tooltip": "Application drawer [Alt]+F1",
+      "css-name": "",
+      "icon-size": 16
+    },
     "button-help": {
       "command": "nwg-shell-help",
       "icon": "help-about",

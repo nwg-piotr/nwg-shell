@@ -8,6 +8,16 @@ fi
 # Don't continue script if any error occurs.
 set -e
 
+function yes_or_no {
+    while true; do
+        read -r -p "$* [y/n]: " yn
+        case $yn in
+            [Yy]*) choice="Y" ; return 0 ;;
+            [Nn]*) choice="n" ; return 1 ;;
+        esac
+    done
+}
+
 # wget https://raw.github.com/nwg-piotr/nwg-shell/main/install/arch-dev.sh && chmod u+x arch-dev.sh && ./arch-dev.sh && rm ./arch-dev.sh
 sudo pacman -S --noconfirm git man-db vi xdg-user-dirs
 
@@ -42,7 +52,7 @@ done
 echo
 
 PS3="Select web browser: "
-select browser in chromium brave-bin google-chrome epiphany falkon firefox konqueror midori opera qutebrowser seamonkey surf vivaldi;
+select browser in chromium brave-bin google-chrome epiphany falkon firefox konqueror microsoft-edge-stable-bin midori opera qutebrowser seamonkey surf vivaldi;
 do
     break
 done
@@ -54,5 +64,16 @@ baph -inN $fm $editor $browser
 echo Installing nwg-shell
 baph -inN nwg-shell-git
 
-echo Installing initial configuration
-nwg-shell-installer -w
+echo "Starting from v0.5.0, nwg-shell supports Hyprland Wayland compositor."
+
+yes_or_no "Install Hyprland?"
+
+if [ "$choice" == "Y" ] ; then
+   echo "Installing Hyprland"
+   baph -inN hyprland
+   echo Installing initial configuration
+   nwg-shell-installer -w -hypr
+else
+   echo Installing initial configuration
+   nwg-shell-installer -w
+fi

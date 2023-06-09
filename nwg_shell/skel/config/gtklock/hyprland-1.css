@@ -1,0 +1,34 @@
+* {
+  border: none;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7)
+}
+
+button {
+  border-radius: 10px;
+  background: none;
+  padding: 10px
+}
+
+#clock-label {
+  font-family: monospace
+}
+
+#unlock-button {
+  border-radius: 10px;
+  background: #31373A
+}
+
+#powerbar-box {
+  border-radius: 10px;
+  background: #31373A
+}
+
+#input-field {
+  border-radius: 10px;
+  background: #31373A
+}
+
+#playerctl-box {
+  margin: 20px;
+  background: #31373A
+}

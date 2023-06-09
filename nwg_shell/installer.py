@@ -19,7 +19,7 @@ import datetime
 import os
 import subprocess
 import sys
-from shutil import copy, copytree
+from shutil import copy, copy2
 
 from nwg_shell.__about__ import __version__
 
@@ -45,6 +45,7 @@ browsers = {
     "firefox": "MOZ_ENABLE_WAYLAND=1 firefox",
     "konqueror": "konqueror",
     "midori": "midori",
+    "microsoft-edge-stable": "microsoft-edge-stable --enable-features=UseOzonePlatform --ozone-platform=wayland",
     "opera": "opera",
     "qutebrowser": "qutebrowser",
     "seamonkey": "seamonkey",
@@ -53,7 +54,17 @@ browsers = {
 }
 
 
-def copy_from_skel(name, folder="config", skip_confirmation=False):
+def copy_folder(src, dst, hyprland=False):
+    if not os.path.isdir(dst):
+        os.mkdir(dst)
+
+    for item in os.listdir(src):
+        if hyprland or "hyprland" not in item:
+            print(" {}".format(item))
+            copy2(os.path.join(src, item), os.path.join(dst, item))
+
+
+def copy_from_skel(name, folder="config", skip_confirmation=False, hyprland=False):
     src = os.path.join(dir_name, "skel/{}/".format(folder), name)
     if folder == "data":
         dst = os.path.join(data_home, name)
@@ -66,10 +77,10 @@ def copy_from_skel(name, folder="config", skip_confirmation=False):
         return
 
     else:
-        print("Copying files to '{}'".format(dst), end=" ")
+        print("Copying files to '{}'".format(dst))
         try:
-            copytree(src, dst, dirs_exist_ok=True)
-            print("OK")
+            # copytree(src, dst, dirs_exist_ok=True)
+            copy_folder(src, dst, hyprland=hyprland)
         except Exception as e:
             print("Failure: {}".format(e), file=sys.stderr)
 
@@ -107,6 +118,9 @@ def main():
                         "--all",
                         action="store_true",
                         help="install/overwrite All configs and styles w/o confirmation")
+    parser.add_argument("-hypr",
+                        action="store_true",
+                        help="Install Hyprland presets")
     parser.add_argument("-r",
                         "--restore",
                         action="store_true",
@@ -124,7 +138,12 @@ def main():
 
     if args.restore:
         summary = []
-        for item in ["sway", "nwg-panel", "nwg-drawer", "nwg-dock", "nwg-bar", "swaync", "foot", "gtklock"]:
+        items = ["sway", "nwg-panel", "nwg-drawer", "nwg-dock", "nwg-bar", "nwg-look", "swaync", "swaync", "foot",
+                 "gtklock"]
+        if args.hypr:
+            items.append("hypr")
+            items.append("nwg-dock-hyprland")
+        for item in items:
             r = restore(item, folder="config")
             if r:
                 summary.append(r)
@@ -142,10 +161,10 @@ def main():
     if not args.web:
         print("\n*******************************************************************")
         print("    This script installs/overwrites configs and style sheets       ")
-        print("              for sway and nwg-shell components.                   ")
+        print("          for sway, Hyprland and nwg-shell components.             ")
         print("  The only backup that will be made is the main sway config file.  ")
         print("   This script should be used on a fresh Arch Linux installation.  ")
-        print("          If you're running it on your existing sway setup,        ")
+        print("            If you're running it on your existing setup,           ")
         print("                 you're doing it at your own risk.                 ")
         print("*******************************************************************")
 
@@ -193,10 +212,14 @@ def main():
 
     if proceed:
         skip = args.all or args.web
-        for item in ["sway", "nwg-panel", "nwg-drawer", "nwg-dock", "nwg-bar", "nwg-look", "swaync", "foot", "gtklock"]:
-            copy_from_skel(item, folder="config", skip_confirmation=skip)
-        for item in ["nwg-look", "nwg-shell-config"]:
-            copy_from_skel(item, folder="data", skip_confirmation=skip)
+        items = ["sway", "nwg-panel", "nwg-drawer", "nwg-dock", "nwg-bar", "nwg-look", "swaync", "foot", "gtklock"]
+        if args.hypr:
+            items.append("hypr")
+            items.append("nwg-dock-hyprland")
+        for item in items:
+            copy_from_skel(item, folder="config", skip_confirmation=skip, hyprland=args.hypr)
+        for item in ["nwg-look"]:
+            copy_from_skel(item, folder="data", skip_confirmation=skip, hyprland=args.hypr)
 
         # Set default apps, if found, for nwg-shell-config
         shell_config_settings_file = os.path.join(data_home, "nwg-shell-config", "settings")
@@ -219,8 +242,8 @@ def main():
 
         if "browser" not in shell_config_settings or not shell_config_settings["browser"]:
             for cmd in ["brave", "chromium", "google-chrome-stable", "epiphany", "falkon", "firefox", "konqueror",
-                        "midori",
-                        "opera", "qutebrowser", "seamonkey", "surf", "vivaldi-stable"]:
+                        "midori", "microsoft-edge-stable", "opera", "qutebrowser", "seamonkey", "surf",
+                        "vivaldi-stable"]:
                 if is_command(cmd):
                     shell_config_settings["browser"] = browsers[cmd]
                     break
@@ -233,11 +256,19 @@ def main():
             print("Copying default background")
             copy(os.path.join(dir_name, "skel", "stuff", "azotebg"), bcg)
             os.rename(bcg, os.path.join(os.getenv("HOME"), ".azotebg"))
+            copy(os.path.join(os.getenv("HOME"), ".azotebg"), os.path.join(os.getenv("HOME"), ".azotebg-hyprland"))
 
         if not args.web:
-            print("\nThat's all. You may run sway now.\n")
+            if is_command("Hyprland"):
+                print("\nThat's all. You may run sway or Hyprland now.\n")
+            else:
+                print("\nThat's all. You may run sway now.\n")
         else:
-            print("\nThat's all. For the brightness control to work, you need to reboot before running sway.\n")
+            if is_command("Hyprland"):
+                print("\nThat's all. For the brightness control to work, you need to reboot before running sway or Hyprland.\n")
+            else:
+                print("\nThat's all. For the brightness control to work, you need to reboot before running sway.\n")
+
             a = input("\nReboot now? Y/n ")
             if a.strip().upper() == "Y" or not a:
                 subprocess.call("sudo reboot", shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
