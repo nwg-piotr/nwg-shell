@@ -138,7 +138,8 @@ def main():
 
     if args.restore:
         summary = []
-        items = ["sway", "nwg-panel", "nwg-drawer", "nwg-dock", "nwg-bar", "nwg-look", "swaync", "swaync", "foot", "gtklock"]
+        items = ["sway", "nwg-panel", "nwg-drawer", "nwg-dock", "nwg-bar", "nwg-look", "swaync", "swaync", "foot",
+                 "gtklock"]
         if args.hypr:
             items.append("hypr")
             items.append("nwg-dock-hyprland")
@@ -258,9 +259,16 @@ def main():
             copy(os.path.join(os.getenv("HOME"), ".azotebg"), os.path.join(os.getenv("HOME"), ".azotebg-hyprland"))
 
         if not args.web:
-            print("\nThat's all. You may run sway now.\n")
+            if is_command("Hyprland"):
+                print("\nThat's all. You may run sway or Hyprland now.\n")
+            else:
+                print("\nThat's all. You may run sway now.\n")
         else:
-            print("\nThat's all. For the brightness control to work, you need to reboot before running sway.\n")
+            if is_command("Hyprland"):
+                print("\nThat's all. For the brightness control to work, you need to reboot before running sway or Hyprland.\n")
+            else:
+                print("\nThat's all. For the brightness control to work, you need to reboot before running sway.\n")
+
             a = input("\nReboot now? Y/n ")
             if a.strip().upper() == "Y" or not a:
                 subprocess.call("sudo reboot", shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
