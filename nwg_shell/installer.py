@@ -255,6 +255,7 @@ def main():
             print("Copying default background")
             copy(os.path.join(dir_name, "skel", "stuff", "azotebg"), bcg)
             os.rename(bcg, os.path.join(os.getenv("HOME"), ".azotebg"))
+            copy(os.path.join(os.getenv("HOME"), ".azotebg"), os.path.join(os.getenv("HOME"), ".azotebg-hyprland"))
 
         if not args.web:
             print("\nThat's all. You may run sway now.\n")
