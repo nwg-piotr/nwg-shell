@@ -218,37 +218,43 @@ def main():
             items.append("nwg-dock-hyprland")
         for item in items:
             copy_from_skel(item, folder="config", skip_confirmation=skip, hyprland=args.hypr)
-        for item in ["nwg-look"]:
+        for item in ["nwg-look", "nwg-shell-config"]:
             copy_from_skel(item, folder="data", skip_confirmation=skip, hyprland=args.hypr)
 
-        # Set default apps, if found, for nwg-shell-config
+        # Set default apps, if found, for nwg-shell-config(s)
         shell_config_settings_file = os.path.join(data_home, "nwg-shell-config", "settings")
         shell_config_settings = load_json(shell_config_settings_file)
 
-        if "terminal" not in shell_config_settings or not shell_config_settings["terminal"]:
-            shell_config_settings["terminal"] = "foot"
+        shell_config_settings_hyprland_file = os.path.join(data_home, "nwg-shell-config", "settings-hyprland")
+        shell_config_settings_hyprland = load_json(shell_config_settings_hyprland_file)
 
-        if "file-manager" not in shell_config_settings or not shell_config_settings["file-manager"]:
-            for cmd in ["thunar", "caja", "dolphin", "nautilus", "nemo", "pcmanfm"]:
-                if is_command(cmd):
-                    shell_config_settings["file-manager"] = cmd
-                    break
+        settings = [shell_config_settings, shell_config_settings_hyprland]
+        for s in settings:
+            if "terminal" not in s or not s["terminal"]:
+                s["terminal"] = "foot"
 
-        if "editor" not in shell_config_settings or not shell_config_settings["editor"]:
-            for cmd in ["mousepad", "atom", "emacs", "gedit", "geany", "kate", "vim"]:
-                if is_command(cmd):
-                    shell_config_settings["editor"] = cmd
-                    break
+            if "file-manager" not in s or not s["file-manager"]:
+                for cmd in ["thunar", "caja", "dolphin", "nautilus", "nemo", "pcmanfm"]:
+                    if is_command(cmd):
+                        s["file-manager"] = cmd
+                        break
 
-        if "browser" not in shell_config_settings or not shell_config_settings["browser"]:
-            for cmd in ["brave", "chromium", "google-chrome-stable", "epiphany", "falkon", "firefox", "konqueror",
-                        "midori", "microsoft-edge-stable", "opera", "qutebrowser", "seamonkey", "surf",
-                        "vivaldi-stable"]:
-                if is_command(cmd):
-                    shell_config_settings["browser"] = browsers[cmd]
-                    break
+            if "editor" not in s or not s["editor"]:
+                for cmd in ["mousepad", "atom", "emacs", "gedit", "geany", "kate", "vim"]:
+                    if is_command(cmd):
+                        s["editor"] = cmd
+                        break
+
+            if "browser" not in s or not s["browser"]:
+                for cmd in ["brave", "chromium", "google-chrome-stable", "epiphany", "falkon", "firefox", "konqueror",
+                            "midori", "microsoft-edge-stable", "opera", "qutebrowser", "seamonkey", "surf",
+                            "vivaldi-stable"]:
+                    if is_command(cmd):
+                        s["browser"] = browsers[cmd]
+                        break
 
         save_json(shell_config_settings, shell_config_settings_file)
+        save_json(shell_config_settings_hyprland, shell_config_settings_hyprland_file)
 
         # Copy default background
         bcg = os.path.join(os.getenv("HOME"), "azotebg")
