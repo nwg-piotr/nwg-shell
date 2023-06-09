@@ -64,8 +64,6 @@ baph -inN $fm $editor $browser
 echo Installing Simon Ser GPG key, needed by the wlr-randr AUR package
 gpg --recv-key 0FDE7BE0E88F5E48
 
-baph -inN wlr-randr
-
 echo Installing nwg-shell
 baph -inN nwg-shell
 
@@ -75,7 +73,7 @@ yes_or_no "Install Hyprland?"
 
 if [ "$choice" == "Y" ] ; then
    echo "Installing Hyprland"
-   baph -inN hyprland
+   baph -inN hyprland wlr-randr
    echo Installing initial configuration
    nwg-shell-installer -w -hypr
 else
