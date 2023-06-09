@@ -61,6 +61,9 @@ echo
 echo "Installing selection: $fm $editor $browser"
 baph -inN $fm $editor $browser
 
+echo Installing Simon Ser GPG key, needed by the wlr-randr AUR package
+gpg --recv-key 0FDE7BE0E88F5E48
+
 echo Installing nwg-shell
 baph -inN nwg-shell
 
