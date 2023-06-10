@@ -1,5 +1,5 @@
 <div align="right"><a href="https://github.com/nwg-piotr/nwg-shell/discussions/categories/changelog">CHANGELOG</a></div>
-
+<div align="right"><a href="https://discord.gg/SMK4nYv8">Discord</a></div>
 
 # nwg-shell project
 <iframe src="https://github.com/sponsors/nwg-piotr/button" title="Sponsor nwg-piotr" height="35" width="116" style="border: 0;"></iframe>
