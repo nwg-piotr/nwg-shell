@@ -1,4 +1,4 @@
-<div align="right"><a href="https://github.com/nwg-piotr/nwg-shell/discussions/categories/changelog">CHANGELOG</a></div>
+<div align="right"><a href="https://github.com/nwg-piotr/nwg-shell/discussions/categories/changelog">Changelog</a></div>
 <div align="right"><a href="https://discord.gg/SMK4nYv8">Discord</a></div>
 
 # nwg-shell project
