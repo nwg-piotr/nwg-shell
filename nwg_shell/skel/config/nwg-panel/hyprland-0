@@ -2,7 +2,7 @@
   {
     "name": "top",
     "output": "",
-    "layer": "bottom",
+    "layer": "overlay",
     "position": "top",
     "width": "auto",
     "height": 30,
@@ -176,7 +176,7 @@
   {
     "name": "bottom",
     "output": "",
-    "layer": "bottom",
+    "layer": "top",
     "position": "bottom",
     "height": 30,
     "margin-top": 0,
