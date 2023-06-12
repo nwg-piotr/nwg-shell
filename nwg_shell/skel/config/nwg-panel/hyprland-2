@@ -2,7 +2,7 @@
   {
     "name": "bottom",
     "output": "",
-    "layer": "bottom",
+    "layer": "overlay",
     "position": "bottom",
     "height": 36,
     "width": "auto",
@@ -16,8 +16,7 @@
     "css-name": "panel-bottom",
     "icons": "",
     "modules-left": [
-      "sway-taskbar",
-      "scratchpad"
+      "hyprland-taskbar"
     ],
     "modules-center": [],
     "modules-right": [
@@ -27,29 +26,7 @@
       "tray",
       "button-help"
     ],
-    "sway-taskbar": {
-      "workspace-buttons": false,
-      "show-app-icon": true,
-      "show-layout": true,
-      "show-app-name": false,
-      "name-max-len": 20,
-      "workspaces-spacing": 0,
-      "task-spacing": 0,
-      "all-outputs": true,
-      "workspace-menu": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8"
-      ],
-      "image-size": 24,
-      "task-padding": 0,
-      "all-workspaces": true
-    },
+    "sway-taskbar": {},
     "controls-settings": {
       "alignment": "right",
       "components": [
@@ -100,7 +77,7 @@
           },
           {
             "name": "Logout",
-            "cmd": "swaymsg exit"
+            "cmd": "hyprctl dispatch exit"
           },
           {
             "name": "Restart",
@@ -138,7 +115,17 @@
       "on-scroll-up": "",
       "on-scroll-down": "",
       "css-name": "clock",
-      "root-css-name": "root-clock"
+      "root-css-name": "root-clock",
+      "tooltip-date-format": false,
+      "angle": 0.0,
+      "calendar-path": "",
+      "calendar-css-name": "calendar-window",
+      "calendar-placement": "bottom-right",
+      "calendar-margin-horizontal": 0,
+      "calendar-margin-vertical": 0,
+      "calendar-icon-size": 24,
+      "calendar-interval": 60,
+      "calendar-on": true
     },
     "sway-workspaces": {},
     "scratchpad": {
