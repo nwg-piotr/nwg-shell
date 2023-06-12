@@ -120,7 +120,7 @@ def main():
                         help="install/overwrite All configs and styles w/o confirmation")
     parser.add_argument("-hypr",
                         action="store_true",
-                        help="Install Hyprland presets")
+                        help="install Hyprland presets; use together w/ -a or -w")
     parser.add_argument("-r",
                         "--restore",
                         action="store_true",
