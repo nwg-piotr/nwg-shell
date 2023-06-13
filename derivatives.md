@@ -1,12 +1,10 @@
 # nwg-shell on Arch derivatives
 
-**Note: Arch Linux derivatives other than ArchLabs, are not supported**.
-
 That's where we managed to install nwg-shell:
 
 ## ArchLabs
 
-See: [nwg-shell on ArchLabs Linux since 2022.08.21 iso](https://github.com/nwg-piotr/nwg-shell/discussions/17)
+_Make sure you have `wget`, `make`, `gcc` & `pkgconfig` installed first._
 
 <a href="https://user-images.githubusercontent.com/20579136/185012961-2ddbab2a-d9d0-4d58-85e3-9a928effdb46.png"><img src="https://user-images.githubusercontent.com/20579136/185012961-2ddbab2a-d9d0-4d58-85e3-9a928effdb46.png" width=480></a>
 
