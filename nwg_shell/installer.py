@@ -212,7 +212,8 @@ def main():
 
     if proceed:
         skip = args.all or args.web
-        items = ["sway", "nwg-panel", "nwg-drawer", "nwg-dock", "nwg-bar", "nwg-look", "swaync", "foot", "gtklock"]
+        items = ["sway", "nwg-panel", "nwg-drawer", "nwg-dock", "nwg-bar", "nwg-look", "swaync", "foot", "gtklock",
+                 "gtk-3.0"]
         if args.hypr:
             items.append("hypr")
             items.append("nwg-dock-hyprland")
@@ -271,7 +272,8 @@ def main():
                 print("\nThat's all. You may run sway now.\n")
         else:
             if is_command("Hyprland"):
-                print("\nThat's all. For the brightness control to work, you need to reboot before running sway or Hyprland.\n")
+                print(
+                    "\nThat's all. For the brightness control to work, you need to reboot before running sway or Hyprland.\n")
             else:
                 print("\nThat's all. For the brightness control to work, you need to reboot before running sway.\n")
 
