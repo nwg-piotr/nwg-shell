@@ -79,8 +79,8 @@
             "cmd": "nwg-lock"
           },
           {
-            "name": "Logout",
-            "cmd": "swaymsg exit"
+            "name": "Exit Hyprland session",
+            "cmd": "hyprctl dispatch exit"
           },
           {
             "name": "Restart",

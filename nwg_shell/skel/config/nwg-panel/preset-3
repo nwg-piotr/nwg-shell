@@ -75,7 +75,7 @@
             "cmd": "nwg-lock"
           },
           {
-            "name": "Logout",
+            "name": "Exit sway session",
             "cmd": "swaymsg exit"
           },
           {
