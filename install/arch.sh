@@ -69,6 +69,7 @@ baph -inN nwg-shell
 
 echo "Starting from v0.5.0, nwg-shell supports Hyprland Wayland compositor."
 
+echo
 yes_or_no "Install Hyprland?"
 
 if [ "$choice" == "Y" ] ; then
