@@ -28,6 +28,7 @@ setup(
              "skel/config/swaync/*",
              "skel/config/foot/*",
              "skel/config/gtklock/*",
+             "skel/config/gtk-3.0/*",
              "skel/*"]
     },
     url='https://github.com/nwg-piotr/nwg-shell',
