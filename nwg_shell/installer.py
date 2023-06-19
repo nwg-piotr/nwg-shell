@@ -231,7 +231,7 @@ def main():
 
         settings = [shell_config_settings]
         if args.hypr:
-            settings.append("shell_config_settings_hyprland")
+            settings.append(shell_config_settings_hyprland)
 
         for s in settings:
             if "terminal" not in s or not s["terminal"]:
