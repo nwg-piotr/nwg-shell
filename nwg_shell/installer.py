@@ -229,7 +229,10 @@ def main():
         shell_config_settings_hyprland_file = os.path.join(data_home, "nwg-shell-config", "settings-hyprland")
         shell_config_settings_hyprland = load_json(shell_config_settings_hyprland_file)
 
-        settings = [shell_config_settings, shell_config_settings_hyprland]
+        settings = [shell_config_settings]
+        if args.hypr:
+            settings.append("shell_config_settings_hyprland")
+
         for s in settings:
             if "terminal" not in s or not s["terminal"]:
                 s["terminal"] = "foot"
@@ -255,7 +258,8 @@ def main():
                         break
 
         save_json(shell_config_settings, shell_config_settings_file)
-        save_json(shell_config_settings_hyprland, shell_config_settings_hyprland_file)
+        if args.hypr:
+            save_json(shell_config_settings_hyprland, shell_config_settings_hyprland_file)
 
         # Copy default background
         bcg = os.path.join(os.getenv("HOME"), "azotebg")
