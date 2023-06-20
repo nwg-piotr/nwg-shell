@@ -5,12 +5,15 @@ if [ "$(id -u)" == 0 ] ; then
    exit 1
 fi
 
+# Don't continue script if any error occurs.
+set -e
+
 function yes_or_no {
     while true; do
         read -r -p "$* [y/n]: " yn
         case $yn in
             [Yy]*) choice="Y" ; return 0 ;;
-            [Nn]*) choice="n" ; return 1 ;;
+            [Nn]*) choice="n" ; return 0 ;;
         esac
     done
 }
