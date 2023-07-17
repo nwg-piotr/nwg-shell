@@ -10,6 +10,8 @@ Learn more about nwg-shell on the [**project website**](https://nwg-piotr.github
 
 **See [CHANGELOG](https://github.com/nwg-piotr/nwg-shell/discussions/categories/changelog)** to to learn about latest updates.
 
+**Use [this invitation](https://matrix.to/#/#nwg-shell:matrix.org)** to join the live chat on Matrix.
+
 # Installation
 
 [How to set up nwg-shell in several simple steps](https://github.com/nwg-piotr/nwg-shell/wiki) - Wiki (Arch Linux, Fedora, Slackware)
