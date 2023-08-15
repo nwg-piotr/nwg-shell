@@ -42,6 +42,7 @@
   "dwindle-default_split_ratio": 1.0,
   "dwindle-preserve_split": true,
   "dwindle-smart_split": false,
+  "dwindle-smart_resizing": true,
   "master-use-settings": true,
   "master-allow_small_split": false,
   "master-special_scale_factor": 0.8,
