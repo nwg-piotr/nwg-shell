@@ -25,6 +25,7 @@
     "modules-right": [
       "executor-cpuav",
       "executor-cpubar",
+      "sway-mode",
       "scratchpad",
       "tray",
       "button-help"
@@ -218,6 +219,11 @@
       "tooltip": "Show/hide help [S]+F1",
       "css-name": "",
       "icon-size": 16
-    }
+    },
+    "sigrt": 64,
+    "use-sigrt": false,
+    "sway-mode": {},
+    "hyprland-taskbar": {},
+    "hyprland-workspaces": {}
   }
 ]

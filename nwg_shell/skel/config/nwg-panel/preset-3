@@ -16,13 +16,14 @@
     "css-name": "panel-top",
     "icons": "",
     "modules-left": [
-      "sway-workspaces"
+      "sway-workspaces",
+      "scratchpad"
     ],
     "modules-center": [
       "clock"
     ],
     "modules-right": [
-      "scratchpad",
+      "sway-mode",
       "tray",
       "button-help"
     ],
@@ -173,6 +174,18 @@
       "tooltip": "Show/hide help [S]+F1",
       "css-name": "",
       "icon-size": 16
-    }
+    },
+    "homogeneous": true,
+    "sigrt": 64,
+    "use-sigrt": false,
+    "sway-mode": {
+      "show-default": false,
+      "show-icon": false,
+      "css-name": "",
+      "icon-size": 16,
+      "angle": 0.0
+    },
+    "hyprland-taskbar": {},
+    "hyprland-workspaces": {}
   }
 ]
