@@ -88,5 +88,8 @@
   "gtklock-suspend-command": "systemctl suspend",
   "gtklock-time-format": "%H:%M:%S",
   "gtklock-userinfo": false,
-  "gtklock-userswitch-command": ""
+  "gtklock-userswitch-command": "",
+  "update-indicator-on": true,
+  "update-indicator-interval": 30,
+  "update-command": "nwg-system-update"
 }
