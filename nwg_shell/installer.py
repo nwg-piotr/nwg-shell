@@ -222,7 +222,7 @@ def main():
         for item in ["nwg-look", "nwg-shell-config"]:
             copy_from_skel(item, folder="data", skip_confirmation=skip, hyprland=args.hypr)
 
-        # Set default apps, if found, for nwg-shell-config(s)
+        # Detect default apps and keyboard layout
         shell_config_settings_file = os.path.join(data_home, "nwg-shell-config", "settings")
         shell_config_settings = load_json(shell_config_settings_file)
 
@@ -233,6 +233,7 @@ def main():
         if args.hypr:
             settings.append(shell_config_settings_hyprland)
 
+        # Set default apps, if found
         for s in settings:
             if "terminal" not in s or not s["terminal"]:
                 s["terminal"] = "foot"
@@ -256,6 +257,23 @@ def main():
                     if is_command(cmd):
                         s["browser"] = browsers[cmd]
                         break
+
+        # Set keyboard layout (requires systemd)
+        if is_command("localectl"):
+            keymap = ""
+            try:
+                lines = subprocess.check_output("localectl status", shell=True).decode("utf-8").strip().splitlines()
+                for line in lines:
+                    if "VC Keymap" in line:
+                        if "unset" not in line:
+                            keymap = line.split()[-1]
+                        break
+            except subprocess.CalledProcessError:
+                pass
+            if keymap:
+                shell_config_settings["keyboard-xkb-layout"] = keymap
+                if shell_config_settings_hyprland:
+                    shell_config_settings_hyprland["input-kb_layout"] = keymap
 
         save_json(shell_config_settings, shell_config_settings_file)
         if args.hypr:
