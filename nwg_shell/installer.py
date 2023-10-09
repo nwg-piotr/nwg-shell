@@ -19,6 +19,7 @@ import datetime
 import os
 import subprocess
 import sys
+import time
 from shutil import copy, copy2
 
 from nwg_shell.__about__ import __version__
@@ -293,15 +294,9 @@ def main():
             else:
                 print("\nThat's all. You may run sway now.\n")
         else:
-            if is_command("Hyprland"):
-                print(
-                    "\nThat's all. For the brightness control to work, you need to reboot before running sway or Hyprland.\n")
-            else:
-                print("\nThat's all. For the brightness control to work, you need to reboot before running sway.\n")
-
-            a = input("\nReboot now? Y/n ")
-            if a.strip().upper() == "Y" or not a:
-                subprocess.call("sudo reboot", shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
+            print("Your computer will now restart...")
+            time.sleep(3)
+            subprocess.call("sudo reboot", shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
 
 
 if __name__ == '__main__':
