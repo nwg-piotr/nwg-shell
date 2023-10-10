@@ -17,7 +17,7 @@
   "browser": "",
   "panel-preset": "preset-0",
   "panel-custom": "",
-  "show-on-startup": true,
+  "show-on-startup": false,
   "keyboard-use-settings": true,
   "keyboard-identifier": "",
   "keyboard-xkb-layout": "us",

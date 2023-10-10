@@ -12,7 +12,7 @@
   "browser": "",
   "panel-preset": "hyprland-0",
   "panel-custom": "",
-  "show-on-startup": true,
+  "show-on-startup": false,
   "gen-use-settings": true,
   "gen-border_size": 1,
   "gen-no_border_on_floating": false,
