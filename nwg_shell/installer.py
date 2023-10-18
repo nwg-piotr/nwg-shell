@@ -280,10 +280,11 @@ def main():
                         break
             except subprocess.CalledProcessError:
                 pass
-            if keymap:
-                shell_config_settings["keyboard-xkb-layout"] = keymap
-                if shell_config_settings_hyprland:
-                    shell_config_settings_hyprland["input-kb_layout"] = keymap
+
+        if keymap:
+            shell_config_settings["keyboard-xkb-layout"] = keymap
+            if shell_config_settings_hyprland:
+                shell_config_settings_hyprland["input-kb_layout"] = keymap
 
         save_json(shell_config_settings, shell_config_settings_file)
         if args.hypr:
