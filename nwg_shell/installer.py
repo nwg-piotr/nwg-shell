@@ -130,6 +130,16 @@ def main():
                         "--web",
                         action="store_true",
                         help="Web installer - skip confirmations")
+    parser.add_argument("-k",
+                        "--keyboard_layout",
+                        type=str,
+                        default="",
+                        help="Preselect keyboard layout")
+    parser.add_argument("-s",
+                        "--skip_reboot",
+                        type=str,
+                        default="",
+                        help="Skip final messages and reboot")
     parser.add_argument("-v",
                         "--version",
                         action="version",
@@ -259,9 +269,9 @@ def main():
                         s["browser"] = browsers[cmd]
                         break
 
-        # Set keyboard layout (requires systemd)
-        if is_command("localectl"):
-            keymap = ""
+        keymap = args.keyboard_layout
+        # Detect keyboard layout (requires systemd)
+        if not keymap and is_command("localectl"):
             try:
                 lines = subprocess.check_output("localectl status", shell=True).decode("utf-8").strip().splitlines()
                 for line in lines:
@@ -288,15 +298,16 @@ def main():
             os.rename(bcg, os.path.join(os.getenv("HOME"), ".azotebg"))
             copy(os.path.join(os.getenv("HOME"), ".azotebg"), os.path.join(os.getenv("HOME"), ".azotebg-hyprland"))
 
-        if not args.web:
-            if is_command("Hyprland"):
-                print("\nThat's all. You may run sway or Hyprland now.\n")
+        if not args.skip_reboot:
+            if not args.web:
+                if is_command("Hyprland"):
+                    print("\nThat's all. You may run sway or Hyprland now.\n")
+                else:
+                    print("\nThat's all. You may run sway now.\n")
             else:
-                print("\nThat's all. You may run sway now.\n")
-        else:
-            print("Your computer will now restart...")
-            time.sleep(3)
-            subprocess.call("sudo reboot", shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
+                print("Your computer will now restart...")
+                time.sleep(3)
+                subprocess.call("sudo reboot", shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
 
 
 if __name__ == '__main__':
