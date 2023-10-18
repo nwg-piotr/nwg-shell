@@ -137,8 +137,7 @@ def main():
                         help="Preselect keyboard layout")
     parser.add_argument("-s",
                         "--skip_reboot",
-                        type=str,
-                        default="",
+                        action="store_true",
                         help="Skip final messages and reboot")
     parser.add_argument("-v",
                         "--version",
