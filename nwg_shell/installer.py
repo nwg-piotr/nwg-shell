@@ -306,7 +306,10 @@ def main():
             else:
                 print("Your computer will now restart...")
                 time.sleep(3)
-                subprocess.call("sudo reboot", shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
+                if is_command("systemctl"):
+                    subprocess.call("sudo systemctl reboot -f", shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
+                else:
+                    subprocess.call("sudo reboot", shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
 
 
 if __name__ == '__main__':
