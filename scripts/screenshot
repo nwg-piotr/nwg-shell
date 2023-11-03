@@ -21,6 +21,13 @@ list_geometry_hypr()
 }
 
 CHOICE=$1
+
+# Since the script errors out when a $CHOICE isn't supplied
+if [[ -z "$CHOICE" ]]; then
+  echo "Usage: $0 [fullscreen|region|focused|display]"
+  exit 1
+fi
+
 DIR=${SCREENSHOT_DIR:=$HOME/Screenshots}
 
 mkdir -p "$DIR"
