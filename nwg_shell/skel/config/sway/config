@@ -80,7 +80,7 @@ bindsym $Mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. 
 # screenshot
 bindsym Print exec screenshot fullscreen
 bindsym Control+Print exec screenshot display
-bindsym Shift+Control+Print exec grim -g "$(slurp)" - | swappy -f -
+bindsym Shift+Control+Print exec screenshot swappy
 bindsym $Mod+Shift+Control+Print exec screenshot focused
 
 # audio

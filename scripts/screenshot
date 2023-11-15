@@ -24,7 +24,7 @@ CHOICE=$1
 
 # Since the script errors out when a $CHOICE isn't supplied
 if [[ -z "$CHOICE" ]]; then
-  echo "Usage: $0 [fullscreen|region|focused|display]"
+  echo "Usage: $0 [fullscreen|region|focused|display|swappy]"
   exit 1
 fi
 
@@ -40,6 +40,7 @@ if [[ -n "$SWAY" ]]; then
         region)     grim -g "$(slurp)" "$FILENAME" ;;
         focused)    grim -g "$FOCUSED" "$FILENAME" ;;
         display)    grim -o "$(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name')" "$FILENAME" ;;
+        swappy)     grim -g "$(slurp)" - | swappy -f - ;;
     esac
 fi
 
@@ -51,8 +52,11 @@ if [[ -n "$HYPR" ]]; then
         region)     grim -g "$(slurp)" "$FILENAME" ;;
         focused)    grim -g "$FOCUSED" "$FILENAME" ;;
         display)    grim -o "$(hyprctl -j monitors | jq -r '.[] | select(.focused) | .name')" "$FILENAME" ;;
+        swappy)     grim -g "$(slurp)" - | swappy -f - ;;
     esac
 fi
 
-wl-copy < "$FILENAME"
-notify-send "Screenshot" "File saved as <i>'$FILENAME'</i> and copied to the clipboard." -i "$FILENAME"
+if [ "$CHOICE" != "swappy" ]; then
+        wl-copy < "$FILENAME"
+        notify-send "Screenshot" "File saved as <i>'$FILENAME'</i> and copied to the clipboard." -i "$FILENAME"
+fi
