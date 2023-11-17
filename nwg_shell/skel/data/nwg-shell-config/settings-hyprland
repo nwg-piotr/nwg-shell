@@ -12,6 +12,7 @@
   "browser": "",
   "panel-preset": "hyprland-0",
   "panel-custom": "",
+  "screenshot": true,
   "show-on-startup": false,
   "gen-use-settings": true,
   "gen-border_size": 1,

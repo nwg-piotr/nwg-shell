@@ -17,6 +17,7 @@
   "browser": "",
   "panel-preset": "preset-0",
   "panel-custom": "",
+  "screenshot": true,
   "show-on-startup": false,
   "keyboard-use-settings": true,
   "keyboard-identifier": "",
