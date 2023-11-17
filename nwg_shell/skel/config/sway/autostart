@@ -7,5 +7,5 @@ exec_always nwg-panel -c preset-0 -s preset-0.css
 exec_always nwg-shell-check-updates
 exec nwg-look -a
 exec nwg-update-indicator
+exec_always nwg-screenshot-applet
 exec_always nwg-shell-config -s
-
