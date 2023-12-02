@@ -102,3 +102,10 @@ button {
 #dwl-tag-selected {
     border: 2px solid #81a1c1;
 }
+
+/* Selected (hovered) UI elements */
+*:selected {
+  border: none;
+  background: #cd7ebf;
+  color: #fff
+}
