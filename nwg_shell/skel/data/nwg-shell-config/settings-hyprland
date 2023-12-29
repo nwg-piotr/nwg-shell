@@ -93,7 +93,7 @@
   "misc-hide_cursor_on_touch": true,
   "misc-mouse_move_focuses_monitor": true,
   "lockscreen-use-settings": true,
-  "lockscreen-locker": "gtklock",
+  "lockscreen-locker": "swaylock",
   "lockscreen-background-source": "local",
   "lockscreen-custom-cmd": "",
   "lockscreen-timeout": 1200,
