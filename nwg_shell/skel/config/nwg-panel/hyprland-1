@@ -104,6 +104,7 @@
       "output-switcher": true,
       "window-width": 320,
       "window-margin": 6,
+      "battery-low-level": 0,
       "backlight-device": "",
       "root-css-name": "controls-overview",
       "backlight-controller": "light",
