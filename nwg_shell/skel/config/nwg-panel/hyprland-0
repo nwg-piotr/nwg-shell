@@ -25,7 +25,8 @@
     ],
     "modules-right": [
       "tray",
-      "button-help"
+      "button-help",
+      "button-clipman"
     ],
     "controls": "right",
     "controls-settings": {
