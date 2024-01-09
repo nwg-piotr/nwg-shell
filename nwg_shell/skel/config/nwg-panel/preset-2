@@ -25,7 +25,8 @@
       "sway-mode",
       "clock",
       "tray",
-      "button-help"
+      "button-help",
+      "button-clipman"
     ],
     "sway-taskbar": {},
     "hyprland-taskbar": {
@@ -219,6 +220,15 @@
       "label": "",
       "label-position": "right",
       "tooltip": "Show/hide help [S]+F1",
+      "css-name": "",
+      "icon-size": 16
+    },
+    "button-clipman": {
+      "command": "nwg-clipman",
+      "icon": "nwg-clipman",
+      "label": "",
+      "label-position": "right",
+      "tooltip": "Clipboard history [Alt]+c",
       "css-name": "",
       "icon-size": 16
     },

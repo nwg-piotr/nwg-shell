@@ -68,6 +68,7 @@ bindsym Control+space     exec $launcher
 bindsym Mod1+F1           exec $launcher
 bindsym $Mod+f            exec $filemanager
 bindsym $Mod+c            exec swaync-client -t
+bindsym Mod1+c            exec nwg-clipman
 bindsym Mod1+l            exec nwg-lock
 bindsym $Mod+F1           exec nwg-shell-help
 
