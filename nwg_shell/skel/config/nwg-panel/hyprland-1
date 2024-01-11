@@ -107,8 +107,8 @@
       "window-margin": 6,
       "battery-low-level": 0,
       "backlight-device": "",
+      "backlight-controller": "brightnessctl",
       "root-css-name": "controls-overview",
-      "backlight-controller": "light",
       "window-margin-horizontal": 4,
       "window-margin-vertical": 4,
       "angle": 0.0

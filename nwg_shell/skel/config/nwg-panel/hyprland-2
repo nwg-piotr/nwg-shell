@@ -104,7 +104,8 @@
       "window-margin": 0,
       "battery-low-level": 0,
       "root-css-name": "controls-overview",
-      "backlight-device": ""
+      "backlight-device": "",
+      "backlight-controller": "brightnessctl"
     },
     "playerctl": {},
     "clock": {
