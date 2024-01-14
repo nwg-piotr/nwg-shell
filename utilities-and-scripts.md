@@ -18,6 +18,15 @@ The nwg-bar command creates a button bar on the basis of a JSON template placed 
 
 <a href="https://user-images.githubusercontent.com/20579136/179866515-fe89e50b-cc5f-4878-aeab-387535bc1d94.png">![2022-07-20-014527_screenshot](https://user-images.githubusercontent.com/20579136/179866515-fe89e50b-cc5f-4878-aeab-387535bc1d94.png)</a>
 
+## Clipboard manager: [nwg-clipman](https://github.com/nwg-piotr/nwg-clipman)
+
+- Author: Piotr Miller
+- License: MIT
+
+Nwg-clipman is a GTK3-based GUI for Senan Kelly's [cliphist](https://github.com/sentriz/cliphist). It provides access and management of the clipboard history from an easy to use GTK window.
+
+![clipman-00](https://github.com/nwg-piotr/nwg-shell/assets/20579136/6480a75b-72df-49f0-9b10-51e055b409be)
+
 ## Icon picker: [nwg-icon-picker](https://github.com/nwg-piotr/nwg-icon-picker)
 
 - Author: Piotr Miller
