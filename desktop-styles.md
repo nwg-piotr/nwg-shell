@@ -1,12 +1,19 @@
-## Display management: [nwg-displays](https://github.com/nwg-piotr/nwg-displays)
+## Desktop styles
 
-- Authors: Piotr Miller & [Contributors](https://github.com/nwg-piotr/nwg-displays/graphs/contributors)
-- License: MIT
+Nwg-shell comes with four predefined desktop styles for both sway and Hyprland. Every preset is bound to its own nwg-panel config file and css style sheet. Along with it come settings for the launcher, dock (if present if the preset), notification center, screen locker and the exit menu.
 
-This program provides an intuitive GUI to manage multiple displays, save outputs configuration and workspace-to-output assignments.
+### Preset 0
 
-![2022-07-20-011519_screenshot](https://user-images.githubusercontent.com/20579136/179864328-2dd5aa8b-dac9-4eaf-893c-cb85215a212c.png)
+![image](https://github.com/nwg-piotr/nwg-shell/assets/20579136/402bb806-ff9b-4869-aee0-683b7838e15d)
 
-<a href="https://user-images.githubusercontent.com/20579136/182031836-7118fb2b-416a-4e09-bf71-40cf29542d33.png">![overview](https://user-images.githubusercontent.com/20579136/182031836-7118fb2b-416a-4e09-bf71-40cf29542d33.png)</a>
+### Preset 1
 
-<a href="https://user-images.githubusercontent.com/20579136/182031840-23cf5fcc-e0e4-4494-96e6-b789f46dc614.png">![workspaces](https://user-images.githubusercontent.com/20579136/182031840-23cf5fcc-e0e4-4494-96e6-b789f46dc614.png)</a>
+![image](https://github.com/nwg-piotr/nwg-shell/assets/20579136/405ff1b9-ada9-48ea-95d8-d595b0a84fc5)
+
+### Preset 2
+
+![image](https://github.com/nwg-piotr/nwg-shell/assets/20579136/b340597d-9f5a-466e-a0a1-858a4d08cca5)
+
+### Preset 3
+
+![image](https://github.com/nwg-piotr/nwg-shell/assets/20579136/167cec77-6c87-444f-8805-3b58da52e604)
