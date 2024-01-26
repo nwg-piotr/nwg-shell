@@ -27,12 +27,8 @@ Please read the [general contributing rules for the nwg-shell project](https://n
 
 ## Contact
 
-- Use [Discussions](https://github.com/nwg-piotr/nwg-shell/discussions) to see announcements, share ideas or ask for support.
+- Use [Discussions](https://github.com/nwg-piotr/nwg-shell/discussions) to see CHANGELOG and announcements, share ideas, ask for support.
 - Use [this invitation](https://matrix.to/#/#nwg-shell:matrix.org) to join the live chat on Matrix.
-
-## CHANGELOG
-
-- learn about latest updates on [this Discussions thread](https://github.com/nwg-piotr/nwg-shell/discussions/categories/changelog).
 
 ## Project supported by
 
