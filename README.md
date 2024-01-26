@@ -5,8 +5,8 @@
 (**nwg-shell-config**) that allows you to configure the system in a graphical UI, and a range of components such as 
 **nwg-panel** (system panel), **nwg-drawer** (application launcher), **nwg-dock** (system dock), **nwg-menu** 
 (XDG-style menu) or **nwg-bar** (customizable button bar). It also includes several native tools as 
-**nwg-look** (look and feel GTK settings editor), **nwg-displays** (display manager), **Azote** (wallpaper manager), 
-**nwg-clipman** (clipboard history manager), **nwg-icon-picker** (icon browser with textual search), 
+**nwg-look** (look and feel GTK settings editor), **nwg-displays** (display configuration tool), **Azote** (wallpaper 
+manager), **nwg-clipman** (clipboard history manager), **nwg-icon-picker** (icon browser with textual search), 
 **nwg-readme-browser** (documentation viewer) and **nwg-hello** (login manager). Scripts and utilities such as 
 **autotiling** (script for sway to automatically switch the horizontal / vertical window split orientation) and 
 **gospuinfo** (a command to display system usage info) are used in the background. The shell also utilizes third party 
