@@ -27,8 +27,8 @@ Please read the [general contributing rules for the nwg-shell project](https://n
 
 ## Contact
 
-- Use [Discussions](https://github.com/nwg-piotr/nwg-shell/discussions)** to see announcements, share ideas or ask for support.
-- Use [this invitation](https://matrix.to/#/#nwg-shell:matrix.org)** to join the live chat on Matrix.
+- Use [Discussions](https://github.com/nwg-piotr/nwg-shell/discussions) to see announcements, share ideas or ask for support.
+- Use [this invitation](https://matrix.to/#/#nwg-shell:matrix.org) to join the live chat on Matrix.
 
 ## CHANGELOG
 
