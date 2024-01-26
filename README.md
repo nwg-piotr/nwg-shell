@@ -1,7 +1,6 @@
 <img src="https://github.com/nwg-piotr/nwg-shell/assets/20579136/58e3dcc1-d738-449f-a6d0-e5cbb91e4e60" width="90" style="margin-right:10px" align=left alt="nwg-shell logo">
 <H1>nwg-shell</H1><br>
 
-
 **nwg-shell** is a GTK3-based shell for [sway](https://github.com/swaywm/sway) and 
 [Hyprland](https://github.com/hyprwm/Hyprland) Wayland compositors. The project provides a common configuration tool 
 (**nwg-shell-config**) that allows you to configure the system in a graphical UI, and a range of components such as 
