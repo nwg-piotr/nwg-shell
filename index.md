@@ -24,6 +24,7 @@ If you want to share an idea, find a solution to a problem or discuss the projec
 # TOC
 
 - What's inside
+    - [Login manager: nwg-hello](nwg-hello)
     - [Panel: nwg-panel](nwg-panel)
     - [Launcher: nwg-drawer](nwg-drawer)
     - [Dock: nwg-dock](nwg-dock)
