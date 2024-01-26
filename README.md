@@ -1,73 +1,40 @@
 # nwg-shell
 
-[![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-shell.svg)](https://repology.org/project/nwg-shell/versions)
-
-**Contributing:** please read the [general contributing rules for the nwg-shell project](https://nwg-piotr.github.io/nwg-shell/contribution).
+**nwg-shell** is a GTK3-based shell for [sway](https://github.com/swaywm/sway) and 
+[Hyprland](https://github.com/hyprwm/Hyprland) Wayland compositors. The project provides a common configuration tool 
+(**nwg-shell-config**), that allows to set up the system with a graphical UI, and a range of components such as 
+**nwg-panel** (system panel), **nwg-drawer** (application launcher), **nwg-dock** (system dock), **nwg-menu** 
+(XDG-style menu) or **nwg-bar** (customizable button bar). It also includes several native tools as 
+**nwg-look** (look and feel GTK settings editor), **nwg-displays** (display manager), **Azote** (wallpaper manager), 
+**nwg-clipman** (clipboard history manager), **nwg-icon-picker** (icon browser with textual search), 
+**nwg-readme-browser** (documentation viewer) and **nwg-hello** (login manager). Scripts and utilities such as 
+**autotiling** (script for sway to automatically switch the horizontal / vertical window split orientation) and 
+**gospuinfo** (a command to display system usage info) are used in the background. The shell also utilizes third party 
+software as **swaync** (notification center), **gtklock** / **swaylock** (screen lockers) and more.
 
 Learn more about nwg-shell on the [**project website**](https://nwg-piotr.github.io/nwg-shell).
 
-**Use [Discussions](https://github.com/nwg-piotr/nwg-shell/discussions)** to see announcements, share ideas or ask for support.
+## Installation
 
-**See [CHANGELOG](https://github.com/nwg-piotr/nwg-shell/discussions/categories/changelog)** to to learn about latest updates.
+For installation instructions, see the [Wiki page](https://github.com/nwg-piotr/nwg-shell/wiki).
 
-**Use [this invitation](https://matrix.to/#/#nwg-shell:matrix.org)** to join the live chat on Matrix.
+[![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-shell.svg)](https://repology.org/project/nwg-shell/versions)
 
-# Installation
+## Contributing
 
-[How to set up nwg-shell in several simple steps](https://github.com/nwg-piotr/nwg-shell/wiki) - Wiki (Arch Linux, Fedora, Slackware)
+Please read the [general contributing rules for the nwg-shell project](https://nwg-piotr.github.io/nwg-shell/contribution).
 
-# Components
+## Contact
 
-## [nwg-shell-config](https://github.com/nwg-piotr/nwg-shell-config) (python)
+- Use [Discussions](https://github.com/nwg-piotr/nwg-shell/discussions)** to see announcements, share ideas or ask for support.
+- Use [this invitation](https://matrix.to/#/#nwg-shell:matrix.org)** to join the live chat on Matrix.
 
-[![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-shell-config.svg)](https://repology.org/project/nwg-shell-config/versions)
+## CHANGELOG
 
-## [nwg-panel](https://github.com/nwg-piotr/nwg-panel) (python)
+- learn about latest updates on [this Discussions thread](https://github.com/nwg-piotr/nwg-shell/discussions/categories/changelog).
 
-[![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-panel.svg)](https://repology.org/project/nwg-panel/versions)
-
-- [Wiki](https://github.com/nwg-piotr/nwg-panel/wiki)
-
-## [nwg-drawer](https://github.com/nwg-piotr/nwg-drawer) (go)
-
-[![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-drawer.svg)](https://repology.org/project/nwg-drawer/versions)
-
-## [nwg-dock](https://github.com/nwg-piotr/nwg-dock) (go)
-
-[![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-dock.svg)](https://repology.org/project/nwg-dock/versions)
-
-## [nwg-menu](https://github.com/nwg-piotr/nwg-menu) (go)
-
-[![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-menu.svg)](https://repology.org/project/nwg-menu/versions)
-
-## [nwg-bar](https://github.com/nwg-piotr/nwg-bar) (go)
-
-[![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-bar.svg)](https://repology.org/project/nwg-bar/versions)
-
-- [latest release](https://github.com/nwg-piotr/nwg-bar/releases/latest)
-
-## [Azote](https://github.com/nwg-piotr/azote) (python)
-
-[![Packaging status](https://repology.org/badge/vertical-allrepos/azote.svg)](https://repology.org/project/azote/versions)
-
-## [nwg-displays](https://github.com/nwg-piotr/nwg-displays) (python)
-
-[![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-displays.svg)](https://repology.org/project/nwg-displays/versions)
-
-## [nwg-look](https://github.com/nwg-piotr/nwg-look) (go)
-
-[![Packaging status](https://repology.org/badge/vertical-allrepos/nwg-look.svg)](https://repology.org/project/nwg-look/versions)
-
-## [gopsuinfo](https://github.com/nwg-piotr/gopsuinfo) (go)
-
-[![Packaging status](https://repology.org/badge/vertical-allrepos/gopsuinfo.svg)](https://repology.org/project/gopsuinfo/versions)
-
-## [autotiling](https://github.com/nwg-piotr/autotiling) (python)
-
-[![Packaging status](https://repology.org/badge/vertical-allrepos/autotiling.svg)](https://repology.org/project/autotiling/versions)
-
-# Project supported by
+## Project supported by
 
 <a href="https://jb.gg/OpenSourceSupport"><img width="300" src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" alt="JetBrains Logo (Main) logo."></a>
 
-Copyright © 2000-2022 JetBrains s.r.o. JetBrains and the JetBrains logo are registered trademarks of JetBrains s.r.o.
+Copyright © 2000-2024 JetBrains s.r.o. JetBrains and the JetBrains logo are registered trademarks of JetBrains s.r.o.
