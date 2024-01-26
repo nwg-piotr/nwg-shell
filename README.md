@@ -27,6 +27,11 @@ For installation instructions, see the [Wiki page](https://github.com/nwg-piotr/
 
 Please read the [general contributing rules for the nwg-shell project](https://nwg-piotr.github.io/nwg-shell/contribution).
 
+## License
+
+The shell components are provided under the terms of the [MIT License](https://github.com/nwg-piotr/nwg-shell/blob/main/LICENSE),
+unless otherwise specified for a certain component.
+
 ## Contact
 
 - Use [Discussions](https://github.com/nwg-piotr/nwg-shell/discussions) to see CHANGELOG and announcements, share ideas, ask for support.
