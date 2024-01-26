@@ -3,7 +3,7 @@
 # nwg-shell project
 <iframe src="https://github.com/sponsors/nwg-piotr/button" title="Sponsor nwg-piotr" height="35" width="116" style="border: 0;"></iframe>
 
-**The nwg-shell project aims to create a consistent, GTK3-based user interface for the [sway](https://github.com/swaywm/sway) Wayland Compositor. In order to give the user the greatest possible choice, some interface elements provide several alternative solutions. The shell contains 4 predefined desktop styles, which can be freely modified by the user.**
+**The nwg-shell project aims to create a consistent, GTK3-based user interface for the [sway](https://github.com/swaywm/sway) Wayland Compositor. In order to give the user the greatest possible choice, some interface elements provide several alternative solutions. The shell contains 4 predefined [desktop styles](desktop-styles), which can be freely modified by the user.**
 
 **Starting from the 0.5.x version, nwg-shell also offers support for the [Hyprland](https://github.com/hyprwm/Hyprland) Wayland compositor. All the component apps are Hyprland-ready, and the shell comes with 4 hyprland-* desktop styles. Hyprland support is an addition to the shell, not a standalone feature.**
 
@@ -24,6 +24,7 @@ If you want to share an idea, find a solution to a problem or discuss the projec
 # TOC
 
 - What's inside
+    - [Desktop styles](desktop-styles)
     - [Login manager: nwg-hello](nwg-hello)
     - [Panel: nwg-panel](nwg-panel)
     - [Launcher: nwg-drawer](nwg-drawer)
