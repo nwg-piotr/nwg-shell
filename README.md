@@ -10,7 +10,8 @@
 **nwg-readme-browser** (documentation viewer) and **nwg-hello** (login manager). Scripts and utilities such as 
 **autotiling** (script for sway to automatically switch the horizontal / vertical window split orientation) and 
 **gospuinfo** (a command to display system usage info) are used in the background. The shell also utilizes third party 
-software as **swaync** (notification center), **gtklock** / **swaylock** (screen lockers) and more.
+software as **swaync** (notification center), **gtklock** / **swaylock** (screen lockers) and more. The `nwg-shell` 
+package itself acts as a metapackage and installer of default configuration files.
 
 Learn more about nwg-shell on the [**project website**](https://nwg-piotr.github.io/nwg-shell).
 
