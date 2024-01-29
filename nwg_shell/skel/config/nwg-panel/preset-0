@@ -36,7 +36,8 @@
         "brightness",
         "battery",
         "volume",
-        "processes"
+        "processes",
+        "readme"
       ],
       "commands": {
         "battery": "",
