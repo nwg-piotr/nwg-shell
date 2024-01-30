@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+
+Name=nwg-shell README
+
+GenericName=browse nwg-shell README
+GenericName[pl]=Przeglądaj README nwg-shell
+
+Comment=search and browse nwg-shell README files
+Comment[pl]=Wyszukaj i przeglądaj pliki README nwg-shell
+
+Exec=nwg-readme-browser -i
+Icon=nwg-shell
+Terminal=false
+Categories=Utility;
