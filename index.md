@@ -36,6 +36,7 @@ If you want to share an idea, find a solution to a problem or discuss the projec
     - [Look and feel: nwg-look](nwg-look)
     - [Display management: nwg-displays](nwg-displays)
     - [Shell settings: nwg-shell-config](nwg-shell-config)
+    - [Documentation: nwg-readme-browser](nwg-readme-browser)
     - [Utilities and scripts](utilities-and-scripts)
 - [Installation](https://github.com/nwg-piotr/nwg-shell/wiki)
 - [nwg-shell on Arch derivatives](derivatives)
