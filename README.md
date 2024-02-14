@@ -16,6 +16,8 @@ package itself acts as a metapackage and installer of default configuration file
 
 Learn more about nwg-shell on the [**project website**](https://nwg-piotr.github.io/nwg-shell).
 
+<a href="https://liberapay.com/nwg/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
+
 ## Installation
 
 For installation instructions, see the [Wiki page](https://github.com/nwg-piotr/nwg-shell/wiki).
