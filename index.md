@@ -1,7 +1,8 @@
-<div align="right"><a href="https://matrix.to/#/#nwg-shell:matrix.org">Live chat</a>&nbsp;|&nbsp;<a href="https://www.reddit.com/r/nwg_shell">Reddit</a>&nbsp;|&nbsp;<a href="https://github.com/nwg-piotr/nwg-shell/discussions/categories/changelog">Changelog</a>&nbsp;|&nbsp;<a href="https://github.com/nwg-piotr/nwg-shell/wiki">Get nwg-shell</a></div>
+<div align="right"><a href="https://matrix.to/#/#nwg-shell:matrix.org">Live chat</a>&nbsp;|&nbsp;<a href="https://www.reddit.com/r/nwg_shell">Reddit</a>&nbsp;|&nbsp;<a href="https://github.com/nwg-piotr/nwg-shell/discussions/categories/changelog">Changelog</a>&nbsp;|&nbsp;<a href="https://github.com/nwg-piotr/nwg-shell/wiki">Get nwg-shell</a>&nbsp;|&nbsp;<a href="https://liberapay.com/nwg/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
+</div>
 
 # nwg-shell project
-<iframe src="https://github.com/sponsors/nwg-piotr/button" title="Sponsor nwg-piotr" height="35" width="116" style="border: 0;"></iframe>
+<iframe src="https://github.com/sponsors/nwg-piotr/button" title="Sponsor nwg-piotr" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
 
 <a href="https://liberapay.com/nwg/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
 
