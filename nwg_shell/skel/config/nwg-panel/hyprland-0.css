@@ -13,6 +13,7 @@ button {
     padding-left: 4px;
     padding-right: 4px
 }
+
 #task-box-focused {
     background-color: rgba(255, 255, 255, 0.12);
     padding-left: 4px;
@@ -22,10 +23,17 @@ button {
 
 /***** MODIFY TO YOUR TASTE *****/
 
-/* Sample button in sample config w/ no background nor border */
+/* Default custom button */
 #button-custom {
     background: rgba(0, 0, 0, 0.0);
     border: 0
+}
+
+#button-custom:hover {
+    border: none;
+    border-radius: 3px;
+    background: #cd7ebf;
+    color: #fff
 }
 
 /* Top panel in sample config uses this name */
@@ -71,29 +79,29 @@ button {
 
 /* dwl module */
 #dwl-tag-box {
-	padding-top: 4px;
-	padding-bottom: 4px
+    padding-top: 4px;
+    padding-bottom: 4px
 }
 
 #dwl-tag-occupied {
-	font-family: monospace;
-	color: #eee;
+    font-family: monospace;
+    color: #eee;
     background-color: #006699;
     padding-left: 3px;
     padding-right: 3px;
 }
 
 #dwl-tag-free {
-	font-family: monospace;
-	color: #eee;
+    font-family: monospace;
+    color: #eee;
     background-color: rgba(32, 50, 90, 1.0);
     padding-left: 3px;
     padding-right: 3px;
 }
 
 #dwl-tag-urgent {
-	font-family: monospace;
-	color: #eee;
+    font-family: monospace;
+    color: #eee;
     background-color: #ee6600;
     padding-left: 3px;
     padding-right: 3px;
@@ -105,7 +113,8 @@ button {
 
 /* Selected (hovered) UI elements */
 *:selected {
-  border: none;
-  background: #cd7ebf;
-  color: #fff
+    border: none;
+    border-radius: 3px;
+    background: #cd7ebf;
+    color: #fff
 }

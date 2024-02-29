@@ -24,10 +24,17 @@ button {
 
 * { border-radius: 0 }
 
-/* Sample button in sample config w/ no background nor border */
+/* Default custom button */
 #button-custom {
     background: rgba(0, 0, 0, 0.0);
     border: 0
+}
+
+#button-custom:hover {
+    border: none;
+    border-radius: 3px;
+    background: #cd7ebf;
+    color: #fff
 }
 
 /* Top panel in sample config uses this name */
@@ -103,7 +110,8 @@ button {
 
 /* Selected (hovered) UI elements */
 *:selected {
-  border: none;
-  background: #cd7ebf;
-  color: #fff
+    border: none;
+    border-radius: 3px;
+    background: #cd7ebf;
+    color: #fff
 }
