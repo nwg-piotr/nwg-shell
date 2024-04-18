@@ -95,15 +95,15 @@
           },
           {
             "name": "Exit sway session",
-            "cmd": "swaymsg exit"
+            "cmd": "nwg-dialog -p exit-sway -c \"swaymsg exit\"",
           },
           {
             "name": "Restart",
-            "cmd": "systemctl reboot"
+            "cmd": "nwg-dialog -p reboot -c \"systemctl reboot\""
           },
           {
             "name": "Shutdown",
-            "cmd": "systemctl -i poweroff"
+            "cmd": "nwg-dialog -p poweroff -c \"systemctl -i poweroff\""
           }
         ]
       },
