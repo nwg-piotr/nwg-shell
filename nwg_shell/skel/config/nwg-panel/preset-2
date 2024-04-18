@@ -95,7 +95,7 @@
           },
           {
             "name": "Exit sway session",
-            "cmd": "nwg-dialog -p exit-sway -c \"swaymsg exit\"",
+            "cmd": "nwg-dialog -p exit-sway -c \"swaymsg exit\""
           },
           {
             "name": "Restart",
