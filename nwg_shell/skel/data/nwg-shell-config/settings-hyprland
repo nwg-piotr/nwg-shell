@@ -96,7 +96,6 @@
   "misc-key_press_enables_dpms": false,
   "misc-layers_hog_keyboard_focus": true,
   "misc-focus_on_activate": false,
-  "misc-hide_cursor_on_touch": true,
   "misc-mouse_move_focuses_monitor": true,
   "lockscreen-use-settings": true,
   "lockscreen-locker": "swaylock",
