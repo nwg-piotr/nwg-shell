@@ -148,8 +148,8 @@ def main():
 
     if args.restore:
         summary = []
-        items = ["sway", "nwg-panel", "nwg-drawer", "nwg-dock", "nwg-bar", "nwg-look", "swaync", "swaync", "foot",
-                 "gtklock"]
+        items = ["foot", "gtk-3.0", "gtklock", "nwg-displays", "nwg-dock", "nwg-drawer", "nwg-look",
+                 "nwg-panel", "sway", "swaync"]
         if args.hypr:
             items.append("hypr")
             items.append("nwg-dock-hyprland")
@@ -222,8 +222,8 @@ def main():
 
     if proceed:
         skip = args.all or args.web
-        items = ["sway", "nwg-panel", "nwg-drawer", "nwg-dock", "nwg-bar", "nwg-look", "swaync", "foot", "gtklock",
-                 "gtk-3.0"]
+        items = ["foot", "gtk-3.0", "gtklock", "nwg-displays", "nwg-dock", "nwg-drawer", "nwg-look",
+                 "nwg-panel", "sway", "swaync"]
         if args.hypr:
             items.append("hypr")
             items.append("nwg-dock-hyprland")

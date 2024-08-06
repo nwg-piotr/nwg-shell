@@ -4,8 +4,8 @@
 **nwg-shell** is a GTK3-based shell for [sway](https://github.com/swaywm/sway) and 
 [Hyprland](https://github.com/hyprwm/Hyprland) Wayland compositors. The project provides a common configuration tool 
 (**nwg-shell-config**) that allows you to configure the system in a graphical UI, and a range of components such as 
-**nwg-panel** (system panel), **nwg-drawer** (application launcher), **nwg-dock** (system dock), **nwg-menu** 
-(XDG-style menu) or **nwg-bar** (customizable button bar). It also includes several native tools as 
+**nwg-panel** (system panel), **nwg-drawer** (application launcher), **nwg-dock** (system dock) or **nwg-menu** 
+(XDG-style menu). It also includes several native tools as 
 **nwg-look** (look and feel GTK settings editor), **nwg-displays** (display configuration tool), **Azote** (wallpaper 
 manager), **nwg-clipman** (clipboard history manager), **nwg-icon-picker** (icon browser with textual search), 
 **nwg-readme-browser** (documentation viewer) and **nwg-hello** (login manager). Scripts and utilities such as 
