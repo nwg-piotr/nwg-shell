@@ -113,7 +113,7 @@
       "interval": 1,
       "buttons": true,
       "buttons-position": "left",
-      "chars": 50,
+      "chars": 30,
       "css-name": "button-grid",
       "icon-size": 16,
       "button-css-name": "button-custom",
