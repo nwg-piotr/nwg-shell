@@ -1,7 +1,5 @@
 #!/usr/bin/bash
 
-# This script should go to /usr/bin, or somewhere else on #PATH
-
 if [ "$(id -u)" == 0 ] ; then
    echo "Please don't run this script as root"
    exit 1
@@ -20,18 +18,9 @@ function yes_or_no {
     done
 }
 
-# This is not really necessary, may be removed if case you insist
-sudo pacman -S --noconfirm xdg-user-dirs
-echo Initializing XDG user directories
-xdg-user-dirs-update
-
-# Needed for brightnessctl to work
-echo "Adding $USER to video group"
-sudo usermod -aG video $USER
-
 # nwg-shell needs a file manager, a text editor and a web browser preinstalled
 echo
-echo "You're about to select components, that need to be preinstalled for the key bindings to work."
+echo "You're about to select components, that need to be preinstalled for key bindings to work."
 echo "None of above is a shell dependency, and you're free to change them any time later."
 echo
 
@@ -43,14 +32,14 @@ done
 echo
 
 PS3="Select text editor: "
-select editor in mousepad atom emacs gedit geany kate vim;
+select editor in mousepad emacs gedit geany kate vim;
 do
     break
 done
 echo
 
 PS3="Select web browser: "
-select browser in chromium brave-bin google-chrome epiphany falkon firefox konqueror microsoft-edge-stable-bin midori opera qutebrowser seamonkey surf vivaldi;
+select browser in chromium epiphany falkon firefox konqueror qutebrowser vivaldi;
 do
     break
 done
@@ -59,17 +48,12 @@ echo
 echo "Installing selection: $fm $editor $browser"
 sudo pacman -S --noconfirm $fm $editor $browser
 
-# We need at least sway, but it's optional in the nwg-shell package
-echo Installing sway
-sudo pacman -S --noconfirm sway
-
 echo Installing nwg-shell
 sudo pacman -S --noconfirm nwg-shell
 
-# Hyprland installation is up to the users taste
-echo "Starting from v0.5.0, nwg-shell supports Hyprland Wayland compositor."
+# Hyprland installation is up to the user
 echo
-yes_or_no "Install Hyprland?"
+yes_or_no "Install Hyprland Wayland compositor?"
 
 if [ "$choice" == "Y" ] ; then
    echo "Installing Hyprland"
