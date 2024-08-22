@@ -18,7 +18,7 @@ The project is intended for users of all skill levels. Beginners will find four 
 
 The user interface mostly consists of dedicated software, but also uses several great third party products, that perfectly fit. Many thanks to their authors for favorable attitude towards feature requests.
 
-The default (preinstalled) terminal emulator is [foot](https://codeberg.org/dnkl/foot) by Daniel Eklöf. This does not mean that I consider other terminals worse, but that I had to choose one. The remaining elements of the desktop environment, such as the text editor, file manager, web browser, and so on, are left to the user's choice. The author's subjective recommendation might be mousepad, Thunar, and Chromium / Chrome, but it doesn't really make much difference.
+The default (preinstalled) terminal emulator is [foot](https://codeberg.org/dnkl/foot) by Daniel Eklöf. This does not mean that I consider other terminals worse, but that I had to choose one. The remaining elements of the desktop environment, such as the text editor, file manager, web browser, and so on, are left to the user's choice. The author's subjective recommendation might be mousepad, thunar, and firefox, but it doesn't really make much difference.
 
 On the backend side there's a lot of third party Free Open Source Software. I'll try to list all the applications and libraries in Credits.
 
