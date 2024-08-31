@@ -12,6 +12,8 @@ Feel free to submit your improvements and bug fixes. You can also propose your o
     - **Remember, that the project is intended for users of all skill levels**. Explain your new feature to the user. Add tooltips where needed. Update README / Wiki.
     - **Follow the existing coding style**. All the PRs like _I reformatted code with Black or whatever_ go directly to `/dev/null`, w/o further reading.
 
+![coding-style](https://github.com/user-attachments/assets/2a4afb59-7db9-419b-8ab6-b8c4755c0ec1)
+
 ## Issues
 
 Open an issue in appropriate GitHub repository to report a bug or request a feature.
