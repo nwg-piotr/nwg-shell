@@ -54,7 +54,7 @@ If you want to share an idea, find a solution to a problem or discuss the projec
 This collection of software depends on numerous third-party programs and libraries, that have not been mentioned above:
 
 - [wlsunset](https://sr.ht/~kennylevinsen/wlsunset) by Kenny Levinsen
-- [gtk-layer-shell](https://github.com/wmww/gtk-layer-shell) by Dennis Blommesteijn & William Wold
+- [gtk-layer-shell](https://github.com/wmww/gtk-layer-shell) by Sophie Winter
 - [gotk3](https://github.com/gotk3/gotk3) by Conformal Systems LLC
 - [gotk3-layershell](https://github.com/dlasky/gotk3-layershell) by [@dlasky](https://github.com/dlasky/gotk3-layershell/commits?author=dlasky) (Dan, thanks again!)
 - [go-sway](https://github.com/joshuarubin/go-sway) by Joshua Rubin
