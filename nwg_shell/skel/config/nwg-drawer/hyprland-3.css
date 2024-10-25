@@ -27,3 +27,15 @@ button:hover {
     border: 1px dotted gray;
     border-radius: 15px
 }
+
+/* math operation result label */
+#math-label {
+    font-weight: bold;
+    font-size: 16px
+}
+
+/* math operation result label */
+#math-label {
+    font-weight: bold;
+    font-size: 16px
+}
