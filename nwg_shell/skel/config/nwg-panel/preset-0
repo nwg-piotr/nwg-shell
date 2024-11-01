@@ -24,6 +24,7 @@
       "clock"
     ],
     "modules-right": [
+      "random-wallpaper",
       "sway-mode",
       "tray",
       "button-help",
@@ -185,6 +186,20 @@
       "tooltip": "Clipboard history [Alt]+c",
       "css-name": "button-custom",
       "icon-size": 16
+    },
+    "random-wallpaper": {
+      "source": "wallhaven.cc",
+      "tags": [
+        "nature"
+      ],
+      "ratios": "16x9,16x10",
+      "atleast": "1920x1080",
+      "apikey": "",
+      "save-path": "/home/piotr",
+      "local-path": "/usr/share/backgrounds/nwg-shell",
+      "icon-size": 16,
+      "interval": 0,
+      "refresh-on-startup": true
     },
     "sigrt": 64,
     "use-sigrt": false,
