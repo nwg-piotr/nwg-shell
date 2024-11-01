@@ -2,7 +2,7 @@
   {
     "name": "top",
     "output": "",
-    "layer": "top",
+    "layer": "bottom",
     "position": "top",
     "height": 30,
     "width": "auto",
@@ -16,7 +16,7 @@
     "css-name": "panel-top",
     "icons": "",
     "modules-left": [
-      "sway-workspaces"
+      "hyprland-workspaces"
     ],
     "modules-center": [
       "clock"
