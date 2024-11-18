@@ -236,11 +236,13 @@ def main():
         shell_config_settings_file = os.path.join(data_home, "nwg-shell-config", "settings")
         shell_config_settings = load_json(shell_config_settings_file)
 
-        shell_config_settings_hyprland_file = os.path.join(data_home, "nwg-shell-config", "settings-hyprland")
-        shell_config_settings_hyprland = load_json(shell_config_settings_hyprland_file)
+        shell_config_settings_hyprland = None
+        if args.hypr:
+            shell_config_settings_hyprland_file = os.path.join(data_home, "nwg-shell-config", "settings-hyprland")
+            shell_config_settings_hyprland = load_json(shell_config_settings_hyprland_file)
 
         settings = [shell_config_settings]
-        if args.hypr:
+        if args.hypr and shell_config_settings_hyprland:
             settings.append(shell_config_settings_hyprland)
 
         # Set default apps, if found
