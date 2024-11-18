@@ -172,7 +172,7 @@ def main():
         print("\n*******************************************************************")
         print("    This script installs/overwrites configs and style sheets       ")
         print("          for sway, Hyprland and nwg-shell components.             ")
-        print("  The only backup that will be made is the main sway config file.  ")
+        print("      The only backup that will be made are main config files.     ")
         print("   This script should be used on a fresh Arch Linux installation.  ")
         print("            If you're running it on your existing setup,           ")
         print("                 you're doing it at your own risk.                 ")
@@ -208,13 +208,18 @@ def main():
     # Backup sway config file (we may have none on fresh installation)
     now = datetime.datetime.now()
     new_name = now.strftime("config-backup-%Y%m%d-%H%M%S")
-    src = os.path.join(config_home, "sway/config")
-    dst = os.path.join(config_home, "sway/{}".format(new_name))
+    src_sway = os.path.join(config_home, "sway/config")
+    dst_sway = os.path.join(config_home, "sway/{}".format(new_name))
+    src_hypr = os.path.join(config_home, "hypr/hyprland.conf")
+    dst_hypr = os.path.join(config_home, "config/{}".format(new_name))
     proceed = True
     try:
-        if os.path.isfile(src):
-            copy(src, dst)
+        if os.path.isfile(src_sway):
+            copy(src_sway, dst_sway)
             print("* Original sway config file copied to '{}'".format(new_name))
+        if os.path.isfile(src_hypr):
+            copy(src_hypr, dst_hypr)
+            print("* Original Hyprland config file copied to '{}'".format(new_name))
     except Exception as e:
         print("Error: {}".format(e))
         a = input("Proceed with installation? y/N ")
