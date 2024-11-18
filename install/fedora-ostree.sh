@@ -15,6 +15,9 @@ version=$REDHAT_SUPPORT_PRODUCT_VERSION
 
 echo "Enabling nwg-shell Copr"
 sudo curl https://copr.fedorainfracloud.org/coprs/tofik/nwg-shell/repo/fedora-$version/tofik-nwg-shell-fedora-$version.repo -o /etc/yum.repos.d/nwg-shell.repo
+sudo curl https://copr.fedorainfracloud.org/coprs/tofik/sway/repo/fedora-${version}/tofik-sway-fedora-${version}.repo -o /etc/yum.repos.d/tofik-sway.repo
+sudo curl https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-${version}/erikreider-SwayNotificationCenter-fedora-${version}.repo -o /etc/yum.repos.d/erikreider-SwayNotificationCenter.repo
+sudo curl https://copr.fedorainfracloud.org/coprs/mochaa/gtk-session-lock/repo/fedora-${version}/mochaa-gtk-session-lock-fedora-${version}.repo -o /etc/yum.repos.d/mochaa-gtk-session-lock.repo
 
 echo
 echo "You're about to select components, that need to be preinstalled for the key bindings to work."
