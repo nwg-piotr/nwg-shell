@@ -198,7 +198,7 @@
       "local-path": "/usr/share/backgrounds/nwg-shell",
       "icon-size": 16,
       "interval": 0,
-      "refresh-on-startup": true
+      "refresh-on-startup": false
     }
   },
   {
