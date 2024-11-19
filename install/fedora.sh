@@ -8,6 +8,16 @@ fi
 # Don't continue script if any error occurs.
 set -e
 
+function yes_or_no {
+	local yn
+    while true; do
+        read -r -p "$* [y/n]: " yn
+        case $yn in
+            [Yy]*) choice="Y" ; return 0 ;;
+            [Nn]*) choice="n" ; return 0 ;;
+        esac
+    done
+}
 echo "Enabling nwg-shell Copr"
 sudo dnf copr enable -y tofik/nwg-shell
 
@@ -43,8 +53,19 @@ sudo dnf install -y $fm $editor $browser
 echo "Installing nwg-shell"
 sudo dnf install -y nwg-shell
 
-echo "Installing initial configuration"
-# Version in fedora does not support -w flag, so, implemented workaround
-echo y | nwg-shell-installer -a
+echo "Starting from v0.5.0, nwg-shell supports Hyprland Wayland compositor."
+
+echo
+yes_or_no "Install Hyprland?"
+
+if [ "$choice" == "Y" ] ; then
+   echo "Installing Hyprland"
+   dnf install -y hyprland wlr-randr
+   echo Installing initial configuration
+   nwg-shell-installer -w -hypr
+else
+   echo Installing initial configuration
+   nwg-shell-installer -w
+fi
 
 xdg-user-dirs-update
