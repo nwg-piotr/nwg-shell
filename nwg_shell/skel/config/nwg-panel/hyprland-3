@@ -5,6 +5,7 @@
     "layer": "bottom",
     "position": "top",
     "height": 30,
+    "homogeneous": true,
     "width": "auto",
     "margin-top": 0,
     "margin-bottom": 0,

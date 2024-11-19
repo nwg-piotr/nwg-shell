@@ -5,6 +5,7 @@
     "layer": "overlay",
     "position": "bottom",
     "height": 36,
+    "homogeneous": true,
     "width": "auto",
     "margin-top": 0,
     "margin-bottom": 0,
