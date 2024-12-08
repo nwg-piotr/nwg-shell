@@ -28,7 +28,8 @@ if [[ -z "$CHOICE" ]]; then
   exit 1
 fi
 
-DIR=${SCREENSHOT_DIR:=$HOME/Screenshots}
+PICTURES=$(xdg-user-dir PICTURES)
+DIR=${SCREENSHOT_DIR:=$PICTURES/Screenshots}
 
 mkdir -p "$DIR"
 
