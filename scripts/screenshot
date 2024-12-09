@@ -3,8 +3,8 @@
 # Original script based on some early version of https://github.com/moverest/sway-interactive-screenshot
 # modified for use with key bindings. For now supports sway & Hyprland.
 
-SWAY=$(echo "$SWAYSOCK")
-HYPR=$(echo "$HYPRLAND_INSTANCE_SIGNATURE")
+SWAY=$SWAYSOCK
+HYPR=$HYPRLAND_INSTANCE_SIGNATURE
 if [[ -n "$SWAY" && -n "$HYPR" ]]; then
     echo "This script only works on sway or Hyprland, terminating.";
     exit 1
