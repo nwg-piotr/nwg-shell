@@ -6,7 +6,6 @@ exec swayidle -w timeout 1200 nwg-lock timeout 1800 'swaymsg "output * dpms off"
 exec_always nwg-autotiling
 exec_always nwg-drawer -r -s preset-0.css -term foot -ft
 exec_always nwg-panel -c preset-0 -s preset-0.css
-exec_always nwg-shell-check-updates
 exec nwg-look -a
 exec nwg-update-indicator
 exec_always nwg-screenshot-applet
