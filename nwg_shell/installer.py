@@ -211,7 +211,7 @@ def main():
     src_sway = os.path.join(config_home, "sway/config")
     dst_sway = os.path.join(config_home, "sway/{}".format(new_name))
     src_hypr = os.path.join(config_home, "hypr/hyprland.conf")
-    dst_hypr = os.path.join(config_home, "config/{}".format(new_name))
+    dst_hypr = os.path.join(config_home, "hypr/{}".format(new_name))
     proceed = True
     try:
         if os.path.isfile(src_sway):
