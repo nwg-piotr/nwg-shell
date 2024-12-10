@@ -216,10 +216,10 @@ def main():
     try:
         if os.path.isfile(src_sway):
             copy(src_sway, dst_sway)
-            print("* Original sway config file copied to '{}'".format(new_name))
+            print("* Main sway config file copied to '{}'".format(new_name))
         if os.path.isfile(src_hypr):
             copy(src_hypr, dst_hypr)
-            print("* Original Hyprland config file copied to '{}'".format(new_name))
+            print("* Main Hyprland config file copied to '{}'".format(new_name))
     except Exception as e:
         print("Error: {}".format(e))
         a = input("Proceed with installation? y/N ")
