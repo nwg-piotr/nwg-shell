@@ -23,7 +23,8 @@
       "clock"
     ],
     "modules-right": [
-      "scratchpad",
+      "executor-cpuav",
+      "hyprland-submap",
       "tray",
       "button-help",
       "button-clipman"

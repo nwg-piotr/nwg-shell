@@ -23,6 +23,7 @@
     "modules-right": [
       "executor-cpuavg",
       "executor-cpubar",
+      "hyprland-submap",
       "clock",
       "tray",
       "button-help",

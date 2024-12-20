@@ -25,6 +25,7 @@
     "modules-right": [
       "executor-cpuav",
       "executor-cpubar",
+      "hyprland-submap",
       "scratchpad",
       "tray",
       "button-help",

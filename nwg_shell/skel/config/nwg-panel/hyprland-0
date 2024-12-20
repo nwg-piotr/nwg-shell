@@ -24,6 +24,7 @@
       "clock"
     ],
     "modules-right": [
+      "hyprland-submap",
       "random-wallpaper",
       "tray",
       "button-help",
