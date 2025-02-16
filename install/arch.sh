@@ -45,7 +45,7 @@ done
 echo
 
 PS3="Select text editor: "
-select editor in mousepad atom emacs gedit geany kate vim;
+select editor in typobuster mousepad atom emacs gedit geany kate vim;
 do
     break
 done

@@ -43,7 +43,7 @@ browsers = {
     "google-chrome-stable": "google-chrome-stable --enable-features=UseOzonePlatform --ozone-platform=wayland",
     "epiphany": "epiphany",
     "falkon": "falkon",
-    "firefox": "MOZ_ENABLE_WAYLAND=1 firefox",
+    "firefox": "firefox",
     "konqueror": "konqueror",
     "midori": "midori",
     "microsoft-edge-stable": "microsoft-edge-stable --enable-features=UseOzonePlatform --ozone-platform=wayland",
@@ -262,7 +262,7 @@ def main():
                         break
 
             if "editor" not in s or not s["editor"]:
-                for cmd in ["mousepad", "atom", "emacs", "gedit", "geany", "kate", "vim"]:
+                for cmd in ["typobuster", "mousepad", "atom", "emacs", "gedit", "geany", "kate", "vim"]:
                     if is_command(cmd):
                         s["editor"] = cmd
                         break
