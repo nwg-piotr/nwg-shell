@@ -55,7 +55,7 @@
   "master-new_on_top": false,
   "master-orientation": "left",
   "master-inherit_fullscreen": true,
-  "master-always_center_master": false,
+  "master-slave_count_for_center_master": 2,
   "input-use-settings": true,
   "input-kb_layout": "us",
   "input-kb_model": "",
