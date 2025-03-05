@@ -40,6 +40,7 @@ If you want to share an idea, find a solution to a problem or discuss the projec
     - [Display management: nwg-displays](nwg-displays)
     - [Shell settings: nwg-shell-config](nwg-shell-config)
     - [Documentation: nwg-readme-browser](nwg-readme-browser)
+    - [Text editor: typobuster](typobuster)
     - [Utilities and scripts](utilities-and-scripts)
 - [Installation](https://github.com/nwg-piotr/nwg-shell/wiki)
 - [nwg-shell on Arch derivatives](derivatives)
