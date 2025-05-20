@@ -38,8 +38,7 @@ unless otherwise specified for a certain component.
 - Use [Discussions](https://github.com/nwg-piotr/nwg-shell/discussions) to see CHANGELOG and announcements, share ideas, ask for support.
 - Use [this invitation](https://matrix.to/#/#nwg-shell:matrix.org) to join the live chat on Matrix.
 
-## Project supported by
+### Powered by
+[![JetBrains logo.](https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg)](https://jb.gg/OpenSource)
 
-<a href="https://jb.gg/OpenSourceSupport"><img width="300" src="https://resources.jetbrains.com/storage/products/company/brand/logos/jb_beam.png" alt="JetBrains Logo (Main) logo."></a>
-
-Copyright © 2000-2024 JetBrains s.r.o. JetBrains and the JetBrains logo are registered trademarks of JetBrains s.r.o.
+Copyright © 2025 JetBrains s.r.o. JetBrains and the JetBrains logo are trademarks of JetBrains s.r.o.
