@@ -97,4 +97,3 @@ The artwork used on this site is licensed under the terms of the [Creative Commo
 [![JetBrains logo.](https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg)](https://jb.gg/OpenSource)
 
 Copyright © 2025 JetBrains s.r.o. JetBrains and the JetBrains logo are trademarks of JetBrains s.r.o.
-Copyright © 2000-2022 JetBrains s.r.o. JetBrains and the JetBrains logo are registered trademarks of JetBrains s.r.o.
