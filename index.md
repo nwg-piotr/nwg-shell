@@ -94,6 +94,6 @@ The artwork used on this site is licensed under the terms of the [Creative Commo
 - [reddit.com/user/nwg-piotr](https://www.reddit.com/user/nwg-piotr)
 
 ### Powered by
-[![JetBrains logo.](https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg)](https://jb.gg/OpenSource)
+[![JetBrains logo.](https://github.com/nwg-piotr/nwg-shell/raw/refs/heads/gh-pages/logo_jb_dark_bg.svg)](https://jb.gg/OpenSource)
 
 Copyright © 2025 JetBrains s.r.o. JetBrains and the JetBrains logo are trademarks of JetBrains s.r.o.
