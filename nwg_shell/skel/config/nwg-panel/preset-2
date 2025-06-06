@@ -162,7 +162,10 @@
       "margin-top": 8,
       "padding": 2,
       "terminal": "foot",
-      "width": 0
+      "width": 0,
+      "run-through-compositor": true,
+      "hover-opens-submenu": false,
+      "click-outside-closes": true
     },
     "executor-cpubar": {
       "script": "gopsuinfo -i g",
