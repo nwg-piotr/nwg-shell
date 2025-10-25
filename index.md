@@ -1,3 +1,9 @@
+Dear friends,
+
+My beloved wife recently passed away, and my whole life has changed. I know issues and pull requests are piling up, but I'm not ready to deal with them yet. Please be patient, I need some time. Thank you.
+
+Piotr Miller
+
 <div align="right"><a href="https://matrix.to/#/#nwg-shell:matrix.org">Live chat</a>&nbsp;|&nbsp;<a href="https://www.reddit.com/r/nwg_shell">Reddit</a>&nbsp;|&nbsp;<a href="https://github.com/nwg-piotr/nwg-shell/discussions/categories/changelog">Changelog</a>&nbsp;|&nbsp;<a href="https://github.com/nwg-piotr/nwg-shell/wiki">Get nwg-shell</a>
 </div>
 
