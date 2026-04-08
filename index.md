@@ -1,10 +1,8 @@
-Dear friends,
+If you have questions or want to follow the development of nwg-shell, join us on our IRC channel.
 
-My beloved wife recently passed away, and my whole life has changed. I know issues and pull requests are piling up, but I'm not ready to deal with them yet. Please be patient, I need some time. Thank you.
+[![IRC Channel](https://img.shields.io/badge/OFTC-%23nwg--shell-E91E63?style=flat&logo=irc&logoColor=white)](https://webchat.oftc.net/?channels=nwg-shell)
 
-Piotr Miller
-
-<div align="right"><a href="https://matrix.to/#/#nwg-shell:matrix.org">Live chat</a>&nbsp;|&nbsp;<a href="https://www.reddit.com/r/nwg_shell">Reddit</a>&nbsp;|&nbsp;<a href="https://github.com/nwg-piotr/nwg-shell/discussions/categories/changelog">Changelog</a>&nbsp;|&nbsp;<a href="https://github.com/nwg-piotr/nwg-shell/wiki">Get nwg-shell</a>
+<div align="right"><a href="https://github.com/nwg-piotr/nwg-shell/discussions/categories/changelog">Changelog</a>&nbsp;|&nbsp;<a href="https://github.com/nwg-piotr/nwg-shell/wiki">Get nwg-shell</a>
 </div>
 
 # nwg-shell project
