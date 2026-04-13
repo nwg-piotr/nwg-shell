@@ -4,7 +4,7 @@ Feel free to submit your improvements and bug fixes. You can also propose your o
 
 ## Code
 
-1. Before you open a PR containing substantial changes to already existing programs, please open a [Discussion](https://github.com/nwg-piotr/nwg-shell/discussions) or use the IRC channel: **#nwg-shell** on **OFTC**. You may do it quickly by following this link: https://webchat.oftc.net/?channels=nwg-shell.
+1. Before you open a PR containing substantial changes to already existing programs, please open a [Discussion](https://github.com/nwg-piotr/nwg-shell/discussions) or use the IRC channel: **#nwg-shell** on **OFTC**. You may do it quickly by following [this link](https://webchat.oftc.net/?channels=nwg-shell).
 2. Half-baked PRs won't be merged:
 
     - **Make sure you don't introduce new bugs**. We already have enough bugs to fix.
