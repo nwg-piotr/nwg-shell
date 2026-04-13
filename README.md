@@ -36,7 +36,7 @@ unless otherwise specified for a certain component.
 ## Contact
 
 - Use [Discussions](https://github.com/nwg-piotr/nwg-shell/discussions) to see CHANGELOG and announcements, share ideas, ask for support.
-- Use [this invitation](https://matrix.to/#/#nwg-shell:matrix.org) to join the live chat on Matrix.
+- Use the IRC channel: **#nwg-shell** on **OFTC**. You may do it quickly by following this link:[https://webchat.oftc.net/?channels=nwg-shell](https://webchat.oftc.net/?channels=nwg-shell).
 
 ### Powered by
 [![JetBrains logo.](https://resources.jetbrains.com/storage/products/company/brand/logos/jetbrains.svg)](https://jb.gg/OpenSource)
