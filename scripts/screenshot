@@ -1,28 +1,41 @@
 #!/usr/bin/env bash
 
 # Original script based on some early version of https://github.com/moverest/sway-interactive-screenshot
-# modified for use with key bindings. For now supports sway & Hyprland.
+# modified for use with key bindings. Supports sway, Hyprland & Mango.
 
 SWAY=$SWAYSOCK
 HYPR=$HYPRLAND_INSTANCE_SIGNATURE
-if [[ -n "$SWAY" && -n "$HYPR" ]]; then
-    echo "This script only works on sway or Hyprland, terminating.";
+MANGO=$MANGO_INSTANCE_SIGNATURE
+
+# Check if running under exactly one supported compositor
+active_envs=0
+[[ -n "$SWAY" ]] && ((active_envs++))
+[[ -n "$HYPR" ]] && ((active_envs++))
+[[ -n "$MANGO" ]] && ((active_envs++))
+
+if (( active_envs != 1 )); then
+    echo "This script works on exactly one supported compositor (sway, Hyprland, or Mango), terminating."
     exit 1
 fi
 
 list_geometry()
 {
-    swaymsg -t get_tree | jq -r '.. | try select(.'"$1"' and .pid) | "\(.rect.x),\(.rect.y) \(.rect.width)x\(.rect.height)''"'
+    swaymsg -t get_tree | jq -r '.. | try select(.'"$1"' and .pid) | "\(.rect.x),\(.rect.y) \(.rect.width)x\(.rect.height)"'
 }
 
 list_geometry_hypr()
 {
-    hyprctl -j activewindow | jq -r '"\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])''"'
+    hyprctl -j activewindow | jq -r '"\(.at[0]),\(.at[1]) \(.size[0])x\(.size[1])"'
+}
+
+list_geometry_mango()
+{
+    mmsg get focusing-client | jq -r '"\(.x),\(.y) \(.width)x\(.height)"'
 }
 
 CHOICE=$1
 
-# Since the script errors out when a $CHOICE isn't supplied
+# Error out when a $CHOICE isn't supplied
 if [[ -z "$CHOICE" ]]; then
   echo "Usage: $0 [fullscreen|region|focused|display|swappy]"
   exit 1
@@ -57,7 +70,20 @@ if [[ -n "$HYPR" ]]; then
     esac
 fi
 
-if [ "$CHOICE" != "swappy" ]; then
+if [[ -n "$MANGO" ]]; then
+    FOCUSED=$(list_geometry_mango)
+    FILENAME="${DIR/#\~/$HOME}/$(date +'%Y-%m-%d-%H%M%S_mango_screenshot.png')"
+    case $CHOICE in
+        fullscreen) grim "$FILENAME" ;;
+        region)     grim -g "$(slurp)" "$FILENAME" ;;
+        focused)    grim -g "$FOCUSED" "$FILENAME" ;;
+        display)    grim -o "$(mmsg get all-monitors | jq -r '.monitors[] | select(.active) | .name')" "$FILENAME" ;;
+        swappy)     grim -g "$(slurp)" - | swappy -f - ;;
+    esac
+fi
+
+# Proceed only if file was successfully created (not in swappy mode)
+if [ "$CHOICE" != "swappy" ] && [ -f "$FILENAME" ]; then
         wl-copy < "$FILENAME"
         notify-send "Screenshot" "File saved as <i>'$FILENAME'</i> and copied to the clipboard." -i "$FILENAME"
 fi
